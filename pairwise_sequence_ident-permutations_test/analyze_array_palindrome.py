@@ -32,6 +32,9 @@ OUTPUT_DIR = "./output"
 SEQUENCES_DIR = "./sequences"
 ALIGNMENTS_DIR = "./alignments"
 
+
+## Fore each reference genome the Y chromosome contig was extracted with samtools faidx
+## e.g.: samtools faidx ./GCF_028878055.2_NHGRI_mSymSyn1-v2.0_pri_genomic.fna NC_072448.2 > NC_072448.2.fa
 REFERENCE_GENOMES = {
     "GorGor": "/Users/kxp5629/proj/Y/data/references/GorGor/ncbi_dataset_v2.0/data/GCF_029281585.2/NC_073248.2.fa",
     "PonAbe": "/Users/kxp5629/proj/Y/data/references/PonAbe/ncbi_dataset_v2.0/data/GCF_028885655.2/NC_072009.2.fa",
