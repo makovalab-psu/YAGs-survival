@@ -1,0 +1,80 @@
+#header
+# Gene definition file for Pan troglodytes (PanTro) — version 5
+# Reference assembly: GCF_028858775.2 (NHGRI mPanTro3-v2.0)
+# Y chromosome accession: NC_072422.2  (length: 36,447,294 bp)
+# Coordinates: 0-based, half-open  [start, end)
+#
+# Format: start  end  gene_family  [notes]
+#
+# Multicopy gene families:
+#   BPY2  — 1 copy
+#   CDY   — 4 canonical copies + 1 pseudogene (LOC129388401)
+#           Pseudogene added to prevent NaN from AmpliCoNE-build
+#   DAZ   — 4 regions spanning 2 palindrome arm pairs (~60 kb each)
+#   RBMY  — 6 canonical copies (truncated: first 8 kb used due to minus/plus
+#           strand orientation) + 4 pseudogenes (LOC740282, LOC745213,
+#           LOC739668, LOC740336)
+#           Note: truncation avoids overlap with intronic repeats
+#   TSPY  — 21 copies (18 canonical + 2 at distal locus + 1 pseudogene
+#           LOC112207447 with internal frameshift; duplicate coord retained
+#           to account for both alleles)
+#   VCY   — 2 copies (absent in gorilla)
+#
+# Single-copy control regions:
+#   CONTROL — 9 regions spanning single-copy portions of chrY
+#             (coordinates derived from DDX3Y, KDM5D, USP9Y, UTY, ZFY,
+#              TBL1Y, and intergenic single-copy windows)
+#
+9703873	9728394	BPY2
+5358722	5360941	CDY
+10716098	10718545	CDY
+10854593	10857166	CDY
+20320840	20322820	CDY
+20105906	20108366	CDY	LOC129388401
+9432522	9491010	DAZ
+9511428	9580873	DAZ
+19207852	19258064	DAZ
+19278361	19338008	DAZ
+15713694	15721694	RBMY	trunc first 8k bp minus strand
+16149485	16157485	RBMY	trunc first 8k bp plus
+15412682	15420682	RBMY	trunc first 8k bp plus
+14978198	14986198	RBMY	trunc first 8k bp minus strand
+16884284	16892284	RBMY	trunc first 8k bp plus
+16450396	16458396	RBMY	trunc first 8k bp minus strand
+23748065	23756065	RBMY	pseudo LOC740282
+6643564	6651564	RBMY	pseudo LOC745213
+21587443	21595443	RBMY	pseudo LOC739668
+24049029	24057029	RBMY	LOC740336
+6661275	6664016	TSPY
+6672035	6674778	TSPY
+6682797	6685540	TSPY
+6693559	6696302	TSPY
+6704287	6707064	TSPY
+6715083	6717826	TSPY
+6725845	6728588	TSPY
+6736573	6739350	TSPY
+6747369	6750112	TSPY
+6758131	6760874	TSPY
+6779645	6782388	TSPY
+6790409	6793149	TSPY
+6801135	6803912	TSPY
+6811931	6814674	TSPY
+6822693	6825436	TSPY
+6833421	6836198	TSPY
+6844217	6846960	TSPY
+6854945	6857722	TSPY
+6865743	6868296	TSPY
+17214010	17216539	TSPY
+21605166	21607909	TSPY
+21605166	21607909	TSPY	LOC112207447 internal frameshift pseudogene
+28834974	28835985	VCY
+28926389	28927400	VCY
+25364627	25403857	CONTROL
+27479544	27624281	CONTROL
+27669052	27685584	CONTROL
+28021701	28270816	CONTROL
+30206602	30497322	CONTROL
+32681228	32758645	CONTROL
+32872738	33081920	CONTROL
+33270101	33320467	CONTROL
+33470070	33470980	CONTROL

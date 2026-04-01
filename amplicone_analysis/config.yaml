@@ -1,0 +1,62 @@
+# =============================================================================
+# AmpliCoNE pipeline configuration
+# =============================================================================
+# Edit the paths in this file to match your environment before running
+# amplicone_pipeline.sh.  All other paths (scripts/, gene_definitions/,
+# panels/, results/, y_chromosomes/, trf_output/, repeat_masker/) are
+# relative to the pipeline root directory and do not need to be changed.
+#
+# Required Python package: pyyaml  (pip install pyyaml)
+# =============================================================================
+
+# ── External tool paths ───────────────────────────────────────────────────
+tools:
+  # Tandem Repeat Finder binary (download from https://tandem.bu.edu/trf/trf.html)
+  trf_bin: /storage/home/kxp5629/tools/trf409.linux64
+
+  # GEM mappability suite bin directory
+  # (https://sourceforge.net/projects/gemlibrary/)
+  gem_bin_dir: /storage/home/kxp5629/tools/gem/GEM-binaries-Linux-x86_64-core_i3-20130406-045632/bin
+
+  # BEDOPS bin directory — provides wig2bed
+  # (https://bedops.readthedocs.io/)
+  bedops_bin_dir: /storage/home/kxp5629/tools/bedops/bin
+
+# ── Mapped reads root ─────────────────────────────────────────────────────
+# Expected layout: {alignments_root}/{species}/{individual}/merged.100.bam
+alignments_root: /storage/home/kxp5629/proj/04_map/results
+
+# ── Per-species configuration ─────────────────────────────────────────────
+# Fields:
+#   reference        — path to uncompressed (or .gz) reference FASTA
+#   gff              — path to NCBI RefSeq GFF (used by 02_generate_gene_definitions.py)
+#   repeatmasker_out — path to genome-wide RepeatMasker .out file
+#   chry_rm_tag      — chromosome label used for chrY in that RepeatMasker file
+#                      (will be replaced with chry_accession in extracted output)
+#   chry_accession   — NCBI RefSeq accession for the Y chromosome
+#   chry_length      — Y chromosome length in bp
+#   gene_definitions — filename of the curated gene definition TSV
+#                      (must exist in gene_definitions/targets/)
+#   annotation_tab   — filename for the AmpliCoNE annotation output
+#                      (written to panels/ by build step; read by count step)
+
+species:
+  GorGor:
+    reference: /storage/group/kdm16/default/shared/T2Tv2.assemblies/NCBI_RefSeq/GorGor/data/GCF_029281585.2/GCF_029281585.2_NHGRI_mGorGor1-v2.0_pri_genomic.fna
+    gff: /storage/group/kdm16/default/shared/T2Tv2.assemblies/NCBI_RefSeq/GorGor/data/GCF_029281585.2/genomic.gff
+    repeatmasker_out: /storage/home/kxp5629/group_storage/shared/T2Tv2.repeats/repeats/RepeatMasker_output_RM1/primary/GorGor/mGorGor1.pri.cur.20231122.combo2.out
+    chry_rm_tag: chrY_pat_hsaY
+    chry_accession: NC_073248.2
+    chry_length: 67405748
+    gene_definitions: GorGor_add_pseudo_RBMY_CDY_edit.tsv
+    annotation_tab: GorGor_NC_073248.2_20241106_annot.tab
+
+  PanTro:
+    reference: /storage/group/kdm16/default/shared/T2Tv2.assemblies/NCBI_RefSeq/PanTro/data/GCF_028858775.2/GCF_028858775.2_NHGRI_mPanTro3-v2.0_pri_genomic.fna
+    gff: /storage/group/kdm16/default/shared/T2Tv2.assemblies/NCBI_RefSeq/PanTro/data/GCF_028858775.2/genomic.gff
+    repeatmasker_out: /storage/home/kxp5629/group_storage/shared/T2Tv2.repeats/repeats/RepeatMasker_output_RM1/primary/PanTro/mPanTro3.pri.cur.20231122.rmout
+    chry_rm_tag: chrY_hap2_hsaY   # NOTE: differs from GorGor tag
+    chry_accession: NC_072422.2
+    chry_length: 36447294
+    gene_definitions: PanTro5.tsv
+    annotation_tab: PanTro_NC_072422.2_20241107_annot.tab

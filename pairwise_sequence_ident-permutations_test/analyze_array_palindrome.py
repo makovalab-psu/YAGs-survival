@@ -348,11 +348,11 @@ def find_palindrome_for_position(gene_start: int, gene_end: int, chrom: str, pal
             pal_start = pal['Start']
             pal_end = pal['End']
 
-            # Gene must be fully contained in palindrome
             fully_contained = (pal_start <= gene_start and gene_end <= pal_end)
-            if fully_contained:
-                partial_overlap = False
+            any_overlap = gene_start < pal_end and gene_end > pal_start
+            partial_overlap = any_overlap and not fully_contained
 
+            if any_overlap:
                 q_num, arm = extract_q_number(pal['Palindrome name'])
                 return {
                     'palindrome_name': pal['Palindrome name'],
@@ -645,6 +645,7 @@ def plot_combined_results(result: Dict):
 
     # Plot 1: Full view
     fig1, ax1 = plt.subplots(figsize=(10, 6))
+
     plot_data(ax1)
     ax1.set_xlabel('Genomic Distance (Mb)', fontsize=12)
     ax1.set_ylabel('Sequence Identity (%)', fontsize=12)

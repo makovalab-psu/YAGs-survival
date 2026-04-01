@@ -15,13 +15,14 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
+from matplotlib.ticker import FixedLocator
 
 OUTPUT_DIR = "./output"
 N_PERMUTATIONS = 10_000
 
 CATEGORIES = [
     ("Tandem\nrepeat\n(same array)", "tandem_same"),
-    ("Tandem\nrepeat\n(diff array)", "tandem_diff"),
+    ("Tandem\nrepeat\n(different array)", "tandem_diff"),
     ("Palindrome\nopposite\narms", "pal_opposite_arms"),
     ("Palindrome\nsame arm", "pal_same_arm"),
     ("Palindrome\ndifferent", "pal_diff_q"),
@@ -58,6 +59,13 @@ def get_category_data(df: pd.DataFrame, tag: str) -> np.ndarray:
     return df.loc[get_category_mask(df, tag), "Similarity"].values
 
 
+def get_category_lengths(df: pd.DataFrame, tag: str) -> np.ndarray:
+    mask = get_category_mask(df, tag)
+    genes_a = df.loc[mask, ["GeneA", "GeneA_length"]].rename(columns={"GeneA": "Gene", "GeneA_length": "Length"})
+    genes_b = df.loc[mask, ["GeneB", "GeneB_length"]].rename(columns={"GeneB": "Gene", "GeneB_length": "Length"})
+    return pd.concat([genes_a, genes_b]).drop_duplicates(subset="Gene")["Length"].values
+
+
 def count_category_genes(df: pd.DataFrame, tag: str) -> int:
     mask = get_category_mask(df, tag)
     return pd.concat([df.loc[mask, "GeneA"], df.loc[mask, "GeneB"]]).nunique()
@@ -75,6 +83,57 @@ def permutation_test(group1: np.ndarray, group2: np.ndarray,
         perm_diffs[i] = stat_func(combined[:n1]) - stat_func(combined[n1:])
     p_value = np.mean(np.abs(perm_diffs) >= np.abs(observed_diff))
     return observed_diff, p_value
+
+
+def plot_length_distributions(df: pd.DataFrame, timestamp: str) -> None:
+    labels = [c[0] for c in CATEGORIES]
+    COLORS = ["#e07b39", "#c4a23a", "#6aab6a", "#5b8ec4", "#c45b8e", "#8e5bc4"]
+    VIOLIN_WIDTH = 0.7
+    LINE_HALF = VIOLIN_WIDTH / 2
+
+    length_data = [get_category_lengths(df, tag) for _, tag in CATEGORIES]
+
+    fig, ax = plt.subplots(figsize=(6, 6))
+    n = len(labels)
+
+    parts = ax.violinplot(length_data, positions=range(n), widths=VIOLIN_WIDTH,
+                          showmeans=False, showmedians=False, showextrema=True)
+    for i, pc in enumerate(parts['bodies']):
+        pc.set_facecolor(COLORS[i])
+        pc.set_edgecolor('none')
+        pc.set_alpha(0.6)
+    for part_name in ('cbars', 'cmins', 'cmaxes'):
+        if part_name in parts:
+            parts[part_name].set_edgecolor('#555555')
+            parts[part_name].set_linewidth(0.8)
+
+    for i, vals in enumerate(length_data):
+        if len(vals) == 0:
+            continue
+        mean_val = np.mean(vals)
+        median_val = np.median(vals)
+        ax.plot([i - LINE_HALF, i + LINE_HALF], [mean_val, mean_val], color='black', lw=1, ls='--')
+        ax.annotate(f"mean {mean_val:.0f}", xy=(i - LINE_HALF, mean_val),
+                    xytext=(0, -3), textcoords='offset points',
+                    ha='left', va='top', fontsize=7, color='black')
+        ax.plot([i - LINE_HALF, i + LINE_HALF], [median_val, median_val], color='black', lw=1, ls='-')
+        ax.annotate(f"median {median_val:.0f}", xy=(i + LINE_HALF, median_val),
+                    xytext=(0, 3), textcoords='offset points',
+                    ha='right', va='bottom', fontsize=7, color='black', fontweight='bold')
+
+    ax.set_xticks(range(n))
+    ax.set_xticklabels(
+        [f"{l}\n(n={len(length_data[i])})" for i, l in enumerate(labels)],
+        fontsize=6
+    )
+    ax.set_ylabel("Gene length (bp)", fontsize=7)
+    ax.spines[['right', 'top']].set_visible(False)
+    plt.tight_layout()
+
+    path = os.path.join(OUTPUT_DIR, f"gene_length_distributions_{timestamp}.pdf")
+    plt.savefig(path, dpi=1200, bbox_inches="tight")
+    plt.close()
+    print(f"Length distribution plot saved: {path}")
 
 
 def significance_label(p: float) -> str:
@@ -253,11 +312,20 @@ def main():
     # print(f"Heatmap saved: {fig_path}")
 
     # 3. Violin plot: 5 categories side by side
-    COLORS = ["#e07b39", "#6aab6a", "#5b8ec4", "#c45b8e", "#8e5bc4", "#b2b2b2"]
+    COLORS = [ "#7bb0df", "#1964b0",  "#f4a637",  "#db5829", "#894b45" , "#b2b2b2"]
     VIOLIN_WIDTH = 0.7
     LINE_HALF = VIOLIN_WIDTH / 2
 
-    fig, ax = plt.subplots(figsize=(6, 6))
+
+    # Conversion factor: 1 inch = 25.4 mm
+    MM_PER_INCH = 25.4
+    fig_width_mm = 120
+    fig_height_mm = 85
+
+
+    fig, ax = plt.subplots(figsize=(fig_width_mm/MM_PER_INCH, fig_height_mm/MM_PER_INCH))
+    plt.rcParams['font.sans-serif'] = "Arial"
+    plt.rcParams['font.family'] = "sans-serif"
 
     violin_data = [data[label] for label in labels]
     parts = ax.violinplot(violin_data, positions=range(n), widths=VIOLIN_WIDTH,
@@ -266,11 +334,11 @@ def main():
     for i, pc in enumerate(parts['bodies']):
         pc.set_facecolor(COLORS[i])
         pc.set_edgecolor('none')
-        pc.set_alpha(0.6)
+        pc.set_alpha(0.75)
     for part_name in ('cbars', 'cmins', 'cmaxes'):
         if part_name in parts:
             parts[part_name].set_edgecolor('#555555')
-            parts[part_name].set_linewidth(0.8)
+            parts[part_name].set_linewidth(0.5)
 
     for i, label in enumerate(labels):
         vals = data[label]
@@ -279,17 +347,17 @@ def main():
 
         # Mean: thin dashed blue line, label left-aligned with line, 3pt below
         ax.plot([i - LINE_HALF, i + LINE_HALF], [mean_val, mean_val],
-                color='black', lw=1, ls='--')
-        ax.annotate(f"mean {mean_val:.2f}", xy=(i - LINE_HALF, mean_val),
+                color='black', lw=0.5, ls='--')
+        ax.annotate(f"mean {mean_val:.2f}%", xy=(i - LINE_HALF, mean_val),
                     xytext=(0, -3), textcoords='offset points',
-                    ha='left', va='top', fontsize=7, color='black')
+                    ha='left', va='top', fontsize=5, color='black')
 
         # Median: thin dashed orange line, label right-aligned with line, 3pt above
         ax.plot([i - LINE_HALF, i + LINE_HALF], [median_val, median_val],
-                color='black', lw=1, ls='-')
-        ax.annotate(f"median {median_val:.2f}", xy=(i + LINE_HALF, median_val),
+                color='black', lw=0.5, ls='-')
+        ax.annotate(f"median {median_val:.2f}%", xy=(i + LINE_HALF, median_val),
                     xytext=(0, 3), textcoords='offset points',
-                    ha='right', va='bottom', fontsize=7, color='black', fontweight='bold' )
+                    ha='right', va='bottom', fontsize=5, color='black', fontweight='bold' )
 
     # Significance brackets for median p-values
     sig_pairs = sorted(
@@ -301,53 +369,57 @@ def main():
     sig_pairs = reversed(sig_pairs)
 
     if sig_pairs:
-        y_max = max(np.max(v) for v in violin_data if len(v) > 0)
+        y_max = max(np.max(v) for v in violin_data if len(v) > 0) +0.7
         y_min = min(np.min(v) for v in violin_data if len(v) > 0) 
         step = (y_max - y_min) * 0.04
-        tick_h = step * 0.3
+        # tick_h = step * 0.3
 
-        col_heights = [y_max + step * 1.5] * n
-        bracket_offset = ax.transData.inverted().transform(
-            ax.transData.transform((0, 0)) + np.array([0, 2])
-        )[1] - ax.transData.inverted().transform(
-            ax.transData.transform((0, 0))
-        )[1]
+        col_heights = [y_max + step * 1.5] * n 
 
         for i, j, _, stars in sig_pairs:
-            y = max(col_heights[i:j + 1]) + bracket_offset
+            y = max(col_heights[i:j + 1]) 
             mid = (i + j) / 2
             gap = len(stars) * 0.08
-            ax.plot([i, mid - gap], [y, y], color='#333333', lw=0.8)
-            ax.plot([mid + gap, j], [y, y], color='#333333', lw=0.8)
+            ax.plot([i, mid - gap], [y, y], color='#333333', lw=0.5)
+            ax.plot([mid + gap, j], [y, y], color='#333333', lw=0.5)
             # ax.plot([i, i, mid - gap], [y - tick_h, y, y], color='#333333', lw=0.8)
             # ax.plot([mid + gap, j, j], [y, y, y - tick_h], color='#333333', lw=0.8)
-            ax.text(mid, y - 0.15, stars, ha='center', va='center', fontsize=8, color='#333333')
+            ax.text(mid, y - 0.15, stars, ha='center', va='center', fontsize=5, color='#333333')
             for k in range(i, j + 1):
                 col_heights[k] = y + step
 
-        ax.set_ylim(bottom=85, top=max(col_heights) + step)
+        ax.set_ylim(bottom=87, top=max(col_heights) + step +2)
     else:
-        ax.set_ylim(bottom=85, top=101)
+        ax.set_ylim(bottom=87, top=101)
+    # ax.labelsize(5)
+    ax.tick_params(axis='y', labelsize =5)
+    # ax.set_yticks(range(87, 101, 5))
+    ax.set_yticks([87, 90, 95, 100])
+    ax.set_yticklabels(['87', '90', '95', '100'])
 
-    ax.set_yticks(range(85, 101, 5))
+    # Minor ticks at every integer, no labels
+    ax.yaxis.set_minor_locator(FixedLocator(range(87, 100)))
+    ax.spines['left'].set_bounds(87, 100)
     ax.set_xticks(range(n))
     ax.set_xticklabels(
-        [f"{l}\n(n={len(data[l])})" for l in labels],
-        fontsize=9
+        [f"{l}" for l in labels],
+        fontsize=6
     )
-    ax.set_ylabel("Sequence identity (%)", fontsize=10)
+    ax.set_ylabel("Sequence identity (%)", fontsize=7)
     ax.spines[['right', 'top']].set_visible(False)
 
     ax.text(0.01, 0.01,
             "* p < 0.05\n** p < 0.01\n*** p < 0.001",
-            transform=ax.transAxes, fontsize=7, va='bottom', ha='left',
+            transform=ax.transAxes, fontsize=5, va='bottom', ha='left',
             linespacing=1.8)
 
     plt.tight_layout()
     violin_path = os.path.join(OUTPUT_DIR, f"permutation_test_violins_{timestamp}.pdf")
-    plt.savefig(violin_path, dpi=300, bbox_inches="tight")
+    plt.savefig(violin_path, dpi=1200, bbox_inches="tight")
     plt.close()
     print(f"Violin plot saved: {violin_path}")
+
+    plot_length_distributions(df, timestamp)
 
     print(f"\n{'=' * 60}")
     print("Analysis complete!")
