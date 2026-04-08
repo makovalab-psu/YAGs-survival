@@ -14,11 +14,11 @@ import pandas as pd
 from analyze_array_palindrome import (
     fetch_google_sheet_by_gid,
     parse_gff_for_gene,
-    find_palindrome_for_position,
     find_array_for_position,
     GID_S1, GID_S13_PALINDROMES, GID_S14_ARRAY,
     GFF_DOWNLOAD_DIR,
 )
+from gene_summary import find_palindrome_any_overlap
 
 OUTPUT_PATH = "gene_category_report.csv"
 
@@ -46,7 +46,7 @@ def classify_genes(all_genes_df: pd.DataFrame, arrays_df: pd.DataFrame,
         sp_palindromes = palindromes_df[palindromes_df['Species'] == species]
 
         in_array = find_array_for_position(gene_start, gene_info['chrom'], gene_family, sp_arrays) is not None
-        in_palindrome = find_palindrome_for_position(gene_start, gene_end, gene_info['chrom'], sp_palindromes) is not None
+        in_palindrome = find_palindrome_any_overlap(gene_start, gene_end, gene_info['chrom'], sp_palindromes) is not None
 
         records.append({
             'Species': species,

@@ -348,11 +348,11 @@ def find_palindrome_for_position(gene_start: int, gene_end: int, chrom: str, pal
             pal_start = pal['Start']
             pal_end = pal['End']
 
+            # Gene must be fully contained in palindrome
             fully_contained = (pal_start <= gene_start and gene_end <= pal_end)
-            any_overlap = gene_start < pal_end and gene_end > pal_start
-            partial_overlap = any_overlap and not fully_contained
+            if fully_contained:
+                partial_overlap = False
 
-            if any_overlap:
                 q_num, arm = extract_q_number(pal['Palindrome name'])
                 return {
                     'palindrome_name': pal['Palindrome name'],
@@ -365,7 +365,6 @@ def find_palindrome_for_position(gene_start: int, gene_end: int, chrom: str, pal
                     'gene_start': gene_start,
                     'gene_end': gene_end
                 }
-    return None
 
 
 def find_array_for_position(pos: int, chrom: str, gene_family: str, arrays_df: pd.DataFrame) -> Optional[Dict]:

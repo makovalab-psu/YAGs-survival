@@ -46,13 +46,13 @@ def get_category_mask(df: pd.DataFrame, tag: str) -> pd.Series:
     elif tag == "tandem_diff":
         return (df["Type"] == "ARRAY") & (df["SameArrayRegion"] == False)
     elif tag == "pal_opposite_arms":
-        return (df["PalindromeTag"] == "palindrome_sameQ_trans") & (df["BothGenesFullyInPalindrome"] == True)
+        return (df["PalindromeTag"] == "palindrome_sameQ_trans")  & (df["BothGenesFullyInPalindrome"] == True)
     elif tag == "pal_same_arm":
         return (df["Type"] == "PALINDROME") & (df["PalindromeTag"] == "palindrome_sameQ_cis")
     elif tag == "pal_diff_q":
         return (df["Type"] == "PALINDROME") & (df["PalindromeTag"] == "palindrome_diffQ")
     else:  # outside
-        return df["Type"] == "OTHER"
+        return (df["Type"] == "OTHER") & (df["GeneFamily"] != "DAZ")
 
 
 def get_category_data(df: pd.DataFrame, tag: str) -> np.ndarray:
