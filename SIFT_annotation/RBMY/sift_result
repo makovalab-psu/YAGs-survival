@@ -1,0 +1,76 @@
+WARNING: Original amino acid W at position 318 is not allowed by the prediction.
+
+
+Substitution at pos 13 from G to C is predicted to AFFECT PROTEIN FUNCTION with a score of 0.01.
+    Median sequence conservation: 3.05
+    Sequences represented at this position:323
+
+Substitution at pos 70 from K to T is predicted to AFFECT PROTEIN FUNCTION with a score of 0.05.
+    Median sequence conservation: 3.05
+    Sequences represented at this position:322
+
+Substitution at pos 90 from G to D is predicted to AFFECT PROTEIN FUNCTION with a score of 0.01.
+    Median sequence conservation: 3.24
+    Sequences represented at this position:53
+
+Substitution at pos 106 from G to R is predicted to be TOLERATED with a score of 0.97.
+    Median sequence conservation: 3.16
+    Sequences represented at this position:17
+
+Substitution at pos 162 from P to L is predicted to AFFECT PROTEIN FUNCTION with a score of 0.00.
+    Median sequence conservation: 3.32
+    Sequences represented at this position:13
+WARNING!!  This substitution may have been predicted to affect function just because 
+ the sequences used were not diverse enough.  There is LOW CONFIDENCE in this prediction.
+
+Substitution at pos 241 from N to Y is predicted to be TOLERATED with a score of 0.66.
+    Median sequence conservation: 3.42
+    Sequences represented at this position:12
+
+Substitution at pos 253 from G to R is predicted to be TOLERATED with a score of 0.12.
+    Median sequence conservation: 3.42
+    Sequences represented at this position:12
+
+Substitution at pos 273 from S to R is predicted to AFFECT PROTEIN FUNCTION with a score of 0.00.
+    Median sequence conservation: 3.42
+    Sequences represented at this position:12
+WARNING!!  This substitution may have been predicted to affect function just because 
+ the sequences used were not diverse enough.  There is LOW CONFIDENCE in this prediction.
+
+Substitution at pos 302 from G to V is predicted to AFFECT PROTEIN FUNCTION with a score of 0.00.
+    Median sequence conservation: 3.43
+    Sequences represented at this position:11
+WARNING!!  This substitution may have been predicted to affect function just because 
+ the sequences used were not diverse enough.  There is LOW CONFIDENCE in this prediction.
+
+Substitution at pos 306 from A to D is predicted to be TOLERATED with a score of 0.09.
+    Median sequence conservation: 3.60
+    Sequences represented at this position:8
+
+Substitution at pos 318 from W to Q is predicted to be TOLERATED with a score of 0.37.
+    Median sequence conservation: 3.47
+    Sequences represented at this position:9
+
+Substitution at pos 333 from R to H is predicted to AFFECT PROTEIN FUNCTION with a score of 0.01.
+    Median sequence conservation: 3.47
+    Sequences represented at this position:9
+WARNING!!  This substitution may have been predicted to affect function just because 
+ the sequences used were not diverse enough.  There is LOW CONFIDENCE in this prediction.
+
+Substitution at pos 351 from L to P is predicted to AFFECT PROTEIN FUNCTION with a score of 0.03.
+    Median sequence conservation: 3.61
+    Sequences represented at this position:7
+WARNING!!  This substitution may have been predicted to affect function just because 
+ the sequences used were not diverse enough.  There is LOW CONFIDENCE in this prediction.
+
+Substitution at pos 355 from R to P is predicted to AFFECT PROTEIN FUNCTION with a score of 0.00.
+    Median sequence conservation: 3.61
+    Sequences represented at this position:7
+WARNING!!  This substitution may have been predicted to affect function just because 
+ the sequences used were not diverse enough.  There is LOW CONFIDENCE in this prediction.
+
+Substitution at pos 362 from S to L is predicted to AFFECT PROTEIN FUNCTION with a score of 0.00.
+    Median sequence conservation: 4.32
+    Sequences represented at this position:1
+WARNING!!  This substitution may have been predicted to affect function just because 
+ the sequences used were not diverse enough.  There is LOW CONFIDENCE in this prediction.

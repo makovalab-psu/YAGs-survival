@@ -1,0 +1,9 @@
+>DAZ_repeat_consensus
+AFPAYPNSPVQ------VTTGYQLPVYNYQ
+
+L24S
+
+>DAZ_repeat_consensus_gapless
+AFPAYPNSPVQVTTGYQLPVYNYQ
+
+L18S
