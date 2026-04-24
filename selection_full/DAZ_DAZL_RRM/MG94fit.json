@@ -1,0 +1,748 @@
+{
+ "analysis":{
+   "authors":"Sergei L Kosakovsky Pond",
+   "contact":"spond@temple.edu",
+   "info":"Fit an MG94xREV model with several selectable options frequency estimator and \nreport the fit results including dN/dS ratios, and synonymous and non-synonymous branch lengths. v0.2 adds LRT test for dN/dS != 1. \nv0.3 adds LRT test support for dN/dS != 1 for local models. v0.4 adds the lineage option",
+   "requirements":"in-frame codon alignment and a phylogenetic tree",
+   "version":"0.4"
+  },
+ "branch attributes":{
+   "0":{
+     "GORGOR_CHR2_DAZL_RBD1_26423032_NA_NONC_":{
+       "Nucleotide GTR":0.00205065091475205,
+       "Standard MG94":0.002085372892641546,
+       "dN":0.001689978069872328,
+       "dS":0.003336025692581251,
+       "nonsynonymous":0.001284030775151073,
+       "original name":"GORGOR_CHR2_DAZL-RBD1_26423032_NA_NONC_-",
+       "synonymous":0.0008013421174904769
+      },
+     "GORGOR_CHRY_DAZ1_RBD1_42783133_Q18_1_A_NONC_":{
+       "Nucleotide GTR":0.01639558664341316,
+       "Standard MG94":0.01645241953462259,
+       "dN":0.01333297671028586,
+       "dS":0.02631936689418776,
+       "nonsynonymous":0.01013028081581728,
+       "original name":"GORGOR_CHRY_DAZ1-RBD1_42783133_Q18.1.A_NONC_-",
+       "synonymous":0.006322138718805295
+      },
+     "GORGOR_CHRY_DAZ1_RBD2_42783133_Q18_1_A_NONC_":{
+       "Nucleotide GTR":1e-06,
+       "Standard MG94":0,
+       "dN":1.31615075166208e-10,
+       "dS":4.163047991323002e-10,
+       "nonsynonymous":1e-10,
+       "original name":"GORGOR_CHRY_DAZ1-RBD2_42783133_Q18.1.A_NONC_-",
+       "synonymous":1e-10
+      },
+     "GORGOR_CHRY_DAZ1_RBD3_42783133_Q18_1_A_NONC_":{
+       "Nucleotide GTR":1e-06,
+       "Standard MG94":0,
+       "dN":1.31615075166208e-10,
+       "dS":4.163047991323002e-10,
+       "nonsynonymous":1e-10,
+       "original name":"GORGOR_CHRY_DAZ1-RBD3_42783133_Q18.1.A_NONC_-",
+       "synonymous":1e-10
+      },
+     "GORGOR_CHRY_LOC129530216_RBD2_42879918_Q18_1_B_NONC_T":{
+       "Nucleotide GTR":0.002019785324304605,
+       "Standard MG94":0.002022798873411144,
+       "dN":0.001639268328407718,
+       "dS":0.003235924393395239,
+       "nonsynonymous":0.00124550195054601,
+       "original name":"GORGOR_CHRY_LOC129530216-RBD2_42879918_Q18.1.B_NONC_T",
+       "synonymous":0.0007772969228651323
+      },
+     "HOMSAP_CHR3_DAZL_RBD1_16587918_NA_NONC_":{
+       "Nucleotide GTR":1e-06,
+       "Standard MG94":0,
+       "dN":1.31615075166208e-10,
+       "dS":4.163047991323002e-10,
+       "nonsynonymous":1e-10,
+       "original name":"HOMSAP_CHR3_DAZL-RBD1_16587918_NA_NONC_-",
+       "synonymous":1e-10
+      },
+     "HOMSAP_CHRY_DAZ1_RBD1_23965003_Q8A_NONC_":{
+       "Nucleotide GTR":0.008443720474677605,
+       "Standard MG94":0.008531993358122417,
+       "dN":0.006914294186138961,
+       "dS":0.01364885347462959,
+       "nonsynonymous":0.005253421142986359,
+       "original name":"HOMSAP_CHRY_DAZ1-RBD1_23965003_Q8A_NONC_-",
+       "synonymous":0.003278572215136062
+      },
+     "NODE1":{
+       "Nucleotide GTR":0.002056497118067002,
+       "Standard MG94":0.00205509846129044,
+       "dN":0.001665443788621352,
+       "dS":0.003287594890986028,
+       "nonsynonymous":0.001265389839665534,
+       "synonymous":0.0007897086216249074
+      },
+     "NODE10":{
+       "Nucleotide GTR":0.06538159906287355,
+       "Standard MG94":0.06658878149804398,
+       "dN":0.05396328916919399,
+       "dS":0.1065238196482768,
+       "nonsynonymous":0.04100084211557628,
+       "synonymous":0.02558793938246768
+      },
+     "NODE11":{
+       "Nucleotide GTR":0.01514880049628081,
+       "Standard MG94":0.01521213494710136,
+       "dN":0.01232785491134639,
+       "dS":0.0243352511206092,
+       "nonsynonymous":0.009366597933996813,
+       "synonymous":0.005845537013104561
+      },
+     "NODE114":{
+       "Nucleotide GTR":0.002030734080676428,
+       "Standard MG94":0.002045787132667741,
+       "dN":0.001657897924172236,
+       "dS":0.003272699314455326,
+       "nonsynonymous":0.001259656556878903,
+       "synonymous":0.0007861305757888401
+      },
+     "NODE12":{
+       "Nucleotide GTR":0.02457287254216934,
+       "Standard MG94":0.02463720462323964,
+       "dN":0.01996589466716011,
+       "dS":0.03941278219666426,
+       "nonsynonymous":0.01516991472439346,
+       "synonymous":0.009467289898846211
+      },
+     "NODE122":{
+       "Nucleotide GTR":0.01015656843177113,
+       "Standard MG94":0.01024470979409806,
+       "dN":0.008302272914989845,
+       "dS":0.01638873086283299,
+       "nonsynonymous":0.006307995421121366,
+       "synonymous":0.003936714372976689
+      },
+     "NODE13":{
+       "Nucleotide GTR":0.004074046233267915,
+       "Standard MG94":0.0040910982349098,
+       "dN":0.003315410075141584,
+       "dS":0.006544637110557671,
+       "nonsynonymous":0.002519020006602413,
+       "synonymous":0.001572078228307382
+      },
+     "NODE131":{
+       "Nucleotide GTR":0.005268194222518829,
+       "Standard MG94":0.005287670710711026,
+       "dN":0.004285107748997605,
+       "dS":0.008458825472933494,
+       "nonsynonymous":0.003255787943429903,
+       "synonymous":0.002031882767281121
+      },
+     "NODE134":{
+       "Nucleotide GTR":0.008254382746336466,
+       "Standard MG94":0.008333824334082002,
+       "dN":0.006753698780905668,
+       "dS":0.01333183729109458,
+       "nonsynonymous":0.00513140213792141,
+       "synonymous":0.0032024221961606
+      },
+     "NODE17":{
+       "Nucleotide GTR":0.001999774619670326,
+       "Standard MG94":0.00200391253853794,
+       "dN":0.001623962916186912,
+       "dS":0.0032057114283193,
+       "nonsynonymous":0.001233873030225539,
+       "synonymous":0.0007700395083124027
+      },
+     "NODE2":{
+       "Nucleotide GTR":0.004134682712391516,
+       "Standard MG94":0.004223391976426135,
+       "dN":0.003422620407995181,
+       "dS":0.006756270877460224,
+       "nonsynonymous":0.002600477493686023,
+       "synonymous":0.00162291448274011
+      },
+     "NODE21":{
+       "Nucleotide GTR":0.008173175334604132,
+       "Standard MG94":0.008259201796385783,
+       "dN":0.006693224967004148,
+       "dS":0.01321246166101966,
+       "nonsynonymous":0.005085454655214621,
+       "synonymous":0.003173747141171147
+      },
+     "NODE35":{
+       "Nucleotide GTR":0.01404065937402996,
+       "Standard MG94":0.01406546026200534,
+       "dN":0.01139859421273084,
+       "dS":0.02250088556229064,
+       "nonsynonymous":0.008660553662516474,
+       "synonymous":0.005404906599488886
+      },
+     "NODE54":{
+       "Nucleotide GTR":0.007925954392846518,
+       "Standard MG94":0.008112220837085517,
+       "dN":0.006574112170063756,
+       "dS":0.01297733236674521,
+       "nonsynonymous":0.004994953778479967,
+       "synonymous":0.003117267058605553
+      },
+     "NODE55":{
+       "Nucleotide GTR":0.01557467593053953,
+       "Standard MG94":0.01610750401807576,
+       "dN":0.01305345851908869,
+       "dS":0.02576759649905591,
+       "nonsynonymous":0.009917905302720326,
+       "synonymous":0.006189598715355443
+      },
+     "NODE56":{
+       "Nucleotide GTR":0.002516547887209032,
+       "Standard MG94":0.002324985640008256,
+       "dN":0.001884159307069986,
+       "dS":0.003719340486930944,
+       "nonsynonymous":0.00143156800593747,
+       "synonymous":0.0008934176340707883
+      },
+     "NODE57":{
+       "Nucleotide GTR":0.002482305365984445,
+       "Standard MG94":0.002334416995368277,
+       "dN":0.001891802440719535,
+       "dS":0.003734428073380306,
+       "nonsynonymous":0.001437375193024433,
+       "synonymous":0.0008970418023438444
+      },
+     "NODE58":{
+       "Nucleotide GTR":0.01331081255394998,
+       "Standard MG94":0.01369219002592777,
+       "dN":0.01109609746726479,
+       "dS":0.0219037553788953,
+       "nonsynonymous":0.008430719241889472,
+       "synonymous":0.0052614707840383
+      },
+     "NODE59":{
+       "Nucleotide GTR":0.005120999802599092,
+       "Standard MG94":0.004868475897530443,
+       "dN":0.003945393905119041,
+       "dS":0.00778822853945373,
+       "nonsynonymous":0.002997676292124335,
+       "synonymous":0.0018707996054061
+      },
+     "NODE60":{
+       "Nucleotide GTR":0.002033373702580252,
+       "Standard MG94":0.002046709272527874,
+       "dN":0.001658645222723241,
+       "dS":0.003274174485767087,
+       "nonsynonymous":0.001260224347878575,
+       "synonymous":0.000786484924649299
+      },
+     "NODE61":{
+       "Nucleotide GTR":0.002020623353555278,
+       "Standard MG94":0.002030558094162397,
+       "dN":0.001645556370683127,
+       "dS":0.003248337022269402,
+       "nonsynonymous":0.001250279550883561,
+       "synonymous":0.0007802785432788374
+      },
+     "NODE62":{
+       "Nucleotide GTR":0.002020853617166277,
+       "Standard MG94":0.001544478400137847,
+       "dN":0.001251639279878713,
+       "dS":0.002470742591254294,
+       "nonsynonymous":0.0009509847396265968,
+       "synonymous":0.0005934936605112496
+      },
+     "NODE77":{
+       "Nucleotide GTR":0.006098948940105097,
+       "Standard MG94":0.00614761094715825,
+       "dN":0.004981999967230939,
+       "dS":0.009834494415881362,
+       "nonsynonymous":0.0037852806458071,
+       "synonymous":0.002362330301351149
+      },
+     "NODE79":{
+       "Nucleotide GTR":0.004075042884170978,
+       "Standard MG94":0.00409885842421387,
+       "dN":0.003321698902328424,
+       "dS":0.006557051288851166,
+       "nonsynonymous":0.002523798203308906,
+       "synonymous":0.001575060220904962
+      },
+     "NODE82":{
+       "Nucleotide GTR":0.004031237365479698,
+       "Standard MG94":0.004102902705781768,
+       "dN":0.00332497637235897,
+       "dS":0.00656352103211204,
+       "nonsynonymous":0.00252628839679655,
+       "synonymous":0.001576614308985224
+      },
+     "NODE85":{
+       "Nucleotide GTR":0.002020463370377018,
+       "Standard MG94":0.00204337505279236,
+       "dN":0.001655943184036041,
+       "dS":0.003268840647036548,
+       "nonsynonymous":0.001258171362167183,
+       "synonymous":0.0007852036906251762
+      },
+     "NODE86":{
+       "Nucleotide GTR":0.00202046682872793,
+       "Standard MG94":0.002035056538739741,
+       "dN":0.001649201892647602,
+       "dS":0.003255533302004132,
+       "nonsynonymous":0.001253049387059145,
+       "synonymous":0.0007820071516805972
+      },
+     "NODE88":{
+       "Nucleotide GTR":0.008096333939443565,
+       "Standard MG94":0.008158713951213724,
+       "dN":0.006611790008667087,
+       "dS":0.01305170862041527,
+       "nonsynonymous":0.005023581075585371,
+       "synonymous":0.00313513287562834
+      },
+     "NODE96":{
+       "Nucleotide GTR":0.004038826971487768,
+       "Standard MG94":0.004072924211006257,
+       "dN":0.00330068191695621,
+       "dS":0.00651556364801592,
+       "nonsynonymous":0.002507829678923935,
+       "synonymous":0.001565094532082321
+      },
+     "PANPAN_CHRY_LOC129395530_RBD1_9036315_Q23B_C2_":{
+       "Nucleotide GTR":0.002021359722857969,
+       "Standard MG94":0.002019338670117591,
+       "dN":0.001636464193135781,
+       "dS":0.00323038901546376,
+       "nonsynonymous":0.001243371392729289,
+       "original name":"PANPAN_CHRY_LOC129395530-RBD1_9036315_Q23B_C2_-",
+       "synonymous":0.0007759672773883045
+      },
+     "PANPAN_CHRY_LOC129395621_RBD1_9107812_Q22A_NONC_T":{
+       "Nucleotide GTR":1e-06,
+       "Standard MG94":0,
+       "dN":1.31615075166208e-10,
+       "dS":4.163047991323002e-10,
+       "nonsynonymous":1e-10,
+       "original name":"PANPAN_CHRY_LOC129395621-RBD1_9107812_Q22A_NONC_T",
+       "synonymous":1e-10
+      },
+     "PANTRO_CHR2_DAZL_RBD1_20590218_NA_NONC_":{
+       "Nucleotide GTR":0.002052548834403168,
+       "Standard MG94":0.002087781971119073,
+       "dN":0.00169193037768739,
+       "dS":0.00333987955858518,
+       "nonsynonymous":0.001285514121806155,
+       "original name":"PANTRO_CHR2_DAZL-RBD1_20590218_NA_NONC_-",
+       "synonymous":0.0008022678493129209
+      },
+     "PONABE_CHR2_DAZL_RBD1_138140947_NA_NONC_T":{
+       "Nucleotide GTR":0.002038187374982227,
+       "Standard MG94":0.002091750599632244,
+       "dN":0.001695146538777039,
+       "dS":0.00334622827767085,
+       "nonsynonymous":0.001287957733288797,
+       "original name":"PONABE_CHR2_DAZL-RBD1_138140947_NA_NONC_T",
+       "synonymous":0.0008037928663434482
+      },
+     "PONABE_CHRY_LOC129053177_RBD1_40287231_Q13A_C2_":{
+       "Nucleotide GTR":0.002590848074748996,
+       "Standard MG94":0.00261333742529588,
+       "dN":0.002117838470764944,
+       "dS":0.004180624398127602,
+       "nonsynonymous":0.00160911542092763,
+       "original name":"PONABE_CHRY_LOC129053177-RBD1_40287231_Q13A_C2_-",
+       "synonymous":0.00100422200436825
+      },
+     "PONABE_CHRY_LOC129053200_RBD1_47246963_Q23_1A_C2_":{
+       "Nucleotide GTR":0.004040195537721868,
+       "Standard MG94":0.004070838030365312,
+       "dN":0.003298991284290257,
+       "dS":0.006512226330147206,
+       "nonsynonymous":0.002506545150792322,
+       "original name":"PONABE_CHRY_LOC129053200-RBD1_47246963_Q23.1A_C2_-",
+       "synonymous":0.001564292879572989
+      },
+     "PONABE_CHRY_LOC129053245_RBD1_40367975_Q13B_C2_T":{
+       "Nucleotide GTR":1e-06,
+       "Standard MG94":0,
+       "dN":1.31615075166208e-10,
+       "dS":4.163047991323002e-10,
+       "nonsynonymous":1e-10,
+       "original name":"PONABE_CHRY_LOC129053245-RBD1_40367975_Q13B_C2_T",
+       "synonymous":1e-10
+      },
+     "PONABE_CHRY_LOC129053245_RBD2_40367975_Q13B_C2_T":{
+       "Nucleotide GTR":0.002008879689591709,
+       "Standard MG94":0.002026969345365972,
+       "dN":0.001642648062636333,
+       "dS":0.003242596006726648,
+       "nonsynonymous":0.001248069843490148,
+       "original name":"PONABE_CHRY_LOC129053245-RBD2_40367975_Q13B_C2_T",
+       "synonymous":0.0007788995018758268
+      },
+     "PONABE_CHRY_LOC129053245_RBD3_40367975_Q13B_C2_T":{
+       "Nucleotide GTR":1e-06,
+       "Standard MG94":0,
+       "dN":1.31615075166208e-10,
+       "dS":4.163047991323002e-10,
+       "nonsynonymous":1e-10,
+       "original name":"PONABE_CHRY_LOC129053245-RBD3_40367975_Q13B_C2_T",
+       "synonymous":1e-10
+      },
+     "PONPYG_CHRY_LOC129025913_RBD1_33814768_Q18A_C2_":{
+       "Nucleotide GTR":0.003983356094723817,
+       "Standard MG94":0.004406534545894461,
+       "dN":0.003571038432969837,
+       "dS":0.007049248847638869,
+       "nonsynonymous":0.002713244230161482,
+       "original name":"PONPYG_CHRY_LOC129025913-RBD1_33814768_Q18A_C2_-",
+       "synonymous":0.001693290315732979
+      },
+     "PONPYG_CHRY_LOC129025913_RBD2_33814768_Q18A_C2_":{
+       "Nucleotide GTR":0.01331064228123679,
+       "Standard MG94":0.01363000306174971,
+       "dN":0.01104570139370704,
+       "dS":0.02180427326182465,
+       "nonsynonymous":0.008392428739457206,
+       "original name":"PONPYG_CHRY_LOC129025913-RBD2_33814768_Q18A_C2_-",
+       "synonymous":0.005237574322292483
+      },
+     "PONPYG_CHRY_LOC129025914_RBD1_33882908_Q18B_C2_T":{
+       "Nucleotide GTR":0.002014499911656424,
+       "Standard MG94":0.00202736362622459,
+       "dN":0.001642967586308469,
+       "dS":0.003243226748153793,
+       "nonsynonymous":0.00124831261482294,
+       "original name":"PONPYG_CHRY_LOC129025914-RBD1_33882908_Q18B_C2_T",
+       "synonymous":0.0007790510114016504
+      },
+     "PONPYG_CHRY_LOC129025914_RBD3_33882908_Q18B_C2_T":{
+       "Nucleotide GTR":0.002019449717213534,
+       "Standard MG94":0.002028700499844105,
+       "dN":0.001644050983482731,
+       "dS":0.003245365379934312,
+       "nonsynonymous":0.001249135770660441,
+       "original name":"PONPYG_CHRY_LOC129025914-RBD3_33882908_Q18B_C2_T",
+       "synonymous":0.0007795647291836639
+      },
+     "PONPYG_CHRY_LOC129025923_RBD1_42461501_Q31B_C2_T":{
+       "Nucleotide GTR":0.01166658823506289,
+       "Standard MG94":0.01138500276220583,
+       "dN":0.009226361895014287,
+       "dS":0.01821288742116373,
+       "nonsynonymous":0.007010110265380256,
+       "original name":"PONPYG_CHRY_LOC129025923-RBD1_42461501_Q31B_C2_T",
+       "synonymous":0.004374892496825562
+      },
+     "PONPYG_CHRY_LOC129025923_RBD2_42461501_Q31B_C2_T":{
+       "Nucleotide GTR":0.01014347607883948,
+       "Standard MG94":0.01028234047305065,
+       "dN":0.008332768670645196,
+       "dS":0.01644892964658918,
+       "nonsynonymous":0.006331165833490041,
+       "original name":"PONPYG_CHRY_LOC129025923-RBD2_42461501_Q31B_C2_T",
+       "synonymous":0.00395117463956061
+      },
+     "PONPYG_CHRY_LOC129025923_RBD3_42461501_Q31B_C2_T":{
+       "Nucleotide GTR":0.01126083312866713,
+       "Standard MG94":0.01100946360513879,
+       "dN":0.008922026424815625,
+       "dS":0.01761212758537294,
+       "nonsynonymous":0.006778878797545483,
+       "original name":"PONPYG_CHRY_LOC129025923-RBD3_42461501_Q31B_C2_T",
+       "synonymous":0.00423058480759331
+      },
+     "PONPYG_CHRY_LOC129025942_RBD2_28033868_Q9_3B_C2_T":{
+       "Nucleotide GTR":0.002020403812934083,
+       "Standard MG94":0.002040835402245454,
+       "dN":0.00165388506112452,
+       "dS":0.00326477790146977,
+       "nonsynonymous":0.001256607618113607,
+       "original name":"PONPYG_CHRY_LOC129025942-RBD2_28033868_Q9.3B_C2_T",
+       "synonymous":0.000784227784131846
+      },
+     "PONPYG_CHRY_LOC129025942_RBD3_28033868_Q9_3B_C2_T":{
+       "Nucleotide GTR":1e-06,
+       "Standard MG94":0.0004886294773294211,
+       "dN":0.0003959834252635224,
+       "dS":0.0007816733862204705,
+       "nonsynonymous":0.0003008647943736392,
+       "original name":"PONPYG_CHRY_LOC129025942-RBD3_28033868_Q9.3B_C2_T",
+       "synonymous":0.0001877646829557825
+      },
+     "PONPYG_CHRY_LOC129025945_RBD2_35664344_Q22_2A_C2_":{
+       "Nucleotide GTR":0.002018307491068308,
+       "Standard MG94":0.002035044765065934,
+       "dN":0.001649192351308203,
+       "dS":0.003255514467349444,
+       "nonsynonymous":0.001253042137631686,
+       "original name":"PONPYG_CHRY_LOC129025945-RBD2_35664344_Q22.2A_C2_-",
+       "synonymous":0.0007820026274342451
+      },
+     "PONPYG_CHRY_LOC129025945_RBD3_35664344_Q22_2A_C2_":{
+       "Nucleotide GTR":1e-06,
+       "Standard MG94":0,
+       "dN":1.31615075166208e-10,
+       "dS":4.163047991323002e-10,
+       "nonsynonymous":1e-10,
+       "original name":"PONPYG_CHRY_LOC129025945-RBD3_35664344_Q22.2A_C2_-",
+       "synonymous":1e-10
+      },
+     "PONPYG_CHRY_LOC129025960_RBD1_42384755_Q30A_C35_":{
+       "Nucleotide GTR":0.006067222362566877,
+       "Standard MG94":0.006113422255750818,
+       "dN":0.004954293584875989,
+       "dS":0.009779801869846366,
+       "nonsynonymous":0.003764229575236376,
+       "original name":"PONPYG_CHRY_LOC129025960-RBD1_42384755_Q30A_C35_-",
+       "synonymous":0.002349192680514447
+      },
+     "PONPYG_CHRY_LOC129025960_RBD2_42384755_Q30A_C35_":{
+       "Nucleotide GTR":0.004052406554909028,
+       "Standard MG94":0.004075906664708655,
+       "dN":0.003303098885820267,
+       "dS":0.006520334757400353,
+       "nonsynonymous":0.002509666071040115,
+       "original name":"PONPYG_CHRY_LOC129025960-RBD2_42384755_Q30A_C35_-",
+       "synonymous":0.001566240593668538
+      },
+     "PONPYG_CHRY_LOC129025960_RBD3_42384755_Q30A_C35_":{
+       "Nucleotide GTR":0.004046682065848455,
+       "Standard MG94":0.004072864940363608,
+       "dN":0.003300633884258256,
+       "dS":0.006515468831214857,
+       "nonsynonymous":0.002507793184093922,
+       "original name":"PONPYG_CHRY_LOC129025960-RBD3_42384755_Q30A_C35_-",
+       "synonymous":0.001565071756269681
+      },
+     "PONPYG_CHRY_LOC129025961_RBD2_26220121_Q7_1A_C2_":{
+       "Nucleotide GTR":0.008118113142702771,
+       "Standard MG94":0.008194197645817448,
+       "dN":0.006640545856568428,
+       "dS":0.013108472817017,
+       "nonsynonymous":0.005045429521035124,
+       "original name":"PONPYG_CHRY_LOC129025961-RBD2_26220121_Q7.1A_C2_-",
+       "synonymous":0.003148768124782335
+      },
+     "PONPYG_CHRY_LOC129025961_RBD3_26220121_Q7_1A_C2_":{
+       "Nucleotide GTR":0.002017647177417442,
+       "Standard MG94":0.002028150429968301,
+       "dN":0.001643605208997848,
+       "dS":0.003244485418731752,
+       "nonsynonymous":0.001248797075048012,
+       "original name":"PONPYG_CHRY_LOC129025961-RBD3_26220121_Q7.1A_C2_-",
+       "synonymous":0.0007793533549202889
+      },
+     "PONPYG_CHRY_LOC129025963_RBD3_26306805_Q7_3B_C2_T":{
+       "Nucleotide GTR":0.00405719915091643,
+       "Standard MG94":0.004079049627087519,
+       "dN":0.003305645930290569,
+       "dS":0.006525362636722901,
+       "nonsynonymous":0.002511601293481075,
+       "original name":"PONPYG_CHRY_LOC129025963-RBD3_26306805_Q7.3B_C2_T",
+       "synonymous":0.001567448333606446
+      },
+     "SYMSYN_CHR10_DAZL_RBD1_109881390_NA_NONC_":{
+       "Nucleotide GTR":0.008251104568466991,
+       "Standard MG94":0.008403556277287222,
+       "dN":0.006810209276080038,
+       "dS":0.01344338930893614,
+       "nonsynonymous":0.00517433832521075,
+       "original name":"SYMSYN_CHR10_DAZL-RBD1_109881390_NA_NONC_-",
+       "synonymous":0.003229217952076474
+      },
+     "SYMSYN_CHRY_LOC129476757_RBD1_18127859_Q5B_NONC_T":{
+       "Nucleotide GTR":0.006086239721167368,
+       "Standard MG94":0.006125832887083467,
+       "dN":0.004964351112169762,
+       "dS":0.009799655482182546,
+       "nonsynonymous":0.003771871197809681,
+       "original name":"SYMSYN_CHRY_LOC129476757-RBD1_18127859_Q5B_NONC_T",
+       "synonymous":0.002353961689273789
+      },
+     "SYMSYN_CHRY_LOC129476757_RBD2_18127859_Q5B_NONC_T":{
+       "Nucleotide GTR":0.0123156241651543,
+       "Standard MG94":0.01243299553994723,
+       "dN":0.01007565116026609,
+       "dS":0.01988938894495421,
+       "nonsynonymous":0.007655392930895046,
+       "original name":"SYMSYN_CHRY_LOC129476757-RBD2_18127859_Q5B_NONC_T",
+       "synonymous":0.00477760260905218
+      }
+    },
+   "attributes":{
+     "Nucleotide GTR":{
+       "attribute type":"branch length",
+       "display order":0
+      },
+     "Standard MG94":{
+       "attribute type":"branch length",
+       "display order":1
+      },
+     "dN":{
+       "attribute type":"branch length",
+       "display order":2
+      },
+     "dS":{
+       "attribute type":"branch length",
+       "display order":2
+      },
+     "nonsynonymous":{
+       "attribute type":"branch length",
+       "display order":3
+      },
+     "original name":{
+       "attribute type":"node label",
+       "display order":-1
+      },
+     "synonymous":{
+       "attribute type":"branch length",
+       "display order":2
+      }
+    }
+  },
+ "data partitions":{
+   "0":{
+     "coverage":      [
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164] 
+      ],
+     "name":"fitter.filter.default"
+    }
+  },
+ "fits":{
+   "Nucleotide GTR":{
+     "AIC-c":4029.036223249018,
+     "Equilibrium frequencies":      [
+[0.2889684162690297],
+      [0.2288116337196092],
+      [0.2312542603953647],
+      [0.2509656896159964] 
+      ],
+     "Log Likelihood":-1937.179592855486,
+     "Rate Distributions":{
+       "Substitution rate from nucleotide A to nucleotide C":0.318266118218513,
+       "Substitution rate from nucleotide A to nucleotide G":1,
+       "Substitution rate from nucleotide A to nucleotide T":0.1700874984927034,
+       "Substitution rate from nucleotide C to nucleotide G":0.4613595386066725,
+       "Substitution rate from nucleotide C to nucleotide T":1.041976603379501,
+       "Substitution rate from nucleotide G to nucleotide T":0.4072312987169322
+      },
+     "display order":0,
+     "estimated parameters":77
+    },
+   "Standard MG94":{
+     "AIC-c":3981.868587473771,
+     "Confidence Intervals":{
+       "non-synonymous/synonymous rate ratio":{
+         "LB":0.4975526775370305,
+         "UB":0.7125488262293304
+        }
+      },
+     "Log Likelihood":-1909.828302953475,
+     "Rate Distributions":{
+       "Substitution rate from nucleotide A to nucleotide C":0.3486994244268348,
+       "Substitution rate from nucleotide A to nucleotide G":1,
+       "Substitution rate from nucleotide A to nucleotide T":0.1818330375923752,
+       "Substitution rate from nucleotide C to nucleotide G":0.5431180283029187,
+       "Substitution rate from nucleotide C to nucleotide T":1.039667270178631,
+       "Substitution rate from nucleotide G to nucleotide T":0.4465534871894407,
+       "non-synonymous/synonymous rate ratio":0.5993313379465477
+      },
+     "display order":1,
+     "estimated parameters":80
+    }
+  },
+ "input":{
+   "file name":"/Users/sergei/Dropbox/Work/Collaborations/Y-chromosome/2026/round6_export_20260126/DAZ_DAZL_RRM/DAZ_DAZL_RRM.unique.nexus",
+   "number of sequences":36,
+   "number of sites":165,
+   "partition count":1,
+   "trees":{
+     "0":"(((GORGOR_CHR2_DAZL_RBD1_26423032_NA_NONC_:0.0020250017,PANTRO_CHR2_DAZL_RBD1_20590218_NA_NONC_:0.002027534,HOMSAP_CHR3_DAZL_RBD1_16587918_NA_NONC_:2.0092e-06)NODE2:0.0040796699,SYMSYN_CHR10_DAZL_RBD1_109881390_NA_NONC_:0.008253484)NODE1:0.0020617283,(((((GORGOR_CHRY_DAZ1_RBD2_42783133_Q18_1_A_NONC_:1.0046e-06,GORGOR_CHRY_LOC129530216_RBD2_42879918_Q18_1_B_NONC_T:0.0020249001)NODE17:0.0020019565,GORGOR_CHRY_DAZ1_RBD1_42783133_Q18_1_A_NONC_:0.0020249001)NODE13:0.0041328864,GORGOR_CHRY_DAZ1_RBD3_42783133_Q18_1_A_NONC_:2.3004e-06)NODE12:0.0267931126,((PANPAN_CHRY_LOC129395530_RBD1_9036315_Q23B_C2_:0.0020283771,PANPAN_CHRY_LOC129395621_RBD1_9107812_Q22A_NONC_T:4.0184e-06)NODE35:0.0151175718,HOMSAP_CHRY_DAZ1_RBD1_23965003_Q8A_NONC_:0.008100963800000001)NODE21:0.008783342600000001)NODE11:0.0156605525,(((((((((PONABE_CHRY_LOC129053177_RBD1_40287231_Q13A_C2_:0.0025068677,PONPYG_CHRY_LOC129025942_RBD3_28033868_Q9_3B_C2_T:3.7006e-06)NODE62:0.0020381823,PONPYG_CHRY_LOC129025914_RBD3_33882908_Q18B_C2_T:0.0020259436,PONPYG_CHRY_LOC129025945_RBD3_35664344_Q22_2A_C2_:2.0092e-06)NODE61:0.0020263933,PONABE_CHRY_LOC129053245_RBD3_40367975_Q13B_C2_T:4.3891e-06)NODE60:0.002075146,(PONPYG_CHRY_LOC129025960_RBD3_42384755_Q30A_C35_:0.0040734573,(PONPYG_CHRY_LOC129025961_RBD3_26220121_Q7_1A_C2_:0.0019928858,PONPYG_CHRY_LOC129025963_RBD3_26306805_Q7_3B_C2_T:0.0041404193)NODE79:0.0042055249)NODE77:0.0062929025)NODE59:0.0049850741,(PONPYG_CHRY_LOC129025913_RBD2_33814768_Q18A_C2_:0.0138276724,PONPYG_CHRY_LOC129025923_RBD3_42461501_Q31B_C2_T:0.0112686709)NODE82:0.0043507734)NODE58:0.0139983504,((((PONPYG_CHRY_LOC129025960_RBD2_42384755_Q30A_C35_:0.0041496346,PONPYG_CHRY_LOC129025961_RBD2_26220121_Q7_1A_C2_:0.008450333900000001)NODE122:0.0105364902,PONABE_CHRY_LOC129053245_RBD2_40367975_Q13B_C2_T:0.0019524114)NODE114:0.002120003,(PONPYG_CHRY_LOC129025960_RBD1_42384755_Q30A_C35_:0.0041496346,(PONPYG_CHRY_LOC129025914_RBD1_33882908_Q18B_C2_T:0.0020266143,PONABE_CHRY_LOC129053245_RBD1_40367975_Q13B_C2_T:4.0184e-06)NODE96:0.0041496346,PONABE_CHRY_LOC129053200_RBD1_47246963_Q23_1A_C2_:0.0040907673)NODE88:0.008450333900000001,PONPYG_CHRY_LOC129025945_RBD2_35664344_Q22_2A_C2_:0.0105364902)NODE86:0.0020426336,PONPYG_CHRY_LOC129025942_RBD2_28033868_Q9_3B_C2_T:0.002040794)NODE85:0.0020337593)NODE57:0.0025979228,PONPYG_CHRY_LOC129025923_RBD2_42461501_Q31B_C2_T:0.0105634921)NODE56:0.0022636614,(PONPYG_CHRY_LOC129025913_RBD1_33814768_Q18A_C2_:0.0038986501,PONPYG_CHRY_LOC129025923_RBD1_42461501_Q31B_C2_T:0.0116221383)NODE131:0.0057526447)NODE55:0.0164107193,(SYMSYN_CHRY_LOC129476757_RBD1_18127859_Q5B_NONC_T:0.0061103813,SYMSYN_CHRY_LOC129476757_RBD2_18127859_Q5B_NONC_T:0.0127115967)NODE134:0.008522222600000001)NODE54:0.008641477)NODE10:0.07617327860000001,PONABE_CHR2_DAZL_RBD1_138140947_NA_NONC_T:0.0020545384)"
+    }
+  },
+ "test results":{
+   "non-synonymous/synonymous rate ratio":{
+     "LRT":10.77045513594749,
+     "p-value":0.001031331458191009
+    }
+  },
+ "tested":{
+   "0":{
+     "GORGOR_CHR2_DAZL_RBD1_26423032_NA_NONC_":"test",
+     "GORGOR_CHRY_DAZ1_RBD1_42783133_Q18_1_A_NONC_":"test",
+     "GORGOR_CHRY_DAZ1_RBD2_42783133_Q18_1_A_NONC_":"test",
+     "GORGOR_CHRY_DAZ1_RBD3_42783133_Q18_1_A_NONC_":"test",
+     "GORGOR_CHRY_LOC129530216_RBD2_42879918_Q18_1_B_NONC_T":"test",
+     "HOMSAP_CHR3_DAZL_RBD1_16587918_NA_NONC_":"test",
+     "HOMSAP_CHRY_DAZ1_RBD1_23965003_Q8A_NONC_":"test",
+     "NODE1":"test",
+     "NODE10":"test",
+     "NODE11":"test",
+     "NODE114":"test",
+     "NODE12":"test",
+     "NODE122":"test",
+     "NODE13":"test",
+     "NODE131":"test",
+     "NODE134":"test",
+     "NODE17":"test",
+     "NODE2":"test",
+     "NODE21":"test",
+     "NODE35":"test",
+     "NODE54":"test",
+     "NODE55":"test",
+     "NODE56":"test",
+     "NODE57":"test",
+     "NODE58":"test",
+     "NODE59":"test",
+     "NODE60":"test",
+     "NODE61":"test",
+     "NODE62":"test",
+     "NODE77":"test",
+     "NODE79":"test",
+     "NODE82":"test",
+     "NODE85":"test",
+     "NODE86":"test",
+     "NODE88":"test",
+     "NODE96":"test",
+     "PANPAN_CHRY_LOC129395530_RBD1_9036315_Q23B_C2_":"test",
+     "PANPAN_CHRY_LOC129395621_RBD1_9107812_Q22A_NONC_T":"test",
+     "PANTRO_CHR2_DAZL_RBD1_20590218_NA_NONC_":"test",
+     "PONABE_CHR2_DAZL_RBD1_138140947_NA_NONC_T":"test",
+     "PONABE_CHRY_LOC129053177_RBD1_40287231_Q13A_C2_":"test",
+     "PONABE_CHRY_LOC129053200_RBD1_47246963_Q23_1A_C2_":"test",
+     "PONABE_CHRY_LOC129053245_RBD1_40367975_Q13B_C2_T":"test",
+     "PONABE_CHRY_LOC129053245_RBD2_40367975_Q13B_C2_T":"test",
+     "PONABE_CHRY_LOC129053245_RBD3_40367975_Q13B_C2_T":"test",
+     "PONPYG_CHRY_LOC129025913_RBD1_33814768_Q18A_C2_":"test",
+     "PONPYG_CHRY_LOC129025913_RBD2_33814768_Q18A_C2_":"test",
+     "PONPYG_CHRY_LOC129025914_RBD1_33882908_Q18B_C2_T":"test",
+     "PONPYG_CHRY_LOC129025914_RBD3_33882908_Q18B_C2_T":"test",
+     "PONPYG_CHRY_LOC129025923_RBD1_42461501_Q31B_C2_T":"test",
+     "PONPYG_CHRY_LOC129025923_RBD2_42461501_Q31B_C2_T":"test",
+     "PONPYG_CHRY_LOC129025923_RBD3_42461501_Q31B_C2_T":"test",
+     "PONPYG_CHRY_LOC129025942_RBD2_28033868_Q9_3B_C2_T":"test",
+     "PONPYG_CHRY_LOC129025942_RBD3_28033868_Q9_3B_C2_T":"test",
+     "PONPYG_CHRY_LOC129025945_RBD2_35664344_Q22_2A_C2_":"test",
+     "PONPYG_CHRY_LOC129025945_RBD3_35664344_Q22_2A_C2_":"test",
+     "PONPYG_CHRY_LOC129025960_RBD1_42384755_Q30A_C35_":"test",
+     "PONPYG_CHRY_LOC129025960_RBD2_42384755_Q30A_C35_":"test",
+     "PONPYG_CHRY_LOC129025960_RBD3_42384755_Q30A_C35_":"test",
+     "PONPYG_CHRY_LOC129025961_RBD2_26220121_Q7_1A_C2_":"test",
+     "PONPYG_CHRY_LOC129025961_RBD3_26220121_Q7_1A_C2_":"test",
+     "PONPYG_CHRY_LOC129025963_RBD3_26306805_Q7_3B_C2_T":"test",
+     "SYMSYN_CHR10_DAZL_RBD1_109881390_NA_NONC_":"test",
+     "SYMSYN_CHRY_LOC129476757_RBD1_18127859_Q5B_NONC_T":"test",
+     "SYMSYN_CHRY_LOC129476757_RBD2_18127859_Q5B_NONC_T":"test"
+    }
+  },
+ "timers":{
+   "LRT":{
+     "order":2,
+     "timer":1
+    },
+   "Overall":{
+     "order":0,
+     "timer":2
+    },
+   "Standard MG94":{
+     "order":null,
+     "timer":2
+    }
+  }
+}

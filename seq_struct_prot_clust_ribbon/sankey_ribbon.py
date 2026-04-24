@@ -55,7 +55,7 @@ SPECIES_ORDER = ['PanPan', 'PanTro', 'HomSap', 'GorGor', 'PonAbe', 'PonPyg']
 SPECIES_LABELS = {
     'PanPan': 'Bonobo',         'PanTro': 'Chimpanzee',
     'HomSap': 'Human',          'GorGor': 'Gorilla',
-    'PonAbe': 'B. orangutan',   'PonPyg': 'S. orangutan',
+    'PonAbe': 'S. orangutan',   'PonPyg': 'B. orangutan',
 }
 
 # Three-column gene arrangement
@@ -74,9 +74,10 @@ ISOFORM_COLORS = {
     'RBMY_isoform_10': '#4173b1', 'RBMY_isoform_14': '#b4c6e6',
     'RBMY_isoform_20': '#ec892e', 'RBMY_isoform_29': '#f3bf7f',
     'RBMY_isoform_35': '#539d38', 'RBMY_isoform_36': '#a8dd8f',
-    'RBMY_isoform_38': '#c24030', 'RBMY_isoform_44': '#ef9f98',
-    'RBMY_isoform_46': '#8e69ba', 'RBMY_isoform_5':  '#c2b1d3',
-    'RBMY_isoform_9':  '#83594d',
+    'RBMY_isoform_38': '#c24030', 'RBMY_isoform_43': '#f19d99',
+    'RBMY_isoform_44': '#8e69ba', 'RBMY_isoform_45': '#c2b1d2',
+    'RBMY_isoform_46': '#83594d', 'RBMY_isoform_5':  '#bd9e95',
+    'RBMY_isoform_9':  '#d47fbf',
     'TSPY_isoform_12': '#4173b1', 'TSPY_isoform_25': '#b4c6e6',
     'TSPY_isoform_28': '#ec892e', 'TSPY_isoform_32': '#f3bf7f',
     'TSPY_isoform_36': '#539d38', 'TSPY_isoform_37': '#a8dd8f',
@@ -202,6 +203,22 @@ def load_gene_data(gene: str) -> dict:
             if m not in protein_to_cluster:
                 protein_to_cluster[m] = cluster_rep
 
+    rbmyb_reps: set = set()
+    rbmyb_tsv = DATA_DIR / 'RBMYB' / 'redundant_names.tsv'
+    if gene == 'RBMY' and rbmyb_tsv.exists():
+        target_cluster = 'PanPan__RBMY_isoform_35__CGCCCTGGG__15_reads'
+        with open(rbmyb_tsv) as f:
+            for line in f:
+                parts = line.rstrip('\n').split('\t')
+                if not parts or not parts[0].strip():
+                    continue
+                rep = parts[0].strip()
+                synonyms = [s.strip() for s in parts[1].split('|') if s.strip()] \
+                    if len(parts) > 1 and parts[1].strip() else []
+                protein_groups[rep] = [rep] + synonyms
+                protein_to_cluster[rep] = target_cluster
+                rbmyb_reps.add(rep)
+
     cluster_groups = defaultdict(list)
     for prot_rep in protein_groups:
         c = protein_to_cluster.get(prot_rep)
@@ -258,6 +275,7 @@ def load_gene_data(gene: str) -> dict:
         'cluster_colors': cluster_colors,
         'cluster_labels': cluster_labels,
         'color_map': color_map,
+        'rbmyb_reps': rbmyb_reps,
     }
 
 # ─── Layout ───────────────────────────────────────────────────────────────────
@@ -520,6 +538,28 @@ def draw_gene_column(ax, layout, all_gene_data, gene_list, xoff=0.0):
                 gene_layout['y_end'] - y0 + pad_y,
                 facecolor='#f2f2f2', edgecolor='none', zorder=0
             ))
+
+        # Gray background behind RBMYB isoforms in col1 + col2
+        rbmyb_reps = gdata.get('rbmyb_reps', set())
+        if rbmyb_reps:
+            rbmyb_ys = []
+            for sp_panel in species_panels.values():
+                for bar in sp_panel.get('col1_bars', []):
+                    if bar.get('protein_rep') in rbmyb_reps:
+                        rbmyb_ys.extend([bar['y_bot'], bar['y_top']])
+                for bar in sp_panel.get('col2_bars', []):
+                    if bar['name'] in rbmyb_reps:
+                        rbmyb_ys.extend([bar['y_bot'], bar['y_top']])
+            if rbmyb_ys:
+                rx0 = xoff + X1 - 0.3
+                rx1 = xoff + X2 + BAR_W + (X3 - X2 - BAR_W) / 3
+                ry0, ry1 = min(rbmyb_ys), max(rbmyb_ys) + 1
+                ax.add_patch(mpatches.Rectangle(
+                    (rx0, ry0), rx1 - rx0, ry1 - ry0,
+                    facecolor='#bbbbbb', alpha=0.4, edgecolor='none', zorder=1
+                ))
+                ax.text(rx1, ry1 -2, '*', ha='right', va='bottom',
+                        fontsize=FS_LG, zorder=3)
 
         # Gene label: horizontal italic, left-aligned, at top of gene group
         ax.text(xoff + X1 - 7.5, gene_layout['y_start'], gene,

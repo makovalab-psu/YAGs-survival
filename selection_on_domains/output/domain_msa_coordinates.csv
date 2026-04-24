@@ -1,0 +1,6 @@
+family,domain,domain_length_aa,msa_codon_start_1based,msa_codon_end_1based,msa_nt_start_1based,msa_nt_end_1based,protein_pos_start_0based,protein_pos_end_0based,alignment_score
+CDY,Chromodomain,52,1,51,1,153,0,51,50.0
+CDY,crotonase_domain,198,284,481,850,1443,282,480,194.0
+HSFY,HSF-DNA-binding_domain,115,80,194,238,582,79,194,115.0
+RBMY,RRM-RBMX-like_domain,85,1,86,1,258,0,86,82.0
+TSPY,NAP-S_domain,163,93,255,277,765,84,247,157.0
