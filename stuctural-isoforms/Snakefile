@@ -1,0 +1,386 @@
+configfile: "config.yaml"
+
+rule gff_to_gtf:
+     input:
+        "stringtie/annotation/merged_gff_cORF/{species}_techrep1.stringtie.annotation.hc_cORF.Ychr.gff"
+     output:
+        "stringtie/annotation/merged_gff_cORF/{species}_techrep1.stringtie.annotation.hc_cORF.Ychr.gtf"
+     shell:
+        "/galaxy/home/ajg7274/tools/gffread/gffread/gffread -E {input} -T -o {output}"
+
+rule plots_summary_rep:
+     input:
+        "full_gff/bonobo_merged_replicate.gff",
+        "full_gff/chimp_merged_replicate.gff",
+        "full_gff/gor_merged_replicate.gff",
+        "full_gff/bor_orang_merged_replicate.gff",
+        "full_gff/sum_orang_merged_replicate.gff",
+        "data/fasta/ORFs/protein_db/bonobo_techrep1_Y_homologs.Ychr.txt",
+        "data/fasta/ORFs/protein_db/chimp_techrep1_Y_homologs.Ychr.txt",
+        "data/fasta/ORFs/protein_db/gor_techrep1_Y_homologs.Ychr.txt",
+        "data/fasta/ORFs/protein_db/bor_orang_techrep1_Y_homologs.Ychr.txt",
+        "data/fasta/ORFs/protein_db/sum_orang_techrep1_Y_homologs.Ychr.txt",
+        "protein_db/human_apes_Y_NCBI.tsv"
+     output:
+        "summary_plots_rep/plot_new_gene_copies_all.png",
+        "summary_plots_rep/n_transcripts_all.png",
+        "summary_plots_rep/len_transcript_all.png",
+        "summary_plots_rep/n_transcripts_with_cORF_all.png",
+        "summary_plots_rep/n_cORF_all.png",
+        "summary_plots_rep/len_cORF_all.png",
+        "summary_plots_rep/n_transcripts_high_conf_cORF_all.png",
+        "summary_plots_rep/n_high_conf_cORF_all.png",
+        "summary_plots_rep/len_high_conf_cORF_all.png",
+        "summary_plots_rep/number_of_homologs_vs_algn_length_all.png",
+        "summary_plots_rep/coverage_vs_seqid_high_conf_cORF_all.png",
+        "summary_plots_rep/n_isoforms_per_gene_copy_all.png",
+        "summary_plots_rep/n_hc_cORF_all.png",
+        "summary_plots_rep/n_genes_pseudogenes_species_all.png"
+     script:
+        "scripts/plots_summary_replicate.R"
+
+rule plot_transcripts_replicate:
+      input:
+         bed="stringtie/annotation/final/annotation_subset/fasta/merged/uLTRA/{gene_fam}_ultra/reads.sorted.bed",
+         bor_orang="full_gff/bor_orang_merged_replicate.gff",
+         chimp="full_gff/chimp_merged_replicate.gff",
+         sum_orang="full_gff/sum_orang_merged_replicate.gff",
+         bonobo="full_gff/bonobo_merged_replicate.gff",
+         gor="full_gff/gor_merged_replicate.gff"
+      output:
+         "stringtie/annotation/final/annotation_subset/fasta/merged/uLTRA/plots_replicates/all_transcripts_{gene_fam}.png"
+      shell:
+        "Rscript scripts/plot_transcripts_replicate.R {wildcards.gene_fam} {input.bed} {output} {input.bor_orang} {input.chimp} {input.sum_orang} {input.bonobo} {input.gor}"
+
+rule plots_summary:
+     input:
+        "stringtie/annotation/merged_gff_cORF/bonobo_techrep1.stringtie.annotation.hc_cORF.Ychr.gff",
+        "stringtie/annotation/merged_gff_cORF/chimp_techrep1.stringtie.annotation.hc_cORF.Ychr.gff",
+        "stringtie/annotation/merged_gff_cORF/gor_techrep1.stringtie.annotation.hc_cORF.Ychr.gff",
+        "stringtie/annotation/merged_gff_cORF/bor_orang_techrep1.stringtie.annotation.hc_cORF.Ychr.gff",
+        "stringtie/annotation/merged_gff_cORF/sum_orang_techrep1.stringtie.annotation.hc_cORF.Ychr.gff",
+        "data/fasta/ORFs/protein_db/bonobo_techrep1_Y_homologs.Ychr.txt",
+        "data/fasta/ORFs/protein_db/chimp_techrep1_Y_homologs.Ychr.txt",
+        "data/fasta/ORFs/protein_db/gor_techrep1_Y_homologs.Ychr.txt",
+        "data/fasta/ORFs/protein_db/sum_orang_techrep1_Y_homologs.Ychr.txt",
+        "data/fasta/ORFs/protein_db/bor_orang_techrep1_Y_homologs.Ychr.txt",
+        "protein_db/human_apes_Y_NCBI.tsv"
+     output:
+        "summary_plots/plot_new_gene_copies_all.png",
+        "summary_plots/n_transcripts_all.png",
+        "summary_plots/len_transcript_all.png",
+        "summary_plots/n_transcripts_with_cORF_all.png",
+        "summary_plots/n_cORF_all.png",
+        "summary_plots/len_cORF_all.png",
+        "summary_plots/n_transcripts_high_conf_cORF_all.png",
+        "summary_plots/n_high_conf_cORF_all.png",
+        "summary_plots/len_high_conf_cORF_all.png",
+        "summary_plots/number_of_homologs_vs_algn_length_all.png",
+        "summary_plots/coverage_vs_seqid_high_conf_cORF_all.png",
+        "summary_plots/n_isoforms_per_gene_copy_all.png",
+        "summary_plots/n_hc_cORF_all.png",
+        "summary_plots/n_genes_pseudogenes_species_all.png"
+     script:
+        "scripts/plots_summary.R"
+
+##############################################################################################################################################################
+#unite fasta files across all species for each gene family
+rule unite_fasta:
+    input:
+        chimp="data/fasta/ORFs/protein_db/chimp_techrep1_{gene_fam}_mod.fasta",
+        bor_orang="data/fasta/ORFs/protein_db/bor_orang_techrep1_{gene_fam}_mod.fasta",
+        sum_orang="data/fasta/ORFs/protein_db/sum_orang_techrep1_{gene_fam}_mod.fasta",
+        human="data/fasta/ORFs/protein_db/human_orang_techrep1_{gene_fam}_mod.fasta",
+        gor="data/fasta/ORFs/protein_db/gor_orang_techrep1_{gene_fam}_mod.fasta",
+        bonobo="data/fasta/ORFs/protein_db/bonobo_orang_techrep1_{gene_fam}_mod.fasta"
+    output:
+        "data/fasta/ORFs/protein_db/{gene_fam}_united.fasta"
+    shell:
+        "cat {input.chimp} {input.bor_orang} {input.sum_orang} {input.human} {input.gor} {input.bonobo} > {output}"
+
+#add information about species and gene fmaily to the name of each entry in the fasta file
+rule modify_fasta:
+    input:
+        "data/fasta/ORFs/protein_db/{species}_techrep1_{gene_fam}_extracted.fasta"
+    output:
+        "data/fasta/ORFs/protein_db/{species}_techrep1_{gene_fam}_mod.fasta"
+    shell:
+        "bash scripts/modify_fasta.sh {input} {output}"
+
+#extract seuqneces of predicted proteins
+rule extract_orf_fasta:
+    input:
+        id_file="data/fasta/ORFs/protein_db/{species}_techrep1_{gene_fam}.txt",
+        fasta="data/fasta/ORFs/{species}_techrep1.stringtie.Ychr.orf"
+    output:
+        "data/fasta/ORFs/protein_db/{species}_techrep1_{gene_fam}_extracted.fasta"
+    shell:
+        "bash scripts/extract_protein_orfs_fasta.sh {input.id_file} {input.fasta} {output}"
+
+#compare each isoform against the reference to count the number of unique isoforms
+rule isoform_comapre:
+     input:
+        "compare_isoforms/{gene_fam}/{gene_fam}_transcripts.gff"
+     output:
+        "compare_isoforms/{gene_fam}/transcript_1.{gene_fam}_transcripts.gff.tmap"
+     shell:
+        """
+        bash scripts/isoform_compare.sh {wildcards.gene_fam}
+        """
+
+#subset each transcript into a separate gtf file
+rule subset_gff:
+      input:
+         gff="stringtie/annotation_upd/merged_gff_cORF/{species}_{techrep}.stringtie.annotation.hc_cORF.Ychr.gff"
+      output:
+         all="stringtie/annotation/final/annotation_subset/{species}_{techrep}_{gene_fam}.all.Ychr.gff"
+      shell:
+         "Rscript scripts/subset_gtf_hc_cORF.R {wildcards.species} {wildcards.techrep} {wildcards.gene_fam} {input.gff} {output.all}"
+
+#bed data into gtf
+rule bed_to_gff_isoforms:
+    input:
+        bed="stringtie/annotation/final/annotation_subset/fasta/merged/uLTRA/{gene_fam}_ultra/reads.sorted.bed"
+    output:
+        gff="compare_isoforms/{gene_fam}/{gene_fam}_transcripts.gff",
+        path="compare_isoforms/{gene_fam}/"
+    shell:
+        "Rscript scripts/bed_to_gff_transcripts.R {wildcards.gene_fam} {input.bed} {output.gff} {output.path}"
+
+###########################################################################################################################
+
+rule samtools_uLTRA_mapping_bam_to_bed:
+     input:
+        sorted="stringtie/annotation/final/annotation_subset/fasta/merged/uLTRA/{gene_fam}_ultra/reads.sorted.bam"
+     output:
+        bed="stringtie/annotation/final/annotation_subset/fasta/merged/uLTRA/{gene_fam}_ultra/reads.sorted.bed"
+     shell:
+        "/galaxy/home/marta/conda/envs/bedtools/bedtools2/bin/bamToBed -i {input.sorted} -split > {output.bed}"
+
+
+rule samtools_uLTRA_mapping_index:
+     input:
+        sorted="stringtie/annotation/final/annotation_subset/fasta/merged/uLTRA/{gene_fam}_ultra/reads.sorted.bam"
+     output:
+        bai="stringtie/annotation/final/annotation_subset/fasta/merged/uLTRA/{gene_fam}_ultra/reads.sorted.bam.bai"
+     shell:
+        "samtools index {input.sorted}"
+
+rule samtools_uLTRA_mapping_bam_sort:
+     input:
+        bam="stringtie/annotation/final/annotation_subset/fasta/merged/uLTRA/{gene_fam}_ultra/reads.bam"
+     output:
+        sorted="stringtie/annotation/final/annotation_subset/fasta/merged/uLTRA/{gene_fam}_ultra/reads.sorted.bam"
+     shell:
+        "samtools sort {input.bam} > {output.sorted}"
+
+rule samtools_uLTRA_mapping_sam_to_bam:
+      input:
+        sam="stringtie/annotation/final/annotation_subset/fasta/merged/uLTRA/{gene_fam}_ultra/reads.sam"
+      output:
+        bam="stringtie/annotation/final/annotation_subset/fasta/merged/uLTRA/{gene_fam}_ultra/reads.bam"
+      shell:
+        "samtools view -Sb {input.sam} > {output.bam}"
+
+rule uLTRA_mapping:
+      input:
+         fa="data/ultra/human_gene_copies.fa",
+         vcf="/nfs/brubeck.bx.psu.edu/scratch6/marta/Whole_genome_Hsa/hg38_chrY.vcf",
+         fasta="stringtie/annotation/final/annotation_subset/fasta/merged/{gene_fam}.merged.all.Ychr.fasta"
+      output:
+         ultra="stringtie/annotation/final/annotation_subset/fasta/merged/uLTRA/{gene_fam}_ultra/",
+         next_step="stringtie/annotation/final/annotation_subset/fasta/merged/uLTRA/{gene_fam}_ultra/reads.sam"
+      shell:
+         "/nfs/thumper.galaxyproject.org/home/marta/conda/envs/ultra/bin/uLTRA pipeline {input.fa} {input.vcf} {input.fasta} {output.ultra} --t 40"
+
+rule merge_fasta:
+      input:
+         chimp="stringtie/annotation/final/annotation_subset/fasta/chimp_techrep1_{gene_fam}.all.Ychr.fasta",
+         bonobo="stringtie/annotation/final/annotation_subset/fasta/bonobo_techrep1_{gene_fam}.all.Ychr.fasta",
+         gor="stringtie/annotation/final/annotation_subset/fasta/gor_techrep1_{gene_fam}.all.Ychr.fasta",
+         bor_orang="stringtie/annotation/final/annotation_subset/fasta/bor_orang_techrep1_{gene_fam}.all.Ychr.fasta",
+         sum_orang="stringtie/annotation/final/annotation_subset/fasta/sum_orang_techrep1_{gene_fam}.all.Ychr.fasta",
+         human="stringtie/annotation/final/annotation_subset/fasta/human_techrep1_{gene_fam}.all.Ychr.fasta"
+      output:
+         "stringtie/annotation/final/annotation_subset/fasta/merged/{gene_fam}.merged.all.Ychr.fasta"
+      shell:
+         "cat {input.chimp} {input.bonobo} {input.gor} {input.bor_orang} {input.sum_orang} {input.human} > {output}"
+
+#run gffcompare to determine the origin (targeted technical replicate 1 or 2 or untargeted data) in the final assembly
+rule gffcompare:
+    input:
+        reference_gff="compare_with_original/reference/{species}_techrep1.stringtie.annotation.hc_cORF.Ychr.gff",
+        targeted1_gff="compare_with_original/targeted/{species}_techrep1.stringtie.Ychr.gtf",
+        targeted2_gff="compare_with_original/targeted/{species}_techrep2.stringtie.Ychr.gtf",
+        untargeted_gff="compare_with_original/untargeted/{species}_techrep1.stringtie.Ychr.gtf"
+    output:
+        targeted1_stats="compare_with_original/{species}_targeted1.stats",
+        targeted2_stats="compare_with_original/{species}_targeted2.stats",
+        untargeted_stats="compare_with_original/{species}_untargeted.stats"
+    params:
+        gffcompare_path="/galaxy/home/ajg7274/tools/gffcompare/gffcompare/gffcompare"
+    shell:
+        """
+        # Run gffcompare for targeted1 GFF
+        {params.gffcompare_path} -r {input.reference_gff} -o compare_with_original/{wildcards.species}_targeted1 {input.targeted1_gff}
+
+        # Run gffcompare for targeted2 GFF
+        {params.gffcompare_path} -r {input.reference_gff} -o compare_with_original/{wildcards.species}_targeted2 {input.targeted2_gff}
+
+        # Run gffcompare for untargeted GFF
+        {params.gffcompare_path} -r {input.reference_gff} -o compare_with_original/{wildcards.species}_untargeted {input.untargeted_gff}
+        """
+
+#copy files to the directory
+rule copy_gff_files:
+    input:
+        lambda wildcards: f"stringtie/annotation_upd/merged_gff_cORF/{wildcards.species}_{wildcards.techrep}.stringtie.annotation.hc_cORF.Ychr.gff"
+    output:
+        "compare_with_original/reference/{species}_{techrep}.stringtie.annotation.hc_cORF.Ychr.gff"
+    run:
+        shell("cp {input} {output}")
+
+##############################################################################################################################################################
+
+#align sequences of assembled transcripts to all YAG transcripts (to confirm the prediction of potential novel YAG copies)
+rule lastz_call_all_Y_transcript:
+    input:
+        "data/fasta/{species}_corrected.fasta"
+    output:
+        "lastz_all_Y_transcripts/{species}_lastz.Ychr.lastz"
+    shell:
+        "lastz {input}[multiple] data/lastz_data/all_apes_chrY_transcripts.fasta --format=general:name1,zstart1,end1,name2,strand2,zstart2+,end2+,id%,blastid%,coverage > {output}"
+
+#get fasta sequences of all Y transcripts
+rule subset_gff_to_fasta:
+      input:
+         gff = "stringtie/annotation/final/annotation_subset/{species}_techrep1_{gene_fam}.all.Ychr.gff",
+         ref = "data/reference_genomes/{species}/genomic.fna"
+      output:
+         "stringtie/annotation/final/annotation_subset/fasta/{species}_techrep1_{gene_fam}.all.Ychr.fasta"
+      shell:
+         "/galaxy/home/ajg7274/tools/gffread/gffread/gffread -w {output} -g {input.ref} {input.gff}"
+
+
+##############################################################################################################################################################
+
+
+
+#annotated high-confidence cORFs in the transcript assemblies
+rule merge_gff_hc_cORF:
+     input:
+        "protein_db/protein_lengths.tsv",
+        "protein_db/human_apes_Y_NCBI.tsv",
+        "stringtie/annotation_upd/final/{species}_{techrep}.stringtie.annotation.final.Ychr.gff",
+        "data/fasta/ORFs/protein_db/{species}_{techrep}_Y_homologs.Ychr.txt"
+     output:
+        "stringtie/annotation_upd/merged_gff_cORF/{species}_{techrep}.stringtie.annotation.hc_cORF.Ychr.gff"
+     script:
+        "scripts/merge_gff_hc_cORF_old_version.R"
+
+#identify high-confidence cORFs based on
+#homology between predicted protein sequences and know YAG proteins from NCBI protein data base 
+rule Y_proteins_homology:
+      input:
+         "data/fasta/ORFs/{species}_{techrep}.stringtie.Ychr.orf"
+      output:
+         "data/fasta/ORFs/protein_db/{species}_{techrep}_Y_homologs.Ychr.txt"
+      shell:
+          "blastp -query {input} -db protein_db/human_apes_YAGs -out {output} -evalue 1e-30 -outfmt \"6 qseqid sseqid qcovs length pident evalue bitscore mismatch gaps qstart qend sstart send qseq sseq qlen\""
+
+#add information about potential ORFs to transcript assmblies
+rule final_annotation:
+    input:
+       "data/fasta/ORFs/{species}_{techrep}.stringtie.Ychr.orf",
+       "stringtie/annotation_upd/{species}_{techrep}.stringtie.annotation.Ychr.gff",
+       "data/fasta/{species}_corrected.fasta"
+    output:
+       "stringtie/annotation_upd/final/{species}_{techrep}.stringtie.annotation.final.Ychr.gff"
+    script:
+       "scripts/annotation_final.R"
+
+#fins potential ORFs
+rule find_ORFs:
+    input:
+       "data/fasta/{species}_corrected.fasta"
+    output:
+       "data/fasta/ORFs/{species}_{techrep}.stringtie.Ychr.orf"
+    shell:
+       "getorf -sequence {input} -minsize 150 -find 1 -outseq {output}"
+
+#annotated assembled transcripts - part 2
+rule annotation_manual_2:
+    input:
+       "stringtie/{species}_{techrep}.stringtie.Ychr.gtf",
+       "stringtie/annotation/{species}_{techrep}.stringtie.transcripts.annotation.Ychr.gtf",
+       "lastz/{species}_lastz.upd.Ychr.lastz",
+       "data/gene_list/human_gene_list.csv",
+       "data/gene_list/bonobo_gene_list.csv",
+       "data/gene_list/chimp_gene_list.csv",
+       "data/gene_list/sum_orang_gene_list.csv",
+       "data/gene_list/bor_orang_gene_list.csv",
+       "data/gene_list/gor_gene_list.csv",
+       "data/reference_genomes/bonobo/chrY.gff",
+       "data/reference_genomes/human/chrY.gff",
+       "data/reference_genomes/gor/chrY.gff",
+       "data/reference_genomes/chimp/chrY.gff",
+       "data/reference_genomes/bor_orang/chrY.gff",
+       "data/reference_genomes/sum_orang/chrY.gff",
+       "lastz_all_Y_transcripts/{species}_lastz.Ychr.lastz"
+    output:
+        "stringtie/annotation_upd/{species}_{techrep}.stringtie.annotation.Ychr.gff",
+        "stringtie/annotation_upd/mltp/{species}_{techrep}.stringtie.lastz_multiple_hits.Ychr.gff",
+        "stringtie/annotation_upd/novel/{species}_{techrep}.stringtie.novel_YAGs_copies.Ychr.gff"
+    script:
+        "scripts/annotation_manual_2.R"
+
+#annotated assembled transcripts - part 1
+rule annotation_manual:
+    input:
+       "stringtie/{species}_{techrep}.stringtie.Ychr.gtf",
+       "data/reference_genomes/{species}/chrY.gff",
+       "data/gene_list/{species}_gene_list.csv"
+    output:
+        "stringtie/annotation/{species}_{techrep}.stringtie.transcripts.annotation.Ychr.gtf"
+    script:
+        "scripts/annotation_manual_1.R"
+
+#align sequences of assembled transcripts to known YAG transcripts
+rule lastz_call:
+    input:
+        "data/fasta/{species}_corrected.fasta"
+    output:
+        "lastz/{species}_lastz.upd.Ychr.lastz"
+    shell:
+        "lastz {input}[multiple] data/great_apes_YAGs/all_species_YAGs.fasta --format=general:name1,zstart1,end1,name2,strand2,zstart2+,end2+,id%,blastid%,coverage > {output}"
+
+#####################################################################################################################################################################
+#run SQANTI quality control with bash script
+#fasta files - corrected fasta - output from sqanti - copied from a directory stringtie_merged
+#####################################################################################################################################################################
+
+#move merged gtfs into the directory
+rule move_merged_gtf:
+    input:
+        expand("MERGED_{species}.combined.gtf", species=config["species"])
+    output:
+        "/stringtie_merged"
+    shell:
+        "mv {input} {output}"
+
+#merge stringtie assemblies from targeted technical replicate 1 and 2 and untargeted IsoSeq data
+rule merge_gff:
+    input:
+        trageted1="stringtie_targeted/{species}_techrep1.stringtie.Ychr.gtf",
+        trageted2="stringtie_targeted/{species}_techrep2.stringtie.Ychr.gtf",
+        untargeted="stringtie_untargeted/{species}_techrep1.stringtie.Ychr.gtf"
+    output:
+        prefix="MERGED_{species}",
+        folder="stringtie_merged/MERGED_{species}",
+        targeted_file="MERGED_{species}.combined.gtf"
+    shell:
+        """
+        mkdir {output.folder}
+        /galaxy/home/ajg7274/tools/gffcompare/gffcompare/gffcompare {input.trageted1} {input.trageted2} {input.untargeted} -o {output.prefix}
+        """
+

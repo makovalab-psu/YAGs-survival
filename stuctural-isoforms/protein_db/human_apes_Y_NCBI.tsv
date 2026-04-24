@@ -1,0 +1,108 @@
+id	description	species	gene_fam
+AAX78370.1	BPY2, partial	Pan troglodytes	BPY2
+AJA38013.1	basic charge Y-linked 2	Pongo abelii	BPY2
+AJA38010.1	basic charge Y-linked 2	Gorilla gorilla	BPY2
+NP_004669.2	testis-specific basic protein Y 2	Homo sapiens	BPY2
+AAC51828.1	testis-specific Basic Protein Y 2	Homo sapiens	BPY2
+sp|O14599.2|VCY2_HUMAN	RecName: Full=Testis-specific basic protein Y 2; AltName: Full=Basic charge, Y-linked 2; AltName: Full=Variably charged protein Y 2	Homo sapiens	BPY2
+NP_733841.1	testis-specific chromodomain protein Y 1 isoform a	Homo sapiens	CDY
+NP_001233424.1	chromodomain protein, Y-linked, 1	Pan troglodytes	CDY
+XP_054184366.1	testis-specific chromodomain protein Y 1 isoform X1	Homo sapiens	CDY
+XP_054184245.1	testis-specific chromodomain protein Y 1 isoform X1	Homo sapiens	CDY
+XP_011529814.1	testis-specific chromodomain protein Y 1 isoform X1	Homo sapiens	CDY
+XP_011529786.1	testis-specific chromodomain protein Y 1 isoform X1	Homo sapiens	CDY
+NP_004671.1	testis-specific chromodomain protein Y 1 isoform b	Homo sapiens	CDY
+NP_001001722.1	testis-specific chromodomain protein Y 2	Homo sapiens	CDY
+NP_001003894.1	testis-specific chromodomain protein Y 1 isoform a	Homo sapiens	CDY
+NP_004816.1	testis-specific chromodomain protein Y 2	Homo sapiens	CDY
+NP_001003895.1	testis-specific chromodomain protein Y 1 isoform b	Homo sapiens	CDY
+AAX78367.1	CDY, partial	Pan troglodytes	CDY
+AAP83845.1	chromodomain Y protein, partial	Pan troglodytes	CDY
+AAI32930.1	Chromodomain protein, Y-linked, 1B	Homo sapiens	CDY
+AAI32956.1	Chromodomain protein, Y-linked, 1	Homo sapiens	CDY
+AAI30429.1	Chromodomain protein, Y-linked, 2B	Homo sapiens	CDY
+AAI30427.1	Chromodomain protein, Y-linked, 2B	Homo sapiens	CDY
+AAH69087.1	Chromodomain protein, Y-linked, 2B	Homo sapiens	CDY
+JAC06559.1	CDY	Gorilla gorilla	CDY
+sp|Q9NQZ3.2|DAZ1_HUMAN	RecName: Full=Deleted in azoospermia protein 1	Homo sapiens	DAZ
+NP_004072.3	deleted in azoospermia protein 1 isoform 1	Homo sapiens	DAZ
+NP_001375425.1	deleted in azoospermia protein 1 isoform 2	Homo sapiens	DAZ
+AAX78369.1	DAZ, partial	Pan troglodytes	DAZ
+AAS78586.1	deleted in azoospermia 1, partial	Homo sapiens	DAZ
+AAS55959.1	deleted in azoospermia, partial	Homo sapiens	DAZ
+AAF91406.1	deleted in azoospermia, partial	Homo sapiens	DAZ
+AAF91405.1	deleted in azoospermia, partial	Homo sapiens	DAZ
+AAC24875.1	DAZ protein, partial	Pan troglodytes	DAZ
+AAC24874.1	DAZ protein, partial	Pan troglodytes	DAZ
+AJA38016.1	deleted in azoospermia, partial	Pongo abelii	DAZ
+AAH47617.1	Deleted in azoospermia 4	Homo sapiens	DAZ
+AAH47480.1	Deleted in azoospermia 4	Homo sapiens	DAZ
+JAC06560.1	DAZ, partial	Gorilla gorilla	DAZ
+AAB02393.1	DAZ protein	Homo sapiens	DAZ
+NP_001001877.1	heat shock transcription factor, Y-linked isoform 2	Homo sapiens	HSFY
+sp|Q96LI6.1|HSFY1_HUMAN	RecName: Full=Heat shock transcription factor, Y-linked; AltName: Full=Heat shock transcription factor 2-like protein; Short=HSF2-like	Homo sapiens	HSFY
+NP_689797.1	heat shock transcription factor, Y-linked isoform 2	Homo sapiens	HSFY
+XP_054184365.1	heat shock transcription factor, Y-linked isoform X2	Homo sapiens	HSFY
+XP_054184364.1	heat shock transcription factor, Y-linked isoform X1	Homo sapiens	HSFY
+XP_054184229.1	heat shock transcription factor, Y-linked isoform X3	Homo sapiens	HSFY
+XP_054184228.1	heat shock transcription factor, Y-linked isoform X2	Homo sapiens	HSFY
+XP_054184227.1	heat shock transcription factor, Y-linked isoform X1	Homo sapiens	HSFY
+XP_016885574.1	heat shock transcription factor, Y-linked isoform X1	Homo sapiens	HSFY
+XP_016885520.1	heat shock transcription factor, Y-linked isoform X3	Homo sapiens	HSFY
+XP_016885519.1	heat shock transcription factor, Y-linked isoform X1	Homo sapiens	HSFY
+XP_005262622.1	heat shock transcription factor, Y-linked isoform X2	Homo sapiens	HSFY
+XP_005262565.1	heat shock transcription factor, Y-linked isoform X2	Homo sapiens	HSFY
+NP_149099.2	heat shock transcription factor, Y-linked isoform 1	Homo sapiens	HSFY
+NP_714927.1	heat shock transcription factor, Y-linked isoform 1	Homo sapiens	HSFY
+AAI17383.1	Heat shock transcription factor, Y linked 2	Homo sapiens	HSFY
+AAI17381.1	Heat shock transcription factor, Y linked 2	Homo sapiens	HSFY
+CAD98806.1	heat shock factor Y protein	Homo sapiens	HSFY
+sp|O14603.2|PRY_HUMAN	RecName: Full=PTPN13-like protein, Y-linked; AltName: Full=Testis-specific PTP-BL-related Y protein	Homo sapiens	PRY
+NP_004667.2	PTPN13-like protein, Y-linked	Homo sapiens	PRY
+AJA38019.1	Y-linked PTPN13-like protein	Pongo abelii	PRY
+AJA38011.1	Y-linked PTPN13-like protein	Gorilla gorilla	PRY
+AAI71757.1	PTPN13-like, Y-linked	Homo sapiens	PRY
+AAI43894.1	PTPN13-like, Y-linked	Homo sapiens	PRY
+AAI13549.1	PTPN13-like, Y-linked	Homo sapiens	PRY
+AAI13551.1	PTPN13-like, Y-linked	Homo sapiens	PRY
+AAC51835.2	testis-specific PTP-BL Related Y protein	Homo sapiens	PRY
+XP_054184292.1	RNA-binding motif protein, Y chromosome, family 1 member A1 isoform X1	Homo sapiens	RBMY
+NP_001307873.1	RNA-binding motif protein, Y chromosome, family 1 member A1 isoform 2	Homo sapiens	RBMY
+XP_011529739.1	RNA-binding motif protein, Y chromosome, family 1 member A1 isoform X1	Homo sapiens	RBMY
+NP_001307874.1	RNA-binding motif protein, Y chromosome, family 1 member A1 isoform 3	Homo sapiens	RBMY
+NP_005049.1	RNA-binding motif protein, Y chromosome, family 1 member A1 isoform 1	Homo sapiens	RBMY
+AJA38020.1	Y-linked RNA binding motif protein	Pongo abelii	RBMY
+AAI46854.1	RNA binding motif protein, Y-linked, family 1, member A1	Homo sapiens	RBMY
+AAH47768.1	RNA binding motif protein, Y-linked, family 1, member A1	Homo sapiens	RBMY
+AAH70298.1	RBMY1A1 protein	Homo sapiens	RBMY
+sp|Q01534.4|TSPY1_HUMAN	RecName: Full=Testis-specific Y-encoded protein 1; AltName: Full=Cancer/testis antigen 78; Short=CT78	Homo sapiens	TSPY
+NP_001071165.2	XKRY	Homo sapiens	TSPY
+NP_003299.2	testis-specific Y-encoded protein 1 isoform TSPY-S	Homo sapiens	TSPY
+XP_054184303.1	testis-specific Y-encoded protein 3 isoform X2	Homo sapiens	TSPY
+XP_054184302.1	testis-specific Y-encoded protein 3 isoform X1	Homo sapiens	TSPY
+XP_054184215.1	testis-specific Y-encoded protein 10 isoform X1	Homo sapiens	TSPY
+XP_054189394.1	testis-specific Y-encoded protein 3 isoform X2	Homo sapiens	TSPY
+XP_054189393.1	testis-specific Y-encoded protein 3 isoform X1	Homo sapiens	TSPY
+XP_054189391.1	testis-specific Y-encoded protein 1 isoform X2	Homo sapiens	TSPY
+XP_054189388.1	testis-specific Y-encoded protein 10 isoform X1	Homo sapiens	TSPY
+XP_047303204.1	testis-specific Y-encoded protein 1 isoform X3	Homo sapiens	TSPY
+XP_016885553.1	testis-specific Y-encoded protein 1 isoform X1	Homo sapiens	TSPY
+XP_016885514.1	testis-specific Y-encoded protein 10 isoform X1	Homo sapiens	TSPY
+XP_011542306.1	testis-specific Y-encoded protein 3 isoform X2	Homo sapiens	TSPY
+XP_005272799.1	testis-specific Y-encoded protein 3 isoform X1	Homo sapiens	TSPY
+NP_001307893.1	testis-specific Y-encoded protein 1 isoform 3	Homo sapiens	TSPY
+NP_001269398.1	testis-specific Y-encoded protein 10 isoform 1	Homo sapiens	TSPY
+NP_001307891.1	testis-specific Y-encoded protein 10 isoform 2	Homo sapiens	TSPY
+NP_001184171.1	testis-specific Y-encoded protein 1 isoform TSPY-L	Homo sapiens	TSPY
+AAX78368.1	TSPY, partial	Pan troglodytes	TSPY
+JAC06569.1	TSPY	Gorilla gorilla	TSPY
+AAA61238.1	testis-specific protein, partial	Homo sapiens	TSPY
+AAB51693.1	testis specific protein	Homo sapiens	TSPY
+sp|O14598.1|VCY1_HUMAN	RecName: Full=Testis-specific basic protein Y 1; AltName: Full=Basic charge, Y-linked 1; AltName: Full=Variably charged protein Y	Homo sapiens	VCY
+NP_004670.1	testis-specific basic protein Y 1	Homo sapiens	VCY
+AAH96729.1	Variable charge, Y-linked	Homo sapiens	VCY
+AAF03503.1	testis-specific basic protein Y 1	Homo sapiens	VCY
+AAC51844.1	testis-specific XK Related Y	Homo sapiens	XKRY
+sp|O14609.1|XKRY_HUMAN	RecName: Full=Testis-specific XK-related protein, Y-linked	Homo sapiens	XKRY
+AAI32886.2	XK, Kell blood group complex subunit-related, Y-linked	Homo sapiens	XKRY
+AAI32884.2	XK, Kell blood group complex subunit-related, Y-linked	Homo sapiens	XKRY
