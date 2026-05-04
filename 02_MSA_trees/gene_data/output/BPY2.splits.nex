@@ -1,0 +1,56 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=8;
+TAXLABELS
+[1] 'HomSap_chrY_BPY2_23819939_Q8A_nonC_t'
+[2] 'HomSap_chrY_BPY2B_24223343_Q8B_nonC_-'
+[3] 'HomSap_chrY_BPY2C_25843297_nonP-closest-Q11.1B-at-55949_nonC_-'
+[4] 'PanTro_chrY_LOC107971295_9703874_nonP-closest-Q12.1A-at-33431_nonC_-'
+[5] 'PanPan_chrY_LOC129395745_9283200_Q22A_nonC_-'
+[6] 'PanPan_chrY_LOC129395774_8901811_Q22B_nonC_t'
+[7] 'GorGor_chrY_LOC129530363_42645394_Q17.1A_C2_t'
+[8] 'GorGor_chrY_LOC129530366_43077068_Q17.1B_C2_-'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=8 nsplits=33;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 1,
+	100	 2,
+	100	 3,
+	33	 2 3,
+	92	 1 2 3,
+	100	 5,
+	4	 1 2 3 5,
+	100	 4,
+	100	 6,
+	14	 4 6,
+	95	 7 8,
+	100	 8,
+	100	 7,
+	39	 1 2,
+	70	 5 6,
+	69	 4 5 6,
+	15	 4 7 8,
+	25	 1 3,
+	4	 1 2 7 8,
+	2	 2 7 8,
+	11	 1 2 3 4,
+	2	 6 7 8,
+	9	 4 5,
+	2	 1 4 5 6,
+	4	 1 2 3 6,
+	2	 5 7 8,
+	4	 1 2 3 8,
+	1	 3 7 8,
+	2	 1 7 8,
+	0	 1 3 7 8,
+	1	 1 2 3 7,
+	0	 3 5 6,
+	0	 2 5 6,
+;
+END; [Splits]
+

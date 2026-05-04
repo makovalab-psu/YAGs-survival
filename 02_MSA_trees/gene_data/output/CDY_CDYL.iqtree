@@ -1,0 +1,458 @@
+IQ-TREE 2.3.6 built Aug  1 2024
+
+Input file name: gene_data/renamed/CDY_CDYL.aligned_trimmed.renamed.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 276325
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 63 sequences with 1620 nucleotide sites
+Number of constant sites: 1015 (= 62.6543% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1015 (= 62.6543% of all sites)
+Number of parsimony informative sites: 577
+Number of distinct site patterns: 294
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TVM+F+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TVM+F+G4          -5879.819   12021.639 +    0.534   12044.881 +     0.59   12727.752 +    0.686
+TPM3u+F+G4        -5888.232   12034.463 - 0.000877   12056.974 -   0.0014   12729.797 +    0.247
+GTR+F+G4          -5879.188   12022.376 +     0.37   12045.989 +    0.339   12733.880 -   0.0321
+TIM3+F+G4         -5887.532   12035.063 -  0.00065   12057.937 - 0.000862   12735.787 -   0.0124
+TVM+F+I           -5883.849   12029.698 -   0.0095   12052.940 -   0.0105   12735.812 -   0.0122
+TPM2u+F+G4        -5892.210   12042.420 - 1.64e-05   12064.930 - 2.61e-05   12737.753 -  0.00462
+TPM3u+F+I         -5892.507   12043.014 - 1.22e-05   12065.524 - 1.94e-05   12738.348 -  0.00343
+GTR+F+I           -5883.149   12030.299 -  0.00704   12053.911 -  0.00646   12741.803 -  0.00061
+TPM3+G4           -5905.910   12063.820 -  3.7e-10   12085.256 - 1.01e-09   12742.983 - 0.000338
+TIM2+F+G4         -5891.577   12043.154 - 1.14e-05   12066.029 - 1.51e-05   12743.878 - 0.000216
+GTR+F+R2          -5880.501   12027.002 -   0.0366   12050.989 -   0.0278   12743.897 - 0.000214
+TIM3+F+I          -5891.703   12043.406 -    1e-05   12066.280 - 1.33e-05   12744.129 - 0.000191
+TPM2u+F+I         -5896.013   12050.025 - 3.66e-07   12072.535 - 5.83e-07   12745.359 - 0.000103
+HKY+F+G4          -5900.307   12056.615 - 1.36e-08   12078.763 - 2.59e-08   12746.558 - 5.66e-05
+GTR+F+I+G4        -5882.105   12030.211 -  0.00735   12054.197 -   0.0056   12747.105 - 4.31e-05
+TIM3e+G4          -5905.214   12064.428 - 2.73e-10   12086.218 - 6.23e-10   12748.981 - 1.69e-05
+TVMe+G4           -5901.765   12059.531 - 3.16e-09   12081.680 - 6.03e-09   12749.474 - 1.32e-05
+TIM2+F+I          -5895.315   12050.631 - 2.71e-07   12073.505 - 3.59e-07   12751.354 - 5.15e-06
+TPM3+I            -5910.140   12072.280 - 5.39e-12   12093.716 - 1.47e-11   12751.443 - 4.92e-06
+TN+F+G4           -5899.594   12057.188 - 1.02e-08   12079.698 - 1.62e-08   12752.522 - 2.87e-06
+TPM2+G4           -5910.682   12073.363 - 3.13e-12   12094.799 - 8.54e-12   12752.526 - 2.86e-06
+K2P+G4            -5914.493   12078.986 - 1.88e-13   12100.070 - 6.12e-13   12752.758 - 2.55e-06
+GTR+F+I+R2        -5881.399   12030.798 -  0.00548   12055.162 -  0.00345   12753.083 - 2.17e-06
+K3Pu+F+G4         -5899.953   12057.905 - 7.12e-09   12080.415 - 1.13e-08   12753.239 - 2.01e-06
+HKY+F+I           -5904.315   12064.630 - 2.47e-10   12086.779 - 4.71e-10   12754.573 - 1.03e-06
+SYM+G4            -5901.040   12060.080 -  2.4e-09   12082.590 - 3.82e-09   12755.414 - 6.76e-07
+GTR+F+R3          -5878.892   12027.785 -   0.0247   12052.529 -   0.0129   12755.459 - 6.61e-07
+TVMe+I            -5905.781   12067.561 -  5.7e-11   12089.710 - 1.09e-10   12757.504 - 2.38e-07
+TIM3e+I           -5909.580   12073.160 - 3.47e-12   12094.951 - 7.91e-12   12757.713 - 2.14e-07
+TIM2e+G4          -5909.992   12073.984 -  2.3e-12   12095.775 - 5.24e-12   12758.537 - 1.42e-07
+TNe+G4            -5913.831   12079.662 - 1.34e-13   12101.098 - 3.66e-13   12758.825 - 1.23e-07
+TIM+F+G4          -5899.247   12058.493 - 5.31e-09   12081.368 - 7.05e-09   12759.217 - 1.01e-07
+K3P+G4            -5914.351   12080.702 - 7.99e-14   12102.138 - 2.18e-13   12759.865 -  7.3e-08
+GTR+F             -5895.969   12053.938 - 5.18e-08   12077.180 - 5.72e-08   12760.052 - 6.65e-08
+TPM2+I            -5914.543   12081.087 - 6.59e-14   12102.523 -  1.8e-13   12760.249 - 6.03e-08
+TN+F+I            -5903.502   12065.003 - 2.05e-10   12087.513 - 3.26e-10   12760.336 - 5.77e-08
+K2P+I             -5918.548   12087.095 - 3.27e-15   12108.179 - 1.06e-14   12760.868 - 4.42e-08
+K3Pu+F+I          -5903.980   12065.960 - 1.27e-10   12088.470 - 2.02e-10   12761.293 - 3.58e-08
+SYM+I             -5905.195   12068.390 - 3.77e-11   12090.900 -    6e-11   12763.723 - 1.06e-08
+GTR+F+I+R3        -5879.775   12031.550 -  0.00376   12056.677 -  0.00162   12764.614 - 6.79e-09
+TIMe+G4           -5913.686   12081.373 - 5.71e-14   12103.164 -  1.3e-13   12765.926 - 3.53e-09
+TIM2e+I           -5913.976   12081.953 - 4.27e-14   12103.744 - 9.75e-14   12766.506 - 2.64e-09
+TIM+F+I           -5903.176   12066.353 - 1.04e-10   12089.227 - 1.38e-10   12767.077 - 1.98e-09
+TNe+I             -5918.019   12088.037 - 2.04e-15   12109.473 - 5.56e-15   12767.200 - 1.87e-09
+K3P+I             -5918.425   12088.850 - 1.36e-15   12110.286 -  3.7e-15   12768.013 - 1.24e-09
+TIMe+I            -5917.894   12089.788 -  8.5e-16   12111.578 - 1.94e-15   12774.341 - 5.25e-11
+F81+F+G4          -6047.294   12348.587 - 5.39e-72   12370.378 - 1.23e-71   13033.140 - 3.33e-67
+F81+F+I           -6050.471   12354.943 - 2.25e-73   12376.734 - 5.13e-73   13039.496 - 1.39e-68
+JC+G4             -6064.728   12377.456 -  2.9e-78   12398.192 - 1.12e-77   13045.839 - 5.82e-70
+JC+I              -6068.032   12384.065 - 1.07e-79   12404.800 - 4.12e-79   13052.447 - 2.14e-71
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TVM+F+G4
+
+Rate parameter R:
+
+  A-C: 1.1138
+  A-G: 4.3505
+  A-T: 0.4506
+  C-G: 1.8817
+  C-T: 4.3505
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.329
+  pi(C) = 0.1991
+  pi(G) = 0.2352
+  pi(T) = 0.2366
+
+Rate matrix Q:
+
+  A   -0.8517    0.1397    0.6448   0.06718
+  C    0.2309    -1.158    0.2789    0.6486
+  G     0.902    0.2361    -1.287    0.1491
+  T   0.09343    0.5458    0.1482   -0.7874
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 1.295
+
+ Category  Relative_rate  Proportion
+  1         0.1918         0.25
+  2         0.5504         0.25
+  3         1.036          0.25
+  4         2.222          0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -5879.8062 (s.e. 133.3123)
+Unconstrained log-likelihood (without tree): -6095.0906
+Number of free parameters (#branches + #model parameters): 131
+Akaike information criterion (AIC) score: 12021.6124
+Corrected Akaike information criterion (AICc) score: 12044.8543
+Bayesian information criterion (BIC) score: 12727.7261
+
+Total tree length (sum of branch lengths): 0.5984
+Sum of internal branch lengths: 0.5118 (85.5157% of tree length)
+
+WARNING: 19 near-zero internal branches (<0.0006) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'GorGor_chr5_CDYL_22394017_NA_nonC_t' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
+                                                           +--GorGor_chrY_LOC129530301-exPG_16914474_nonP-closest-Q4.A-at-199039_nonC_t
+                                                        +--| (98)
+                                                        |  |     +--GorGor_chrY_LOC129530299-exPG_18481620_nonP-closest-Q7.B-at-37060_nonC_t
+                                                        |  |  +--| (88)
+                                                        |  |  |  +--GorGor_chrY_LOC129530297-exPG_17829216_nonP-closest-Q7.A-at-37178_nonC_-
+                                                        |  +**| (63)
+                                                        |     +**GorGor_chrY_LOC129530247_19346920_nonP-closest-Q11.A-at-11045_nonC_-
+                                                     +--| (90)
+                                                     |  |        +**HomSap_chrY_CDY1_26434508_nonP-closest-Q12B-at-66643_nonC_t
+                                                     |  |     +--| (99)
+                                                     |  |     |  +**HomSap_chrY_CDY1B_24814541_nonP-closest-Q10B-at-66639_nonC_t
+                                                     |  |  +--| (98)
+                                                     |  |  |  |  +**HomSap_chrY_CDY2A_18932262_Q4B_nonC_t
+                                                     |  |  |  +--| (100)
+                                                     |  |  |     +**HomSap_chrY_CDY2B_18784818_Q4A_nonC_-
+                                                     |  +--| (97)
+                                                     |     |     +**PanPan_chrY_LOC129395542-exPG_7871634_nonP-closest-Q22B-at-452392_nonC_t
+                                                     |     |  +--| (98)
+                                                     |     |  |  |  +**PanPan_chrY_LOC129395731_10461020_Q21A_nonC_t
+                                                     |     |  |  +--| (98)
+                                                     |     |  |     +**PanPan_chrY_LOC129395566_10322121_Q21B_nonC_-
+                                                     |     +--| (100)
+                                                     |        |        +**PanTro_chrY_LOC129388401-exPG_20105906_Q7.1B_C38_-
+                                                     |        |     +--| (97)
+                                                     |        |     |  +**PanTro_chrY_CDY1_20320841_Q7.1A_C38_t
+                                                     |        |  +--| (96)
+                                                     |        |  |  |  +**PanTro_chrY_LOC744070_10716099_Q11B_nonC_-
+                                                     |        |  |  +--| (96)
+                                                     |        |  |     +--PanTro_chrY_LOC739157_10854594_Q11A_nonC_t
+                                                     |        +**| (95)
+                                                     |           +--PanTro_crhY_LOC745547_5358723_nonP-closest-Q14B-at-988449_nonC_t
++----------------------------------------------------| (100)
+|                                                    |                 +**PonAbe_chrY_LOC129053503_51692121_Q30B_C1_t
+|                                                    |              +**| (19)
+|                                                    |              |  +**PonAbe_chrY_LOC129053502_51580221_Q30A_C1_-
+|                                                    |           +**| (58)
+|                                                    |           |  |  +**PonAbe_chrY_LOC129053461_41259419_Q14B_C1_t
+|                                                    |           |  +**| (21)
+|                                                    |           |     +**PonAbe_chrY_LOC129053460_41147495_Q14A_C1_-
+|                                                    |        +--| (100)
+|                                                    |        |  |  +**PonPyg_chrY_LOC129025901_36614912_Q23B_C1_t
+|                                                    |        |  +--| (97)
+|                                                    |        |     +--PonPyg_chrY_LOC129025898_36502421_Q23A_C1_-
+|                                                    |     +--| (100)
+|                                                    |     |  |        +**PonAbe_chrY_LOC129053496_50227701_nonP-closest-Q28A-at-16957_nonC_-
+|                                                    |     |  |     +--| (99)
+|                                                    |     |  |     |  +--PonAbe_chrY_LOC129053453_39794954_nonP-closest-Q12A-at-16947_nonC_-
+|                                                    |     |  |  +**| (52)
+|                                                    |     |  |  |  +--PonPyg_chrY_LOC129025917_33323942_nonP-closest-Q16A-at-16966_nonC_-
+|                                                    |     |  +--| (100)
+|                                                    |     |     +--PonAbe_chrY_LOC129053139_54584688_nonP-closest-Q34A-at-16949_nonC_-
+|                                                    |  +--| (100)
+|                                                    |  |  |                          +--PonAbe_chrY_LOC129053476_45770263_Q20B_C1_t
+|                                                    |  |  |                       +**| (10)
+|                                                    |  |  |                       |  |  +**PonPyg_chrY_LOC129025721-exPG_29831016_Q11B_C1_t
+|                                                    |  |  |                       |  +--| (100)
+|                                                    |  |  |                       |     +**PonPyg_chrY_LOC129025886_29671200_Q11A_C1_-
+|                                                    |  |  |                    +**| (18)
+|                                                    |  |  |                    |  |  +--PonAbe_chrY_LOC129053358_52467350_Q31B_C1_t
+|                                                    |  |  |                    |  +--| (92)
+|                                                    |  |  |                    |     +--PonAbe_chrY_LOC129053357_52307689_Q4A_C3_-
+|                                                    |  |  |                 +**| (22)
+|                                                    |  |  |                 |  |  +**PonAbe_chrY_LOC129053178_41874974_Q15A_C1_-
+|                                                    |  |  |                 |  +**| (27)
+|                                                    |  |  |                 |     +**PonPyg_chrY_LOC129025887_39491754_Q26B_C1_t
+|                                                    |  |  |              +**| (30)
+|                                                    |  |  |              |  +**PonAbe_chrY_LOC129053475-exPG_45610161_Q20A_C1_-
+|                                                    |  |  |           +**| (25)
+|                                                    |  |  |           |  +**PonPyg_chrY_LOC129025889_39332081_Q26A_C1_-
+|                                                    |  |  |        +--| (99)
+|                                                    |  |  |        |  +--PonAbe_chrY_LOC129053180_42034652_Q15B_C1_t
+|                                                    |  |  |     +--| (93)
+|                                                    |  |  |     |  |     +**PonAbe_chrY_LOC129053145_56048677_Q36B_C1_t
+|                                                    |  |  |     |  |  +--| (99)
+|                                                    |  |  |     |  |  |  +**PonAbe_chrY_LOC129053144_55889000_Q36A_C1_-
+|                                                    |  |  |     |  +--| (100)
+|                                                    |  |  |     |     |  +**PonPyg_chrY_LOC129025890_34656667_Q19A_C1_-
+|                                                    |  |  |     |     +--| (98)
+|                                                    |  |  |     |        +**PonPyg_chrY_LOC129025888_34816536_Q19B_C1_t
+|                                                    |  |  |  +--| (100)
+|                                                    |  |  |  |  |     +**PonAbe_chrY_LOC129053442_37080427_Q7B_C1_t
+|                                                    |  |  |  |  |  +--| (97)
+|                                                    |  |  |  |  |  |  +**PonAbe_chrY_LOC129053441_36920924_Q7A_C1_-
+|                                                    |  |  |  |  +--| (100)
+|                                                    |  |  |  |     |     +**PonAbe_chrY_LOC129053199_46540858_Q21.2B_C1_t
+|                                                    |  |  |  |     |  +--| (98)
+|                                                    |  |  |  |     |  |  +**PonAbe_chrY_LOC129053198_46381211_Q21.2A_C1_-
+|                                                    |  |  |  |     +**| (58)
+|                                                    |  |  |  |        |  +--PonPyg_chrY_LOC129025902_29061134_Q10.1B_C1_t
+|                                                    |  |  |  |        +**| (51)
+|                                                    |  |  |  |           |  +**PonPyg_chrY_LOC129025882_41685721_Q29B_C1_t
+|                                                    |  |  |  |           +--| (99)
+|                                                    |  |  |  |              +**PonPyg_chrY_LOC129025879_41525936_Q29A_C1_-
+|                                                    |  |  +--| (99)
+|                                                    |  |     |        +--PonAbe_chrY_LOC129053440_35954132_Q5.1B_C1_t
+|                                                    |  |     |     +**| (70)
+|                                                    |  |     |     |  +**PonAbe_chrY_LOC129053439_35795298_Q5.1A_C1_-
+|                                                    |  |     |  +--| (73)
+|                                                    |  |     |  |  +--PonPyg_chrY_LOC129025896_25891571_Q5.1A_C1_-
+|                                                    |  |     +--| (100)
+|                                                    |  |        +--PonPyg_chrY_LOC129025903_26050227_Q5.1B_C1_t
+|                                                    +--| (95)
+|                                                       |     +**SymSyn_chrY_LOC129476678_19362995_Q6.1A_nonC_-
+|                                                       |  +**| (25)
+|                                                       |  |  +**SymSyn_chrY_LOC129476752_20108307_Q6.2A_nonC_t
+|                                                       +--| (100)
+|                                                          |     +**SymSyn_chrY_LOC129476738_21408483_Q6.5B_nonC_t
+|                                                          |  +**| (24)
+|                                                          |  |  +**SymSyn_chrY_LOC129476751_21915157_Q6.9B_nonC_-
+|                                                          +**| (24)
+|                                                             +**SymSyn_chrY_LOC129476749_20615009_Q6.2B_nonC_-
+| (75)
++**PonAbe_chr5_CDYL_4587803_NA_nonC_t
+|
+|  +--PonPyg_chr5_CDYL_4592538_NA_nonC_t
++--| (91)
+   |  +--SymSyn_chr23_CDYL_65930269_NA_nonC_-
+   +--| (91)
+      |     +--PanPan_chr5_CDYL_19400677_NA_nonC_t
+      |  +--| (96)
+      |  |  +**PanTro_chr5_CDYL_10660151_NA_nonC_t
+      +--| (59)
+         |  +--GorGor_chr5_CDYL_22394017_NA_nonC_t
+         +**|
+            +--HomSap_chr6_CDYL_4575080_NA_nonC_t
+
+Tree in newick format:
+
+((((GorGor_chrY_LOC129530301-exPG_16914474_nonP-closest-Q4.A-at-199039_nonC_t:0.0012592126,((GorGor_chrY_LOC129530299-exPG_18481620_nonP-closest-Q7.B-at-37060_nonC_t:0.0031574872,GorGor_chrY_LOC129530297-exPG_17829216_nonP-closest-Q7.A-at-37178_nonC_-:0.0012607755)88:0.0006277172,GorGor_chrY_LOC129530247_19346920_nonP-closest-Q11.A-at-11045_nonC_-:0.0000010000)63:0.0000010000)98:0.0057652461,(((HomSap_chrY_CDY1_26434508_nonP-closest-Q12B-at-66643_nonC_t:0.0000010000,HomSap_chrY_CDY1B_24814541_nonP-closest-Q10B-at-66639_nonC_t:0.0000010000)99:0.0025505971,(HomSap_chrY_CDY2A_18932262_Q4B_nonC_t:0.0000010000,HomSap_chrY_CDY2B_18784818_Q4A_nonC_-:0.0000010000)100:0.0056992510)98:0.0027981227,((PanPan_chrY_LOC129395542-exPG_7871634_nonP-closest-Q22B-at-452392_nonC_t:0.0000010000,(PanPan_chrY_LOC129395731_10461020_Q21A_nonC_t:0.0000010000,PanPan_chrY_LOC129395566_10322121_Q21B_nonC_-:0.0000010000)98:0.0006262826)98:0.0018988341,(((PanTro_chrY_LOC129388401-exPG_20105906_Q7.1B_C38_-:0.0000010000,PanTro_chrY_CDY1_20320841_Q7.1A_C38_t:0.0000010000)97:0.0012524965,(PanTro_chrY_LOC744070_10716099_Q11B_nonC_-:0.0000010000,PanTro_chrY_LOC739157_10854594_Q11A_nonC_t:0.0006260897)96:0.0012568675)96:0.0012575477,PanTro_crhY_LOC745547_5358723_nonP-closest-Q14B-at-988449_nonC_t:0.0018866154)95:0.0006122950)100:0.0076041395)97:0.0029391404)90:0.0094207493,((((((PonAbe_chrY_LOC129053503_51692121_Q30B_C1_t:0.0000010000,PonAbe_chrY_LOC129053502_51580221_Q30A_C1_-:0.0000010000)19:0.0000010000,(PonAbe_chrY_LOC129053461_41259419_Q14B_C1_t:0.0000010000,PonAbe_chrY_LOC129053460_41147495_Q14A_C1_-:0.0000010000)21:0.0000010000)58:0.0000010000,(PonPyg_chrY_LOC129025901_36614912_Q23B_C1_t:0.0000010000,PonPyg_chrY_LOC129025898_36502421_Q23A_C1_-:0.0012691866)97:0.0006339852)100:0.0042831763,(((PonAbe_chrY_LOC129053496_50227701_nonP-closest-Q28A-at-16957_nonC_-:0.0000010000,PonAbe_chrY_LOC129053453_39794954_nonP-closest-Q12A-at-16947_nonC_-:0.0006340165)99:0.0012675047,PonPyg_chrY_LOC129025917_33323942_nonP-closest-Q16A-at-16966_nonC_-:0.0006331773)52:0.0000010000,PonAbe_chrY_LOC129053139_54584688_nonP-closest-Q34A-at-16949_nonC_-:0.0012664523)100:0.0040159705)100:0.0104992740,(((((((((PonAbe_chrY_LOC129053476_45770263_Q20B_C1_t:0.0025252462,(PonPyg_chrY_LOC129025721-exPG_29831016_Q11B_C1_t:0.0000010000,PonPyg_chrY_LOC129025886_29671200_Q11A_C1_-:0.0000010000)100:0.0018921942)10:0.0000010000,(PonAbe_chrY_LOC129053358_52467350_Q31B_C1_t:0.0006293178,PonAbe_chrY_LOC129053357_52307689_Q4A_C3_-:0.0006304748)92:0.0006305177)18:0.0000010000,(PonAbe_chrY_LOC129053178_41874974_Q15A_C1_-:0.0000010000,PonPyg_chrY_LOC129025887_39491754_Q26B_C1_t:0.0000010000)27:0.0000010000)22:0.0000010000,PonAbe_chrY_LOC129053475-exPG_45610161_Q20A_C1_-:0.0000010000)30:0.0000010000,PonPyg_chrY_LOC129025889_39332081_Q26A_C1_-:0.0000010000)25:0.0000010000,PonAbe_chrY_LOC129053180_42034652_Q15B_C1_t:0.0006297778)99:0.0025287802,((PonAbe_chrY_LOC129053145_56048677_Q36B_C1_t:0.0000010000,PonAbe_chrY_LOC129053144_55889000_Q36A_C1_-:0.0000010000)99:0.0012611600,(PonPyg_chrY_LOC129025890_34656667_Q19A_C1_-:0.0000010000,PonPyg_chrY_LOC129025888_34816536_Q19B_C1_t:0.0000010000)98:0.0012607483)100:0.0025340592)93:0.0014638124,((PonAbe_chrY_LOC129053442_37080427_Q7B_C1_t:0.0000010000,PonAbe_chrY_LOC129053441_36920924_Q7A_C1_-:0.0000010000)97:0.0018933272,((PonAbe_chrY_LOC129053199_46540858_Q21.2B_C1_t:0.0000010000,PonAbe_chrY_LOC129053198_46381211_Q21.2A_C1_-:0.0000010000)98:0.0012609498,(PonPyg_chrY_LOC129025902_29061134_Q10.1B_C1_t:0.0025296792,(PonPyg_chrY_LOC129025882_41685721_Q29B_C1_t:0.0000010000,PonPyg_chrY_LOC129025879_41525936_Q29A_C1_-:0.0000010000)99:0.0006298283)51:0.0000010000)58:0.0000010000)100:0.0042447385)100:0.0058524553,(((PonAbe_chrY_LOC129053440_35954132_Q5.1B_C1_t:0.0006341591,PonAbe_chrY_LOC129053439_35795298_Q5.1A_C1_-:0.0000010000)70:0.0000010000,PonPyg_chrY_LOC129025896_25891571_Q5.1A_C1_-:0.0039381147)73:0.0006320785,PonPyg_chrY_LOC129025903_26050227_Q5.1B_C1_t:0.0006360312)100:0.0130323893)99:0.0067064267)100:0.0172025288,((SymSyn_chrY_LOC129476678_19362995_Q6.1A_nonC_-:0.0000010000,SymSyn_chrY_LOC129476752_20108307_Q6.2A_nonC_t:0.0000010000)25:0.0000010000,((SymSyn_chrY_LOC129476738_21408483_Q6.5B_nonC_t:0.0000010000,SymSyn_chrY_LOC129476751_21915157_Q6.9B_nonC_-:0.0000010000)24:0.0000010000,SymSyn_chrY_LOC129476749_20615009_Q6.2B_nonC_-:0.0000010000)24:0.0000010000)100:0.0270872608)95:0.0066450631)100:0.3810254356,((((GorGor_chr5_CDYL_22394017_NA_nonC_t:0.0043762297,HomSap_chr6_CDYL_4575080_NA_nonC_t:0.0016622864):0.0005909009,(PanPan_chr5_CDYL_19400677_NA_nonC_t:0.0011996323,PanTro_chr5_CDYL_10660151_NA_nonC_t:0.0006002455)96:0.0007437164)59:0.0032075458,SymSyn_chr23_CDYL_65930269_NA_nonC_-:0.0072395923)91:0.0075854701,PonPyg_chr5_CDYL_4592538_NA_nonC_t:0.0019914150)91:0.0022342026,PonAbe_chr5_CDYL_4587803_NA_nonC_t:0.0000026216)75;
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -5879.912221
+Robinson-Foulds distance between ML tree and consensus tree: 20
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
+                                                                     +--GorGor_chrY_LOC129530301-exPG_16914474_nonP-closest-Q4.A-at-199039_nonC_t
+                                                                  +--| (98)
+                                                                  |  |     +--GorGor_chrY_LOC129530299-exPG_18481620_nonP-closest-Q7.B-at-37060_nonC_t
+                                                                  |  |  +--| (88)
+                                                                  |  |  |  +--GorGor_chrY_LOC129530297-exPG_17829216_nonP-closest-Q7.A-at-37178_nonC_-
+                                                                  |  +--| (63)
+                                                                  |     +--GorGor_chrY_LOC129530247_19346920_nonP-closest-Q11.A-at-11045_nonC_-
+                                                               +--| (90)
+                                                               |  |        +--HomSap_chrY_CDY1_26434508_nonP-closest-Q12B-at-66643_nonC_t
+                                                               |  |     +--| (99)
+                                                               |  |     |  +--HomSap_chrY_CDY1B_24814541_nonP-closest-Q10B-at-66639_nonC_t
+                                                               |  |  +--| (98)
+                                                               |  |  |  |  +--HomSap_chrY_CDY2A_18932262_Q4B_nonC_t
+                                                               |  |  |  +--| (100)
+                                                               |  |  |     +--HomSap_chrY_CDY2B_18784818_Q4A_nonC_-
+                                                               |  +--| (97)
+                                                               |     |     +--PanPan_chrY_LOC129395542-exPG_7871634_nonP-closest-Q22B-at-452392_nonC_t
+                                                               |     |  +--| (98)
+                                                               |     |  |  |  +--PanPan_chrY_LOC129395731_10461020_Q21A_nonC_t
+                                                               |     |  |  +--| (98)
+                                                               |     |  |     +--PanPan_chrY_LOC129395566_10322121_Q21B_nonC_-
+                                                               |     +--| (100)
+                                                               |        |        +--PanTro_chrY_LOC129388401-exPG_20105906_Q7.1B_C38_-
+                                                               |        |     +--| (97)
+                                                               |        |     |  +--PanTro_chrY_CDY1_20320841_Q7.1A_C38_t
+                                                               |        |  +--| (96)
+                                                               |        |  |  |  +--PanTro_chrY_LOC744070_10716099_Q11B_nonC_-
+                                                               |        |  |  +--| (96)
+                                                               |        |  |     +--PanTro_chrY_LOC739157_10854594_Q11A_nonC_t
+                                                               |        +--| (95)
+                                                               |           +--PanTro_crhY_LOC745547_5358723_nonP-closest-Q14B-at-988449_nonC_t
+            +--------------------------------------------------| (95)
+            |                                                  |                 +--PonAbe_chrY_LOC129053503_51692121_Q30B_C1_t
+            |                                                  |              +--| (28)
+            |                                                  |              |  +--PonAbe_chrY_LOC129053460_41147495_Q14A_C1_-
+            |                                                  |           +--| (58)
+            |                                                  |           |  |  +--PonAbe_chrY_LOC129053502_51580221_Q30A_C1_-
+            |                                                  |           |  +--| (31)
+            |                                                  |           |     +--PonAbe_chrY_LOC129053461_41259419_Q14B_C1_t
+            |                                                  |        +--| (100)
+            |                                                  |        |  |  +--PonPyg_chrY_LOC129025901_36614912_Q23B_C1_t
+            |                                                  |        |  +--| (97)
+            |                                                  |        |     +--PonPyg_chrY_LOC129025898_36502421_Q23A_C1_-
+            |                                                  |     +--| (100)
+            |                                                  |     |  |        +--PonAbe_chrY_LOC129053496_50227701_nonP-closest-Q28A-at-16957_nonC_-
+            |                                                  |     |  |     +--| (99)
+            |                                                  |     |  |     |  +--PonAbe_chrY_LOC129053453_39794954_nonP-closest-Q12A-at-16947_nonC_-
+            |                                                  |     |  |  +--| (52)
+            |                                                  |     |  |  |  +--PonPyg_chrY_LOC129025917_33323942_nonP-closest-Q16A-at-16966_nonC_-
+            |                                                  |     |  +--| (100)
+            |                                                  |     |     +--PonAbe_chrY_LOC129053139_54584688_nonP-closest-Q34A-at-16949_nonC_-
+            |                                                  |  +--|
+            |                                                  |  |  |           +--PonAbe_chrY_LOC129053476_45770263_Q20B_C1_t
+            |                                                  |  |  |        +--| (99)
+            |                                                  |  |  |        |  |     +--PonAbe_chrY_LOC129053358_52467350_Q31B_C1_t
+            |                                                  |  |  |        |  |  +--| (92)
+            |                                                  |  |  |        |  |  |  +--PonAbe_chrY_LOC129053357_52307689_Q4A_C3_-
+            |                                                  |  |  |        |  +--| (45)
+            |                                                  |  |  |        |     |        +--PonAbe_chrY_LOC129053180_42034652_Q15B_C1_t
+            |                                                  |  |  |        |     |     +--| (21)
+            |                                                  |  |  |        |     |     |  |  +--PonPyg_chrY_LOC129025721-exPG_29831016_Q11B_C1_t
+            |                                                  |  |  |        |     |     |  +--| (100)
+            |                                                  |  |  |        |     |     |     +--PonPyg_chrY_LOC129025886_29671200_Q11A_C1_-
+            |                                                  |  |  |        |     |  +--| (10)
+            |                                                  |  |  |        |     |  |  +--PonPyg_chrY_LOC129025889_39332081_Q26A_C1_-
+            |                                                  |  |  |        |     +--| (23)
+            |                                                  |  |  |        |        |     +--PonAbe_chrY_LOC129053178_41874974_Q15A_C1_-
+            |                                                  |  |  |        |        |  +--| (27)
+            |                                                  |  |  |        |        |  |  +--PonPyg_chrY_LOC129025887_39491754_Q26B_C1_t
+            |                                                  |  |  |        |        +--| (13)
+            |                                                  |  |  |        |           +--PonAbe_chrY_LOC129053475-exPG_45610161_Q20A_C1_-
+            |                                                  |  |  |     +--| (93)
+            |                                                  |  |  |     |  |     +--PonAbe_chrY_LOC129053145_56048677_Q36B_C1_t
+            |                                                  |  |  |     |  |  +--| (99)
+            |                                                  |  |  |     |  |  |  +--PonAbe_chrY_LOC129053144_55889000_Q36A_C1_-
+            |                                                  |  |  |     |  +--| (100)
+            |                                                  |  |  |     |     |  +--PonPyg_chrY_LOC129025890_34656667_Q19A_C1_-
+            |                                                  |  |  |     |     +--| (98)
+            |                                                  |  |  |     |        +--PonPyg_chrY_LOC129025888_34816536_Q19B_C1_t
+            |                                                  |  |  |  +--| (100)
+            |                                                  |  |  |  |  |     +--PonAbe_chrY_LOC129053442_37080427_Q7B_C1_t
+            |                                                  |  |  |  |  |  +--| (97)
+            |                                                  |  |  |  |  |  |  +--PonAbe_chrY_LOC129053441_36920924_Q7A_C1_-
+            |                                                  |  |  |  |  +--| (100)
+            |                                                  |  |  |  |     |     +--PonAbe_chrY_LOC129053199_46540858_Q21.2B_C1_t
+            |                                                  |  |  |  |     |  +--| (98)
+            |                                                  |  |  |  |     |  |  +--PonAbe_chrY_LOC129053198_46381211_Q21.2A_C1_-
+            |                                                  |  |  |  |     +--| (58)
+            |                                                  |  |  |  |        |  +--PonPyg_chrY_LOC129025902_29061134_Q10.1B_C1_t
+            |                                                  |  |  |  |        +--| (51)
+            |                                                  |  |  |  |           |  +--PonPyg_chrY_LOC129025882_41685721_Q29B_C1_t
+            |                                                  |  |  |  |           +--| (99)
+            |                                                  |  |  |  |              +--PonPyg_chrY_LOC129025879_41525936_Q29A_C1_-
+            |                                                  |  |  +--| (99)
+            |                                                  |  |     |        +--PonAbe_chrY_LOC129053440_35954132_Q5.1B_C1_t
+            |                                                  |  |     |     +--| (70)
+            |                                                  |  |     |     |  +--PonAbe_chrY_LOC129053439_35795298_Q5.1A_C1_-
+            |                                                  |  |     |  +--| (73)
+            |                                                  |  |     |  |  +--PonPyg_chrY_LOC129025896_25891571_Q5.1A_C1_-
+            |                                                  |  |     +--| (100)
+            |                                                  |  |        +--PonPyg_chrY_LOC129025903_26050227_Q5.1B_C1_t
+            |                                                  +--| (100)
+            |                                                     |        +--SymSyn_chrY_LOC129476678_19362995_Q6.1A_nonC_-
+            |                                                     |     +--| (26)
+            |                                                     |     |  +--SymSyn_chrY_LOC129476738_21408483_Q6.5B_nonC_t
+            |                                                     |  +--| (31)
+            |                                                     |  |  +--SymSyn_chrY_LOC129476751_21915157_Q6.9B_nonC_-
+            |                                                     +--| (100)
+            |                                                        |  +--SymSyn_chrY_LOC129476749_20615009_Q6.2B_nonC_-
+            |                                                        +--| (28)
+            |                                                           +--SymSyn_chrY_LOC129476752_20108307_Q6.2A_nonC_t
+         +--| (100)
+         |  +--PonAbe_chr5_CDYL_4587803_NA_nonC_t
+      +--| (75)
+      |  +--PonPyg_chr5_CDYL_4592538_NA_nonC_t
+   +--| (91)
+   |  +--SymSyn_chr23_CDYL_65930269_NA_nonC_-
++--| (91)
+|  |  +--PanPan_chr5_CDYL_19400677_NA_nonC_t
+|  +--| (96)
+|     +--PanTro_chr5_CDYL_10660151_NA_nonC_t
+| (59)
++--GorGor_chr5_CDYL_22394017_NA_nonC_t
+|
++--HomSap_chr6_CDYL_4575080_NA_nonC_t
+
+
+Consensus tree in newick format: 
+
+((((((((GorGor_chrY_LOC129530301-exPG_16914474_nonP-closest-Q4.A-at-199039_nonC_t:0.0012595294,((GorGor_chrY_LOC129530299-exPG_18481620_nonP-closest-Q7.B-at-37060_nonC_t:0.0031581609,GorGor_chrY_LOC129530297-exPG_17829216_nonP-closest-Q7.A-at-37178_nonC_-:0.0012610452)88:0.0006281692,GorGor_chrY_LOC129530247_19346920_nonP-closest-Q11.A-at-11045_nonC_-:0.0000022046)63:0.0000022046)98:0.0057667560,(((HomSap_chrY_CDY1_26434508_nonP-closest-Q12B-at-66643_nonC_t:0.0000022046,HomSap_chrY_CDY1B_24814541_nonP-closest-Q10B-at-66639_nonC_t:0.0000022046)99:0.0025507363,(HomSap_chrY_CDY2A_18932262_Q4B_nonC_t:0.0000022046,HomSap_chrY_CDY2B_18784818_Q4A_nonC_-:0.0000022046)100:0.0056999731)98:0.0027995646,((PanPan_chrY_LOC129395542-exPG_7871634_nonP-closest-Q22B-at-452392_nonC_t:0.0000022046,(PanPan_chrY_LOC129395731_10461020_Q21A_nonC_t:0.0000022046,PanPan_chrY_LOC129395566_10322121_Q21B_nonC_-:0.0000022046)98:0.0006266665)98:0.0018991821,(((PanTro_chrY_LOC129388401-exPG_20105906_Q7.1B_C38_-:0.0000022046,PanTro_chrY_CDY1_20320841_Q7.1A_C38_t:0.0000022046)97:0.0012531730,(PanTro_chrY_LOC744070_10716099_Q11B_nonC_-:0.0000022046,PanTro_chrY_LOC739157_10854594_Q11A_nonC_t:0.0006264378)96:0.0012576982)96:0.0012584274,PanTro_crhY_LOC745547_5358723_nonP-closest-Q14B-at-988449_nonC_t:0.0018869160)95:0.0006124588)100:0.0076038152)97:0.0029379107)90:0.0094396672,((((((PonAbe_chrY_LOC129053503_51692121_Q30B_C1_t:0.0000022046,PonAbe_chrY_LOC129053460_41147495_Q14A_C1_-:0.0000022046)28:0.0000022046,(PonAbe_chrY_LOC129053502_51580221_Q30A_C1_-:0.0000022046,PonAbe_chrY_LOC129053461_41259419_Q14B_C1_t:0.0000022046)31:0.0000022046)58:0.0000022046,(PonPyg_chrY_LOC129025901_36614912_Q23B_C1_t:0.0000022046,PonPyg_chrY_LOC129025898_36502421_Q23A_C1_-:0.0012695388)97:0.0006341934)100:0.0042845860,(((PonAbe_chrY_LOC129053496_50227701_nonP-closest-Q28A-at-16957_nonC_-:0.0000022046,PonAbe_chrY_LOC129053453_39794954_nonP-closest-Q12A-at-16947_nonC_-:0.0006341473)99:0.0012680249,PonPyg_chrY_LOC129025917_33323942_nonP-closest-Q16A-at-16966_nonC_-:0.0006333906)52:0.0000022046,PonAbe_chrY_LOC129053139_54584688_nonP-closest-Q34A-at-16949_nonC_-:0.0012669680)100:0.0040159026)100:0.0104980994,((((PonAbe_chrY_LOC129053476_45770263_Q20B_C1_t:0.0025264511,((PonAbe_chrY_LOC129053358_52467350_Q31B_C1_t:0.0006296148,PonAbe_chrY_LOC129053357_52307689_Q4A_C3_-:0.0006307766)92:0.0006308265,(((PonAbe_chrY_LOC129053180_42034652_Q15B_C1_t:0.0006300845,(PonPyg_chrY_LOC129025721-exPG_29831016_Q11B_C1_t:0.0000022046,PonPyg_chrY_LOC129025886_29671200_Q11A_C1_-:0.0000022046)100:0.0018926964)21:0.0000022046,PonPyg_chrY_LOC129025889_39332081_Q26A_C1_-:0.0000022046)10:0.0000022046,((PonAbe_chrY_LOC129053178_41874974_Q15A_C1_-:0.0000022046,PonPyg_chrY_LOC129025887_39491754_Q26B_C1_t:0.0000022046)27:0.0000022046,PonAbe_chrY_LOC129053475-exPG_45610161_Q20A_C1_-:0.0000022046)13:0.0000022046)23:0.0000022046)45:0.0000022046)99:0.0025299484,((PonAbe_chrY_LOC129053145_56048677_Q36B_C1_t:0.0000022046,PonAbe_chrY_LOC129053144_55889000_Q36A_C1_-:0.0000022046)99:0.0012616630,(PonPyg_chrY_LOC129025890_34656667_Q19A_C1_-:0.0000022046,PonPyg_chrY_LOC129025888_34816536_Q19B_C1_t:0.0000022046)98:0.0012613190)100:0.0025352051)93:0.0014633874,((PonAbe_chrY_LOC129053442_37080427_Q7B_C1_t:0.0000022046,PonAbe_chrY_LOC129053441_36920924_Q7A_C1_-:0.0000022046)97:0.0018942055,((PonAbe_chrY_LOC129053199_46540858_Q21.2B_C1_t:0.0000022046,PonAbe_chrY_LOC129053198_46381211_Q21.2A_C1_-:0.0000022046)98:0.0012615322,(PonPyg_chrY_LOC129025902_29061134_Q10.1B_C1_t:0.0025307771,(PonPyg_chrY_LOC129025882_41685721_Q29B_C1_t:0.0000022046,PonPyg_chrY_LOC129025879_41525936_Q29A_C1_-:0.0000022046)99:0.0006300975)51:0.0000022046)58:0.0000022046)100:0.0042462071)100:0.0058512827,(((PonAbe_chrY_LOC129053440_35954132_Q5.1B_C1_t:0.0006344304,PonAbe_chrY_LOC129053439_35795298_Q5.1A_C1_-:0.0000022046)70:0.0000022046,PonPyg_chrY_LOC129025896_25891571_Q5.1A_C1_-:0.0039387541)73:0.0006323264,PonPyg_chrY_LOC129025903_26050227_Q5.1B_C1_t:0.0006369659)100:0.0130336388)99:0.0067094622):0.0172075761,(((SymSyn_chrY_LOC129476678_19362995_Q6.1A_nonC_-:0.0000022046,SymSyn_chrY_LOC129476738_21408483_Q6.5B_nonC_t:0.0000022046)26:0.0000022046,SymSyn_chrY_LOC129476751_21915157_Q6.9B_nonC_-:0.0000022046)31:0.0000022046,(SymSyn_chrY_LOC129476749_20615009_Q6.2B_nonC_-:0.0000022046,SymSyn_chrY_LOC129476752_20108307_Q6.2A_nonC_t:0.0000022046)28:0.0000022046)100:0.0270941223)100:0.0066107353)95:0.3810673423,PonAbe_chr5_CDYL_4587803_NA_nonC_t:0.0000028160)100:0.0022329843,PonPyg_chr5_CDYL_4592538_NA_nonC_t:0.0019930351)75:0.0075869666,SymSyn_chr23_CDYL_65930269_NA_nonC_-:0.0072415111)91:0.0032081655,(PanPan_chr5_CDYL_19400677_NA_nonC_t:0.0012005180,PanTro_chr5_CDYL_10660151_NA_nonC_t:0.0006006980)96:0.0007446132)91:0.0005917237,GorGor_chr5_CDYL_22394017_NA_nonC_t:0.0043777953,HomSap_chr6_CDYL_4575080_NA_nonC_t:0.0016630925)59;
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t output/CDY_CDYL.treefile -m "TVM{1.11375,4.35047,0.450631,1.88168}+F{0.329049,0.199104,0.235246,0.236601}+G4{1.2947}" --length 1620
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s gene_data/renamed/CDY_CDYL.aligned_trimmed.renamed.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s gene_data/renamed/CDY_CDYL.aligned_trimmed.renamed.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed Dec 17 10:33:09 2025
+Total CPU time used: 10.69242 seconds (0h:0m:10s)
+Total wall-clock time used: 10.88827896 seconds (0h:0m:10s)
+
