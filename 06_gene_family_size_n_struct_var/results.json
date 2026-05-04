@@ -1,0 +1,1079 @@
+[
+    {
+        "species": "GorGor",
+        "gene": "BPY2",
+        "total": 84,
+        "isoforms": [
+            {
+                "isoform": "BPY2_isoform_25",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 18
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "GorGor",
+        "gene": "CDY",
+        "total": 280,
+        "isoforms": [
+            {
+                "isoform": "CDY_isoform_2",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 72
+                    },
+                    {
+                        "ord": 2,
+                        "count": 53
+                    },
+                    {
+                        "ord": 3,
+                        "count": 50
+                    },
+                    {
+                        "ord": 4,
+                        "count": 46
+                    },
+                    {
+                        "ord": 5,
+                        "count": 7
+                    },
+                    {
+                        "ord": 6,
+                        "count": 6
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "GorGor",
+        "gene": "HSFY",
+        "total": 761,
+        "isoforms": [
+            {
+                "isoform": "HSFY_isoform_2",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 182
+                    },
+                    {
+                        "ord": 2,
+                        "count": 122
+                    },
+                    {
+                        "ord": 3,
+                        "count": 119
+                    },
+                    {
+                        "ord": 4,
+                        "count": 118
+                    },
+                    {
+                        "ord": 5,
+                        "count": 105
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "GorGor",
+        "gene": "RBMY",
+        "total": 130,
+        "isoforms": [
+            {
+                "isoform": "RBMY_isoform_35",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 7
+                    },
+                    {
+                        "ord": 2,
+                        "count": 14
+                    },
+                    {
+                        "ord": 3,
+                        "count": 9
+                    },
+                    {
+                        "ord": 4,
+                        "count": 6
+                    },
+                    {
+                        "ord": 5,
+                        "count": 6
+                    },
+                    {
+                        "ord": 6,
+                        "count": 6
+                    }
+                ]
+            },
+            {
+                "isoform": "RBMY_isoform_46",
+                "counts": [
+                    {
+                        "ord": 4,
+                        "count": 8
+                    }
+                ]
+            },
+            {
+                "isoform": "RBMY_isoform_44",
+                "counts": [
+                    {
+                        "ord": 7,
+                        "count": 7
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "GorGor",
+        "gene": "TSPY",
+        "total": 248,
+        "isoforms": [
+            {
+                "isoform": "TSPY_isoform_32",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 207
+                    }
+                ]
+            },
+            {
+                "isoform": "TSPY_isoform_12",
+                "counts": [
+                    {
+                        "ord": 2,
+                        "count": 22
+                    }
+                ]
+            },
+            {
+                "isoform": "TSPY_isoform_25",
+                "counts": [
+                    {
+                        "ord": 2,
+                        "count": 11
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "HomSap",
+        "gene": "BPY2",
+        "total": 162,
+        "isoforms": [
+            {
+                "isoform": "BPY2_isoform_6",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 39
+                    }
+                ]
+            },
+            {
+                "isoform": "BPY2_isoform_13",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 10
+                    }
+                ]
+            },
+            {
+                "isoform": "BPY2_isoform_5",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 9
+                    }
+                ]
+            },
+            {
+                "isoform": "BPY2_isoform_7",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 8
+                    }
+                ]
+            },
+            {
+                "isoform": "BPY2_isoform_14",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 6
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "HomSap",
+        "gene": "CDY",
+        "total": 645,
+        "isoforms": [
+            {
+                "isoform": "CDY_isoform_2",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 376
+                    },
+                    {
+                        "ord": 2,
+                        "count": 145
+                    },
+                    {
+                        "ord": 3,
+                        "count": 18
+                    },
+                    {
+                        "ord": 4,
+                        "count": 15
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "HomSap",
+        "gene": "HSFY",
+        "total": 2066,
+        "isoforms": [
+            {
+                "isoform": "HSFY_isoform_2",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 1768
+                    }
+                ]
+            },
+            {
+                "isoform": "HSFY_isoform_3",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 273
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "HomSap",
+        "gene": "RBMY",
+        "total": 445,
+        "isoforms": [
+            {
+                "isoform": "RBMY_isoform_10",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 58
+                    },
+                    {
+                        "ord": 2,
+                        "count": 63
+                    },
+                    {
+                        "ord": 3,
+                        "count": 46
+                    },
+                    {
+                        "ord": 4,
+                        "count": 20
+                    },
+                    {
+                        "ord": 5,
+                        "count": 26
+                    }
+                ]
+            },
+            {
+                "isoform": "RBMY_isoform_20",
+                "counts": [
+                    {
+                        "ord": 2,
+                        "count": 25
+                    },
+                    {
+                        "ord": 4,
+                        "count": 16
+                    },
+                    {
+                        "ord": 5,
+                        "count": 11
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "HomSap",
+        "gene": "TSPY",
+        "total": 284,
+        "isoforms": [
+            {
+                "isoform": "TSPY_isoform_32",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 41
+                    },
+                    {
+                        "ord": 2,
+                        "count": 36
+                    },
+                    {
+                        "ord": 3,
+                        "count": 29
+                    },
+                    {
+                        "ord": 4,
+                        "count": 14
+                    },
+                    {
+                        "ord": 5,
+                        "count": 11
+                    },
+                    {
+                        "ord": 6,
+                        "count": 15
+                    },
+                    {
+                        "ord": 7,
+                        "count": 9
+                    },
+                    {
+                        "ord": 8,
+                        "count": 8
+                    },
+                    {
+                        "ord": 9,
+                        "count": 6
+                    },
+                    {
+                        "ord": 10,
+                        "count": 6
+                    }
+                ]
+            },
+            {
+                "isoform": "TSPY_isoform_40",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 7
+                    },
+                    {
+                        "ord": 3,
+                        "count": 6
+                    }
+                ]
+            },
+            {
+                "isoform": "TSPY_isoform_36",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 6
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "HomSap",
+        "gene": "VCY",
+        "total": 1836,
+        "isoforms": [
+            {
+                "isoform": "VCY_isoform_2",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 1660
+                    },
+                    {
+                        "ord": 2,
+                        "count": 76
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "PanPan",
+        "gene": "CDY",
+        "total": 1512,
+        "isoforms": [
+            {
+                "isoform": "CDY_isoform_2",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 1493
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "PanPan",
+        "gene": "RBMY",
+        "total": 703,
+        "isoforms": [
+            {
+                "isoform": "RBMY_isoform_14",
+                "counts": [
+                    {
+                        "ord": 2,
+                        "count": 107
+                    },
+                    {
+                        "ord": 3,
+                        "count": 60
+                    },
+                    {
+                        "ord": 5,
+                        "count": 24
+                    },
+                    {
+                        "ord": 6,
+                        "count": 30
+                    },
+                    {
+                        "ord": 7,
+                        "count": 17
+                    }
+                ]
+            },
+            {
+                "isoform": "RBMY_isoform_35",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 81
+                    },
+                    {
+                        "ord": 4,
+                        "count": 36
+                    },
+                    {
+                        "ord": 5,
+                        "count": 15
+                    }
+                ]
+            },
+            {
+                "isoform": "RBMY_isoform_20",
+                "counts": [
+                    {
+                        "ord": 2,
+                        "count": 24
+                    },
+                    {
+                        "ord": 3,
+                        "count": 20
+                    }
+                ]
+            },
+            {
+                "isoform": "RBMY_isoform_9",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 28
+                    },
+                    {
+                        "ord": 4,
+                        "count": 18
+                    }
+                ]
+            },
+            {
+                "isoform": "RBMY_isoform_44",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 25
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "PanPan",
+        "gene": "TSPY",
+        "total": 1129,
+        "isoforms": [
+            {
+                "isoform": "TSPY_isoform_32",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 501
+                    },
+                    {
+                        "ord": 2,
+                        "count": 368
+                    },
+                    {
+                        "ord": 3,
+                        "count": 87
+                    },
+                    {
+                        "ord": 4,
+                        "count": 55
+                    },
+                    {
+                        "ord": 5,
+                        "count": 42
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "PanPan",
+        "gene": "VCY",
+        "total": 139,
+        "isoforms": [
+            {
+                "isoform": "VCY_isoform_1",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 139
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "PanTro",
+        "gene": "BPY2",
+        "total": 0,
+        "isoforms": []
+    },
+    {
+        "species": "PanTro",
+        "gene": "CDY",
+        "total": 1224,
+        "isoforms": [
+            {
+                "isoform": "CDY_isoform_2",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 338
+                    },
+                    {
+                        "ord": 2,
+                        "count": 185
+                    },
+                    {
+                        "ord": 3,
+                        "count": 152
+                    },
+                    {
+                        "ord": 4,
+                        "count": 112
+                    },
+                    {
+                        "ord": 5,
+                        "count": 58
+                    },
+                    {
+                        "ord": 6,
+                        "count": 52
+                    },
+                    {
+                        "ord": 7,
+                        "count": 29
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "PanTro",
+        "gene": "RBMY",
+        "total": 292,
+        "isoforms": [
+            {
+                "isoform": "RBMY_isoform_14",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 63
+                    },
+                    {
+                        "ord": 2,
+                        "count": 16
+                    },
+                    {
+                        "ord": 3,
+                        "count": 16
+                    },
+                    {
+                        "ord": 4,
+                        "count": 15
+                    },
+                    {
+                        "ord": 5,
+                        "count": 9
+                    }
+                ]
+            },
+            {
+                "isoform": "RBMY_isoform_29",
+                "counts": [
+                    {
+                        "ord": 2,
+                        "count": 21
+                    },
+                    {
+                        "ord": 3,
+                        "count": 9
+                    },
+                    {
+                        "ord": 4,
+                        "count": 11
+                    },
+                    {
+                        "ord": 5,
+                        "count": 15
+                    }
+                ]
+            },
+            {
+                "isoform": "RBMY_isoform_20",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 17
+                    },
+                    {
+                        "ord": 3,
+                        "count": 8
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "PanTro",
+        "gene": "TSPY",
+        "total": 358,
+        "isoforms": [
+            {
+                "isoform": "TSPY_isoform_32",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 162
+                    },
+                    {
+                        "ord": 2,
+                        "count": 105
+                    },
+                    {
+                        "ord": 3,
+                        "count": 22
+                    },
+                    {
+                        "ord": 4,
+                        "count": 14
+                    },
+                    {
+                        "ord": 5,
+                        "count": 14
+                    },
+                    {
+                        "ord": 6,
+                        "count": 9
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "PanTro",
+        "gene": "VCY",
+        "total": 18,
+        "isoforms": [
+            {
+                "isoform": "VCY_isoform_1",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 18
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "PonAbe",
+        "gene": "CDY",
+        "total": 193,
+        "isoforms": [
+            {
+                "isoform": "CDY_isoform_1",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 34
+                    },
+                    {
+                        "ord": 2,
+                        "count": 13
+                    },
+                    {
+                        "ord": 3,
+                        "count": 10
+                    },
+                    {
+                        "ord": 4,
+                        "count": 7
+                    },
+                    {
+                        "ord": 5,
+                        "count": 7
+                    },
+                    {
+                        "ord": 7,
+                        "count": 6
+                    }
+                ]
+            },
+            {
+                "isoform": "",
+                "counts": [
+                    {
+                        "ord": 6,
+                        "count": 7
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "PonAbe",
+        "gene": "HSFY",
+        "total": 1104,
+        "isoforms": [
+            {
+                "isoform": "HSFY_isoform_2",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 523
+                    },
+                    {
+                        "ord": 2,
+                        "count": 278
+                    }
+                ]
+            },
+            {
+                "isoform": "HSFY_isoform_3",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 166
+                    },
+                    {
+                        "ord": 2,
+                        "count": 95
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "PonAbe",
+        "gene": "RBMY",
+        "total": 16,
+        "isoforms": []
+    },
+    {
+        "species": "PonAbe",
+        "gene": "RBMYB",
+        "total": 4,
+        "isoforms": []
+    },
+    {
+        "species": "PonAbe",
+        "gene": "TSPY",
+        "total": 180,
+        "isoforms": [
+            {
+                "isoform": "TSPY_isoform_32",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 37
+                    },
+                    {
+                        "ord": 2,
+                        "count": 28
+                    },
+                    {
+                        "ord": 3,
+                        "count": 19
+                    },
+                    {
+                        "ord": 4,
+                        "count": 11
+                    },
+                    {
+                        "ord": 5,
+                        "count": 11
+                    },
+                    {
+                        "ord": 6,
+                        "count": 8
+                    }
+                ]
+            },
+            {
+                "isoform": "TSPY_isoform_37",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 24
+                    },
+                    {
+                        "ord": 2,
+                        "count": 13
+                    },
+                    {
+                        "ord": 3,
+                        "count": 7
+                    },
+                    {
+                        "ord": 4,
+                        "count": 7
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "PonPyg",
+        "gene": "CDY",
+        "total": 117,
+        "isoforms": [
+            {
+                "isoform": "CDY_isoform_1",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 20
+                    },
+                    {
+                        "ord": 2,
+                        "count": 14
+                    },
+                    {
+                        "ord": 3,
+                        "count": 11
+                    },
+                    {
+                        "ord": 4,
+                        "count": 9
+                    },
+                    {
+                        "ord": 5,
+                        "count": 7
+                    },
+                    {
+                        "ord": 6,
+                        "count": 7
+                    },
+                    {
+                        "ord": 7,
+                        "count": 7
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "PonPyg",
+        "gene": "HSFY",
+        "total": 771,
+        "isoforms": [
+            {
+                "isoform": "HSFY_isoform_2",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 271
+                    },
+                    {
+                        "ord": 2,
+                        "count": 124
+                    },
+                    {
+                        "ord": 3,
+                        "count": 103
+                    },
+                    {
+                        "ord": 4,
+                        "count": 91
+                    },
+                    {
+                        "ord": 5,
+                        "count": 17
+                    }
+                ]
+            },
+            {
+                "isoform": "HSFY_isoform_3",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 58
+                    },
+                    {
+                        "ord": 2,
+                        "count": 24
+                    },
+                    {
+                        "ord": 3,
+                        "count": 27
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "PonPyg",
+        "gene": "RBMY",
+        "total": 67,
+        "isoforms": [
+            {
+                "isoform": "RBMY_isoform_38",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 32
+                    }
+                ]
+            },
+            {
+                "isoform": "RBMY_isoform_36",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 23
+                    }
+                ]
+            },
+            {
+                "isoform": "RBMY_isoform_5",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 9
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "PonPyg",
+        "gene": "RBMYB",
+        "total": 30,
+        "isoforms": [
+            {
+                "isoform": "RBMY_isoform_43",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 14
+                    },
+                    {
+                        "ord": 2,
+                        "count": 7
+                    }
+                ]
+            },
+            {
+                "isoform": "RBMY_isoform_45",
+                "counts": [
+                    {
+                        "ord": 2,
+                        "count": 6
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "species": "PonPyg",
+        "gene": "TSPY",
+        "total": 773,
+        "isoforms": [
+            {
+                "isoform": "TSPY_isoform_32",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 438
+                    },
+                    {
+                        "ord": 2,
+                        "count": 137
+                    },
+                    {
+                        "ord": 3,
+                        "count": 38
+                    },
+                    {
+                        "ord": 4,
+                        "count": 26
+                    }
+                ]
+            },
+            {
+                "isoform": "TSPY_isoform_37",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 55
+                    }
+                ]
+            },
+            {
+                "isoform": "TSPY_isoform_28",
+                "counts": [
+                    {
+                        "ord": 1,
+                        "count": 18
+                    }
+                ]
+            }
+        ]
+    }
+]
