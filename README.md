@@ -10,13 +10,25 @@ Accompanying code and scripts for Pal et al. — integrating T2T genome assembli
 | `01_multicopy_wholegenome/` | Whole-genome copy number estimation across ape species |
 | `02_MSA_trees/` | Multiple sequence alignments (MAFFT) and phylogenetic trees (IQ-TREE) |
 | `03_selection_full/` | Genome-wide selection analysis (HYPHY: MG94, BUSTED-E, aBSREL, MEME) |
-| `03_selection_on_domains/` | Domain-specific selection analysis (crotonase, chromodomain, RRM, HSF, NAP-S) |
+| `03b_selection_on_domains/` | Domain-specific selection analysis (crotonase, chromodomain, RRM, HSF, NAP-S) |
 | `04_amplicone_analysis/` | AMPLICONE-based copy number estimation for chimpanzee and gorilla short-read data |
 | `04b_copy_number_human/` | Copy number variation across 45 T2T human Y chromosomes |
 | `05_pairwise_sequence_ident-permutations_test/` | Pairwise sequence identity among gene copies; permutation tests comparing palindrome vs. array homogenization |
 | `06_gene_family_size_n_struct_var/` | Gene family size and structural variant summaries |
 | `07_stuctural-isoforms/` | Structural isoform reconstruction from PacBio Iso-Seq + Illumina (STRINGTIE, GFFCOMPARE) |
+| `07b_reconstruct-isoform-sequence/` | Sequence isoform (signature) reconstruction from IsoSeq reads: maps reads to a representative copy, calls variants, and groups reads by unique-position signatures |
 | `08_RNASeq_expression/` | Expression quantification with Salmon; differential expression (R) |
 | `09_seq_struct_prot_clust_ribbon/` | Protein structure clustering (COLABFOLD + FOLDSEEK); Sankey/ribbon visualization |
 | `10_SIFT_annotation/` | SIFT functional impact annotation of non-synonymous substitutions |
 
+## Genome assemblies
+
+| Species | Accession |
+|---------|-----------|
+| *Homo sapiens* (CHM13+Y) | GCF_009914755.1 |
+| *Gorilla gorilla* | GCF_029281585.2 |
+| *Pan paniscus* (bonobo) | GCF_029289425.2 |
+| *Pan troglodytes* (chimpanzee) | GCF_028858775.2 |
+| *Pongo abelii* (Sumatran orangutan) | GCF_028885655.2 |
+| *Pongo pygmaeus* (Bornean orangutan) | GCF_028885625.2 |
+| *Symphalangus syndactylus* (siamang) | GCF_028878055.2 |
