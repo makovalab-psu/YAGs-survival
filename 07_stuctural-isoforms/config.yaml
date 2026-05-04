@@ -1,0 +1,12 @@
+species:
+  - gor
+  - sum_orang
+  - bor_orang
+  - chimp
+  - bonobo
+  - human
+
+techrep:
+  - techrep1
+
+gene_fam: ["BPY2", "CDY", "DAZ", "HSFY", "PRY", "RBMY", "TSPY", "XKRY", "VCY"]

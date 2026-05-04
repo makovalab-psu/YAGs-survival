@@ -1,0 +1,7 @@
+species_name,n_yag_families,total_TPM,total_reads,top_family,top_family_TPM
+Bonobo,6,135.788279,1630.354,VCY,52.01913
+Bornean orangutan,5,92.296854,773.343,TSPY,24.964005
+Chimpanzee,6,217.179823,6786.68,VCY,58.861651
+Gorilla,6,43.923446,256.999,TSPY,11.054674
+Human,7,270.878386,16240.409,HSFY,80.52161899999999
+Sumatran orangutan,5,253.467579,237,HSFY,110.926369

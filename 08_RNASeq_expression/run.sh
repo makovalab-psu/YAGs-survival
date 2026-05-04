@@ -1,0 +1,2 @@
+## run the script to which extrats DNA sequences based in identifies ORFs
+python scripts/process_isoseq_consensus.py  --input-dir ~/proj/09_sequence-diversity/data/results/ --protein-dir data/protein/YAGS_20260105/ --output-dir data/novel_transcripts/
