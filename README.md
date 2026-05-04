@@ -23,11 +23,12 @@ Accompanying code and scripts for Pal et al. — integrating T2T genome assembli
 
 ## Genome assemblies
 
-
-*Homo sapiens* (CHM13+Y)  -> GCF_009914755.1-RS_2024_08  
-*Gorilla gorilla* -> GCF_029281585.2-RS_2024_02 
-*Pan paniscus* -> GCF_029289425.2-RS_2024_02
-*Pan troglodytes* -> GCF_028858775.2-RS_2024_02
-*Pongo abelii* -> GCF_028885655.2-RS_2024_02
-*Pongo pygmaeus* -> GCF_028885625.2-RS_2024_02
-*Symphalangus syndactylus* -> GCF_028878055.3-RS_2024_07
+```
+Homo sapiens* (CHM13+Y)  -> GCF_009914755.1-RS_2024_08  
+Gorilla gorilla          -> GCF_029281585.2-RS_2024_02 
+Pan paniscus             -> GCF_029289425.2-RS_2024_02
+Pan troglodytes          -> GCF_028858775.2-RS_2024_02
+Pongo abelii             -> GCF_028885655.2-RS_2024_02
+Pongo pygmaeus           -> GCF_028885625.2-RS_2024_02
+Symphalangus syndactylus -> GCF_028878055.3-RS_2024_07
+```
