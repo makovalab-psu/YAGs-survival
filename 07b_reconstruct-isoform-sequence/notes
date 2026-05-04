@@ -1,0 +1,46 @@
+--- Jul 16 2025 ---
+
+I have no notes file in this folder. Originally I assumed it will be a tool I'd run once and use the analysis. 
+I'm currently testing if the extraction of isoforms sequencs from reference based on GFF file and mapping it to one reference sequence
+doesn't obscure the resulting GFF too much. 
+
+I'll try to exgtract GFF from the single refeference sequence alignment. with "spliced-bam2gff" installed throught conda. And then I'll
+try to find the original GFF file and convert the coordinates to they both start from 0. 
+
+spliced_bam2gff data/isoforms/HomSap_TSPY/HomSap_TSPY_isoforms.bam > test_isoforms/HomSap_TSPY_isoforms_from_BAM_single_ref.gff
+
+--- Jul 21 2025 ---
+
+(base) [14:06|kxp5629@submit01:~/p/0/test_isoforms] $ cat human2.YAGs.TSPY.isoforms.gff  | cut -f 9 | cut -d ";" -f 1,16,25 | awk 'BEGIN{FS=";"; OFS="\t"}{ split($1, a, "\""); split($2, b, "\""); split($3, c, "\""); print a[2], b[2], c[2] }' | sort | uniq  > isoforms.csv
+
+
+tried to compare if the alignment to single reference gene doesn't mess up the groups /storage/home/kxp5629/proj/09_sequence-diversity/test_isoforms/compare_isoform_groups.py ... this seems to be OK
+
+I'll now try to map a single read (one from the assigned ones) to the whole Y chromosome and will try to assign to ISO based on that
+
+(base) [15:20|kxp5629@submit01:~/p/0/d/reads] $ cat HomSap_TSPY_human2_targeted_t1.fq | grep -A 3  SRR22838397.859$ > HomSap_TSPY_human2_targeted_t1_single_read.fq
+
+ minimap2 -ax splice:hq --MD -t 8 /storage/home/kxp5629/group_storage/shared/T2Tv2.assemblies/NCBI_RefSeq/HomSap/data/GCF_009914755.1/GCF_009914755.1_T2T-CHM13v2.0_genomic.fna.gz_splice-hq.mmi HomSap_TSPY_human2_targeted_t1_single_read.fq  > 1read.sam
+
+--- Jul 23 2025 ---
+
+chanted isoform matching function to use full genome alignments.
+
+--- Jul 25 2025 ---
+
+Fixed error in optimization function when reduding the size of signature. I'm removing redundant bases. Previously when removing I shifted the coordinates
+which resulted in an non specific signatures.
+
+--- Jul 29 2025 ---
+
+tried to use Jacard similarity to match isoforms but found that isoform 32 and isoform 40 in human TSPY
+differ only by 9 bases which puts the similarity value above 0.99. 
+Alternatively I'll try to ad an option where if I don't get an exact match I'll repord the highest JC value (considering
+it's higher than 99%)
+
+--- Jul 30 2025 ---
+
+Analyzing Pongo RBMY. Since it has two distinct copies. I'm trying to analyze them separately - naming them RBMYA (the one that is similar to other RBMY
+s) and RBMYB - the one that is more similar to RBMX.
+
+RBMYA PonPyg had and empty signature file so I copied the one from PonAbe to be able to finish the analysis.

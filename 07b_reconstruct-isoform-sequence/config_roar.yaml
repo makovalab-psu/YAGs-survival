@@ -1,0 +1,279 @@
+samples:
+    - human2_targeted_t1
+    - human2_targeted_t2
+    - human2_untargeted_t1
+    - human1_targeted_t1
+    - human1_targeted_t2
+    - bonobo_targeted_t1
+    - bonobo_targeted_t2
+    - bonobo_untargeted_t1
+    - bonobo_untargeted_t2
+
+individuals:
+    - human2
+    - human1
+    - bonobo
+
+individuals_samples:
+    human2:
+        - human2_targeted_t1
+        - human2_targeted_t2
+        - human2_untargeted_t1
+    human1:
+        - human1_targeted_t1
+        - human1_targeted_t2
+    bonobo:
+        - bonobo_targeted_t1
+        - bonobo_targeted_t2
+        - bonobo_untargeted_t1
+    chimp:
+        - chimp1_targeted_t1
+        - chimp1_targeted_t2
+        - chimp2_targeted_t1
+        - chimp2_targeted_t2
+        - chimp2_untargeted_t1
+    sorang:
+        - sorang_targeted_t1
+        - sorang_targeted_t2
+        - sorang_untargeted_t1
+        - sorang_untargeted_t2
+    borang:
+        - borang_targeted_t1
+        - borang_targeted_t2
+        - borang_untargeted_t1
+    gorilla:
+        - gorilla_targeted_t1
+        - gorilla_targeted_t2
+        - gorilla_untargeted_t1
+
+sample_files:
+    human2_targeted_t1: ./data/reads/raw/SRR22838397.fastq
+    human2_targeted_t2: ./data/reads/raw/SRR22838398.fastq
+    human2_untargeted_t1: ./data/reads/raw/A119b.fq
+    human1_targeted_t1: ./data/reads/raw/SRR22838406.fastq
+    human1_targeted_t2: ./data/reads/raw/SRR22838405.fastq
+    bonobo_targeted_t1: ./data/reads/raw/SRR22838391.fastq
+    bonobo_targeted_t2: ./data/reads/raw/SRR22838392.fastq
+    bonobo_untargeted_t1: ./data/reads/raw/SRR22306523.fastq
+    chimp1_targeted_t1: ./data/reads/raw/SRR22838393.fastq
+    chimp1_targeted_t2: ./data/reads/raw/SRR22838394.fastq
+    chimp2_targeted_t1: ./data/reads/raw/SRR22838395.fastq
+    chimp2_targeted_t2: ./data/reads/raw/SRR22838396.fastq
+    chimp2_untargeted_t1: ./data/reads/raw/SRR22306524.fastq
+    sorang_targeted_t1: ./data/reads/raw/SRR22838399.fastq
+    sorang_targeted_t2: ./data/reads/raw/SRR22838400.fastq
+    sorang_untargeted_t1: ./data/reads/raw/SRR23254336.fastq
+    sorang_untargeted_t2: ./data/reads/raw/SRR22452368.fastq
+    borang_targeted_t1: ./data/reads/raw/SRR22838401.fastq
+    borang_targeted_t2: ./data/reads/raw/SRR22838402.fastq
+    borang_untargeted_t1: ./data/reads/raw/SRR22452369.fastq
+    gorilla_targeted_t1: ./data/reads/raw/SRR22838403.fastq
+    gorilla_targeted_t2: ./data/reads/raw/SRR22838404.fastq
+    gorilla_untargeted_t1: ./data/reads/raw/SRR22452370.fastq
+
+## Samples renamed to match Sasha's samples
+## at some point re-analyze the data
+# sample_files:
+#     human2_targeted_t1: ./data/reads/raw/SRR22838398.fastq
+#     human2_targeted_t2: ./data/reads/raw/SRR22838397.fastq
+#     human2_untargeted_t1: ./data/reads/raw/A119b.fq
+#     human1_targeted_t1: ./data/reads/raw/SRR22838404.fastq
+#     human1_targeted_t2: ./data/reads/raw/SRR22838406.fastq
+#     bonobo_targeted_t1: ./data/reads/raw/SRR22838392.fastq
+#     bonobo_targeted_t2: ./data/reads/raw/SRR22838391.fastq
+#     bonobo_untargeted_t1: ./data/reads/raw/SRR22306523.fastq
+#     chimp1_targeted_t1: ./data/reads/raw/SRR22838396.fastq
+#     chimp1_targeted_t2: ./data/reads/raw/SRR22838395.fastq
+#     chimp2_targeted_t1: ./data/reads/raw/SRR22838394.fastq
+#     chimp2_targeted_t2: ./data/reads/raw/SRR22838393.fastq
+#     chimp2_untargeted_t1: ./data/reads/raw/SRR22306524.fastq
+#     sorang_targeted_t1: ./data/reads/raw/SRR22838400.fastq
+#     sorang_targeted_t2: ./data/reads/raw/SRR22838399.fastq
+#     sorang_untargeted_2: ./data/reads/raw/SRR23254336.fastq
+#     sorang_untargeted: ./data/reads/raw/SRR22452368.fastq
+#     borang_targeted_t1: ./data/reads/raw/SRR22838402.fastq
+#     borang_targeted_t2: ./data/reads/raw/SRR22838401.fastq
+#     borang_untargeted_t1: ./data/reads/raw/SRR22452369.fastq
+#     gorilla_targeted_t1: ./data/reads/raw/SRR22838404.fastq
+#     gorilla_targeted_t2: ./data/reads/raw/SRR22838403.fastq
+#     gorilla_untargeted_t1: ./data/reads/raw/SRR22452370.fastq
+
+sample_species:
+    human2_targeted_t1: HomSap
+    human2_targeted_t2: HomSap
+    human2_untargeted_t1: HomSap
+    human1_targeted_t1: HomSap
+    human1_targeted_t2: HomSap
+    bonobo_targeted_t1: PanPan
+    bonobo_targeted_t2: PanPan
+    bonobo_untargeted_t1: PanPan
+    chimp1_targeted_t1: PanTro
+    chimp1_targeted_t2: PanTro
+    chimp2_targeted_t1: PanTro
+    chimp2_targeted_t2: PanTro
+    chimp2_untargeted_t1: PanTro
+    sorang_targeted_t1: PonAbe
+    sorang_targeted_t2: PonAbe
+    sorang_untargeted_t1: PonAbe
+    sorang_untargeted_t2: PonAbe
+    borang_targeted_t1: PonPyg
+    borang_targeted_t2: PonPyg
+    borang_untargeted_t1: PonPyg
+    gorilla_targeted_t1: GorGor
+    gorilla_targeted_t2: GorGor
+    gorilla_untargeted_t1: GorGor
+
+species_genomes:
+    HomSap: /storage/home/kxp5629/group_storage/shared/T2Tv2.assemblies/NCBI_RefSeq/HomSap/data/GCF_009914755.1/GCF_009914755.1_T2T-CHM13v2.0_genomic.fna.gz_splice-hq.mmi
+    PanPan: /storage/home/kxp5629/group_storage/shared/T2Tv2.assemblies/NCBI_RefSeq/PanPan/data/GCF_029289425.2/GCF_029289425.2_NHGRI_mPanPan1-v2.0_pri_genomic.fna.gz_splice-hq.mmi
+    PanTro: /storage/home/kxp5629/group_storage/shared/T2Tv2.assemblies/NCBI_RefSeq/PanTro/data/GCF_028858775.2/GCF_028858775.2_NHGRI_mPanTro3-v2.0_pri_genomic.fna.gz_splice-hq.mmi
+    PonAbe: /storage/group/kdm16/default/shared/T2Tv2.assemblies/NCBI_RefSeq/PonAbe/data/GCF_028885655.2/GCF_028885655.2_NHGRI_mPonAbe1-v2.0_pri_genomic.fna.gz_splice-hq.mmi
+    PonPyg: /storage/group/kdm16/default/shared/T2Tv2.assemblies/NCBI_RefSeq/PonPyg/data/GCF_028885625.2/GCF_028885625.2_NHGRI_mPonPyg2-v2.0_pri_genomic.fna.gz_splice-hq.mmi
+    GorGor: /storage/group/kdm16/default/shared/T2Tv2.assemblies/NCBI_RefSeq/GorGor/data/GCF_029281585.2/GCF_029281585.2_NHGRI_mGorGor1-v2.0_pri_genomic.fna.gz_splice-hq.mmi
+
+genes:
+    - BPY2
+    - CDY
+    - HSFY
+    - RBMY
+    - TSPY
+    - VCY
+
+single_gene_reference:
+    BPY2:
+        HomSap: ./data/references/BPY2_sequences/HomSap_BPY2_single-gene.fasta
+        PanPan: ./data/references/BPY2_sequences/PanPan-PanTro_BPY2_single_ref_129395745.fasta
+        PanTro: ./data/references/BPY2_sequences/PanPan-PanTro_BPY2_single_ref_129395745.fasta
+        GorGor: ./data/references/BPY2_sequences/GorGor_BPY2_single_ref_LOC129530363.fasta
+    CDY:
+        HomSap: ./data/references/CDY_sequences/HomSap_CDY_CDY1B_single-gene.fasta
+        PanPan: ./data/references/CDY_sequences/PanPan_CDY_single_ref_LOC129395731.fasta
+        PanTro: ./data/references/CDY_sequences/PanTro_CDY_single_ref_LOC739157.fasta
+        PonAbe: ./data/references/CDY_sequences/PonAbe-PonPyb_CDY_single_ref_LOC129053178.fasta
+        PonPyg: ./data/references/CDY_sequences/PonAbe-PonPyb_CDY_single_ref_LOC129053178.fasta
+        GorGor: ./data/references/CDY_sequences/GorGor_CDY_single_ref_LOC129530247.fasta
+    HSFY:
+        HomSap: ./data/references/HSFY_sequences/HomSap_HSFY_HSFY1_single-gene.fasta
+        PonAbe: ./data/references/HSFY_sequences/PonAbe-PonPyg_HSFY_single_ref_LOC129053171.fasta
+        PonPyg: ./data/references/HSFY_sequences/PonAbe-PonPyg_HSFY_single_ref_LOC129053171.fasta
+        GorGor: ./data/references/HSFY_sequences/GorGor_HSFY_single_ref_LOC129530208.fasta
+    RBMY:
+        HomSap: ./data/references/RBMY_sequences/HomSap_RBMY_RBMY1D_single-gene.fasta
+        PanPan: ./data/references/RBMY_sequences/PanPan_RBMY_single_ref_LOC129395540.fasta
+        PanTro: ./data/references/RBMY_sequences/PanTro_RBMY_single_ref_LOC736145.fasta
+        GorGor: ./data/references/RBMY_sequences/GorGor_RBMY_single_ref_LOC129530240.fasta
+    TSPY:
+        HomSap: ./data/references/TSPY_sequences/HomSap_TSPY_ext.fa
+        PanPan: ./data/references/TSPY_sequences/PanPan-PanTro_TSPY_single_ref_LOC129138942.fasta
+        PanTro: ./data/references/TSPY_sequences/PanPan-PanTro_TSPY_single_ref_LOC129138942.fasta
+        PonAbe: ./data/references/TSPY_sequences/PonAbe-PonPyg_TSPY_single_ref_LOC129025815.fasta
+        PonPyg: ./data/references/TSPY_sequences/PonAbe-PonPyg_TSPY_single_ref_LOC129025815.fasta
+        GorGor: ./data/references/TSPY_sequences/GorGor_TSPY_single_ref_129530275.fasta
+    VCY:
+        HomSap: ./data/references/VCY_sequences/HomSap_VCY_VCY1B_single-gene.fasta
+        PanPan: ./data/references/VCY_sequences/PanPan_VCY_single_ref_LOC129395529.fasta
+
+genomic_sequences:
+    BPY2:
+        HomSap: ./data/references/BPY2_sequences/HomSap_BPY2_3_genomic_seq.fasta
+        PanPan: ./data/references/BPY2_sequences/PanPan_BPY2_ref2.fasta
+        PanTro: ./data/references/BPY2_sequences/PanTro_BPY2_ref1.fasta
+        GorGor: ./data/references/BPY2_sequences/GorGor_BPY2_ref2.fasta
+    CDY:
+        HomSap: ./data/references/CDY_sequences/HomSap_CDY_4_genomic-seq.fasta
+        PanPan: ./data/references/CDY_sequences/PanPan_CDY_ref3.fasta
+        PanTro: ./data/references/CDY_sequences/PanTro_CDY_ref5.fasta
+        PonAbe: ./data/references/CDY_sequences/PonAbe_CDY_ref21.fasta
+        PonPyg: ./data/references/CDY_sequences/PonPyg_CDY_ref13.fasta
+        GorGor: ./data/references/CDY_sequences/GorGor_CDY_ref4.fasta
+    HSFY:
+        HomSap: ./data/references/HSFY_sequences/HomSap_HSFY_2_genomic_seq.fasta
+        PonAbe: ./data/references/HSFY_sequences/PonAbe_HSFY_ref5.fasta
+        PonPyg: ./data/references/HSFY_sequences/PonPyg_HSFY_ref4.fasta
+        GorGor: ./data/references/HSFY_sequences/GorGor_HSFY_ref5.fasta
+    RBMY:
+        HomSap: ./data/references/RBMY_sequences/HomSap_RBMY_ref6_CDS.fasta
+        PanPan: ./data/references/RBMY_sequences/RBMY_PanPan_ref26.fasta
+        PanTro: ./data/references/RBMY_sequences/RBMY_PanTRo_ref6.fasta
+        GorGor: ./data/references/RBMY_sequences/GorGor_RBMY_ref13_CDS.fasta
+        # In the gorilla CDS I removed the 111 exon which was repeated 1 to 3 times.
+    TSPY:
+        HomSap: ./data/references/TSPY_sequences/HomSap_TSPY_human_ref.fasta
+        PanPan: ./data/references/TSPY_sequences/TSPY_PanPan_ref25.fasta
+        PanTro: ./data/references/TSPY_sequences/TSPY_PanTro_ref21.fasta
+        PonAbe: ./data/references/TSPY_sequences/TSPY_PonAbe_ref18.fasta
+        PonPyg: ./data/references/TSPY_sequences/TSPY_PonPyg_ref25.fasta
+        GorGor: ./data/references/TSPY_sequences/TSPY_GorGor_ref6.fasta
+    VCY:
+        HomSap: ./data/references/VCY_sequences/HomSap_VCY_ref2.fasta
+        PanPan: ./data/references/VCY_sequences/PanPan_VCY_ref2.fasta
+
+genomic_bed:
+    BPY2:
+        HomSap: ./data/references/BPY2_sequences/HomSap_BPY2_genomic.bed
+        PanPan: ./data/references/BPY2_sequences/PanPan_BPY2_genomic_autogenerated.bed
+        PanTro: ./data/references/BPY2_sequences/PanTro_BPY2_genomic_autogenerated.bed
+        GorGor: ./data/references/BPY2_sequences/GorGor_BPY2_genomic_autogenerated.bed
+    CDY:
+        HomSap: ./data/references/CDY_sequences/HomSap_CDY.bed
+        PanPan: ./data/references/CDY_sequences/PanPan_CDY_genomic_autogenerated.bed
+        PanTro: ./data/references/CDY_sequences/PanTro_CDY_genomic_autogenerated.bed
+        PonAbe: ./data/references/CDY_sequences/PonAbe_CDY_genomic_autogenerated.bed
+        PonPyg: ./data/references/CDY_sequences/PonPyg_CDY_genomic_autogenerated.bed
+        GorGor: ./data/references/CDY_sequences/GorGor_CDY_genomic_autogenerated.bed
+    HSFY:
+        HomSap: ./data/references/HSFY_sequences/HomSap_HSFY_genomic.bed
+        PonAbe: ./data/references/HSFY_sequences/PonAbe_HSFY_genomic_autogenerated.bed
+        PonPyg: ./data/references/HSFY_sequences/PonPyg_HSFY_genomic_autogenerated.bed
+        GorGor: ./data/references/HSFY_sequences/GorGor_HSFY_genomic_autogenerated.bed
+    RBMY:
+        HomSap: ./data/references/RBMY_sequences/HomSap_RBMY.bed
+        PanPan: ./data/references/RBMY_sequences/PanPan_RBMY_genomic_autogenerated.bed
+        PanTro: ./data/references/RBMY_sequences/PanTro_RBMY_genomic_autogenerated.bed
+        PonAbe: ./data/references/RBMY_sequences/PonAbe_RBMY_genomic_autogenerated.bed
+        PonPyg: ./data/references/RBMY_sequences/PonPyg_RBMY_genomic_autogenerated.bed
+        GorGor: ./data/references/RBMY_sequences/GorGor_RBMY_genomic_autogenerated.bed
+    TSPY:
+        HomSap: ./data/references/TSPY_sequences/HomSap_TSPY.bed
+        PanPan: ./data/references/TSPY_sequences/PanPan_TSPY_genomic_autogenerated.bed
+        PanTro: ./data/references/TSPY_sequences/PanTro_TSPY_genomic_autogenerated.bed
+        PonAbe: ./data/references/TSPY_sequences/PonAbe_TSPY_genomic_autogenerated.bed
+        PonPyg: ./data/references/TSPY_sequences/PonPyg_TSPY_genomic_autogenerated.bed
+        GorGor: ./data/references/TSPY_sequences/GorGor_TSPY_genomic_autogenerated.bed
+    VCY:
+        HomSap: ./data/references/VCY_sequences/HomSap_VCY_genomic.bed
+        PanPan: ./data/references/VCY_sequences/PanTro_VCY_genomic_autogenerated.bed
+
+single_gene_ref_bed:
+    BPY2:
+        HomSap: ./data/references/BPY2_sequences/HomSap_BPY2_single-gene.bed
+        PanPan: ./data/references/BPY2_sequences/PanPan-PanTro_BPY2_single_ref_129395745.bed
+        PanTro: ./data/references/BPY2_sequences/PanPan-PanTro_BPY2_single_ref_129395745.bed
+        GorGor: ./data/references/BPY2_sequences/GorGor_BPY2_single_ref_LOC129530363.bed
+    CDY:
+        HomSap: ./data/references/CDY_sequences/HomSap_CDY_CDY1B_single-gene.bed
+        PanPan: ./data/references/CDY_sequences/PanPan_CDY_single_ref_LOC129395731.bed
+        PanTro: ./data/references/CDY_sequences/PanTro_CDY_single_ref_LOC739157.bed
+        PonAbe: ./data/references/CDY_sequences/PonAbe-PonPyb_CDY_single_ref_LOC129053178.bed
+        PonPyg: ./data/references/CDY_sequences/PonAbe-PonPyb_CDY_single_ref_LOC129053178.bed
+        GorGor: ./data/references/CDY_sequences/GorGor_CDY_single_ref_LOC129530247.bed
+    HSFY:
+        HomSap: ./data/references/HSFY_sequences/HomSap_HSFY_HSFY1_single-gene.bed
+        PonAbe: ./data/references/HSFY_sequences/PonAbe-PonPyg_HSFY_single_ref_LOC129053171.bed
+        PonPyg: ./data/references/HSFY_sequences/PonAbe-PonPyg_HSFY_single_ref_LOC129053171.bed
+        GorGor: ./data/references/HSFY_sequences/GorGor_HSFY_single_ref_LOC129530208.bed
+    RBMY:
+        HomSap: ./data/references/RBMY_sequences/HomSap_RBMY_RBMY1D_single-gene_no_repeat111.bed
+        PanPan: ./data/references/RBMY_sequences/PanPan_RBMY_single_ref_LOC129395540_no_repeat111.bed
+        PanTro: ./data/references/RBMY_sequences/PanTro_RBMY_single_ref_LOC736145_no_repeats111.bed
+        GorGor: ./data/references/RBMY_sequences/GorGor_RBMY_single_ref_LOC129530240_no_repeats.bed
+    TSPY:
+        HomSap: ./data/references/TSPY_sequences/HomSap_TSPY_ext_simple.bed
+        PanPan: ./data/references/TSPY_sequences/PanPan-PanTro_TSPY_single_ref_LOC129138942.bed
+        PanTro: ./data/references/TSPY_sequences/PanPan-PanTro_TSPY_single_ref_LOC129138942.bed
+        PonAbe: ./data/references/TSPY_sequences/PonAbe-PonPyg_TSPY_single_ref_LOC129025815.bed
+        PonPyg: ./data/references/TSPY_sequences/PonAbe-PonPyg_TSPY_single_ref_LOC129025815.bed
+        GorGor: ./data/references/TSPY_sequences/GorGor_TSPY_single_ref_129530275.bed
+    VCY:
+        HomSap: ./data/references/VCY_sequences/HomSap_VCY_VCY1B_single-gene_simple.bed
+        PanPan: ./data/references/VCY_sequences/PanPan_VCY_single_ref_LOC129395529.bed

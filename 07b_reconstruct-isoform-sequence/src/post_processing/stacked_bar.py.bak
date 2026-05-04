@@ -1,0 +1,206 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import json
+from collections import defaultdict
+
+# Load the JSON data
+with open('all.json', 'r') as f:
+    data = json.load(f)
+
+# Extract unique species, genes, and isoforms
+species_list = []
+gene_list = []
+all_isoforms = set()
+
+for entry in data:
+    # Skip RBMYB gene
+    if entry['gene'] == 'RBMYB':
+        continue
+
+    if entry['species'] not in species_list:
+        species_list.append(entry['species'])
+    if entry['gene'] not in gene_list:
+        gene_list.append(entry['gene'])
+    for isoform_data in entry['isoforms']:
+        isoform_name = isoform_data['isoform']
+        if isoform_name:  # Skip empty isoform names
+            all_isoforms.add(isoform_name)
+
+n_rows = len(gene_list)
+n_cols = len(species_list)
+
+print(f"Genes (rows): {gene_list}")
+print(f"Species (columns): {species_list}")
+print(f"Number of unique isoforms: {len(all_isoforms)}")
+
+# Create a color map for isoforms within each gene
+gene_isoforms = defaultdict(set)
+for entry in data:
+    # Skip RBMYB gene
+    if entry['gene'] == 'RBMYB':
+        continue
+
+    gene = entry['gene']
+    for isoform_data in entry['isoforms']:
+        isoform_name = isoform_data['isoform']
+        if isoform_name:
+            gene_isoforms[gene].add(isoform_name)
+
+# Assign colors to isoforms for each gene
+gene_color_maps = {}
+colormap = plt.cm.tab20
+for gene_idx, gene in enumerate(gene_list):
+    isoforms = sorted(list(gene_isoforms[gene]))
+    colors = {}
+    for i, isoform in enumerate(isoforms):
+        colors[isoform] = colormap(i % 20)
+    gene_color_maps[gene] = colors
+
+# Organize data by gene and species (swapped from before)
+data_structure = defaultdict(lambda: defaultdict(list))
+for entry in data:
+    # Skip RBMYB gene
+    if entry['gene'] == 'RBMYB':
+        continue
+
+    species = entry['species']
+    gene = entry['gene']
+    data_structure[gene][species] = entry['isoforms']
+
+# Find max ord value for x-axis
+max_ord = 0
+for entry in data:
+    for isoform_data in entry['isoforms']:
+        for count_entry in isoform_data['counts']:
+            max_ord = max(max_ord, count_entry['ord'])
+
+# Create figure
+fig, axes = plt.subplots(n_rows, n_cols, figsize=(3*n_cols, 2.5*n_rows), sharex=True)
+
+# Ensure axes is 2D
+if n_rows == 1:
+    axes = axes.reshape(1, -1)
+if n_cols == 1:
+    axes = axes.reshape(-1, 1)
+
+# Extract total counts from JSON and find max per row
+subplot_totals = {}
+row_max_totals = []
+
+for row_idx, gene in enumerate(gene_list):
+    row_max = 0
+    for col_idx, species in enumerate(species_list):
+        # Find the corresponding entry in the original data
+        total_counts = 0
+        for entry in data:
+            if entry['gene'] == gene and entry['species'] == species:
+                total_counts = entry['total']
+                break
+
+        subplot_totals[(gene, species)] = total_counts
+        row_max = max(row_max, total_counts)
+
+    row_max_totals.append(row_max)
+
+# Set Y-axis max to 100% for percentage plots
+row_max_values = [100] * len(gene_list)
+
+# Plot data - keep original x positions
+x = np.arange(1, max_ord + 1)
+
+for row_idx, gene in enumerate(gene_list):
+    for col_idx, species in enumerate(species_list):
+        ax = axes[row_idx, col_idx]
+
+        isoforms = data_structure[gene][species]
+
+        if not isoforms:
+            # Empty plot
+            ax.text(0.5, 0.5, 'No data', ha='center', va='center',
+                   transform=ax.transAxes, fontsize=10, color='gray')
+        else:
+            # Prepare data for stacking
+            # Create a dict to accumulate counts by ord
+            isoform_counts = {}
+            for isoform_data in isoforms:
+                isoform_name = isoform_data['isoform']
+                if not isoform_name:
+                    isoform_name = 'Unknown'
+
+                counts_dict = {}
+                for count_entry in isoform_data['counts']:
+                    counts_dict[count_entry['ord']] = count_entry['count']
+
+                isoform_counts[isoform_name] = counts_dict
+
+            # Get pre-calculated total counts for this subplot
+            total_counts = subplot_totals[(gene, species)]
+
+            # Add light gray bar behind the plot area showing total counts (scaled within row)
+            if total_counts > 0 and row_max_totals[row_idx] > 0:
+                gray_bar_height = (total_counts / row_max_totals[row_idx]) * 100
+                # Draw gray bar first so it appears behind everything else
+                ax.axhspan(0, gray_bar_height, color='lightgray', alpha=0.3, zorder=0)
+
+            # Stack the bars with percentages
+            bottom = np.zeros(max_ord)
+            for isoform_name, counts_dict in isoform_counts.items():
+                heights = np.array([counts_dict.get(i, 0) for i in range(1, max_ord + 1)])
+
+                # Convert to percentages based on total counts for this subplot
+                percentage_heights = (heights / total_counts) * 100 if total_counts > 0 else np.zeros_like(heights)
+
+                color = gene_color_maps[gene].get(isoform_name, 'gray')
+                ax.bar(x, percentage_heights, bottom=bottom, color=color,
+                      label=isoform_name, width=0.8)
+                bottom += percentage_heights
+
+        # Set Y-axis limit
+        ax.set_ylim(0, row_max_values[row_idx])
+
+        # Add right Y-axis for count values
+        ax2 = ax.twinx()
+        ax2.set_ylim(0, row_max_totals[row_idx])
+        # Add label only to the rightmost plot in each row
+        if col_idx == n_cols - 1:
+            ax2.set_ylabel('Total Counts', fontsize=9, rotation=270, labelpad=15)
+        else:
+            ax2.set_ylabel('')
+        ax2.spines['top'].set_visible(False)
+        ax2.spines['left'].set_visible(False)
+        ax2.tick_params(axis='y', labelsize=8)
+
+        # Styling for main axis
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        ax.grid(axis='y', alpha=0.3, zorder=1)
+
+        # Labels
+        if col_idx == 0:
+            ax.set_ylabel(f'{gene}\n(%)', fontsize=10, fontweight='bold')
+
+        if row_idx == 0:
+            ax.set_title(species, fontsize=11, fontweight='bold')
+
+        if row_idx == n_rows - 1:
+            ax.set_xlabel('Order', fontsize=9)
+            # Set x-ticks for regular positions only
+            ax.set_xticks(x[::max(1, len(x)//5)])  # Show every nth tick if too many
+
+# Add legends for each row (genes and their isoforms)
+legend_y_positions = np.linspace(0.95, 0.05, n_rows)
+for row_idx, gene in enumerate(gene_list):
+    # Get all isoforms for this gene
+    isoforms = sorted(list(gene_isoforms[gene]))
+    if isoforms:
+        handles = [plt.Rectangle((0,0),1,1, color=gene_color_maps[gene][iso])
+                  for iso in isoforms]
+
+        # Place legend on the right side of the figure, aligned with the row
+        fig.legend(handles, isoforms, loc='center left',
+                  bbox_to_anchor=(1.01, legend_y_positions[row_idx]),
+                  fontsize=8, title=gene, title_fontsize=9, frameon=True)
+
+plt.tight_layout()
+plt.subplots_adjust(bottom=0.15, hspace=0.3, wspace=0.5)
+plt.savefig("isoforms.pdf")

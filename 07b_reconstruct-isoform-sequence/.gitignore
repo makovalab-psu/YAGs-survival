@@ -1,0 +1,9 @@
+data/mapped
+data/results
+data/variants
+data/reads
+data/backup_*
+data/isoforms
+logs/
+
+*.fai
