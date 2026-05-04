@@ -1,0 +1,11 @@
+IQ-TREE multicore version 2.3.6 for MacOS ARM 64-bit built Aug  1 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    E1-054262.local (SSE4.2, 16 GB RAM)
+Command: /Users/kxp5629/tools/iqtree-2.3.6-macOS/bin/iqtree2 -s renamed/HSFY_alignment_v3.fasta -T 12 -bb 1000
+Seed:    312763 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Aug  3 00:08:23 2025
+Kernel:  SSE2 - 12 threads (12 CPU cores detected)
+
+Reading alignment file renamed/HSFY_alignment_v3.fasta ... ERROR: File not found renamed/HSFY_alignment_v3.fasta

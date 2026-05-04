@@ -1,0 +1,1867 @@
+IQ-TREE multicore version 2.3.6 for MacOS ARM 64-bit built Aug  1 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    E1-054262.local (SSE4.2, 16 GB RAM)
+Command: /Users/kxp5629/tools/iqtree-2.3.6-macOS/bin/iqtree2 -s renamed/DAZ_DAZL_RBD.aligmnent.20240924.renamed.fasta -T 12 -bb 1000
+Seed:    933596 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Aug  3 00:58:21 2025
+Kernel:  SSE2 - 12 threads (12 CPU cores detected)
+
+Reading alignment file renamed/DAZ_DAZL_RBD.aligmnent.20240924.renamed.fasta ... Fasta format detected
+Reading fasta file: done in 0.000415087 secs using 81.67% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 73 sequences with 495 columns, 122 distinct patterns
+106 parsimony-informative, 16 singleton sites, 373 constant sites
+                                                       Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.50611e-05 secs using 68.8% CPU
+   1  GorGor_chr2_DAZL-RBD1_26423032_NA_nonC_-                 0.00%    passed     15.75%
+   2  GorGor_chrY_DAZ1-RBD1_42783133_Q18.1.A_nonC_-            0.00%    passed     99.25%
+   3  GorGor_chrY_DAZ1-RBD2_42783133_Q18.1.A_nonC_-            0.00%    passed     98.88%
+   4  GorGor_chrY_DAZ1-RBD3_42783133_Q18.1.A_nonC_-            0.00%    passed     98.17%
+   5  GorGor_chrY_LOC129530216-RBD1_42879918_Q18.1.B_nonC_t    0.00%    passed     99.25%
+   6  GorGor_chrY_LOC129530216-RBD2_42879918_Q18.1.B_nonC_t    0.00%    passed     98.55%
+   7  HomSap_chr3_DAZL-RBD1_16587918_NA_nonC_-                 0.00%    passed     12.82%
+   8  HomSap_chrY_DAZ1-RBD1_23965003_Q8A_nonC_-                0.00%    passed     99.22%
+   9  HomSap_chrY_DAZ1-RBD2_23965003_Q8A_nonC_-                0.00%    passed     99.22%
+  10  HomSap_chrY_DAZ1-RBD3_23965003_Q8A_nonC_-                0.00%    passed     99.22%
+  11  HomSap_chrY_DAZ2-RBD1_25661821_Q11.3B_nonC_t             0.00%    passed     99.22%
+  12  HomSap_chrY_DAZ3-RBD1_24046728_Q9.2B_nonC_t              0.00%    passed     99.22%
+  13  HomSap_chrY_DAZ4-RBD1_25571713_Q11.1A_nonC_-             0.00%    passed     99.22%
+  14  HomSap_chrY_DAZ4-RBD2_25571713_Q11.1A_nonC_-             0.00%    passed     99.22%
+  15  PanPan_chr2_DAZL-RBD1_16570582_NA_nonC_-                 0.00%    passed     12.82%
+  16  PanPan_chrY_LOC129395530-RBD1_9036315_Q23B_C2_-          0.00%    passed     94.89%
+  17  PanPan_chrY_LOC129395621-RBD1_9107812_Q22A_nonC_t        0.00%    passed     96.12%
+  18  PanPan_chrY_LOC129395621-RBD2_9107812_Q22A_nonC_t        0.00%    passed     94.89%
+  19  PanTro_chr2_DAZL-RBD1_20590218_NA_nonC_-                 0.00%    passed     15.75%
+  20  PanTro_chrY_LOC738636-RBD1_19278362_Q8.1A_C2_t           0.00%    passed     96.12%
+  21  PanTro_chrY_LOC744621-RBD1_9432523_Q12.2B_C2_-           0.00%    passed     96.12%
+  22  PanTro_chrY_LOC744621-RBD2_9432523_Q12.2B_C2_-           0.00%    passed     96.12%
+  23  PanTro_chrY_LOC749905-RBD1_9511429_Q12.1A_C2_t           0.00%    passed     96.12%
+  24  PanTro_chrY_LOC749905-RBD2_9511429_Q12.1A_C2_t           0.00%    passed     96.12%
+  25  PanTro_chrY_LOC749905-RBD3_9511429_Q12.1A_C2_t           0.00%    passed     96.12%
+  26  PanTro_chrY_LOC112208053_19207853_Q8.2B_C2_-             0.00%    passed     96.12%
+  27  PonAbe_chr2_DAZL-RBD1_138140947_NA_nonC_t                0.00%    passed     24.48%
+  28  PonAbe_chrY_LOC129053177-RBD1_40287231_Q13A_C2_-        21.82%    passed     79.78%
+  29  PonAbe_chrY_LOC129053200-RBD1_47246963_Q23.1A_C2_-       0.00%    passed     96.49%
+  30  PonAbe_chrY_LOC129053245-RBD1_40367975_Q13B_C2_t         0.00%    passed     98.19%
+  31  PonAbe_chrY_LOC129053245-RBD2_40367975_Q13B_C2_t         0.00%    passed     98.65%
+  32  PonAbe_chrY_LOC129053245-RBD3_40367975_Q13B_C2_t         0.00%    passed     99.09%
+  33  PonAbe_chrY_LOC129053304-RBD1_50717647_Q29A_C2_-         0.00%    passed     98.19%
+  34  PonAbe_chrY_LOC129053304-RBD2_50717647_Q29A_C2_-         0.00%    passed     98.65%
+  35  PonAbe_chrY_LOC129053304-RBD3_50717647_Q29A_C2_-         0.00%    passed     99.09%
+  36  PonAbe_chrY_LOC129053305-RBD1_50800706_Q29B_C2_t         0.00%    passed     98.19%
+  37  PonAbe_chrY_LOC129053305-RBD2_50800706_Q29B_C2_t         0.00%    passed     98.65%
+  38  PonAbe_chrY_LOC129053305-RBD3_50800706_Q29B_C2_t         0.00%    passed     99.09%
+  39  PonPyg_chr2_DAZL-RBD1_137333547_NA_nonC_t                0.00%    passed     24.48%
+  40  PonPyg_chrY_LOC129025913-RBD1_33814768_Q18A_C2_-         0.00%    passed     94.98%
+  41  PonPyg_chrY_LOC129025913-RBD2_33814768_Q18A_C2_-         0.00%    passed     98.96%
+  42  PonPyg_chrY_LOC129025914-RBD1_33882908_Q18B_C2_t         0.00%    passed     97.13%
+  43  PonPyg_chrY_LOC129025914-RBD2_33882908_Q18B_C2_t         0.00%    passed     98.65%
+  44  PonPyg_chrY_LOC129025914-RBD3_33882908_Q18B_C2_t         0.00%    passed     97.91%
+  45  PonPyg_chrY_LOC129025923-RBD1_42461501_Q31B_C2_t        21.82%    passed     65.07%
+  46  PonPyg_chrY_LOC129025923-RBD2_42461501_Q31B_C2_t         0.00%    passed     92.46%
+  47  PonPyg_chrY_LOC129025923-RBD3_42461501_Q31B_C2_t         0.00%    passed     98.38%
+  48  PonPyg_chrY_LOC129025942-RBD1_28033868_Q9.3B_C2_t        0.00%    passed     98.19%
+  49  PonPyg_chrY_LOC129025942-RBD2_28033868_Q9.3B_C2_t        0.00%    passed     98.96%
+  50  PonPyg_chrY_LOC129025942-RBD3_28033868_Q9.3B_C2_t        0.00%    passed     97.36%
+  51  PonPyg_chrY_LOC129025944-RBD1_27937117_Q9.2A_C2_-        0.00%    passed     98.19%
+  52  PonPyg_chrY_LOC129025944-RBD2_27937117_Q9.2A_C2_-        0.00%    passed     98.96%
+  53  PonPyg_chrY_LOC129025944-RBD3_27937117_Q9.2A_C2_-        0.00%    passed     97.36%
+  54  PonPyg_chrY_LOC129025945-RBD1_35664344_Q22.2A_C2_-       0.00%    passed     98.19%
+  55  PonPyg_chrY_LOC129025945-RBD2_35664344_Q22.2A_C2_-       0.00%    passed     99.66%
+  56  PonPyg_chrY_LOC129025945-RBD3_35664344_Q22.2A_C2_-       0.00%    passed     97.96%
+  57  PonPyg_chrY_LOC129025947-RBD1_35731655_Q22.3B_C2_t       0.00%    passed     98.19%
+  58  PonPyg_chrY_LOC129025947-RBD2_35731655_Q22.3B_C2_t       0.00%    passed     99.66%
+  59  PonPyg_chrY_LOC129025947-RBD3_35731655_Q22.3B_C2_t       0.00%    passed     97.96%
+  60  PonPyg_chrY_LOC129025960-RBD1_42384755_Q30A_C35_-        0.00%    passed     97.88%
+  61  PonPyg_chrY_LOC129025960-RBD2_42384755_Q30A_C35_-        0.00%    passed     95.42%
+  62  PonPyg_chrY_LOC129025960-RBD3_42384755_Q30A_C35_-        0.00%    passed     99.55%
+  63  PonPyg_chrY_LOC129025961-RBD1_26220121_Q7.1A_C2_-        0.00%    passed     96.49%
+  64  PonPyg_chrY_LOC129025961-RBD2_26220121_Q7.1A_C2_-        0.00%    passed     89.87%
+  65  PonPyg_chrY_LOC129025961-RBD3_26220121_Q7.1A_C2_-        0.00%    passed     97.36%
+  66  PonPyg_chrY_LOC129025963-RBD1_26306805_Q7.3B_C2_t        0.00%    passed     96.49%
+  67  PonPyg_chrY_LOC129025963-RBD2_26306805_Q7.3B_C2_t        0.00%    passed     89.87%
+  68  PonPyg_chrY_LOC129025963-RBD3_26306805_Q7.3B_C2_t        0.00%    passed     99.60%
+  69  SymSyn_chr10_DAZL-RBD1_109881390_NA_nonC_-               0.00%    passed     22.69%
+  70  SymSyn_chrY_LOC129476757-RBD1_18127859_Q5B_nonC_t        0.00%    passed     95.92%
+  71  SymSyn_chrY_LOC129476757-RBD2_18127859_Q5B_nonC_t        0.00%    passed     99.42%
+  72  SymSyn_chrY_LOC129476758-RBD1_18081065_Q5A_nonC_-        0.00%    passed     95.92%
+  73  SymSyn_chrY_LOC129476758-RBD2_18081065_Q5A_nonC_-        0.00%    passed     99.42%
+****  TOTAL                                                    0.60%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: GorGor_chrY_LOC129530216-RBD1_42879918_Q18.1.B_nonC_t is identical to GorGor_chrY_DAZ1-RBD1_42783133_Q18.1.A_nonC_- but kept for subsequent analysis
+NOTE: PanPan_chr2_DAZL-RBD1_16570582_NA_nonC_- is identical to HomSap_chr3_DAZL-RBD1_16587918_NA_nonC_- but kept for subsequent analysis
+NOTE: HomSap_chrY_DAZ1-RBD2_23965003_Q8A_nonC_- is identical to HomSap_chrY_DAZ1-RBD1_23965003_Q8A_nonC_- but kept for subsequent analysis
+NOTE: PanPan_chrY_LOC129395621-RBD2_9107812_Q22A_nonC_t is identical to PanPan_chrY_LOC129395530-RBD1_9036315_Q23B_C2_- but kept for subsequent analysis
+NOTE: PanTro_chrY_LOC738636-RBD1_19278362_Q8.1A_C2_t is identical to PanPan_chrY_LOC129395621-RBD1_9107812_Q22A_nonC_t but kept for subsequent analysis
+NOTE: PonPyg_chr2_DAZL-RBD1_137333547_NA_nonC_t is identical to PonAbe_chr2_DAZL-RBD1_138140947_NA_nonC_t but kept for subsequent analysis
+NOTE: PonPyg_chrY_LOC129025961-RBD1_26220121_Q7.1A_C2_- is identical to PonAbe_chrY_LOC129053200-RBD1_47246963_Q23.1A_C2_- but kept for subsequent analysis
+NOTE: PonAbe_chrY_LOC129053304-RBD1_50717647_Q29A_C2_- is identical to PonAbe_chrY_LOC129053245-RBD1_40367975_Q13B_C2_t but kept for subsequent analysis
+NOTE: PonAbe_chrY_LOC129053304-RBD2_50717647_Q29A_C2_- is identical to PonAbe_chrY_LOC129053245-RBD2_40367975_Q13B_C2_t but kept for subsequent analysis
+NOTE: PonAbe_chrY_LOC129053304-RBD3_50717647_Q29A_C2_- is identical to PonAbe_chrY_LOC129053245-RBD3_40367975_Q13B_C2_t but kept for subsequent analysis
+NOTE: PonPyg_chrY_LOC129025944-RBD2_27937117_Q9.2A_C2_- is identical to PonPyg_chrY_LOC129025942-RBD2_28033868_Q9.3B_C2_t but kept for subsequent analysis
+NOTE: PonPyg_chrY_LOC129025944-RBD3_27937117_Q9.2A_C2_- is identical to PonPyg_chrY_LOC129025942-RBD3_28033868_Q9.3B_C2_t but kept for subsequent analysis
+NOTE: PonPyg_chrY_LOC129025947-RBD2_35731655_Q22.3B_C2_t is identical to PonPyg_chrY_LOC129025945-RBD2_35664344_Q22.2A_C2_- but kept for subsequent analysis
+NOTE: PonPyg_chrY_LOC129025947-RBD3_35731655_Q22.3B_C2_t is identical to PonPyg_chrY_LOC129025945-RBD3_35664344_Q22.2A_C2_- but kept for subsequent analysis
+NOTE: PonPyg_chrY_LOC129025963-RBD2_26306805_Q7.3B_C2_t is identical to PonPyg_chrY_LOC129025961-RBD2_26220121_Q7.1A_C2_- but kept for subsequent analysis
+NOTE: SymSyn_chrY_LOC129476758-RBD1_18081065_Q5A_nonC_- is identical to SymSyn_chrY_LOC129476757-RBD1_18127859_Q5B_nonC_t but kept for subsequent analysis
+NOTE: SymSyn_chrY_LOC129476758-RBD2_18081065_Q5A_nonC_- is identical to SymSyn_chrY_LOC129476757-RBD2_18127859_Q5B_nonC_t but kept for subsequent analysis
+NOTE: 20 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: HomSap_chrY_DAZ1-RBD3_23965003_Q8A_nonC_- (identical to HomSap_chrY_DAZ1-RBD1_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ2-RBD1_25661821_Q11.3B_nonC_t (identical to HomSap_chrY_DAZ1-RBD1_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ3-RBD1_24046728_Q9.2B_nonC_t (identical to HomSap_chrY_DAZ1-RBD1_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ4-RBD1_25571713_Q11.1A_nonC_- (identical to HomSap_chrY_DAZ1-RBD1_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ4-RBD2_25571713_Q11.1A_nonC_- (identical to HomSap_chrY_DAZ1-RBD1_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC744621-RBD1_9432523_Q12.2B_C2_- (identical to PanPan_chrY_LOC129395621-RBD1_9107812_Q22A_nonC_t) is ignored but added at the end
+NOTE: PanTro_chrY_LOC744621-RBD2_9432523_Q12.2B_C2_- (identical to PanPan_chrY_LOC129395621-RBD1_9107812_Q22A_nonC_t) is ignored but added at the end
+NOTE: PanTro_chrY_LOC749905-RBD1_9511429_Q12.1A_C2_t (identical to PanPan_chrY_LOC129395621-RBD1_9107812_Q22A_nonC_t) is ignored but added at the end
+NOTE: PanTro_chrY_LOC749905-RBD2_9511429_Q12.1A_C2_t (identical to PanPan_chrY_LOC129395621-RBD1_9107812_Q22A_nonC_t) is ignored but added at the end
+NOTE: PanTro_chrY_LOC749905-RBD3_9511429_Q12.1A_C2_t (identical to PanPan_chrY_LOC129395621-RBD1_9107812_Q22A_nonC_t) is ignored but added at the end
+NOTE: PanTro_chrY_LOC112208053_19207853_Q8.2B_C2_- (identical to PanPan_chrY_LOC129395621-RBD1_9107812_Q22A_nonC_t) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025963-RBD1_26306805_Q7.3B_C2_t (identical to PonAbe_chrY_LOC129053200-RBD1_47246963_Q23.1A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053305-RBD1_50800706_Q29B_C2_t (identical to PonAbe_chrY_LOC129053245-RBD1_40367975_Q13B_C2_t) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025942-RBD1_28033868_Q9.3B_C2_t (identical to PonAbe_chrY_LOC129053245-RBD1_40367975_Q13B_C2_t) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025944-RBD1_27937117_Q9.2A_C2_- (identical to PonAbe_chrY_LOC129053245-RBD1_40367975_Q13B_C2_t) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025945-RBD1_35664344_Q22.2A_C2_- (identical to PonAbe_chrY_LOC129053245-RBD1_40367975_Q13B_C2_t) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025947-RBD1_35731655_Q22.3B_C2_t (identical to PonAbe_chrY_LOC129053245-RBD1_40367975_Q13B_C2_t) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053305-RBD2_50800706_Q29B_C2_t (identical to PonAbe_chrY_LOC129053245-RBD2_40367975_Q13B_C2_t) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025914-RBD2_33882908_Q18B_C2_t (identical to PonAbe_chrY_LOC129053245-RBD2_40367975_Q13B_C2_t) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053305-RBD3_50800706_Q29B_C2_t (identical to PonAbe_chrY_LOC129053245-RBD3_40367975_Q13B_C2_t) is ignored but added at the end
+Alignment was printed to renamed/DAZ_DAZL_RBD.aligmnent.20240924.renamed.fasta.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to renamed/DAZ_DAZL_RBD.aligmnent.20240924.renamed.fasta.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -1890.179
+Optimal log-likelihood: -1890.147
+Rate parameters:  A-C: 0.70927  A-G: 2.41954  A-T: 0.33187  C-G: 1.22719  C-T: 2.46785  G-T: 1.00000
+Base frequencies:  A: 0.289  C: 0.229  G: 0.231  T: 0.250
+Proportion of invariable sites: 0.375
+Gamma shape alpha: 0.708
+Parameters optimization took 1 rounds (0.040 sec)
+Time for fast ML tree search: 0.433 seconds
+
+NOTE: ModelFinder requires 2 MB RAM!
+ModelFinder will test up to 484 DNA models (sample size: 495 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  1  GTR+F         1936.998     111 4095.997     4160.916     4562.703
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  2  GTR+F+I       1895.269     112 4014.538     4080.799     4485.448
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  3  GTR+F+G4      1891.825     112 4007.651     4073.913     4478.561
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  4  GTR+F+I+G4    1890.145     113 4006.291     4073.913     4481.406
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  5  GTR+F+R2      1888.325     113 4002.649     4070.271     4477.764
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  6  GTR+F+R3      1887.921     115 4005.841     4076.237     4489.365
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 14  GTR+F+I+R2    1887.263     114 4002.527     4071.527     4481.846
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 15  GTR+F+I+R3    1886.881     116 4005.762     4077.572     4493.491
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 24  SYM+I         1898.305     109 4014.611     4076.896     4472.908
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 25  SYM+G4        1894.650     109 4007.300     4069.585     4465.597
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 26  SYM+I+G4      1892.907     110 4005.814     4069.407     4468.315
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 27  SYM+R2        1890.434     110 4000.867     4064.461     4463.369
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 36  SYM+I+R2      1889.002     111 4000.004     4064.923     4466.710
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 46  TVM+F+I       1895.268     111 4012.537     4077.456     4479.243
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 47  TVM+F+G4      1891.831     111 4005.662     4070.581     4472.368
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 48  TVM+F+I+G4    1890.145     112 4004.291     4070.553     4475.201
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 49  TVM+F+R2      1888.230     112 4000.460     4066.721     4471.370
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 58  TVM+F+I+R2    1886.997     113 3999.995     4067.617     4475.110
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 68  TVMe+I        1898.339     108 4012.679     4073.674     4466.771
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 69  TVMe+G4       1894.669     108 4005.338     4066.333     4459.430
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 70  TVMe+I+G4     1892.930     109 4003.860     4066.145     4462.156
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 71  TVMe+R2       1890.365     109 3998.729     4061.015     4457.026
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 80  TVMe+I+R2     1889.002     110 3998.004     4061.598     4460.506
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 90  TIM3+F+I      1901.059     110 4022.118     4085.712     4484.620
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 91  TIM3+F+G4     1897.350     110 4014.700     4078.293     4477.201
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 92  TIM3+F+I+G4   1895.574     111 4013.149     4078.068     4479.855
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 93  TIM3+F+R2     1892.945     111 4007.889     4072.808     4474.595
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+102  TIM3+F+I+R2   1891.334     112 4006.668     4072.930     4477.578
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+112  TIM3e+I       1902.384     107 4018.769     4078.490     4468.656
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+113  TIM3e+G4      1898.447     107 4010.894     4070.615     4460.782
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+114  TIM3e+I+G4    1896.611     108 4009.221     4070.216     4463.314
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+115  TIM3e+R2      1893.426     108 4002.852     4063.847     4456.944
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+124  TIM3e+I+R2    1891.489     109 4000.978     4063.263     4459.274
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+134  TIM2+F+I      1897.184     110 4014.368     4077.962     4476.870
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+135  TIM2+F+G4     1893.739     110 4007.479     4071.073     4469.980
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+136  TIM2+F+I+G4   1892.063     111 4006.125     4071.044     4472.831
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+137  TIM2+F+R2     1890.082     111 4002.164     4067.083     4468.870
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+146  TIM2+F+I+R2   1888.804     112 4001.608     4067.870     4472.519
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+156  TIM2e+I       1899.813     107 4013.626     4073.347     4463.513
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+157  TIM2e+G4      1896.149     107 4006.298     4066.018     4456.185
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+158  TIM2e+I+G4    1894.406     108 4004.812     4065.807     4458.905
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+159  TIM2e+R2      1891.785     108 3999.570     4060.565     4453.662
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+168  TIM2e+I+R2    1890.217     109 3998.433     4060.719     4456.730
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+178  TIM+F+I       1902.009     110 4024.018     4087.612     4486.520
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+179  TIM+F+G4      1898.243     110 4016.486     4080.080     4478.987
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+180  TIM+F+I+G4    1896.471     111 4014.941     4079.860     4481.647
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+181  TIM+F+R2      1893.635     111 4009.271     4074.190     4475.976
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+190  TIM+F+I+R2    1892.001     112 4008.002     4074.263     4478.912
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+200  TIMe+I        1903.026     107 4020.052     4079.773     4469.940
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+201  TIMe+G4       1899.020     107 4012.041     4071.762     4461.929
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+202  TIMe+I+G4     1897.184     108 4010.367     4071.362     4464.460
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+203  TIMe+R2       1893.788     108 4003.576     4064.571     4457.669
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+212  TIMe+I+R2     1891.894     109 4001.789     4064.075     4460.086
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+222  TPM3u+F+I     1901.060     109 4020.120     4082.406     4478.417
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+223  TPM3u+F+G4    1897.355     109 4012.710     4074.996     4471.007
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+224  TPM3u+F+I+G4  1895.569     110 4011.137     4074.731     4473.639
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+225  TPM3u+F+R2    1892.897     110 4005.793     4069.387     4468.295
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+234  TPM3u+F+I+R2  1891.173     111 4004.347     4069.266     4471.053
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+244  TPM3+I        1902.420     106 4016.840     4075.304     4462.523
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+245  TPM3+G4       1898.478     106 4008.956     4067.419     4454.639
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+246  TPM3+I+G4     1896.646     107 4007.291     4067.012     4457.179
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+247  TPM3+R2       1893.380     107 4000.761     4060.482     4450.648
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+256  TPM3+I+R2     1891.523     108 3999.046     4060.041     4453.138
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+266  TPM2u+F+I     1897.184     109 4012.368     4074.654     4470.665
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+267  TPM2u+F+G4    1893.745     109 4005.489     4067.775     4463.786
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+268  TPM2u+F+I+G4  1892.058     110 4004.117     4067.710     4466.618
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+269  TPM2u+F+R2    1890.133     110 4000.265     4063.859     4462.767
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+278  TPM2u+F+I+R2  1888.771     111 3999.542     4064.461     4466.248
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+288  TPM2+I        1899.846     106 4011.693     4070.157     4457.376
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+289  TPM2+G4       1896.166     106 4004.333     4062.797     4450.016
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+290  TPM2+I+G4     1894.423     107 4002.846     4062.567     4452.734
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+291  TPM2+R2       1891.789     107 3997.578     4057.299     4447.466
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+300  TPM2+I+R2     1890.264     108 3996.528     4057.523     4450.620
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+310  K3Pu+F+I      1902.009     109 4022.019     4084.304     4480.316
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+311  K3Pu+F+G4     1898.248     109 4014.497     4076.782     4472.793
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+312  K3Pu+F+I+G4   1896.465     110 4012.930     4076.524     4475.432
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+313  K3Pu+F+R2     1893.634     110 4007.268     4070.862     4469.770
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+322  K3Pu+F+I+R2   1891.946     111 4005.891     4070.810     4472.597
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+332  K3P+I         1903.061     106 4018.122     4076.586     4463.805
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+333  K3P+G4        1899.048     106 4010.097     4068.561     4455.780
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+334  K3P+I+G4      1897.217     107 4008.434     4068.155     4458.321
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+335  K3P+R2        1893.805     107 4001.610     4061.330     4451.497
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+344  K3P+I+R2      1891.994     108 3999.989     4060.984     4454.081
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+354  TN+F+I        1902.455     109 4022.910     4085.195     4481.206
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+355  TN+F+G4       1898.705     109 4015.409     4077.695     4473.706
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+356  TN+F+I+G4     1896.923     110 4013.846     4077.440     4476.348
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+357  TN+F+R2       1894.105     110 4008.210     4071.804     4470.712
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+366  TN+F+I+R2     1892.359     111 4006.718     4071.637     4473.424
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+376  TNe+I         1903.385     106 4018.770     4077.234     4464.453
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+377  TNe+G4        1899.403     106 4010.806     4069.270     4456.489
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+378  TNe+I+G4      1897.559     107 4009.119     4068.840     4459.007
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+379  TNe+R2        1894.181     107 4002.363     4062.084     4452.251
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+388  TNe+I+R2      1892.189     108 4000.379     4061.373     4454.471
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+398  HKY+F+I       1902.455     108 4020.911     4081.906     4475.003
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+399  HKY+F+G4      1898.710     108 4013.420     4074.415     4467.512
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+400  HKY+F+I+G4    1896.924     109 4011.847     4074.133     4470.144
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+401  HKY+F+R2      1894.117     109 4006.234     4068.519     4464.530
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+410  HKY+F+I+R2    1892.359     110 4004.719     4068.313     4467.220
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+420  K2P+I         1903.420     105 4016.840     4074.064     4458.319
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+421  K2P+G4        1899.431     105 4008.863     4066.087     4450.342
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+422  K2P+I+G4      1897.598     106 4007.196     4065.660     4452.879
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+423  K2P+R2        1894.215     106 4000.430     4058.894     4446.113
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+432  K2P+I+R2      1892.344     107 3998.688     4058.409     4448.576
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+442  F81+F+I       1933.723     107 4081.446     4141.167     4531.334
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+443  F81+F+G4      1929.824     107 4073.648     4133.369     4523.536
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+444  F81+F+I+G4    1928.106     108 4072.212     4133.207     4526.305
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+445  F81+F+R2      1925.054     108 4066.109     4127.103     4520.201
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+454  F81+F+I+R2    1923.529     109 4065.059     4127.345     4523.356
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+464  JC+I          1933.879     104 4075.758     4131.758     4513.032
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+465  JC+G4         1929.861     104 4067.721     4123.721     4504.995
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+466  JC+I+G4       1928.107     105 4066.213     4123.437     4507.692
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+467  JC+R2         1924.744     105 4059.488     4116.712     4500.967
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+476  JC+I+R2       1923.057     106 4058.113     4116.577     4503.797
+Akaike Information Criterion:           TPM2+I+R2
+Corrected Akaike Information Criterion: TPM2+R2
+Bayesian Information Criterion:         K2P+R2
+Best-fit model: K2P+R2 chosen according to BIC
+
+All model information printed to renamed/DAZ_DAZL_RBD.aligmnent.20240924.renamed.fasta.model.gz
+CPU time for ModelFinder: 6.458 seconds (0h:0m:6s)
+Wall-clock time for ModelFinder: 7.542 seconds (0h:0m:7s)
+Generating 1000 samples for ultrafast bootstrap (seed: 933596)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -1924.754
+2. Current log-likelihood: -1921.120
+3. Current log-likelihood: -1902.938
+4. Current log-likelihood: -1894.253
+Optimal log-likelihood: -1894.208
+Rate parameters:  A-C: 1.00000  A-G: 3.22035  A-T: 1.00000  C-G: 1.00000  C-T: 3.22035  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Site proportion and rates:  (0.911,0.483) (0.089,6.266)
+Parameters optimization took 4 rounds (0.146 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.000444889 secs using 722.4% CPU
+Computing ML distances took 0.000606 sec (of wall-clock time) 0.003315 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000209093 secs using 82.26% CPU
+Computing RapidNJ tree took 0.008311 sec (of wall-clock time) 0.004845 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -1898.127
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.127 second
+Computing log-likelihood of 98 initial trees ... 2.017 seconds
+Current best score: -1894.208
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -1894.208
+BETTER TREE FOUND at iteration 2: -1894.208
+UPDATE BEST LOG-LIKELIHOOD: -1894.208
+BETTER TREE FOUND at iteration 5: -1894.208
+BETTER TREE FOUND at iteration 7: -1894.208
+BETTER TREE FOUND at iteration 8: -1894.208
+Iteration 10 / LogL: -1894.208 / Time: 0h:0m:13s
+UPDATE BEST LOG-LIKELIHOOD: -1894.208
+Iteration 20 / LogL: -1894.208 / Time: 0h:0m:17s
+Finish initializing candidate tree set (10)
+Current best tree score: -1894.208 / CPU time: 9.718
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 25: -1893.194
+Iteration 30 / LogL: -1895.982 / Time: 0h:0m:27s (0h:1m:4s left)
+Iteration 40 / LogL: -1896.016 / Time: 0h:0m:36s (0h:1m:4s left)
+Iteration 50 / LogL: -1893.202 / Time: 0h:0m:46s (0h:0m:59s left)
+Log-likelihood cutoff on original alignment: -1921.281
+Iteration 60 / LogL: -1893.198 / Time: 0h:0m:56s (0h:0m:54s left)
+Iteration 70 / LogL: -1893.196 / Time: 0h:1m:5s (0h:0m:46s left)
+Iteration 80 / LogL: -1900.442 / Time: 0h:1m:15s (0h:0m:38s left)
+Iteration 90 / LogL: -1894.805 / Time: 0h:1m:24s (0h:0m:30s left)
+Iteration 100 / LogL: -1905.935 / Time: 0h:1m:34s (0h:0m:21s left)
+Log-likelihood cutoff on original alignment: -1922.074
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.995
+Iteration 110 / LogL: -1914.739 / Time: 0h:1m:42s (0h:1m:18s left)
+Iteration 120 / LogL: -1893.202 / Time: 0h:1m:51s (0h:1m:10s left)
+TREE SEARCH COMPLETED AFTER 126 ITERATIONS / Time: 0h:1m:57s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -1893.194
+Optimal log-likelihood: -1893.194
+Rate parameters:  A-C: 1.00000  A-G: 3.23625  A-T: 1.00000  C-G: 1.00000  C-T: 3.23625  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Site proportion and rates:  (0.909,0.476) (0.091,6.249)
+Parameters optimization took 1 rounds (0.035 sec)
+BEST SCORE FOUND : -1893.194
+Creating bootstrap support values...
+Split supports printed to NEXUS file renamed/DAZ_DAZL_RBD.aligmnent.20240924.renamed.fasta.splits.nex
+Total tree length: 0.427
+
+Total number of iterations: 126
+CPU time used for tree search: 66.347 sec (0h:1m:6s)
+Wall-clock time used for tree search: 109.434 sec (0h:1m:49s)
+Total CPU time used: 73.098 sec (0h:1m:13s)
+Total wall-clock time used: 117.333 sec (0h:1m:57s)
+
+Computing bootstrap consensus tree...
+Reading input file renamed/DAZ_DAZL_RBD.aligmnent.20240924.renamed.fasta.splits.nex...
+53 taxa and 376 splits.
+Consensus tree written to renamed/DAZ_DAZL_RBD.aligmnent.20240924.renamed.fasta.contree
+Reading input trees file renamed/DAZ_DAZL_RBD.aligmnent.20240924.renamed.fasta.contree
+Log-likelihood of consensus tree: -1893.235
+
+Analysis results written to: 
+  IQ-TREE report:                renamed/DAZ_DAZL_RBD.aligmnent.20240924.renamed.fasta.iqtree
+  Maximum-likelihood tree:       renamed/DAZ_DAZL_RBD.aligmnent.20240924.renamed.fasta.treefile
+  Likelihood distances:          renamed/DAZ_DAZL_RBD.aligmnent.20240924.renamed.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          renamed/DAZ_DAZL_RBD.aligmnent.20240924.renamed.fasta.splits.nex
+  Consensus tree:                renamed/DAZ_DAZL_RBD.aligmnent.20240924.renamed.fasta.contree
+  Screen log file:               renamed/DAZ_DAZL_RBD.aligmnent.20240924.renamed.fasta.log
+
+Date and Time: Sun Aug  3 01:00:19 2025
+IQ-TREE multicore version 2.3.6 for MacOS ARM 64-bit built Aug  1 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    E1-054262.local (SSE4.2, 16 GB RAM)
+Command: /Users/kxp5629/tools/iqtree-2.3.6-macOS/bin/iqtree2 -s renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta -T 12 -bb 1000
+Seed:    438404 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Aug  3 01:00:19 2025
+Kernel:  SSE2 - 12 threads (12 CPU cores detected)
+
+Reading alignment file renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta ... Fasta format detected
+Reading fasta file: done in 2.00272e-05 secs using 74.9% CPU
+Alignment most likely contains DNA/RNA sequences
+WARNING: 18 sites contain only gaps or ambiguous characters.
+Alignment has 7 sequences with 90 columns, 7 distinct patterns
+1 parsimony-informative, 1 singleton sites, 88 constant sites
+                                           Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.8147e-05 secs using 49.81% CPU
+   1  GorGor_chr2_DAZL-E72_26423032_NA_nonC_-     20.00%    passed     99.97%
+   2  HomSap_chr3_DAZL-E72_16587918_NA_nonC_-     20.00%    passed     99.97%
+   3  PanPan_chr2_DAZL-E72_16570582_NA_nonC_-     20.00%    passed     99.97%
+   4  PanTro_chr2_DAZL-E72_20590218_NA_nonC_-     20.00%    passed     99.97%
+   5  PonAbe_chr2_DAZL-E72_138140947_NA_nonC_t    20.00%    passed     99.68%
+   6  PonPyg_chr2_DAZL-E72_137333547_NA_nonC_t    20.00%    passed     99.68%
+   7  SymSyn_chr10_DAZL-E72_109881390_NA_nonC_-   20.00%    passed     98.97%
+****  TOTAL                                       20.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: HomSap_chr3_DAZL-E72_16587918_NA_nonC_- is identical to GorGor_chr2_DAZL-E72_26423032_NA_nonC_- but kept for subsequent analysis
+NOTE: PonPyg_chr2_DAZL-E72_137333547_NA_nonC_t is identical to PonAbe_chr2_DAZL-E72_138140947_NA_nonC_t but kept for subsequent analysis
+NOTE: 2 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: PanPan_chr2_DAZL-E72_16570582_NA_nonC_- (identical to GorGor_chr2_DAZL-E72_26423032_NA_nonC_-) is ignored but added at the end
+NOTE: PanTro_chr2_DAZL-E72_20590218_NA_nonC_- (identical to GorGor_chr2_DAZL-E72_26423032_NA_nonC_-) is ignored but added at the end
+Alignment was printed to renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.uniqueseq.phy
+
+WARNING: 12 threads for alignment length 7 will slow down analysis
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.000 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -107.200
+Optimal log-likelihood: -107.015
+Rate parameters:  A-C: 0.00010  A-G: 100.00000  A-T: 0.00010  C-G: 0.00010  C-T: 50.36160  G-T: 1.00000
+Warning! Some parameters hit the boundaries
+Base frequencies:  A: 0.294  C: 0.256  G: 0.136  T: 0.314
+Proportion of invariable sites: 0.488
+Gamma shape alpha: 998.448
+Parameters optimization took 1 rounds (0.001 sec)
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Time for fast ML tree search: 0.002 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 484 DNA models (sample size: 90 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+WARNING: 12 threads for alignment length 7 will slow down analysis
+  1  GTR+F         106.993      15  243.987      250.473      281.484
+WARNING: 12 threads for alignment length 7 will slow down analysis
+  2  GTR+F+I       106.993      16  245.987      253.439      285.984
+WARNING: 12 threads for alignment length 7 will slow down analysis
+  3  GTR+F+G4      106.993      16  245.987      253.439      285.984
+WARNING: 12 threads for alignment length 7 will slow down analysis
+  4  GTR+F+I+G4    107.015      17  248.030      256.530      290.527
+WARNING: 12 threads for alignment length 7 will slow down analysis
+  5  GTR+F+R2      106.993      17  247.987      256.487      290.483
+WARNING: 12 threads for alignment length 7 will slow down analysis
+  6  GTR+F+R3      106.993      19  251.987      262.844      299.483
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 14  GTR+F+I+R2    107.015      18  250.030      259.664      295.027
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 15  GTR+F+I+R3    107.015      20  254.030      266.204      304.026
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 23  SYM           110.345      12  244.690      248.742      274.687
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 24  SYM+I         110.345      13  246.690      251.479      279.187
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 25  SYM+G4        110.345      13  246.690      251.479      279.187
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 26  SYM+I+G4      110.359      14  248.719      254.319      283.716
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 27  SYM+R2        110.345      14  248.690      254.290      283.687
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 45  TVM+F         107.110      14  242.220      247.820      277.218
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 46  TVM+F+I       107.110      15  244.220      250.707      281.717
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 47  TVM+F+G4      107.110      15  244.220      250.707      281.717
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 48  TVM+F+I+G4    107.126      16  246.252      253.704      286.249
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 49  TVM+F+R2      107.110      16  246.220      253.672      286.217
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 67  TVMe          110.364      11  242.729      246.113      270.227
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 68  TVMe+I        110.364      12  244.729      248.781      274.726
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 69  TVMe+G4       110.364      12  244.729      248.781      274.726
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 70  TVMe+I+G4     110.379      13  246.757      251.546      279.255
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 71  TVMe+R2       110.364      13  246.729      251.518      279.226
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 89  TIM3+F        107.115      13  240.231      245.020      272.728
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 90  TIM3+F+I      107.115      14  242.231      247.831      277.228
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 91  TIM3+F+G4     107.115      14  242.231      247.831      277.228
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 92  TIM3+F+I+G4   107.131      15  244.262      250.749      281.759
+WARNING: 12 threads for alignment length 7 will slow down analysis
+ 93  TIM3+F+R2     107.115      15  244.231      250.717      281.728
+WARNING: 12 threads for alignment length 7 will slow down analysis
+111  TIM3e         110.366      10  240.733      243.518      265.731
+WARNING: 12 threads for alignment length 7 will slow down analysis
+112  TIM3e+I       110.366      11  242.733      246.117      270.231
+WARNING: 12 threads for alignment length 7 will slow down analysis
+113  TIM3e+G4      110.366      11  242.733      246.117      270.231
+WARNING: 12 threads for alignment length 7 will slow down analysis
+114  TIM3e+I+G4    110.380      12  244.761      248.813      274.758
+WARNING: 12 threads for alignment length 7 will slow down analysis
+115  TIM3e+R2      110.366      12  244.733      248.785      274.730
+WARNING: 12 threads for alignment length 7 will slow down analysis
+133  TIM2+F        107.114      13  240.228      245.018      272.726
+WARNING: 12 threads for alignment length 7 will slow down analysis
+134  TIM2+F+I      107.114      14  242.228      247.828      277.225
+WARNING: 12 threads for alignment length 7 will slow down analysis
+135  TIM2+F+G4     107.114      14  242.228      247.828      277.225
+WARNING: 12 threads for alignment length 7 will slow down analysis
+136  TIM2+F+I+G4   107.130      15  244.259      250.746      281.756
+WARNING: 12 threads for alignment length 7 will slow down analysis
+137  TIM2+F+R2     107.114      15  244.228      250.715      281.725
+WARNING: 12 threads for alignment length 7 will slow down analysis
+155  TIM2e         110.366      10  240.731      243.516      265.729
+WARNING: 12 threads for alignment length 7 will slow down analysis
+156  TIM2e+I       110.366      11  242.731      246.116      270.229
+WARNING: 12 threads for alignment length 7 will slow down analysis
+157  TIM2e+G4      110.366      11  242.731      246.116      270.229
+WARNING: 12 threads for alignment length 7 will slow down analysis
+158  TIM2e+I+G4    110.380      12  244.759      248.811      274.757
+WARNING: 12 threads for alignment length 7 will slow down analysis
+159  TIM2e+R2      110.366      12  244.731      248.783      274.729
+WARNING: 12 threads for alignment length 7 will slow down analysis
+177  TIM+F         107.114      13  240.228      245.018      272.726
+WARNING: 12 threads for alignment length 7 will slow down analysis
+178  TIM+F+I       107.114      14  242.228      247.828      277.225
+WARNING: 12 threads for alignment length 7 will slow down analysis
+179  TIM+F+G4      107.114      14  242.228      247.828      277.225
+WARNING: 12 threads for alignment length 7 will slow down analysis
+180  TIM+F+I+G4    107.130      15  244.259      250.746      281.756
+WARNING: 12 threads for alignment length 7 will slow down analysis
+181  TIM+F+R2      107.114      15  244.228      250.715      281.725
+WARNING: 12 threads for alignment length 7 will slow down analysis
+199  TIMe          110.366      10  240.731      243.516      265.729
+WARNING: 12 threads for alignment length 7 will slow down analysis
+200  TIMe+I        110.366      11  242.731      246.116      270.229
+WARNING: 12 threads for alignment length 7 will slow down analysis
+201  TIMe+G4       110.366      11  242.731      246.116      270.229
+WARNING: 12 threads for alignment length 7 will slow down analysis
+202  TIMe+I+G4     110.379      12  244.759      248.811      274.757
+WARNING: 12 threads for alignment length 7 will slow down analysis
+203  TIMe+R2       110.366      12  244.731      248.783      274.729
+WARNING: 12 threads for alignment length 7 will slow down analysis
+221  TPM3u+F       107.114      12  238.228      242.280      268.226
+WARNING: 12 threads for alignment length 7 will slow down analysis
+222  TPM3u+F+I     107.114      13  240.228      245.018      272.726
+WARNING: 12 threads for alignment length 7 will slow down analysis
+223  TPM3u+F+G4    107.114      13  240.228      245.018      272.726
+WARNING: 12 threads for alignment length 7 will slow down analysis
+224  TPM3u+F+I+G4  107.129      14  242.259      247.859      277.256
+WARNING: 12 threads for alignment length 7 will slow down analysis
+225  TPM3u+F+R2    107.114      14  242.228      247.828      277.225
+WARNING: 12 threads for alignment length 7 will slow down analysis
+243  TPM3          110.366      9   238.731      240.981      261.229
+WARNING: 12 threads for alignment length 7 will slow down analysis
+244  TPM3+I        110.366      10  240.731      243.516      265.729
+WARNING: 12 threads for alignment length 7 will slow down analysis
+245  TPM3+G4       110.366      10  240.731      243.516      265.729
+WARNING: 12 threads for alignment length 7 will slow down analysis
+246  TPM3+I+G4     110.379      11  242.759      246.144      270.257
+WARNING: 12 threads for alignment length 7 will slow down analysis
+247  TPM3+R2       110.366      11  242.731      246.116      270.229
+WARNING: 12 threads for alignment length 7 will slow down analysis
+265  TPM2u+F       107.114      12  238.228      242.280      268.226
+WARNING: 12 threads for alignment length 7 will slow down analysis
+266  TPM2u+F+I     107.114      13  240.228      245.018      272.726
+WARNING: 12 threads for alignment length 7 will slow down analysis
+267  TPM2u+F+G4    107.114      13  240.228      245.018      272.726
+WARNING: 12 threads for alignment length 7 will slow down analysis
+268  TPM2u+F+I+G4  107.129      14  242.259      247.859      277.256
+WARNING: 12 threads for alignment length 7 will slow down analysis
+269  TPM2u+F+R2    107.114      14  242.228      247.828      277.225
+WARNING: 12 threads for alignment length 7 will slow down analysis
+287  TPM2          110.366      9   238.731      240.981      261.229
+WARNING: 12 threads for alignment length 7 will slow down analysis
+288  TPM2+I        110.366      10  240.731      243.516      265.729
+WARNING: 12 threads for alignment length 7 will slow down analysis
+289  TPM2+G4       110.366      10  240.731      243.516      265.729
+WARNING: 12 threads for alignment length 7 will slow down analysis
+290  TPM2+I+G4     110.379      11  242.759      246.144      270.257
+WARNING: 12 threads for alignment length 7 will slow down analysis
+291  TPM2+R2       110.366      11  242.731      246.116      270.229
+WARNING: 12 threads for alignment length 7 will slow down analysis
+309  K3Pu+F        107.114      12  238.228      242.280      268.226
+WARNING: 12 threads for alignment length 7 will slow down analysis
+310  K3Pu+F+I      107.114      13  240.228      245.018      272.726
+WARNING: 12 threads for alignment length 7 will slow down analysis
+311  K3Pu+F+G4     107.114      13  240.228      245.018      272.726
+WARNING: 12 threads for alignment length 7 will slow down analysis
+312  K3Pu+F+I+G4   107.129      14  242.259      247.859      277.256
+WARNING: 12 threads for alignment length 7 will slow down analysis
+313  K3Pu+F+R2     107.114      14  242.228      247.828      277.225
+WARNING: 12 threads for alignment length 7 will slow down analysis
+331  K3P           110.366      9   238.731      240.981      261.229
+WARNING: 12 threads for alignment length 7 will slow down analysis
+332  K3P+I         110.366      10  240.731      243.516      265.729
+WARNING: 12 threads for alignment length 7 will slow down analysis
+333  K3P+G4        110.366      10  240.731      243.516      265.729
+WARNING: 12 threads for alignment length 7 will slow down analysis
+334  K3P+I+G4      110.379      11  242.759      246.143      270.257
+WARNING: 12 threads for alignment length 7 will slow down analysis
+335  K3P+R2        110.366      11  242.731      246.116      270.229
+WARNING: 12 threads for alignment length 7 will slow down analysis
+353  TN+F          107.114      12  238.228      242.280      268.226
+WARNING: 12 threads for alignment length 7 will slow down analysis
+354  TN+F+I        107.114      13  240.228      245.018      272.726
+WARNING: 12 threads for alignment length 7 will slow down analysis
+355  TN+F+G4       107.114      13  240.228      245.018      272.726
+WARNING: 12 threads for alignment length 7 will slow down analysis
+356  TN+F+I+G4     107.129      14  242.259      247.859      277.256
+WARNING: 12 threads for alignment length 7 will slow down analysis
+357  TN+F+R2       107.114      14  242.228      247.828      277.225
+WARNING: 12 threads for alignment length 7 will slow down analysis
+375  TNe           110.366      9   238.731      240.981      261.229
+WARNING: 12 threads for alignment length 7 will slow down analysis
+376  TNe+I         110.366      10  240.731      243.516      265.729
+WARNING: 12 threads for alignment length 7 will slow down analysis
+377  TNe+G4        110.366      10  240.731      243.516      265.729
+WARNING: 12 threads for alignment length 7 will slow down analysis
+378  TNe+I+G4      110.379      11  242.759      246.143      270.257
+WARNING: 12 threads for alignment length 7 will slow down analysis
+379  TNe+R2        110.366      11  242.731      246.116      270.229
+WARNING: 12 threads for alignment length 7 will slow down analysis
+397  HKY+F         107.114      11  236.228      239.613      263.726
+WARNING: 12 threads for alignment length 7 will slow down analysis
+398  HKY+F+I       107.114      12  238.228      242.280      268.226
+WARNING: 12 threads for alignment length 7 will slow down analysis
+399  HKY+F+G4      107.114      12  238.228      242.280      268.226
+WARNING: 12 threads for alignment length 7 will slow down analysis
+400  HKY+F+I+G4    107.129      13  240.259      245.048      272.756
+WARNING: 12 threads for alignment length 7 will slow down analysis
+401  HKY+F+R2      107.114      13  240.228      245.018      272.726
+WARNING: 12 threads for alignment length 7 will slow down analysis
+419  K2P           110.366      8   236.731      238.509      256.730
+WARNING: 12 threads for alignment length 7 will slow down analysis
+420  K2P+I         110.366      9   238.731      240.981      261.229
+WARNING: 12 threads for alignment length 7 will slow down analysis
+421  K2P+G4        110.366      9   238.731      240.981      261.229
+WARNING: 12 threads for alignment length 7 will slow down analysis
+422  K2P+I+G4      110.379      10  240.759      243.544      265.757
+WARNING: 12 threads for alignment length 7 will slow down analysis
+423  K2P+R2        110.366      10  240.731      243.516      265.729
+WARNING: 12 threads for alignment length 7 will slow down analysis
+441  F81+F         109.326      10  238.651      241.436      263.649
+WARNING: 12 threads for alignment length 7 will slow down analysis
+442  F81+F+I       109.326      11  240.651      244.036      268.149
+WARNING: 12 threads for alignment length 7 will slow down analysis
+443  F81+F+G4      109.326      11  240.651      244.036      268.149
+WARNING: 12 threads for alignment length 7 will slow down analysis
+444  F81+F+I+G4    109.341      12  242.682      246.734      272.679
+WARNING: 12 threads for alignment length 7 will slow down analysis
+445  F81+F+R2      109.326      12  242.651      246.703      272.649
+WARNING: 12 threads for alignment length 7 will slow down analysis
+463  JC            112.550      7   239.100      240.466      256.599
+WARNING: 12 threads for alignment length 7 will slow down analysis
+464  JC+I          112.550      8   241.100      242.878      261.099
+WARNING: 12 threads for alignment length 7 will slow down analysis
+465  JC+G4         112.550      8   241.100      242.878      261.099
+WARNING: 12 threads for alignment length 7 will slow down analysis
+466  JC+I+G4       112.564      9   243.128      245.378      265.626
+WARNING: 12 threads for alignment length 7 will slow down analysis
+467  JC+R2         112.550      9   243.100      245.350      265.599
+Akaike Information Criterion:           HKY+F
+Corrected Akaike Information Criterion: K2P
+Bayesian Information Criterion:         JC
+Best-fit model: JC chosen according to BIC
+
+All model information printed to renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.model.gz
+CPU time for ModelFinder: 0.026 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.031 seconds (0h:0m:0s)
+Generating 1000 samples for ultrafast bootstrap (seed: 438404)...
+WARNING: 12 threads for alignment length 7 will slow down analysis
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -112.550
+Optimal log-likelihood: -112.550
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Parameters optimization took 1 rounds (0.000 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 6.79493e-05 secs using 113.3% CPU
+Computing ML distances took 0.000229 sec (of wall-clock time) 0.000148 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000127077 secs using 49.58% CPU
+Computing RapidNJ tree took 0.000456 sec (of wall-clock time) 0.000213 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -112.550
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.004 second
+Computing log-likelihood of 7 initial trees ... 0.000 seconds
+Current best score: -112.550
+
+Do NNI search on 9 best initial trees
+UPDATE BEST LOG-LIKELIHOOD: -112.550
+Finish initializing candidate tree set (9)
+Current best tree score: -112.550 / CPU time: 0.018
+Number of iterations: 9
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 10 / LogL: -112.550 / Time: 0h:0m:0s
+Iteration 20 / LogL: -112.550 / Time: 0h:0m:0s
+Iteration 30 / LogL: -112.550 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -112.550 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -112.551 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -121.108
+Iteration 60 / LogL: -112.551 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -112.550 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -112.550 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -112.550 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -112.551 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -121.167
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+TREE SEARCH COMPLETED AFTER 101 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -112.550
+Optimal log-likelihood: -112.550
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -112.550
+Creating bootstrap support values...
+Split supports printed to NEXUS file renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.splits.nex
+Total tree length: 0.028
+
+Total number of iterations: 101
+CPU time used for tree search: 0.170 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.206 sec (0h:0m:0s)
+Total CPU time used: 0.207 sec (0h:0m:0s)
+Total wall-clock time used: 0.254 sec (0h:0m:0s)
+
+Computing bootstrap consensus tree...
+Reading input file renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.splits.nex...
+5 taxa and 12 splits.
+Consensus tree written to renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.contree
+Reading input trees file renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.contree
+Log-likelihood of consensus tree: -112.551
+
+Analysis results written to: 
+  IQ-TREE report:                renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.iqtree
+  Maximum-likelihood tree:       renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.treefile
+  Likelihood distances:          renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.splits.nex
+  Consensus tree:                renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.contree
+  Screen log file:               renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.log
+
+Date and Time: Sun Aug  3 01:00:19 2025
+IQ-TREE multicore version 2.3.6 for MacOS ARM 64-bit built Aug  1 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    karol.bx.psu.edu (SSE4.2, 16 GB RAM)
+Command: /Users/kxp5629/tools/iqtree-2.3.6-macOS/bin/iqtree2 -s renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta -T 12 -bb 1000
+Seed:    758001 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Aug  4 08:47:52 2025
+Kernel:  SSE2 - 12 threads (12 CPU cores detected)
+
+Reading alignment file renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta ... Fasta format detected
+Reading fasta file: done in 0.000454903 secs using 78.26% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 256 sequences with 90 columns, 58 distinct patterns
+46 parsimony-informative, 5 singleton sites, 39 constant sites
+                                                         Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.19753e-05 secs using 96.2% CPU
+   1  GorGor_chr2_DAZL-E72_26423032_NA_nonC_-                   20.00%    passed     98.32%
+   2  HomSap_chr3_DAZL-E72_16587918_NA_nonC_-                   20.00%    passed     98.32%
+   3  PanPan_chr2_DAZL-E72_16570582_NA_nonC_-                   20.00%    passed     98.32%
+   4  PanTro_chr2_DAZL-E72_20590218_NA_nonC_-                   20.00%    passed     98.32%
+   5  PonAbe_chr2_DAZL-E72_138140947_NA_nonC_t                  20.00%    passed     94.37%
+   6  PonPyg_chr2_DAZL-E72_137333547_NA_nonC_t                  20.00%    passed     94.37%
+   7  SymSyn_chr10_DAZL-E72_109881390_NA_nonC_-                 20.00%    passed     90.90%
+   8  GorGor_chrY_DAZ1-E72.1_42783133_Q18.1.A_nonC_-            20.00%    passed     95.66%
+   9  GorGor_chrY_LOC129530216-E72.2_42879918_Q18.1.B_nonC_t    20.00%    passed     95.66%
+  10  GorGor_chrY_DAZ1-E72.3_42783133_Q18.1.A_nonC_-            20.00%    passed     99.21%
+  11  GorGor_chrY_DAZ1-E72.6_42783133_Q18.1.A_nonC_-            20.00%    passed     99.21%
+  12  GorGor_chrY_LOC129530216-E72.4_42879918_Q18.1.B_nonC_t    20.00%    passed     99.21%
+  13  HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-                20.00%    passed     97.58%
+  14  HomSap_chrY_DAZ2-E72.12_25661821_Q11.3B_nonC_t            20.00%    passed     97.58%
+  15  HomSap_chrY_DAZ2-E72.13_25661821_Q11.3B_nonC_t            20.00%    passed     97.58%
+  16  HomSap_chrY_DAZ2-E72.14_25661821_Q11.3B_nonC_t            20.00%    passed     97.58%
+  17  HomSap_chrY_DAZ2-E72.15_25661821_Q11.3B_nonC_t            20.00%    passed     97.58%
+  18  HomSap_chrY_DAZ4-E72.9_25571713_Q11.1A_nonC_-             20.00%    passed     97.58%
+  19  HomSap_chrY_DAZ4-E72.10_25571713_Q11.1A_nonC_-            20.00%    passed     97.58%
+  20  HomSap_chrY_DAZ4-E72.11_25571713_Q11.1A_nonC_-            20.00%    passed     97.58%
+  21  HomSap_chrY_DAZ4-E72.12_25571713_Q11.1A_nonC_-            20.00%    passed     97.58%
+  22  HomSap_chrY_DAZ4-E72.13_25571713_Q11.1A_nonC_-            20.00%    passed     97.58%
+  23  PanPan_chrY_LOC129395530-E72.2_9036315_Q23B_C2_-          20.00%    passed     97.58%
+  24  PanPan_chrY_LOC129395530-E72.3_9036315_Q23B_C2_-          20.00%    passed     97.58%
+  25  PanPan_chrY_LOC129395621-E72.2_9107812_Q22A_nonC_t        20.00%    passed     97.58%
+  26  PanPan_chrY_LOC129395621-E72.3_9107812_Q22A_nonC_t        20.00%    passed     97.58%
+  27  PanTro_chrY_LOC738636-E72.2_19278362_Q8.1A_C2_t           20.00%    passed     97.58%
+  28  PanTro_chrY_LOC738636-E72.3_19278362_Q8.1A_C2_t           20.00%    passed     97.58%
+  29  PanTro_chrY_LOC738636-E72.10_19278362_Q8.1A_C2_t          20.00%    passed     97.58%
+  30  PanTro_chrY_LOC744621-E72.2_9432523_Q12.2B_C2_-           20.00%    passed     97.58%
+  31  PanTro_chrY_LOC744621-E72.5_9432523_Q12.2B_C2_-           20.00%    passed     97.58%
+  32  PanTro_chrY_LOC749905-E72.2_9511429_Q12.1A_C2_t           20.00%    passed     97.58%
+  33  PanTro_chrY_LOC749905-E72.5_9511429_Q12.1A_C2_t           20.00%    passed     97.58%
+  34  PanTro_chrY_LOC112208053-E72.2_19207853_Q8.2B_C2_-        20.00%    passed     97.58%
+  35  PanTro_chrY_LOC112208053-E72.3_19207853_Q8.2B_C2_-        20.00%    passed     97.58%
+  36  PanTro_chrY_LOC112208053-E72.7_19207853_Q8.2B_C2_-        20.00%    passed     97.58%
+  37  PanPan_chrY_LOC129395530-E72.7_9036315_Q23B_C2_-          20.00%    passed     89.30%
+  38  GorGor_chrY_DAZ1-E72.9_42783133_Q18.1.A_nonC_-            20.00%    passed     96.67%
+  39  GorGor_chrY_LOC129530216-E72.9_42879918_Q18.1.B_nonC_t    20.00%    passed     96.67%
+  40  HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-                20.00%    passed     97.98%
+  41  HomSap_chrY_DAZ2-E72.9_25661821_Q11.3B_nonC_t             20.00%    passed     97.98%
+  42  HomSap_chrY_DAZ2-E72.11_25661821_Q11.3B_nonC_t            20.00%    passed     97.98%
+  43  HomSap_chrY_DAZ3-E72.5_24046728_Q9.2B_nonC_t              20.00%    passed     97.98%
+  44  HomSap_chrY_DAZ3-E72.7_24046728_Q9.2B_nonC_t              20.00%    passed     97.98%
+  45  HomSap_chrY_DAZ3-E72.9_24046728_Q9.2B_nonC_t              20.00%    passed     97.98%
+  46  HomSap_chrY_DAZ4-E72.6_25571713_Q11.1A_nonC_-             20.00%    passed     97.98%
+  47  HomSap_chrY_DAZ4-E72.8_25571713_Q11.1A_nonC_-             20.00%    passed     97.98%
+  48  PanPan_chrY_LOC129395530-E72.5_9036315_Q23B_C2_-          20.00%    passed     97.98%
+  49  PanPan_chrY_LOC129395530-E72.6_9036315_Q23B_C2_-          20.00%    passed     97.98%
+  50  PanPan_chrY_LOC129395621-E72.5_9107812_Q22A_nonC_t        20.00%    passed     97.98%
+  51  PanTro_chrY_LOC738636-E72.4_19278362_Q8.1A_C2_t           20.00%    passed     97.98%
+  52  PanTro_chrY_LOC738636-E72.5_19278362_Q8.1A_C2_t           20.00%    passed     97.98%
+  53  PanTro_chrY_LOC738636-E72.6_19278362_Q8.1A_C2_t           20.00%    passed     97.98%
+  54  PanTro_chrY_LOC738636-E72.7_19278362_Q8.1A_C2_t           20.00%    passed     97.98%
+  55  PanTro_chrY_LOC738636-E72.8_19278362_Q8.1A_C2_t           20.00%    passed     97.98%
+  56  PanTro_chrY_LOC738636-E72.9_19278362_Q8.1A_C2_t           20.00%    passed     97.98%
+  57  PanTro_chrY_LOC744621-E72.3_9432523_Q12.2B_C2_-           20.00%    passed     97.98%
+  58  PanTro_chrY_LOC749905-E72.3_9511429_Q12.1A_C2_t           20.00%    passed     97.98%
+  59  PanTro_chrY_LOC112208053-E72.5_19207853_Q8.2B_C2_-        20.00%    passed     97.98%
+  60  PanTro_chrY_LOC112208053-E72.6_19207853_Q8.2B_C2_-        20.00%    passed     97.98%
+  61  PonAbe_chrY_LOC129053177-E72.2_40287231_Q13A_C2_-         20.00%    passed     99.71%
+  62  PonAbe_chrY_LOC129053245-E72.5_40367975_Q13B_C2_t         20.00%    passed     99.71%
+  63  PonAbe_chrY_LOC129053304-E72.5_50717647_Q29A_C2_-         20.00%    passed     99.71%
+  64  PonAbe_chrY_LOC129053305-E72.5_50800706_Q29B_C2_t         20.00%    passed     99.71%
+  65  PonPyg_chrY_LOC129025913-E72.4_33814768_Q18A_C2_-         20.00%    passed     99.71%
+  66  PonPyg_chrY_LOC129025961-E72.11_26220121_Q7.1A_C2_-       20.00%    passed     99.71%
+  67  PonPyg_chrY_LOC129025914-E72.3_33882908_Q18B_C2_t         20.00%    passed     99.80%
+  68  PonPyg_chrY_LOC129025914-E72.7_33882908_Q18B_C2_t         20.00%    passed     99.80%
+  69  PonAbe_chrY_LOC129053177-E72.6_40287231_Q13A_C2_-         20.00%    passed     99.80%
+  70  PonAbe_chrY_LOC129053245-E72.9_40367975_Q13B_C2_t         20.00%    passed     99.80%
+  71  PonAbe_chrY_LOC129053304-E72.9_50717647_Q29A_C2_-         20.00%    passed     99.80%
+  72  PonAbe_chrY_LOC129053305-E72.9_50800706_Q29B_C2_t         20.00%    passed     99.80%
+  73  PonPyg_chrY_LOC129025914-E72.9_33882908_Q18B_C2_t         20.00%    passed     99.80%
+  74  PonPyg_chrY_LOC129025942-E72.10_28033868_Q9.3B_C2_t       20.00%    passed     99.80%
+  75  PonPyg_chrY_LOC129025944-E72.11_27937117_Q9.2A_C2_-       20.00%    passed     99.80%
+  76  PonPyg_chrY_LOC129025947-E72.9_35731655_Q22.3B_C2_t       20.00%    passed     99.80%
+  77  PonPyg_chrY_LOC129025960-E72.5_42384755_Q30A_C35_-        20.00%    passed     99.80%
+  78  PonPyg_chrY_LOC129025963-E72.4_26306805_Q7.3B_C2_t        20.00%    passed     99.80%
+  79  PonAbe_chrY_LOC129053200-E72.5_47246963_Q23.1A_C2_-       20.00%    passed     95.66%
+  80  SymSyn_chrY_LOC129476757-E72.3_18127859_Q5B_nonC_t        20.00%    passed     81.43%
+  81  SymSyn_chrY_LOC129476758-E72.3_18081065_Q5A_nonC_-        20.00%    passed     81.43%
+  82  PonPyg_chrY_LOC129025923-E72.16_42461501_Q31B_C2_t        20.00%    passed     97.58%
+  83  HomSap_chrY_DAZ1-E72.3_23965003_Q8A_nonC_-                20.00%    passed     97.58%
+  84  HomSap_chrY_DAZ2-E72.3_25661821_Q11.3B_nonC_t             20.00%    passed     97.58%
+  85  HomSap_chrY_DAZ3-E72.3_24046728_Q9.2B_nonC_t              20.00%    passed     97.58%
+  86  HomSap_chrY_DAZ4-E72.3_25571713_Q11.1A_nonC_-             20.00%    passed     97.58%
+  87  HomSap_chrY_DAZ1-E72.5_23965003_Q8A_nonC_-                20.00%    passed     90.63%
+  88  HomSap_chrY_DAZ2-E72.5_25661821_Q11.3B_nonC_t             20.00%    passed     90.63%
+  89  HomSap_chrY_DAZ2-E72.7_25661821_Q11.3B_nonC_t             20.00%    passed     90.63%
+  90  GorGor_chrY_DAZ1-E72.7_42783133_Q18.1.A_nonC_-            20.00%    passed     88.07%
+  91  GorGor_chrY_LOC129530216-E72.7_42879918_Q18.1.B_nonC_t    20.00%    passed     88.07%
+  92  GorGor_chrY_DAZ1-E72.2_42783133_Q18.1.A_nonC_-            20.00%    passed     94.98%
+  93  GorGor_chrY_LOC129530216-E72.3_42879918_Q18.1.B_nonC_t    20.00%    passed     94.98%
+  94  GorGor_chrY_DAZ1-E72.8_42783133_Q18.1.A_nonC_-            20.00%    passed     85.73%
+  95  GorGor_chrY_DAZ1-E72.10_42783133_Q18.1.A_nonC_-           20.00%    passed     85.73%
+  96  GorGor_chrY_LOC129530216-E72.8_42879918_Q18.1.B_nonC_t    20.00%    passed     85.73%
+  97  GorGor_chrY_LOC129530216-E72.10_42879918_Q18.1.B_nonC_t   20.00%    passed     85.73%
+  98  PanPan_chrY_LOC129395530-E72.8_9036315_Q23B_C2_-          20.00%    passed     57.93%
+  99  PanPan_chrY_LOC129395621-E72.6_9107812_Q22A_nonC_t        20.00%    passed     57.93%
+ 100  PanTro_chrY_LOC738636-E72.11_19278362_Q8.1A_C2_t          20.00%    passed     57.93%
+ 101  PanTro_chrY_LOC744621-E72.4_9432523_Q12.2B_C2_-           20.00%    passed     57.93%
+ 102  PanTro_chrY_LOC744621-E72.6_9432523_Q12.2B_C2_-           20.00%    passed     57.93%
+ 103  PanTro_chrY_LOC749905-E72.4_9511429_Q12.1A_C2_t           20.00%    passed     57.93%
+ 104  PanTro_chrY_LOC749905-E72.6_9511429_Q12.1A_C2_t           20.00%    passed     57.93%
+ 105  PanTro_chrY_LOC112208053-E72.8_19207853_Q8.2B_C2_-        20.00%    passed     57.93%
+ 106  PanPan_chrY_LOC129395530-E72.4_9036315_Q23B_C2_-          20.00%    passed     73.87%
+ 107  PanPan_chrY_LOC129395621-E72.4_9107812_Q22A_nonC_t        20.00%    passed     73.87%
+ 108  PanTro_chrY_LOC112208053-E72.4_19207853_Q8.2B_C2_-        20.00%    passed     73.87%
+ 109  GorGor_chrY_DAZ1-E72.5_42783133_Q18.1.A_nonC_-            20.00%    passed     88.32%
+ 110  GorGor_chrY_LOC129530216-E72.6_42879918_Q18.1.B_nonC_t    20.00%    passed     88.32%
+ 111  HomSap_chrY_DAZ1-E72.4_23965003_Q8A_nonC_-                20.00%    passed     90.69%
+ 112  HomSap_chrY_DAZ1-E72.6_23965003_Q8A_nonC_-                20.00%    passed     90.69%
+ 113  HomSap_chrY_DAZ2-E72.4_25661821_Q11.3B_nonC_t             20.00%    passed     90.69%
+ 114  HomSap_chrY_DAZ2-E72.6_25661821_Q11.3B_nonC_t             20.00%    passed     90.69%
+ 115  HomSap_chrY_DAZ2-E72.8_25661821_Q11.3B_nonC_t             20.00%    passed     90.69%
+ 116  HomSap_chrY_DAZ2-E72.10_25661821_Q11.3B_nonC_t            20.00%    passed     90.69%
+ 117  HomSap_chrY_DAZ3-E72.4_24046728_Q9.2B_nonC_t              20.00%    passed     90.69%
+ 118  HomSap_chrY_DAZ3-E72.6_24046728_Q9.2B_nonC_t              20.00%    passed     90.69%
+ 119  HomSap_chrY_DAZ3-E72.8_24046728_Q9.2B_nonC_t              20.00%    passed     90.69%
+ 120  HomSap_chrY_DAZ4-E72.4_25571713_Q11.1A_nonC_-             20.00%    passed     90.69%
+ 121  HomSap_chrY_DAZ4-E72.5_25571713_Q11.1A_nonC_-             20.00%    passed     90.69%
+ 122  HomSap_chrY_DAZ4-E72.7_25571713_Q11.1A_nonC_-             20.00%    passed     90.69%
+ 123  GorGor_chrY_DAZ1-E72.4_42783133_Q18.1.A_nonC_-            20.00%    passed     95.78%
+ 124  GorGor_chrY_LOC129530216-E72.5_42879918_Q18.1.B_nonC_t    20.00%    passed     95.78%
+ 125  HomSap_chrY_DAZ1-E72.2_23965003_Q8A_nonC_-                20.00%    passed     99.70%
+ 126  HomSap_chrY_DAZ2-E72.2_25661821_Q11.3B_nonC_t             20.00%    passed     99.70%
+ 127  HomSap_chrY_DAZ3-E72.2_24046728_Q9.2B_nonC_t              20.00%    passed     99.70%
+ 128  HomSap_chrY_DAZ4-E72.2_25571713_Q11.1A_nonC_-             20.00%    passed     99.70%
+ 129  PanPan_chrY_LOC129395530-E72.1_9036315_Q23B_C2_-          20.00%    passed     98.14%
+ 130  PanPan_chrY_LOC129395621-E72.1_9107812_Q22A_nonC_t        20.00%    passed     98.14%
+ 131  PanTro_chrY_LOC738636-E72.1_19278362_Q8.1A_C2_t           20.00%    passed     98.14%
+ 132  PanTro_chrY_LOC744621-E72.1_9432523_Q12.2B_C2_-           20.00%    passed     98.14%
+ 133  PanTro_chrY_LOC749905-E72.1_9511429_Q12.1A_C2_t           20.00%    passed     98.14%
+ 134  PanTro_chrY_LOC112208053-E72.1_19207853_Q8.2B_C2_-        20.00%    passed     98.14%
+ 135  PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-         20.00%    passed     92.20%
+ 136  PonAbe_chrY_LOC129053177-E72.3_40287231_Q13A_C2_-         20.00%    passed     92.20%
+ 137  PonAbe_chrY_LOC129053177-E72.5_40287231_Q13A_C2_-         20.00%    passed     92.20%
+ 138  PonAbe_chrY_LOC129053200-E72.4_47246963_Q23.1A_C2_-       20.00%    passed     92.20%
+ 139  PonAbe_chrY_LOC129053245-E72.2_40367975_Q13B_C2_t         20.00%    passed     92.20%
+ 140  PonAbe_chrY_LOC129053245-E72.4_40367975_Q13B_C2_t         20.00%    passed     92.20%
+ 141  PonAbe_chrY_LOC129053245-E72.6_40367975_Q13B_C2_t         20.00%    passed     92.20%
+ 142  PonAbe_chrY_LOC129053245-E72.8_40367975_Q13B_C2_t         20.00%    passed     92.20%
+ 143  PonAbe_chrY_LOC129053304-E72.2_50717647_Q29A_C2_-         20.00%    passed     92.20%
+ 144  PonAbe_chrY_LOC129053304-E72.4_50717647_Q29A_C2_-         20.00%    passed     92.20%
+ 145  PonAbe_chrY_LOC129053304-E72.6_50717647_Q29A_C2_-         20.00%    passed     92.20%
+ 146  PonAbe_chrY_LOC129053304-E72.8_50717647_Q29A_C2_-         20.00%    passed     92.20%
+ 147  PonAbe_chrY_LOC129053305-E72.2_50800706_Q29B_C2_t         20.00%    passed     92.20%
+ 148  PonAbe_chrY_LOC129053305-E72.4_50800706_Q29B_C2_t         20.00%    passed     92.20%
+ 149  PonAbe_chrY_LOC129053305-E72.6_50800706_Q29B_C2_t         20.00%    passed     92.20%
+ 150  PonAbe_chrY_LOC129053305-E72.8_50800706_Q29B_C2_t         20.00%    passed     92.20%
+ 151  PonPyg_chrY_LOC129025914-E72.2_33882908_Q18B_C2_t         20.00%    passed     92.20%
+ 152  PonPyg_chrY_LOC129025914-E72.4_33882908_Q18B_C2_t         20.00%    passed     92.20%
+ 153  PonPyg_chrY_LOC129025914-E72.6_33882908_Q18B_C2_t         20.00%    passed     92.20%
+ 154  PonPyg_chrY_LOC129025914-E72.8_33882908_Q18B_C2_t         20.00%    passed     92.20%
+ 155  PonPyg_chrY_LOC129025942-E72.2_28033868_Q9.3B_C2_t        20.00%    passed     92.20%
+ 156  PonPyg_chrY_LOC129025942-E72.4_28033868_Q9.3B_C2_t        20.00%    passed     92.20%
+ 157  PonPyg_chrY_LOC129025942-E72.6_28033868_Q9.3B_C2_t        20.00%    passed     92.20%
+ 158  PonPyg_chrY_LOC129025942-E72.9_28033868_Q9.3B_C2_t        20.00%    passed     92.20%
+ 159  PonPyg_chrY_LOC129025944-E72.2_27937117_Q9.2A_C2_-        20.00%    passed     92.20%
+ 160  PonPyg_chrY_LOC129025944-E72.4_27937117_Q9.2A_C2_-        20.00%    passed     92.20%
+ 161  PonPyg_chrY_LOC129025944-E72.6_27937117_Q9.2A_C2_-        20.00%    passed     92.20%
+ 162  PonPyg_chrY_LOC129025944-E72.8_27937117_Q9.2A_C2_-        20.00%    passed     92.20%
+ 163  PonPyg_chrY_LOC129025944-E72.10_27937117_Q9.2A_C2_-       20.00%    passed     92.20%
+ 164  PonPyg_chrY_LOC129025945-E72.4_35664344_Q22.2A_C2_-       20.00%    passed     92.20%
+ 165  PonPyg_chrY_LOC129025947-E72.4_35731655_Q22.3B_C2_t       20.00%    passed     92.20%
+ 166  PonPyg_chrY_LOC129025947-E72.6_35731655_Q22.3B_C2_t       20.00%    passed     92.20%
+ 167  PonPyg_chrY_LOC129025947-E72.8_35731655_Q22.3B_C2_t       20.00%    passed     92.20%
+ 168  PonPyg_chrY_LOC129025960-E72.4_42384755_Q30A_C35_-        20.00%    passed     92.20%
+ 169  PonPyg_chrY_LOC129025913-E72.3_33814768_Q18A_C2_-         20.00%    passed     92.05%
+ 170  PonPyg_chrY_LOC129025923-E72.4_42461501_Q31B_C2_t         20.00%    passed     92.05%
+ 171  PonPyg_chrY_LOC129025923-E72.5_42461501_Q31B_C2_t         20.00%    passed     92.05%
+ 172  PonPyg_chrY_LOC129025923-E72.6_42461501_Q31B_C2_t         20.00%    passed     92.05%
+ 173  PonPyg_chrY_LOC129025923-E72.8_42461501_Q31B_C2_t         20.00%    passed     92.05%
+ 174  PonPyg_chrY_LOC129025923-E72.9_42461501_Q31B_C2_t         20.00%    passed     92.05%
+ 175  PonPyg_chrY_LOC129025923-E72.10_42461501_Q31B_C2_t        20.00%    passed     92.05%
+ 176  PonPyg_chrY_LOC129025923-E72.11_42461501_Q31B_C2_t        20.00%    passed     92.05%
+ 177  PonPyg_chrY_LOC129025923-E72.12_42461501_Q31B_C2_t        20.00%    passed     92.05%
+ 178  PonPyg_chrY_LOC129025923-E72.13_42461501_Q31B_C2_t        20.00%    passed     92.05%
+ 179  PonPyg_chrY_LOC129025923-E72.14_42461501_Q31B_C2_t        20.00%    passed     92.05%
+ 180  PonPyg_chrY_LOC129025923-E72.15_42461501_Q31B_C2_t        20.00%    passed     92.05%
+ 181  PonPyg_chrY_LOC129025961-E72.8_26220121_Q7.1A_C2_-        20.00%    passed     92.05%
+ 182  PonPyg_chrY_LOC129025961-E72.10_26220121_Q7.1A_C2_-       20.00%    passed     92.05%
+ 183  PonPyg_chrY_LOC129025961-E72.4_26220121_Q7.1A_C2_-        20.00%    passed     92.24%
+ 184  PonPyg_chrY_LOC129025961-E72.6_26220121_Q7.1A_C2_-        20.00%    passed     92.24%
+ 185  SymSyn_chrY_LOC129476757-E72.2_18127859_Q5B_nonC_t        20.00%    passed     98.14%
+ 186  SymSyn_chrY_LOC129476758-E72.2_18081065_Q5A_nonC_-        20.00%    passed     98.14%
+ 187  PanPan_chrY_LOC129395621-E72.8_9107812_Q22A_nonC_t        20.00%    passed     94.40%
+ 188  PonAbe_chrY_LOC129053200-E72.2_47246963_Q23.1A_C2_-       20.00%    passed     98.16%
+ 189  PonPyg_chrY_LOC129025945-E72.2_35664344_Q22.2A_C2_-       20.00%    passed     98.16%
+ 190  PonPyg_chrY_LOC129025947-E72.2_35731655_Q22.3B_C2_t       20.00%    passed     98.16%
+ 191  PonPyg_chrY_LOC129025961-E72.2_26220121_Q7.1A_C2_-        20.00%    passed     98.16%
+ 192  PonPyg_chrY_LOC129025963-E72.2_26306805_Q7.3B_C2_t        20.00%    passed     98.16%
+ 193  PonPyg_chrY_LOC129025960-E72.2_42384755_Q30A_C35_-        20.00%    passed     92.89%
+ 194  PonPyg_chrY_LOC129025913-E72.1_33814768_Q18A_C2_-         20.00%    passed     79.54%
+ 195  PonPyg_chrY_LOC129025923-E72.1_42461501_Q31B_C2_t         20.00%    passed     92.89%
+ 196  PonPyg_chrY_LOC129025963-E72.3_26306805_Q7.3B_C2_t        20.00%    passed     94.71%
+ 197  GorGor_chrY_LOC129530216-E72.1_42879918_Q18.1.B_nonC_t    20.00%    passed     88.05%
+ 198  HomSap_chrY_DAZ2-E72.1_25661821_Q11.3B_nonC_t             20.00%    passed     73.80%
+ 199  HomSap_chrY_DAZ1-E72.1_23965003_Q8A_nonC_-                20.00%    passed     79.97%
+ 200  HomSap_chrY_DAZ3-E72.1_24046728_Q9.2B_nonC_t              20.00%    passed     79.97%
+ 201  HomSap_chrY_DAZ4-E72.1_25571713_Q11.1A_nonC_-             20.00%    passed     79.97%
+ 202  PonAbe_chrY_LOC129053200-E72.1_47246963_Q23.1A_C2_-       20.00%    passed     85.99%
+ 203  PonPyg_chrY_LOC129025945-E72.1_35664344_Q22.2A_C2_-       20.00%    passed     85.99%
+ 204  PonPyg_chrY_LOC129025947-E72.1_35731655_Q22.3B_C2_t       20.00%    passed     85.99%
+ 205  PonPyg_chrY_LOC129025960-E72.1_42384755_Q30A_C35_-        20.00%    passed     85.99%
+ 206  PonPyg_chrY_LOC129025961-E72.1_26220121_Q7.1A_C2_-        20.00%    passed     85.99%
+ 207  PonPyg_chrY_LOC129025963-E72.1_26306805_Q7.3B_C2_t        20.00%    passed     85.99%
+ 208  PonPyg_chrY_LOC129025923-E72.2_42461501_Q31B_C2_t         20.00%    passed     99.20%
+ 209  GorGor_chrY_DAZ1-E72.11_42783133_Q18.1.A_nonC_-           20.00%    passed     92.02%
+ 210  GorGor_chrY_LOC129530216-E72.11_42879918_Q18.1.B_nonC_t   20.00%    passed     92.02%
+ 211  HomSap_chrY_DAZ1-E72.9_23965003_Q8A_nonC_-                20.00%    passed     96.13%
+ 212  HomSap_chrY_DAZ2-E72.16_25661821_Q11.3B_nonC_t            20.00%    passed     96.13%
+ 213  HomSap_chrY_DAZ3-E72.10_24046728_Q9.2B_nonC_t             20.00%    passed     96.13%
+ 214  HomSap_chrY_DAZ4-E72.14_25571713_Q11.1A_nonC_-            20.00%    passed     96.13%
+ 215  PanTro_chrY_LOC738636-E72.12_19278362_Q8.1A_C2_t          20.00%    passed     96.13%
+ 216  PanTro_chrY_LOC744621-E72.7_9432523_Q12.2B_C2_-           20.00%    passed     96.13%
+ 217  PanTro_chrY_LOC749905-E72.7_9511429_Q12.1A_C2_t           20.00%    passed     96.13%
+ 218  PanTro_chrY_LOC112208053-E72.9_19207853_Q8.2B_C2_-        20.00%    passed     96.13%
+ 219  PanPan_chrY_LOC129395530-E72.9_9036315_Q23B_C2_-          21.11%    passed     97.90%
+ 220  PanPan_chrY_LOC129395621-E72.7_9107812_Q22A_nonC_t        20.00%    passed     94.40%
+ 221  PonAbe_chrY_LOC129053177-E72.4_40287231_Q13A_C2_-          0.00%    passed     86.98%
+ 222  PonAbe_chrY_LOC129053245-E72.7_40367975_Q13B_C2_t          0.00%    passed     86.98%
+ 223  PonAbe_chrY_LOC129053304-E72.3_50717647_Q29A_C2_-          0.00%    passed     86.98%
+ 224  PonAbe_chrY_LOC129053304-E72.7_50717647_Q29A_C2_-          0.00%    passed     86.98%
+ 225  PonAbe_chrY_LOC129053305-E72.3_50800706_Q29B_C2_t          0.00%    passed     86.98%
+ 226  PonAbe_chrY_LOC129053305-E72.7_50800706_Q29B_C2_t          0.00%    passed     86.98%
+ 227  PonPyg_chrY_LOC129025914-E72.5_33882908_Q18B_C2_t          0.00%    passed     86.98%
+ 228  PonPyg_chrY_LOC129025942-E72.3_28033868_Q9.3B_C2_t         0.00%    passed     86.98%
+ 229  PonPyg_chrY_LOC129025942-E72.5_28033868_Q9.3B_C2_t         0.00%    passed     86.98%
+ 230  PonPyg_chrY_LOC129025942-E72.7_28033868_Q9.3B_C2_t         0.00%    passed     86.98%
+ 231  PonPyg_chrY_LOC129025944-E72.3_27937117_Q9.2A_C2_-         0.00%    passed     86.98%
+ 232  PonPyg_chrY_LOC129025944-E72.5_27937117_Q9.2A_C2_-         0.00%    passed     86.98%
+ 233  PonPyg_chrY_LOC129025944-E72.7_27937117_Q9.2A_C2_-         0.00%    passed     86.98%
+ 234  PonPyg_chrY_LOC129025944-E72.9_27937117_Q9.2A_C2_-         0.00%    passed     86.98%
+ 235  PonPyg_chrY_LOC129025947-E72.5_35731655_Q22.3B_C2_t        0.00%    passed     86.98%
+ 236  PonPyg_chrY_LOC129025947-E72.7_35731655_Q22.3B_C2_t        0.00%    passed     86.98%
+ 237  PonAbe_chrY_LOC129053245-E72.3_40367975_Q13B_C2_t          0.00%    passed     77.95%
+ 238  PonAbe_chrY_LOC129053200-E72.3_47246963_Q23.1A_C2_-        0.00%    passed     66.67%
+ 239  PonAbe_chrY_LOC129053245-E72.1_40367975_Q13B_C2_t          0.00%    passed     66.67%
+ 240  PonAbe_chrY_LOC129053304-E72.1_50717647_Q29A_C2_-          0.00%    passed     66.67%
+ 241  PonPyg_chrY_LOC129025914-E72.1_33882908_Q18B_C2_t          0.00%    passed     66.67%
+ 242  PonPyg_chrY_LOC129025942-E72.1_28033868_Q9.3B_C2_t         0.00%    passed     66.67%
+ 243  PonPyg_chrY_LOC129025944-E72.1_27937117_Q9.2A_C2_-         0.00%    passed     66.67%
+ 244  PonPyg_chrY_LOC129025945-E72.3_35664344_Q22.2A_C2_-        0.00%    passed     66.67%
+ 245  PonPyg_chrY_LOC129025947-E72.3_35731655_Q22.3B_C2_t        0.00%    passed     66.67%
+ 246  PonPyg_chrY_LOC129025960-E72.3_42384755_Q30A_C35_-         0.00%    passed     66.67%
+ 247  PonPyg_chrY_LOC129025961-E72.3_26220121_Q7.1A_C2_-         0.00%    passed     66.67%
+ 248  PonPyg_chrY_LOC129025913-E72.2_33814768_Q18A_C2_-          0.00%    passed     77.95%
+ 249  PonPyg_chrY_LOC129025923-E72.3_42461501_Q31B_C2_t          0.00%    passed     77.95%
+ 250  PonPyg_chrY_LOC129025923-E72.7_42461501_Q31B_C2_t          0.00%    passed     77.95%
+ 251  PonPyg_chrY_LOC129025961-E72.5_26220121_Q7.1A_C2_-         0.00%    passed     77.95%
+ 252  PonPyg_chrY_LOC129025961-E72.7_26220121_Q7.1A_C2_-         0.00%    passed     77.95%
+ 253  PonPyg_chrY_LOC129025961-E72.9_26220121_Q7.1A_C2_-         0.00%    passed     86.98%
+ 254  PonAbe_chrY_LOC129053305-E72.1_50800706_Q29B_C2_t          0.00%    passed     68.47%
+ 255  SymSyn_chrY_LOC129476757-E72.1_18127859_Q5B_nonC_t         0.00%    passed     83.87%
+ 256  SymSyn_chrY_LOC129476758-E72.1_18081065_Q5A_nonC_-         0.00%    passed     83.87%
+****  TOTAL                                                     17.19%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: HomSap_chr3_DAZL-E72_16587918_NA_nonC_- is identical to GorGor_chr2_DAZL-E72_26423032_NA_nonC_- but kept for subsequent analysis
+NOTE: PonPyg_chr2_DAZL-E72_137333547_NA_nonC_t is identical to PonAbe_chr2_DAZL-E72_138140947_NA_nonC_t but kept for subsequent analysis
+NOTE: GorGor_chrY_LOC129530216-E72.2_42879918_Q18.1.B_nonC_t is identical to GorGor_chrY_DAZ1-E72.1_42783133_Q18.1.A_nonC_- but kept for subsequent analysis
+NOTE: GorGor_chrY_DAZ1-E72.6_42783133_Q18.1.A_nonC_- is identical to GorGor_chrY_DAZ1-E72.3_42783133_Q18.1.A_nonC_- but kept for subsequent analysis
+NOTE: HomSap_chrY_DAZ2-E72.12_25661821_Q11.3B_nonC_t is identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_- but kept for subsequent analysis
+NOTE: GorGor_chrY_LOC129530216-E72.9_42879918_Q18.1.B_nonC_t is identical to GorGor_chrY_DAZ1-E72.9_42783133_Q18.1.A_nonC_- but kept for subsequent analysis
+NOTE: HomSap_chrY_DAZ2-E72.9_25661821_Q11.3B_nonC_t is identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_- but kept for subsequent analysis
+NOTE: PonAbe_chrY_LOC129053245-E72.5_40367975_Q13B_C2_t is identical to PonAbe_chrY_LOC129053177-E72.2_40287231_Q13A_C2_- but kept for subsequent analysis
+NOTE: PonPyg_chrY_LOC129025914-E72.7_33882908_Q18B_C2_t is identical to PonPyg_chrY_LOC129025914-E72.3_33882908_Q18B_C2_t but kept for subsequent analysis
+NOTE: PonAbe_chrY_LOC129053245-E72.9_40367975_Q13B_C2_t is identical to PonAbe_chrY_LOC129053177-E72.6_40287231_Q13A_C2_- but kept for subsequent analysis
+NOTE: SymSyn_chrY_LOC129476758-E72.3_18081065_Q5A_nonC_- is identical to SymSyn_chrY_LOC129476757-E72.3_18127859_Q5B_nonC_t but kept for subsequent analysis
+NOTE: HomSap_chrY_DAZ2-E72.3_25661821_Q11.3B_nonC_t is identical to HomSap_chrY_DAZ1-E72.3_23965003_Q8A_nonC_- but kept for subsequent analysis
+NOTE: HomSap_chrY_DAZ2-E72.5_25661821_Q11.3B_nonC_t is identical to HomSap_chrY_DAZ1-E72.5_23965003_Q8A_nonC_- but kept for subsequent analysis
+NOTE: GorGor_chrY_LOC129530216-E72.7_42879918_Q18.1.B_nonC_t is identical to GorGor_chrY_DAZ1-E72.7_42783133_Q18.1.A_nonC_- but kept for subsequent analysis
+NOTE: GorGor_chrY_LOC129530216-E72.3_42879918_Q18.1.B_nonC_t is identical to GorGor_chrY_DAZ1-E72.2_42783133_Q18.1.A_nonC_- but kept for subsequent analysis
+NOTE: GorGor_chrY_DAZ1-E72.10_42783133_Q18.1.A_nonC_- is identical to GorGor_chrY_DAZ1-E72.8_42783133_Q18.1.A_nonC_- but kept for subsequent analysis
+NOTE: PanPan_chrY_LOC129395621-E72.6_9107812_Q22A_nonC_t is identical to PanPan_chrY_LOC129395530-E72.8_9036315_Q23B_C2_- but kept for subsequent analysis
+NOTE: PanPan_chrY_LOC129395621-E72.4_9107812_Q22A_nonC_t is identical to PanPan_chrY_LOC129395530-E72.4_9036315_Q23B_C2_- but kept for subsequent analysis
+NOTE: GorGor_chrY_LOC129530216-E72.6_42879918_Q18.1.B_nonC_t is identical to GorGor_chrY_DAZ1-E72.5_42783133_Q18.1.A_nonC_- but kept for subsequent analysis
+NOTE: HomSap_chrY_DAZ1-E72.6_23965003_Q8A_nonC_- is identical to HomSap_chrY_DAZ1-E72.4_23965003_Q8A_nonC_- but kept for subsequent analysis
+NOTE: GorGor_chrY_LOC129530216-E72.5_42879918_Q18.1.B_nonC_t is identical to GorGor_chrY_DAZ1-E72.4_42783133_Q18.1.A_nonC_- but kept for subsequent analysis
+NOTE: HomSap_chrY_DAZ2-E72.2_25661821_Q11.3B_nonC_t is identical to HomSap_chrY_DAZ1-E72.2_23965003_Q8A_nonC_- but kept for subsequent analysis
+NOTE: PanPan_chrY_LOC129395621-E72.1_9107812_Q22A_nonC_t is identical to PanPan_chrY_LOC129395530-E72.1_9036315_Q23B_C2_- but kept for subsequent analysis
+NOTE: PonAbe_chrY_LOC129053177-E72.3_40287231_Q13A_C2_- is identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_- but kept for subsequent analysis
+NOTE: PonPyg_chrY_LOC129025923-E72.4_42461501_Q31B_C2_t is identical to PonPyg_chrY_LOC129025913-E72.3_33814768_Q18A_C2_- but kept for subsequent analysis
+NOTE: PonPyg_chrY_LOC129025961-E72.6_26220121_Q7.1A_C2_- is identical to PonPyg_chrY_LOC129025961-E72.4_26220121_Q7.1A_C2_- but kept for subsequent analysis
+NOTE: SymSyn_chrY_LOC129476758-E72.2_18081065_Q5A_nonC_- is identical to SymSyn_chrY_LOC129476757-E72.2_18127859_Q5B_nonC_t but kept for subsequent analysis
+NOTE: PonPyg_chrY_LOC129025945-E72.2_35664344_Q22.2A_C2_- is identical to PonAbe_chrY_LOC129053200-E72.2_47246963_Q23.1A_C2_- but kept for subsequent analysis
+NOTE: HomSap_chrY_DAZ3-E72.1_24046728_Q9.2B_nonC_t is identical to HomSap_chrY_DAZ1-E72.1_23965003_Q8A_nonC_- but kept for subsequent analysis
+NOTE: PonPyg_chrY_LOC129025945-E72.1_35664344_Q22.2A_C2_- is identical to PonAbe_chrY_LOC129053200-E72.1_47246963_Q23.1A_C2_- but kept for subsequent analysis
+NOTE: GorGor_chrY_LOC129530216-E72.11_42879918_Q18.1.B_nonC_t is identical to GorGor_chrY_DAZ1-E72.11_42783133_Q18.1.A_nonC_- but kept for subsequent analysis
+NOTE: HomSap_chrY_DAZ2-E72.16_25661821_Q11.3B_nonC_t is identical to HomSap_chrY_DAZ1-E72.9_23965003_Q8A_nonC_- but kept for subsequent analysis
+NOTE: PonAbe_chrY_LOC129053245-E72.7_40367975_Q13B_C2_t is identical to PonAbe_chrY_LOC129053177-E72.4_40287231_Q13A_C2_- but kept for subsequent analysis
+NOTE: PonAbe_chrY_LOC129053245-E72.1_40367975_Q13B_C2_t is identical to PonAbe_chrY_LOC129053200-E72.3_47246963_Q23.1A_C2_- but kept for subsequent analysis
+NOTE: PonPyg_chrY_LOC129025923-E72.3_42461501_Q31B_C2_t is identical to PonPyg_chrY_LOC129025913-E72.2_33814768_Q18A_C2_- but kept for subsequent analysis
+NOTE: PonPyg_chrY_LOC129025961-E72.5_26220121_Q7.1A_C2_- is identical to PonPyg_chrY_LOC129025923-E72.7_42461501_Q31B_C2_t but kept for subsequent analysis
+NOTE: SymSyn_chrY_LOC129476758-E72.1_18081065_Q5A_nonC_- is identical to SymSyn_chrY_LOC129476757-E72.1_18127859_Q5B_nonC_t but kept for subsequent analysis
+NOTE: 165 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: PanPan_chr2_DAZL-E72_16570582_NA_nonC_- (identical to GorGor_chr2_DAZL-E72_26423032_NA_nonC_-) is ignored but added at the end
+NOTE: PanTro_chr2_DAZL-E72_20590218_NA_nonC_- (identical to GorGor_chr2_DAZL-E72_26423032_NA_nonC_-) is ignored but added at the end
+NOTE: GorGor_chrY_LOC129530216-E72.4_42879918_Q18.1.B_nonC_t (identical to GorGor_chrY_DAZ1-E72.3_42783133_Q18.1.A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ2-E72.13_25661821_Q11.3B_nonC_t (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ2-E72.14_25661821_Q11.3B_nonC_t (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ2-E72.15_25661821_Q11.3B_nonC_t (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ4-E72.9_25571713_Q11.1A_nonC_- (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ4-E72.10_25571713_Q11.1A_nonC_- (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ4-E72.11_25571713_Q11.1A_nonC_- (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ4-E72.12_25571713_Q11.1A_nonC_- (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ4-E72.13_25571713_Q11.1A_nonC_- (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanPan_chrY_LOC129395530-E72.2_9036315_Q23B_C2_- (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanPan_chrY_LOC129395530-E72.3_9036315_Q23B_C2_- (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanPan_chrY_LOC129395621-E72.2_9107812_Q22A_nonC_t (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanPan_chrY_LOC129395621-E72.3_9107812_Q22A_nonC_t (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC738636-E72.2_19278362_Q8.1A_C2_t (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC738636-E72.3_19278362_Q8.1A_C2_t (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC738636-E72.10_19278362_Q8.1A_C2_t (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC744621-E72.2_9432523_Q12.2B_C2_- (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC744621-E72.5_9432523_Q12.2B_C2_- (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC749905-E72.2_9511429_Q12.1A_C2_t (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC749905-E72.5_9511429_Q12.1A_C2_t (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC112208053-E72.2_19207853_Q8.2B_C2_- (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC112208053-E72.3_19207853_Q8.2B_C2_- (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC112208053-E72.7_19207853_Q8.2B_C2_- (identical to HomSap_chrY_DAZ1-E72.8_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ2-E72.11_25661821_Q11.3B_nonC_t (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ3-E72.5_24046728_Q9.2B_nonC_t (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ3-E72.7_24046728_Q9.2B_nonC_t (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ3-E72.9_24046728_Q9.2B_nonC_t (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ4-E72.6_25571713_Q11.1A_nonC_- (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ4-E72.8_25571713_Q11.1A_nonC_- (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanPan_chrY_LOC129395530-E72.5_9036315_Q23B_C2_- (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanPan_chrY_LOC129395530-E72.6_9036315_Q23B_C2_- (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanPan_chrY_LOC129395621-E72.5_9107812_Q22A_nonC_t (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC738636-E72.4_19278362_Q8.1A_C2_t (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC738636-E72.5_19278362_Q8.1A_C2_t (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC738636-E72.6_19278362_Q8.1A_C2_t (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC738636-E72.7_19278362_Q8.1A_C2_t (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC738636-E72.8_19278362_Q8.1A_C2_t (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC738636-E72.9_19278362_Q8.1A_C2_t (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC744621-E72.3_9432523_Q12.2B_C2_- (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC749905-E72.3_9511429_Q12.1A_C2_t (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC112208053-E72.5_19207853_Q8.2B_C2_- (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC112208053-E72.6_19207853_Q8.2B_C2_- (identical to HomSap_chrY_DAZ1-E72.7_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053304-E72.5_50717647_Q29A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.2_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053305-E72.5_50800706_Q29B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.2_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025913-E72.4_33814768_Q18A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.2_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025961-E72.11_26220121_Q7.1A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.2_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053304-E72.9_50717647_Q29A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.6_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053305-E72.9_50800706_Q29B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.6_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025914-E72.9_33882908_Q18B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.6_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025942-E72.10_28033868_Q9.3B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.6_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025944-E72.11_27937117_Q9.2A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.6_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025947-E72.9_35731655_Q22.3B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.6_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025960-E72.5_42384755_Q30A_C35_- (identical to PonAbe_chrY_LOC129053177-E72.6_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025963-E72.4_26306805_Q7.3B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.6_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ3-E72.3_24046728_Q9.2B_nonC_t (identical to HomSap_chrY_DAZ1-E72.3_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ4-E72.3_25571713_Q11.1A_nonC_- (identical to HomSap_chrY_DAZ1-E72.3_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ2-E72.7_25661821_Q11.3B_nonC_t (identical to HomSap_chrY_DAZ1-E72.5_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: GorGor_chrY_LOC129530216-E72.8_42879918_Q18.1.B_nonC_t (identical to GorGor_chrY_DAZ1-E72.8_42783133_Q18.1.A_nonC_-) is ignored but added at the end
+NOTE: GorGor_chrY_LOC129530216-E72.10_42879918_Q18.1.B_nonC_t (identical to GorGor_chrY_DAZ1-E72.8_42783133_Q18.1.A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC738636-E72.11_19278362_Q8.1A_C2_t (identical to PanPan_chrY_LOC129395530-E72.8_9036315_Q23B_C2_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC744621-E72.4_9432523_Q12.2B_C2_- (identical to PanPan_chrY_LOC129395530-E72.8_9036315_Q23B_C2_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC744621-E72.6_9432523_Q12.2B_C2_- (identical to PanPan_chrY_LOC129395530-E72.8_9036315_Q23B_C2_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC749905-E72.4_9511429_Q12.1A_C2_t (identical to PanPan_chrY_LOC129395530-E72.8_9036315_Q23B_C2_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC749905-E72.6_9511429_Q12.1A_C2_t (identical to PanPan_chrY_LOC129395530-E72.8_9036315_Q23B_C2_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC112208053-E72.8_19207853_Q8.2B_C2_- (identical to PanPan_chrY_LOC129395530-E72.8_9036315_Q23B_C2_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC112208053-E72.4_19207853_Q8.2B_C2_- (identical to PanPan_chrY_LOC129395530-E72.4_9036315_Q23B_C2_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ2-E72.4_25661821_Q11.3B_nonC_t (identical to HomSap_chrY_DAZ1-E72.4_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ2-E72.6_25661821_Q11.3B_nonC_t (identical to HomSap_chrY_DAZ1-E72.4_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ2-E72.8_25661821_Q11.3B_nonC_t (identical to HomSap_chrY_DAZ1-E72.4_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ2-E72.10_25661821_Q11.3B_nonC_t (identical to HomSap_chrY_DAZ1-E72.4_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ3-E72.4_24046728_Q9.2B_nonC_t (identical to HomSap_chrY_DAZ1-E72.4_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ3-E72.6_24046728_Q9.2B_nonC_t (identical to HomSap_chrY_DAZ1-E72.4_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ3-E72.8_24046728_Q9.2B_nonC_t (identical to HomSap_chrY_DAZ1-E72.4_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ4-E72.4_25571713_Q11.1A_nonC_- (identical to HomSap_chrY_DAZ1-E72.4_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ4-E72.5_25571713_Q11.1A_nonC_- (identical to HomSap_chrY_DAZ1-E72.4_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ4-E72.7_25571713_Q11.1A_nonC_- (identical to HomSap_chrY_DAZ1-E72.4_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ3-E72.2_24046728_Q9.2B_nonC_t (identical to HomSap_chrY_DAZ1-E72.2_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ4-E72.2_25571713_Q11.1A_nonC_- (identical to HomSap_chrY_DAZ1-E72.2_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC738636-E72.1_19278362_Q8.1A_C2_t (identical to PanPan_chrY_LOC129395530-E72.1_9036315_Q23B_C2_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC744621-E72.1_9432523_Q12.2B_C2_- (identical to PanPan_chrY_LOC129395530-E72.1_9036315_Q23B_C2_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC749905-E72.1_9511429_Q12.1A_C2_t (identical to PanPan_chrY_LOC129395530-E72.1_9036315_Q23B_C2_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC112208053-E72.1_19207853_Q8.2B_C2_- (identical to PanPan_chrY_LOC129395530-E72.1_9036315_Q23B_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053177-E72.5_40287231_Q13A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053200-E72.4_47246963_Q23.1A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053245-E72.2_40367975_Q13B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053245-E72.4_40367975_Q13B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053245-E72.6_40367975_Q13B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053245-E72.8_40367975_Q13B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053304-E72.2_50717647_Q29A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053304-E72.4_50717647_Q29A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053304-E72.6_50717647_Q29A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053304-E72.8_50717647_Q29A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053305-E72.2_50800706_Q29B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053305-E72.4_50800706_Q29B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053305-E72.6_50800706_Q29B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053305-E72.8_50800706_Q29B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025914-E72.2_33882908_Q18B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025914-E72.4_33882908_Q18B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025914-E72.6_33882908_Q18B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025914-E72.8_33882908_Q18B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025942-E72.2_28033868_Q9.3B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025942-E72.4_28033868_Q9.3B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025942-E72.6_28033868_Q9.3B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025942-E72.9_28033868_Q9.3B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025944-E72.2_27937117_Q9.2A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025944-E72.4_27937117_Q9.2A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025944-E72.6_27937117_Q9.2A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025944-E72.8_27937117_Q9.2A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025944-E72.10_27937117_Q9.2A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025945-E72.4_35664344_Q22.2A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025947-E72.4_35731655_Q22.3B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025947-E72.6_35731655_Q22.3B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025947-E72.8_35731655_Q22.3B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025960-E72.4_42384755_Q30A_C35_- (identical to PonAbe_chrY_LOC129053177-E72.1_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025923-E72.5_42461501_Q31B_C2_t (identical to PonPyg_chrY_LOC129025913-E72.3_33814768_Q18A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025923-E72.6_42461501_Q31B_C2_t (identical to PonPyg_chrY_LOC129025913-E72.3_33814768_Q18A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025923-E72.8_42461501_Q31B_C2_t (identical to PonPyg_chrY_LOC129025913-E72.3_33814768_Q18A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025923-E72.9_42461501_Q31B_C2_t (identical to PonPyg_chrY_LOC129025913-E72.3_33814768_Q18A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025923-E72.10_42461501_Q31B_C2_t (identical to PonPyg_chrY_LOC129025913-E72.3_33814768_Q18A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025923-E72.11_42461501_Q31B_C2_t (identical to PonPyg_chrY_LOC129025913-E72.3_33814768_Q18A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025923-E72.12_42461501_Q31B_C2_t (identical to PonPyg_chrY_LOC129025913-E72.3_33814768_Q18A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025923-E72.13_42461501_Q31B_C2_t (identical to PonPyg_chrY_LOC129025913-E72.3_33814768_Q18A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025923-E72.14_42461501_Q31B_C2_t (identical to PonPyg_chrY_LOC129025913-E72.3_33814768_Q18A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025923-E72.15_42461501_Q31B_C2_t (identical to PonPyg_chrY_LOC129025913-E72.3_33814768_Q18A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025961-E72.8_26220121_Q7.1A_C2_- (identical to PonPyg_chrY_LOC129025913-E72.3_33814768_Q18A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025961-E72.10_26220121_Q7.1A_C2_- (identical to PonPyg_chrY_LOC129025913-E72.3_33814768_Q18A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025947-E72.2_35731655_Q22.3B_C2_t (identical to PonAbe_chrY_LOC129053200-E72.2_47246963_Q23.1A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025961-E72.2_26220121_Q7.1A_C2_- (identical to PonAbe_chrY_LOC129053200-E72.2_47246963_Q23.1A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025963-E72.2_26306805_Q7.3B_C2_t (identical to PonAbe_chrY_LOC129053200-E72.2_47246963_Q23.1A_C2_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ4-E72.1_25571713_Q11.1A_nonC_- (identical to HomSap_chrY_DAZ1-E72.1_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025947-E72.1_35731655_Q22.3B_C2_t (identical to PonAbe_chrY_LOC129053200-E72.1_47246963_Q23.1A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025960-E72.1_42384755_Q30A_C35_- (identical to PonAbe_chrY_LOC129053200-E72.1_47246963_Q23.1A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025961-E72.1_26220121_Q7.1A_C2_- (identical to PonAbe_chrY_LOC129053200-E72.1_47246963_Q23.1A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025963-E72.1_26306805_Q7.3B_C2_t (identical to PonAbe_chrY_LOC129053200-E72.1_47246963_Q23.1A_C2_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ3-E72.10_24046728_Q9.2B_nonC_t (identical to HomSap_chrY_DAZ1-E72.9_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: HomSap_chrY_DAZ4-E72.14_25571713_Q11.1A_nonC_- (identical to HomSap_chrY_DAZ1-E72.9_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC738636-E72.12_19278362_Q8.1A_C2_t (identical to HomSap_chrY_DAZ1-E72.9_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC744621-E72.7_9432523_Q12.2B_C2_- (identical to HomSap_chrY_DAZ1-E72.9_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC749905-E72.7_9511429_Q12.1A_C2_t (identical to HomSap_chrY_DAZ1-E72.9_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PanTro_chrY_LOC112208053-E72.9_19207853_Q8.2B_C2_- (identical to HomSap_chrY_DAZ1-E72.9_23965003_Q8A_nonC_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053304-E72.3_50717647_Q29A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.4_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053304-E72.7_50717647_Q29A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.4_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053305-E72.3_50800706_Q29B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.4_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053305-E72.7_50800706_Q29B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.4_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025914-E72.5_33882908_Q18B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.4_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025942-E72.3_28033868_Q9.3B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.4_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025942-E72.5_28033868_Q9.3B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.4_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025942-E72.7_28033868_Q9.3B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.4_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025944-E72.3_27937117_Q9.2A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.4_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025944-E72.5_27937117_Q9.2A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.4_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025944-E72.7_27937117_Q9.2A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.4_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025944-E72.9_27937117_Q9.2A_C2_- (identical to PonAbe_chrY_LOC129053177-E72.4_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025947-E72.5_35731655_Q22.3B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.4_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025947-E72.7_35731655_Q22.3B_C2_t (identical to PonAbe_chrY_LOC129053177-E72.4_40287231_Q13A_C2_-) is ignored but added at the end
+NOTE: PonAbe_chrY_LOC129053304-E72.1_50717647_Q29A_C2_- (identical to PonAbe_chrY_LOC129053200-E72.3_47246963_Q23.1A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025914-E72.1_33882908_Q18B_C2_t (identical to PonAbe_chrY_LOC129053200-E72.3_47246963_Q23.1A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025942-E72.1_28033868_Q9.3B_C2_t (identical to PonAbe_chrY_LOC129053200-E72.3_47246963_Q23.1A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025944-E72.1_27937117_Q9.2A_C2_- (identical to PonAbe_chrY_LOC129053200-E72.3_47246963_Q23.1A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025945-E72.3_35664344_Q22.2A_C2_- (identical to PonAbe_chrY_LOC129053200-E72.3_47246963_Q23.1A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025947-E72.3_35731655_Q22.3B_C2_t (identical to PonAbe_chrY_LOC129053200-E72.3_47246963_Q23.1A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025960-E72.3_42384755_Q30A_C35_- (identical to PonAbe_chrY_LOC129053200-E72.3_47246963_Q23.1A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025961-E72.3_26220121_Q7.1A_C2_- (identical to PonAbe_chrY_LOC129053200-E72.3_47246963_Q23.1A_C2_-) is ignored but added at the end
+NOTE: PonPyg_chrY_LOC129025961-E72.7_26220121_Q7.1A_C2_- (identical to PonPyg_chrY_LOC129025923-E72.7_42461501_Q31B_C2_t) is ignored but added at the end
+Alignment was printed to renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.uniqueseq.phy
+
+WARNING: 12 threads for alignment length 58 will slow down analysis
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.002 seconds
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -670.934
+Optimal log-likelihood: -670.674
+Rate parameters:  A-C: 0.85388  A-G: 6.27178  A-T: 0.58315  C-G: 4.00051  C-T: 2.24932  G-T: 1.00000
+Base frequencies:  A: 0.269  C: 0.247  G: 0.146  T: 0.338
+Proportion of invariable sites: 0.130
+Gamma shape alpha: 6.408
+Parameters optimization took 1 rounds (0.038 sec)
+Time for fast ML tree search: 0.685 seconds
+
+NOTE: ModelFinder requires 2 MB RAM!
+ModelFinder will test up to 484 DNA models (sample size: 90 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  1  GTR+F         672.159      187 1718.318     72030.318    2185.782
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  2  GTR+F+I       671.189      188 1718.378     72782.378    2188.342
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  3  GTR+F+G4      670.093      188 1716.186     72780.186    2186.150
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  4  GTR+F+I+G4    670.503      189 1719.005     73539.005    2191.469
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  5  GTR+F+R2      670.163      189 1718.326     73538.326    2190.790
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  6  GTR+F+R3      670.048      191 1722.096     75066.096    2199.559
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 14  GTR+F+I+R2    670.357      190 1720.714     74300.714    2195.678
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 15  GTR+F+I+R3    670.107      192 1724.214     75836.214    2204.178
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 23  SYM           674.824      184 1717.647     69797.647    2177.612
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 24  SYM+I         673.351      185 1716.701     70536.701    2179.166
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 25  SYM+G4        673.127      185 1716.254     70536.254    2178.718
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 26  SYM+I+G4      673.092      186 1718.184     71282.184    2183.148
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 27  SYM+R2        673.049      186 1718.099     71282.099    2183.063
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 36  SYM+I+R2      673.055      187 1720.111     72032.111    2187.575
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 45  TVM+F         681.070      186 1734.141     71298.141    2199.105
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 46  TVM+F+I       677.935      187 1729.870     72041.870    2197.335
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 47  TVM+F+G4      676.597      187 1727.194     72039.194    2194.658
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 48  TVM+F+I+G4    676.681      188 1729.362     72793.362    2199.326
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 49  TVM+F+R2      676.688      188 1729.375     72793.375    2199.339
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 58  TVM+F+I+R2    676.702      189 1731.405     73551.405    2203.869
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 67  TVMe          678.477      183 1722.955     69066.955    2180.420
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 68  TVMe+I        675.587      184 1719.173     69799.173    2179.138
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 69  TVMe+G4       675.066      184 1718.132     69798.132    2178.097
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 70  TVMe+I+G4     675.043      185 1720.086     70540.086    2182.550
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 71  TVMe+R2       674.938      185 1719.876     70539.876    2182.341
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 80  TVMe+I+R2     675.009      186 1722.018     71286.018    2186.983
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 89  TIM3+F        677.989      185 1725.978     70545.978    2188.442
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 90  TIM3+F+I      676.888      186 1725.776     71289.776    2190.740
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 91  TIM3+F+G4     676.699      186 1725.398     71289.398    2190.362
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 92  TIM3+F+I+G4   676.696      187 1727.391     72039.391    2194.856
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 93  TIM3+F+R2     676.661      187 1727.323     72039.323    2194.787
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+102  TIM3+F+I+R2   676.664      188 1729.329     72793.329    2199.293
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+111  TIM3e         677.670      182 1719.339     68331.339    2174.304
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+112  TIM3e+I       676.101      183 1718.202     69062.202    2175.667
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+113  TIM3e+G4      676.117      183 1718.235     69062.235    2175.700
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+114  TIM3e+I+G4    675.998      184 1719.997     69799.997    2179.962
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+115  TIM3e+R2      675.966      184 1719.932     69799.932    2179.897
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+124  TIM3e+I+R2    675.982      185 1721.963     70541.963    2184.428
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+133  TIM2+F        676.940      185 1723.881     70543.881    2186.345
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+134  TIM2+F+I      676.235      186 1724.469     71288.469    2189.434
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+135  TIM2+F+G4     675.315      186 1722.631     71286.631    2187.595
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+136  TIM2+F+I+G4   675.621      187 1725.241     72037.241    2192.706
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+137  TIM2+F+R2     675.412      187 1724.824     72036.824    2192.288
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+146  TIM2+F+I+R2   675.491      188 1726.982     72790.982    2196.946
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+155  TIM2e         678.523      182 1721.045     68333.045    2176.011
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+156  TIM2e+I       677.192      183 1720.383     69064.383    2177.848
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+157  TIM2e+G4      677.081      183 1720.162     69064.162    2177.627
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+158  TIM2e+I+G4    677.021      184 1722.042     69802.042    2182.007
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+159  TIM2e+R2      677.019      184 1722.038     69802.038    2182.003
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+168  TIM2e+I+R2    677.008      185 1724.016     70544.016    2186.481
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+177  TIM+F         681.199      185 1732.398     70552.398    2194.863
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+178  TIM+F+I       680.337      186 1732.675     71296.675    2197.639
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+179  TIM+F+G4      680.174      186 1732.349     71296.349    2197.313
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+180  TIM+F+I+G4    680.172      187 1734.345     72046.345    2201.809
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+181  TIM+F+R2      680.165      187 1734.330     72046.330    2201.794
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+190  TIM+F+I+R2    680.148      188 1736.296     72800.296    2206.260
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+199  TIMe          679.419      182 1722.839     68334.839    2177.804
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+200  TIMe+I        677.947      183 1721.895     69065.895    2179.360
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+201  TIMe+G4       677.936      183 1721.872     69065.872    2179.338
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+202  TIMe+I+G4     677.833      184 1723.667     69803.667    2183.632
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+203  TIMe+R2       677.835      184 1723.669     69803.669    2183.634
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+212  TIMe+I+R2     677.830      185 1725.659     70545.659    2188.124
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+221  TPM3u+F       686.647      184 1741.293     69821.293    2201.258
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+222  TPM3u+F+I     683.296      185 1736.592     70556.592    2199.056
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+223  TPM3u+F+G4    682.934      185 1735.867     70555.867    2198.332
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+224  TPM3u+F+I+G4  682.864      186 1737.729     71301.729    2202.694
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+225  TPM3u+F+R2    682.595      186 1737.191     71301.191    2202.155
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+234  TPM3u+F+I+R2  682.763      187 1739.526     72051.526    2206.991
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+243  TPM3          681.114      181 1724.228     67608.228    2176.693
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+244  TPM3+I        678.351      182 1720.701     68332.701    2175.667
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+245  TPM3+G4       678.179      182 1720.357     68332.357    2175.322
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+246  TPM3+I+G4     678.107      183 1722.213     69066.213    2179.678
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+247  TPM3+R2       677.865      183 1721.731     69065.731    2179.196
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+256  TPM3+I+R2     678.008      184 1724.015     69804.015    2183.980
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+265  TPM2u+F       685.657      184 1739.314     69819.314    2199.279
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+266  TPM2u+F+I     683.014      185 1736.029     70556.029    2198.494
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+267  TPM2u+F+G4    682.013      185 1734.026     70554.026    2196.490
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+268  TPM2u+F+I+G4  682.067      186 1736.134     71300.134    2201.099
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+269  TPM2u+F+R2    682.159      186 1736.318     71300.318    2201.283
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+278  TPM2u+F+I+R2  682.116      187 1738.232     72050.232    2205.696
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+287  TPM2          681.993      181 1725.987     67609.987    2178.452
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+288  TPM2+I        679.363      182 1722.726     68334.726    2177.692
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+289  TPM2+G4       679.024      182 1722.047     68334.047    2177.013
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+290  TPM2+I+G4     678.984      183 1723.968     69067.968    2181.433
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+291  TPM2+R2       678.883      183 1723.767     69067.767    2181.232
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+300  TPM2+I+R2     678.945      184 1725.889     69805.889    2185.854
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+309  K3Pu+F        689.854      184 1747.707     69827.707    2207.672
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+310  K3Pu+F+I      686.917      185 1743.835     70563.835    2206.300
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+311  K3Pu+F+G4     686.592      185 1743.184     70563.184    2205.649
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+312  K3Pu+F+I+G4   686.541      186 1745.082     71309.082    2210.047
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+313  K3Pu+F+R2     686.370      186 1744.741     71308.741    2209.705
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+322  K3Pu+F+I+R2   686.465      187 1746.930     72058.930    2214.395
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+331  K3P           682.878      181 1727.757     67611.757    2180.222
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+332  K3P+I         680.180      182 1724.359     68336.359    2179.325
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+333  K3P+G4        679.953      182 1723.907     68335.907    2178.872
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+334  K3P+I+G4      679.895      183 1725.790     69069.790    2183.255
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+335  K3P+R2        679.720      183 1725.441     69069.441    2182.906
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+344  K3P+I+R2      679.821      184 1727.641     69807.641    2187.606
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+353  TN+F          681.799      184 1731.598     69811.598    2191.563
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+354  TN+F+I        680.941      185 1731.882     70551.882    2194.347
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+355  TN+F+G4       680.762      185 1731.524     70551.524    2193.989
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+356  TN+F+I+G4     680.761      186 1733.522     71297.522    2198.486
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+357  TN+F+R2       680.757      186 1733.515     71297.515    2198.479
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+366  TN+F+I+R2     680.749      187 1735.497     72047.497    2202.961
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+375  TNe           680.438      181 1722.877     67606.877    2175.343
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+376  TNe+I         678.970      182 1721.941     68333.941    2176.906
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+377  TNe+G4        678.961      182 1721.922     68333.922    2176.888
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+378  TNe+I+G4      678.859      183 1723.717     69067.717    2181.182
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+379  TNe+R2        678.824      183 1723.647     69067.647    2181.112
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+388  TNe+I+R2      678.844      184 1725.688     69805.688    2185.653
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+397  HKY+F         690.446      183 1746.892     69090.892    2204.357
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+398  HKY+F+I       687.503      184 1743.007     69823.007    2202.972
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+399  HKY+F+G4      687.159      184 1742.317     69822.317    2202.282
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+400  HKY+F+I+G4    687.111      185 1744.222     70564.222    2206.686
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+401  HKY+F+R2      686.931      185 1743.862     70563.862    2206.327
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+410  HKY+F+I+R2    687.032      186 1746.065     71310.065    2211.029
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+419  K2P           683.886      180 1727.773     66887.773    2177.738
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+420  K2P+I         681.192      181 1724.383     67608.383    2176.849
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+421  K2P+G4        680.963      181 1723.926     67607.926    2176.391
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+422  K2P+I+G4      680.905      182 1725.811     68337.811    2180.776
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+423  K2P+R2        680.715      182 1725.431     68337.431    2180.396
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+432  K2P+I+R2      680.820      183 1727.640     69071.640    2185.105
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+441  F81+F         703.692      182 1771.384     68383.384    2226.349
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+442  F81+F+I       701.582      183 1769.164     69113.164    2226.629
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+443  F81+F+G4      701.496      183 1768.991     69112.991    2226.457
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+444  F81+F+I+G4    701.414      184 1770.828     69850.828    2230.793
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+445  F81+F+R2      701.281      184 1770.563     69850.563    2230.528
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+454  F81+F+I+R2    701.356      185 1772.713     70592.713    2235.177
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+463  JC            697.241      179 1752.483     66192.483    2199.949
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+464  JC+I          694.583      180 1749.165     66909.165    2199.131
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+465  JC+G4         694.282      180 1748.564     66908.564    2198.530
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+466  JC+I+G4       694.121      181 1750.243     67634.243    2202.709
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+467  JC+R2         693.707      181 1749.414     67633.414    2201.880
+WARNING: 12 threads for alignment length 58 will slow down analysis
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+476  JC+I+R2       693.794      182 1751.587     68363.587    2206.552
+Akaike Information Criterion:           GTR+F+G4
+Corrected Akaike Information Criterion: JC
+Bayesian Information Criterion:         TIM3e
+Best-fit model: TIM3e chosen according to BIC
+
+All model information printed to renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.model.gz
+CPU time for ModelFinder: 5.230 seconds (0h:0m:5s)
+Wall-clock time for ModelFinder: 7.165 seconds (0h:0m:7s)
+Generating 1000 samples for ultrafast bootstrap (seed: 758001)...
+WARNING: 12 threads for alignment length 58 will slow down analysis
+
+NOTE: 0 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -697.237
+2. Current log-likelihood: -678.489
+3. Current log-likelihood: -677.689
+Optimal log-likelihood: -677.670
+Rate parameters:  A-C: 2.13647  A-G: 6.21158  A-T: 1.00000  C-G: 2.13647  C-T: 3.08027  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Parameters optimization took 3 rounds (0.094 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.000731945 secs using 915.1% CPU
+Computing ML distances took 0.000935 sec (of wall-clock time) 0.006808 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000268936 secs using 98.54% CPU
+Computing RapidNJ tree took 0.015254 sec (of wall-clock time) 0.009058 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -683.562
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.206 second
+Computing log-likelihood of 98 initial trees ... 2.001 seconds
+Current best score: -676.793
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -675.327
+Iteration 10 / LogL: -678.491 / Time: 0h:0m:16s
+Iteration 20 / LogL: -678.777 / Time: 0h:0m:22s
+Finish initializing candidate tree set (20)
+Current best tree score: -675.327 / CPU time: 15.486
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -675.436 / Time: 0h:0m:32s (0h:1m:3s left)
+Iteration 40 / LogL: -680.672 / Time: 0h:0m:43s (0h:0m:56s left)
+Iteration 50 / LogL: -675.331 / Time: 0h:0m:53s (0h:0m:47s left)
+Log-likelihood cutoff on original alignment: -697.829
+Iteration 60 / LogL: -675.655 / Time: 0h:1m:2s (0h:0m:38s left)
+Iteration 70 / LogL: -675.330 / Time: 0h:1m:13s (0h:0m:29s left)
+Iteration 80 / LogL: -685.891 / Time: 0h:1m:23s (0h:0m:20s left)
+Iteration 90 / LogL: -675.435 / Time: 0h:1m:34s (0h:0m:10s left)
+Iteration 100 / LogL: -675.328 / Time: 0h:1m:44s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -697.829
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:1m:46s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -675.327
+Optimal log-likelihood: -675.327
+Rate parameters:  A-C: 2.18859  A-G: 7.01405  A-T: 1.00000  C-G: 2.18859  C-T: 3.28033  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Parameters optimization took 1 rounds (0.022 sec)
+BEST SCORE FOUND : -675.327
+Creating bootstrap support values...
+Split supports printed to NEXUS file renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.splits.nex
+Total tree length: 1.465
+
+Total number of iterations: 102
+CPU time used for tree search: 47.697 sec (0h:0m:47s)
+Wall-clock time used for tree search: 99.473 sec (0h:1m:39s)
+Total CPU time used: 53.237 sec (0h:0m:53s)
+Total wall-clock time used: 107.099 sec (0h:1m:47s)
+
+Computing bootstrap consensus tree...
+Reading input file renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.splits.nex...
+91 taxa and 925 splits.
+Consensus tree written to renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.contree
+Reading input trees file renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.contree
+Log-likelihood of consensus tree: -676.184
+
+Analysis results written to: 
+  IQ-TREE report:                renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.iqtree
+  Maximum-likelihood tree:       renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.treefile
+  Likelihood distances:          renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.splits.nex
+  Consensus tree:                renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.contree
+  Screen log file:               renamed/DAZ_DAZL_repeats.alignment.20240924.renamed.fasta.log
+
+Date and Time: Mon Aug  4 08:49:40 2025

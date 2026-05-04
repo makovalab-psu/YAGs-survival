@@ -1,0 +1,327 @@
+IQ-TREE multicore version 2.3.6 for MacOS ARM 64-bit built Aug  1 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    karol.bx.psu.edu (SSE4.2, 16 GB RAM)
+Command: /Users/kxp5629/tools/iqtree-2.3.6-macOS/bin/iqtree2 -s output/DAZ-DAZL_RBD/alignment.clean.fasta -bb 1000 --prefix output/DAZ-DAZL_RBD/tree -keep-ident --redo -o GorGor_chr2_DAZL-RBD1,HomSap_chr3_DAZL-RBD1,PanPan_chr2_DAZL-RBD1,PanTro_chr2_DAZL-RBD1,PonAbe_chr2_DAZL-RBD1,PonPyg_chr2_DAZL-RBD1,SymSyn_chr10_DAZL-RBD1
+Seed:    405334 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Apr 21 14:48:11 2026
+Kernel:  SSE2 - 1 threads (12 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 12 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file output/DAZ-DAZL_RBD/alignment.clean.fasta ... Fasta format detected
+Reading fasta file: done in 0.000375032 secs using 89.86% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 73 sequences with 495 columns, 122 distinct patterns
+106 parsimony-informative, 16 singleton sites, 373 constant sites
+                                Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.09673e-05 secs using 100.3% CPU
+   1  GorGor_chr2_DAZL-RBD1             0.00%    passed     15.75%
+   2  GorGor_chrY_DAZ1-RBD1             0.00%    passed     99.25%
+   3  GorGor_chrY_DAZ1-RBD2             0.00%    passed     98.88%
+   4  GorGor_chrY_DAZ1-RBD3             0.00%    passed     98.17%
+   5  GorGor_chrY_LOC129530216-RBD1     0.00%    passed     99.25%
+   6  GorGor_chrY_LOC129530216-RBD2     0.00%    passed     98.55%
+   7  HomSap_chr3_DAZL-RBD1             0.00%    passed     12.82%
+   8  HomSap_chrY_DAZ1-RBD1             0.00%    passed     99.22%
+   9  HomSap_chrY_DAZ1-RBD2             0.00%    passed     99.22%
+  10  HomSap_chrY_DAZ1-RBD3             0.00%    passed     99.22%
+  11  HomSap_chrY_DAZ2-RBD1             0.00%    passed     99.22%
+  12  HomSap_chrY_DAZ3-RBD1             0.00%    passed     99.22%
+  13  HomSap_chrY_DAZ4-RBD1             0.00%    passed     99.22%
+  14  HomSap_chrY_DAZ4-RBD2             0.00%    passed     99.22%
+  15  PanPan_chr2_DAZL-RBD1             0.00%    passed     12.82%
+  16  PanPan_chrY_LOC129395530-RBD1     0.00%    passed     94.89%
+  17  PanPan_chrY_LOC129395621-RBD1     0.00%    passed     96.12%
+  18  PanPan_chrY_LOC129395621-RBD2     0.00%    passed     94.89%
+  19  PanTro_chr2_DAZL-RBD1             0.00%    passed     15.75%
+  20  PanTro_chrY_LOC738636-RBD1        0.00%    passed     96.12%
+  21  PanTro_chrY_LOC744621-RBD1        0.00%    passed     96.12%
+  22  PanTro_chrY_LOC744621-RBD2        0.00%    passed     96.12%
+  23  PanTro_chrY_LOC749905-RBD1        0.00%    passed     96.12%
+  24  PanTro_chrY_LOC749905-RBD2        0.00%    passed     96.12%
+  25  PanTro_chrY_LOC749905-RBD3        0.00%    passed     96.12%
+  26  PanTro_chrY_LOC112208053_-RBD1    0.00%    passed     96.12%
+  27  PonAbe_chr2_DAZL-RBD1             0.00%    passed     24.48%
+  28  PonAbe_chrY_LOC129053177-RBD1    21.82%    passed     79.78%
+  29  PonAbe_chrY_LOC129053200-RBD1     0.00%    passed     96.49%
+  30  PonAbe_chrY_LOC129053245-RBD1     0.00%    passed     98.19%
+  31  PonAbe_chrY_LOC129053245-RBD2     0.00%    passed     98.65%
+  32  PonAbe_chrY_LOC129053245-RBD3     0.00%    passed     99.09%
+  33  PonAbe_chrY_LOC129053304-RBD1     0.00%    passed     98.19%
+  34  PonAbe_chrY_LOC129053304-RBD2     0.00%    passed     98.65%
+  35  PonAbe_chrY_LOC129053304-RBD3     0.00%    passed     99.09%
+  36  PonAbe_chrY_LOC129053305-RBD1     0.00%    passed     98.19%
+  37  PonAbe_chrY_LOC129053305-RBD2     0.00%    passed     98.65%
+  38  PonAbe_chrY_LOC129053305-RBD3     0.00%    passed     99.09%
+  39  PonPyg_chr2_DAZL-RBD1             0.00%    passed     24.48%
+  40  PonPyg_chrY_LOC129025913-RBD1     0.00%    passed     94.98%
+  41  PonPyg_chrY_LOC129025913-RBD2     0.00%    passed     98.96%
+  42  PonPyg_chrY_LOC129025914-RBD1     0.00%    passed     97.13%
+  43  PonPyg_chrY_LOC129025914-RBD2     0.00%    passed     98.65%
+  44  PonPyg_chrY_LOC129025914-RBD3     0.00%    passed     97.91%
+  45  PonPyg_chrY_LOC129025923-RBD1    21.82%    passed     65.07%
+  46  PonPyg_chrY_LOC129025923-RBD2     0.00%    passed     92.46%
+  47  PonPyg_chrY_LOC129025923-RBD3     0.00%    passed     98.38%
+  48  PonPyg_chrY_LOC129025942-RBD1     0.00%    passed     98.19%
+  49  PonPyg_chrY_LOC129025942-RBD2     0.00%    passed     98.96%
+  50  PonPyg_chrY_LOC129025942-RBD3     0.00%    passed     97.36%
+  51  PonPyg_chrY_LOC129025944-RBD1     0.00%    passed     98.19%
+  52  PonPyg_chrY_LOC129025944-RBD2     0.00%    passed     98.96%
+  53  PonPyg_chrY_LOC129025944-RBD3     0.00%    passed     97.36%
+  54  PonPyg_chrY_LOC129025945-RBD1     0.00%    passed     98.19%
+  55  PonPyg_chrY_LOC129025945-RBD2     0.00%    passed     99.66%
+  56  PonPyg_chrY_LOC129025945-RBD3     0.00%    passed     97.96%
+  57  PonPyg_chrY_LOC129025947-RBD1     0.00%    passed     98.19%
+  58  PonPyg_chrY_LOC129025947-RBD2     0.00%    passed     99.66%
+  59  PonPyg_chrY_LOC129025947-RBD3     0.00%    passed     97.96%
+  60  PonPyg_chrY_LOC129025960-RBD1     0.00%    passed     97.88%
+  61  PonPyg_chrY_LOC129025960-RBD2     0.00%    passed     95.42%
+  62  PonPyg_chrY_LOC129025960-RBD3     0.00%    passed     99.55%
+  63  PonPyg_chrY_LOC129025961-RBD1     0.00%    passed     96.49%
+  64  PonPyg_chrY_LOC129025961-RBD2     0.00%    passed     89.87%
+  65  PonPyg_chrY_LOC129025961-RBD3     0.00%    passed     97.36%
+  66  PonPyg_chrY_LOC129025963-RBD1     0.00%    passed     96.49%
+  67  PonPyg_chrY_LOC129025963-RBD2     0.00%    passed     89.87%
+  68  PonPyg_chrY_LOC129025963-RBD3     0.00%    passed     99.60%
+  69  SymSyn_chr10_DAZL-RBD1            0.00%    passed     22.69%
+  70  SymSyn_chrY_LOC129476757-RBD1     0.00%    passed     95.92%
+  71  SymSyn_chrY_LOC129476757-RBD2     0.00%    passed     99.42%
+  72  SymSyn_chrY_LOC129476758-RBD1     0.00%    passed     95.92%
+  73  SymSyn_chrY_LOC129476758-RBD2     0.00%    passed     99.42%
+****  TOTAL                             0.60%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.002 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -1894.202
+Optimal log-likelihood: -1894.166
+Rate parameters:  A-C: 0.74241  A-G: 2.40870  A-T: 0.33287  C-G: 1.21855  C-T: 2.47444  G-T: 1.00000
+Base frequencies:  A: 0.287  C: 0.231  G: 0.233  T: 0.249
+Proportion of invariable sites: 0.376
+Gamma shape alpha: 0.702
+Parameters optimization took 1 rounds (0.012 sec)
+Time for fast ML tree search: 0.075 seconds
+
+NOTE: ModelFinder requires 3 MB RAM!
+ModelFinder will test up to 484 DNA models (sample size: 495 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         1941.704     151 4185.408     4319.239     4820.296
+  2  GTR+F+I       1899.141     152 4102.282     4238.282     4741.375
+  3  GTR+F+G4      1895.817     152 4095.634     4231.634     4734.727
+  4  GTR+F+I+G4    1894.164     153 4094.328     4232.521     4737.625
+  5  GTR+F+R2      1892.733     153 4091.466     4229.660     4734.764
+  6  GTR+F+R3      1892.272     155 4094.544     4237.199     4746.250
+ 14  GTR+F+I+R2    1891.651     154 4091.302     4231.714     4738.804
+ 15  GTR+F+I+R3    1891.217     156 4094.433     4239.356     4750.344
+ 24  SYM+I         1902.068     149 4102.135     4231.700     4728.614
+ 25  SYM+G4        1898.572     149 4095.144     4224.709     4721.623
+ 26  SYM+I+G4      1896.858     150 4093.716     4225.402     4724.399
+ 27  SYM+R2        1894.918     150 4089.836     4221.522     4720.520
+ 36  SYM+I+R2      1893.446     151 4088.892     4222.723     4723.780
+ 46  TVM+F+I       1899.139     151 4100.279     4234.110     4735.167
+ 47  TVM+F+G4      1895.824     151 4093.649     4227.480     4728.537
+ 48  TVM+F+I+G4    1894.166     152 4092.331     4228.331     4731.424
+ 49  TVM+F+R2      1892.617     152 4089.234     4225.234     4728.327
+ 58  TVM+F+I+R2    1891.363     153 4088.727     4226.920     4732.024
+ 68  TVMe+I        1902.102     148 4100.203     4227.671     4722.478
+ 69  TVMe+G4       1898.589     148 4093.177     4220.645     4715.452
+ 70  TVMe+I+G4     1896.875     149 4091.750     4221.315     4718.229
+ 71  TVMe+R2       1894.824     149 4087.648     4217.213     4714.127
+ 80  TVMe+I+R2     1893.404     150 4086.807     4218.493     4717.491
+ 90  TIM3+F+I      1904.570     150 4109.140     4240.826     4739.824
+ 91  TIM3+F+G4     1901.036     150 4102.071     4233.758     4732.755
+ 92  TIM3+F+I+G4   1899.290     151 4100.579     4234.410     4735.467
+ 93  TIM3+F+R2     1897.203     151 4096.406     4230.237     4731.295
+102  TIM3+F+I+R2   1895.529     152 4095.057     4231.057     4734.150
+112  TIM3e+I       1905.952     147 4105.903     4231.298     4723.973
+113  TIM3e+G4      1902.229     147 4098.457     4223.852     4716.527
+114  TIM3e+I+G4    1900.421     148 4096.842     4224.311     4719.117
+115  TIM3e+R2      1897.922     148 4091.844     4219.312     4714.118
+124  TIM3e+I+R2    1895.847     149 4089.694     4219.259     4716.173
+134  TIM2+F+I      1901.317     150 4102.633     4234.319     4733.317
+135  TIM2+F+G4     1897.987     150 4095.974     4227.660     4726.657
+136  TIM2+F+I+G4   1896.333     151 4094.666     4228.497     4729.554
+137  TIM2+F+R2     1894.679     151 4091.358     4225.189     4726.246
+146  TIM2+F+I+R2   1893.375     152 4090.750     4226.750     4729.842
+156  TIM2e+I       1903.865     147 4101.731     4227.125     4719.801
+157  TIM2e+G4      1900.358     147 4094.716     4220.111     4712.786
+158  TIM2e+I+G4    1898.641     148 4093.282     4220.750     4715.556
+159  TIM2e+R2      1896.514     148 4089.029     4216.497     4711.303
+168  TIM2e+I+R2    1894.840     149 4087.680     4217.245     4714.159
+178  TIM+F+I       1905.560     150 4111.121     4242.807     4741.804
+179  TIM+F+G4      1901.961     150 4103.921     4235.608     4734.605
+180  TIM+F+I+G4    1900.213     151 4102.425     4236.256     4737.314
+181  TIM+F+R2      1897.899     151 4097.797     4231.628     4732.685
+190  TIM+F+I+R2    1896.136     152 4096.271     4232.271     4735.364
+200  TIMe+I        1906.666     147 4107.332     4232.727     4725.402
+201  TIMe+G4       1902.866     147 4099.732     4225.127     4717.802
+202  TIMe+I+G4     1901.055     148 4098.110     4225.578     4720.384
+203  TIMe+R2       1898.321     148 4092.642     4220.111     4714.917
+212  TIMe+I+R2     1896.186     149 4090.372     4219.938     4716.851
+222  TPM3u+F+I     1904.571     149 4107.142     4236.708     4733.621
+223  TPM3u+F+G4    1901.044     149 4100.088     4229.653     4726.567
+224  TPM3u+F+I+G4  1899.285     150 4098.570     4230.256     4729.254
+225  TPM3u+F+R2    1897.156     150 4094.311     4225.998     4724.995
+234  TPM3u+F+I+R2  1895.255     151 4092.510     4226.341     4727.398
+244  TPM3+I        1905.987     146 4103.975     4227.319     4717.840
+245  TPM3+G4       1902.254     146 4096.509     4219.853     4710.374
+246  TPM3+I+G4     1900.448     147 4094.895     4220.290     4712.965
+247  TPM3+R2       1897.848     147 4089.696     4215.091     4707.766
+256  TPM3+I+R2     1895.750     148 4087.500     4214.968     4709.774
+266  TPM2u+F+I     1901.317     149 4100.633     4230.198     4727.112
+267  TPM2u+F+G4    1897.996     149 4093.991     4223.557     4720.471
+268  TPM2u+F+I+G4  1896.331     150 4092.663     4224.349     4723.346
+269  TPM2u+F+R2    1894.745     150 4089.491     4221.177     4720.174
+278  TPM2u+F+I+R2  1893.302     151 4088.604     4222.435     4723.492
+288  TPM2+I        1903.899     146 4099.799     4223.144     4713.664
+289  TPM2+G4       1900.373     146 4092.746     4216.091     4706.612
+290  TPM2+I+G4     1898.652     147 4091.304     4216.699     4709.374
+291  TPM2+R2       1896.508     147 4087.016     4212.411     4705.086
+300  TPM2+I+R2     1894.828     148 4085.656     4213.124     4707.930
+310  K3Pu+F+I      1905.561     149 4109.123     4238.688     4735.602
+311  K3Pu+F+G4     1901.970     149 4101.939     4231.504     4728.418
+312  K3Pu+F+I+G4   1900.210     150 4100.419     4232.105     4731.103
+313  K3Pu+F+R2     1897.911     150 4095.821     4227.508     4726.505
+322  K3Pu+F+I+R2   1896.034     151 4094.067     4227.898     4728.955
+332  K3P+I         1906.701     146 4105.402     4228.747     4719.267
+333  K3P+G4        1902.889     146 4097.779     4221.124     4711.644
+334  K3P+I+G4      1901.080     147 4096.160     4221.554     4714.230
+335  K3P+R2        1898.318     147 4090.636     4216.030     4708.706
+344  K3P+I+R2      1896.263     148 4088.527     4215.995     4710.801
+354  TN+F+I        1906.107     149 4110.213     4239.779     4736.692
+355  TN+F+G4       1902.525     149 4103.049     4232.614     4729.528
+356  TN+F+I+G4     1900.767     150 4101.533     4233.219     4732.217
+357  TN+F+R2       1898.475     150 4096.951     4228.637     4727.634
+366  TN+F+I+R2     1896.549     151 4095.097     4228.928     4729.986
+376  TNe+I         1907.125     146 4106.250     4229.595     4720.116
+377  TNe+G4        1903.351     146 4098.702     4222.046     4712.567
+378  TNe+I+G4      1901.531     147 4097.062     4222.457     4715.132
+379  TNe+R2        1898.821     147 4091.642     4217.037     4709.712
+388  TNe+I+R2      1896.572     148 4089.144     4216.613     4711.419
+398  HKY+F+I       1906.108     148 4108.215     4235.683     4730.490
+399  HKY+F+G4      1902.533     148 4101.066     4228.535     4723.341
+400  HKY+F+I+G4    1900.769     149 4099.539     4229.104     4726.018
+401  HKY+F+R2      1898.500     149 4095.001     4224.566     4721.480
+410  HKY+F+I+R2    1896.541     150 4093.082     4224.768     4723.766
+420  K2P+I         1907.160     145 4104.320     4225.638     4713.981
+421  K2P+G4        1903.374     145 4096.749     4218.067     4706.410
+422  K2P+I+G4      1901.562     146 4095.125     4218.470     4708.990
+423  K2P+R2        1898.836     146 4089.672     4213.017     4703.537
+432  K2P+I+R2      1896.708     147 4087.415     4212.810     4705.485
+442  F81+F+I       1936.770     147 4167.541     4292.936     4785.611
+443  F81+F+G4      1933.050     147 4160.100     4285.495     4778.170
+444  F81+F+I+G4    1931.345     148 4158.691     4286.159     4780.965
+445  F81+F+R2      1928.852     148 4153.703     4281.172     4775.978
+454  F81+F+I+R2    1927.099     149 4152.197     4281.762     4778.676
+464  JC+I          1937.083     144 4162.165     4281.480     4767.622
+465  JC+G4         1933.266     144 4154.532     4273.846     4759.988
+466  JC+I+G4       1931.525     145 4153.050     4274.368     4762.711
+467  JC+R2         1928.799     145 4147.598     4268.916     4757.259
+476  JC+I+R2       1926.839     146 4145.678     4269.023     4759.543
+Akaike Information Criterion:           TPM2+I+R2
+Corrected Akaike Information Criterion: TPM2+R2
+Bayesian Information Criterion:         K2P+R2
+Best-fit model: K2P+R2 chosen according to BIC
+
+All model information printed to output/DAZ-DAZL_RBD/tree.model.gz
+CPU time for ModelFinder: 1.338 seconds (0h:0m:1s)
+Wall-clock time for ModelFinder: 1.376 seconds (0h:0m:1s)
+Generating 1000 samples for ultrafast bootstrap (seed: 405334)...
+
+NOTE: 1 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -1928.812
+2. Current log-likelihood: -1898.865
+Optimal log-likelihood: -1898.833
+Rate parameters:  A-C: 1.00000  A-G: 3.16967  A-T: 1.00000  C-G: 1.00000  C-T: 3.16967  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Site proportion and rates:  (0.901,0.460) (0.099,5.893)
+Parameters optimization took 2 rounds (0.011 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.00504112 secs using 99.7% CPU
+Computing ML distances took 0.005082 sec (of wall-clock time) 0.005054 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 8.89301e-05 secs using 84.34% CPU
+Computing RapidNJ tree took 0.000299 sec (of wall-clock time) 0.000251 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -1902.833
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.163 second
+Computing log-likelihood of 98 initial trees ... 0.095 seconds
+Current best score: -1894.319
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -1894.253
+Iteration 10 / LogL: -1894.253 / Time: 0h:0m:1s
+Iteration 20 / LogL: -1896.946 / Time: 0h:0m:2s
+Finish initializing candidate tree set (20)
+Current best tree score: -1894.253 / CPU time: 0.772
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 26: -1893.221
+Iteration 30 / LogL: -1894.858 / Time: 0h:0m:2s (0h:0m:3s left)
+Iteration 40 / LogL: -1894.916 / Time: 0h:0m:2s (0h:0m:3s left)
+Iteration 50 / LogL: -1905.452 / Time: 0h:0m:3s (0h:0m:2s left)
+Log-likelihood cutoff on original alignment: -1921.217
+Iteration 60 / LogL: -1895.888 / Time: 0h:0m:3s (0h:0m:2s left)
+Iteration 70 / LogL: -1893.227 / Time: 0h:0m:4s (0h:0m:2s left)
+Iteration 80 / LogL: -1893.225 / Time: 0h:0m:4s (0h:0m:1s left)
+Iteration 90 / LogL: -1894.913 / Time: 0h:0m:4s (0h:0m:1s left)
+Iteration 100 / LogL: -1893.229 / Time: 0h:0m:5s (0h:0m:1s left)
+Log-likelihood cutoff on original alignment: -1921.940
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.992
+Iteration 110 / LogL: -1895.929 / Time: 0h:0m:5s (0h:0m:3s left)
+Iteration 120 / LogL: -1896.309 / Time: 0h:0m:6s (0h:0m:3s left)
+TREE SEARCH COMPLETED AFTER 127 ITERATIONS / Time: 0h:0m:6s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -1893.221
+Optimal log-likelihood: -1893.218
+Rate parameters:  A-C: 1.00000  A-G: 3.23486  A-T: 1.00000  C-G: 1.00000  C-T: 3.23486  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Site proportion and rates:  (0.905,0.467) (0.095,6.087)
+Parameters optimization took 1 rounds (0.005 sec)
+BEST SCORE FOUND : -1893.218
+Creating bootstrap support values...
+Split supports printed to NEXUS file output/DAZ-DAZL_RBD/tree.splits.nex
+Total tree length: 0.429
+
+Total number of iterations: 127
+CPU time used for tree search: 4.850 sec (0h:0m:4s)
+Wall-clock time used for tree search: 4.910 sec (0h:0m:4s)
+Total CPU time used: 6.284 sec (0h:0m:6s)
+Total wall-clock time used: 6.397 sec (0h:0m:6s)
+
+Computing bootstrap consensus tree...
+Reading input file output/DAZ-DAZL_RBD/tree.splits.nex...
+73 taxa and 883 splits.
+Consensus tree written to output/DAZ-DAZL_RBD/tree.contree
+Reading input trees file output/DAZ-DAZL_RBD/tree.contree
+Log-likelihood of consensus tree: -1893.297
+
+Analysis results written to: 
+  IQ-TREE report:                output/DAZ-DAZL_RBD/tree.iqtree
+  Maximum-likelihood tree:       output/DAZ-DAZL_RBD/tree.treefile
+  Likelihood distances:          output/DAZ-DAZL_RBD/tree.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          output/DAZ-DAZL_RBD/tree.splits.nex
+  Consensus tree:                output/DAZ-DAZL_RBD/tree.contree
+  Screen log file:               output/DAZ-DAZL_RBD/tree.log
+
+Date and Time: Tue Apr 21 14:48:17 2026

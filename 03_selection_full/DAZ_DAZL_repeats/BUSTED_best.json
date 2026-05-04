@@ -1,0 +1,1654 @@
+{
+ "Evidence Ratios":{
+  },
+ "Site Log Likelihood":{
+   "unconstrained":    [
+[-30.93014549664881, -21.97851664765158, -24.27307508186831, -18.93503498121456, -22.99439455906115, -15.21820404746526, -45.29938956436852, -11.35609755275557, -31.49570988412309, -39.29126945308985, -30.69948245551009, -8.903407619207789, -12.67406136569287, -3.109628577687483, -5.115439387678935, -3.678305618251315, -9.352045572366782, -24.21685397027278, -25.66883484735135, -28.16605859737929, -43.13705887201665, -24.8501498987834, -12.87452606292325, -26.49041691735192, -23.6655893513642, -29.0773315657284, -31.23650787638365, -10.99780650514436, -35.25491108978601, -17.52230270161606] 
+    ]
+  },
+ "analysis":{
+   "authors":"Sergei L Kosakovsky Pond",
+   "citation":"*Gene-wide identification of episodic selection*, Mol Biol Evol. 32(5):1365-71, *Synonymous Site-to-Site Substitution Rate Variation Dramatically Inflates False Positive Rates of Selection Analyses: Ignore at Your Own Peril*, Mol Biol Evol. 37(8):2430-2439",
+   "contact":"spond@temple.edu",
+   "info":"BUSTED (branch-site unrestricted statistical test of episodic diversification) uses a random effects branch-site model fitted  jointly to all or a subset of tree branches in order to test for alignment-wide evidence of episodic diversifying selection. Assuming there is evidence of positive selection (i.e. there is an omega > 1),  BUSTED will also perform a quick evidence-ratio style analysis to explore which individual sites may have been subject to selection.\n                               \nVersion 2.0 adds support for synonymous rate variation, and relaxes the test statistic to 0.5 (chi^2_0 + chi^2_2).\nVersion 2.1 adds a grid search for the initial starting point.\nVersion 2.2 changes the grid search to LHC, and adds an initial search phase to use adaptive Nedler-Mead. \nVersion 3.0 implements the option for branch-site variation in synonymous substitution rates. \nVersion 3.1 adds HMM auto-correlation option for SRV, and binds SRV distributions for multiple branch sets.\nVersion 4.0 adds support for multiple hits (MH), ancestral state reconstruction saved to JSON, and profiling of branch-site level support for selection / multiple hits.\nVersion 4.2 adds calculation of MH-attributable fractions of substitutions.\nVersion 4.5 adds an 'error absorption' component. \nVersion 4.6 adds support for MSS-type models.\nVersion 4.7 adds user configurable options for the error class.\n\n",
+   "requirements":"in-frame codon alignment and a phylogenetic tree (optionally annotated with {})",
+   "settings":{
+     "error-sink":1,
+     "mss":"No",
+     "multiple-hit":"None",
+     "srv":"No"
+    },
+   "version":"4.7"
+  },
+ "background":0,
+ "branch attributes":{
+   "0":{
+     "GORGOR_CHR2_DAZL_E72_26423032_NA_NONC_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"GORGOR_CHR2_DAZL-E72_26423032_NA_NONC_-",
+       "unconstrained":0
+      },
+     "GORGOR_CHRY_DAZ1_E72_11_42783133_Q18_1_A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0.01395655733850247,
+       "Nucleotide GTR":0.01358176269146504,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"GORGOR_CHRY_DAZ1-E72.11_42783133_Q18.1.A_NONC_-",
+       "unconstrained":0.01396030071633356
+      },
+     "GORGOR_CHRY_DAZ1_E72_1_42783133_Q18_1_A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"GORGOR_CHRY_DAZ1-E72.1_42783133_Q18.1.A_NONC_-",
+       "unconstrained":0
+      },
+     "GORGOR_CHRY_DAZ1_E72_2_42783133_Q18_1_A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0.02940321233070827,
+       "Nucleotide GTR":0.0283769868713511,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"GORGOR_CHRY_DAZ1-E72.2_42783133_Q18.1.A_NONC_-",
+       "unconstrained":0.02943968093840183
+      },
+     "GORGOR_CHRY_DAZ1_E72_3_42783133_Q18_1_A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"GORGOR_CHRY_DAZ1-E72.3_42783133_Q18.1.A_NONC_-",
+       "unconstrained":0
+      },
+     "GORGOR_CHRY_DAZ1_E72_4_42783133_Q18_1_A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0.05940386614016469,
+       "Nucleotide GTR":0.05879442877481198,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"GORGOR_CHRY_DAZ1-E72.4_42783133_Q18.1.A_NONC_-",
+       "unconstrained":0.05948156322958526
+      },
+     "GORGOR_CHRY_DAZ1_E72_5_42783133_Q18_1_A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0.03124824717506519,
+       "Nucleotide GTR":0.02981184691819943,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"GORGOR_CHRY_DAZ1-E72.5_42783133_Q18.1.A_NONC_-",
+       "unconstrained":0.03125698735273643
+      },
+     "GORGOR_CHRY_DAZ1_E72_7_42783133_Q18_1_A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0.02836780399626553,
+       "Nucleotide GTR":0.02797539675721552,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"GORGOR_CHRY_DAZ1-E72.7_42783133_Q18.1.A_NONC_-",
+       "unconstrained":0.02839935723962215
+      },
+     "GORGOR_CHRY_DAZ1_E72_8_42783133_Q18_1_A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"GORGOR_CHRY_DAZ1-E72.8_42783133_Q18.1.A_NONC_-",
+       "unconstrained":0
+      },
+     "GORGOR_CHRY_DAZ1_E72_9_42783133_Q18_1_A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0.02915574156261587,
+       "Nucleotide GTR":0.02830206411035912,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"GORGOR_CHRY_DAZ1-E72.9_42783133_Q18.1.A_NONC_-",
+       "unconstrained":0.0291273220453205
+      },
+     "GORGOR_CHRY_LOC129530216_E72_1_42879918_Q18_1_B_NONC_T":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"GORGOR_CHRY_LOC129530216-E72.1_42879918_Q18.1.B_NONC_T",
+       "unconstrained":0
+      },
+     "HOMSAP_CHRY_DAZ1_E72_1_23965003_Q8A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0.01351263283618368,
+       "Nucleotide GTR":0.01352250060961475,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"HOMSAP_CHRY_DAZ1-E72.1_23965003_Q8A_NONC_-",
+       "unconstrained":0.01350623309184598
+      },
+     "HOMSAP_CHRY_DAZ1_E72_2_23965003_Q8A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0.01577325141111622,
+       "Nucleotide GTR":0.01446606806897941,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"HOMSAP_CHRY_DAZ1-E72.2_23965003_Q8A_NONC_-",
+       "unconstrained":0.01572680573982084
+      },
+     "HOMSAP_CHRY_DAZ1_E72_3_23965003_Q8A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0.01434357238645059,
+       "Nucleotide GTR":0.01417732413271638,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"HOMSAP_CHRY_DAZ1-E72.3_23965003_Q8A_NONC_-",
+       "unconstrained":0.01431801378704495
+      },
+     "HOMSAP_CHRY_DAZ1_E72_4_23965003_Q8A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0.04473065421316424,
+       "Nucleotide GTR":0.04353283125576985,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"HOMSAP_CHRY_DAZ1-E72.4_23965003_Q8A_NONC_-",
+       "unconstrained":0.044794703331969
+      },
+     "HOMSAP_CHRY_DAZ1_E72_5_23965003_Q8A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"HOMSAP_CHRY_DAZ1-E72.5_23965003_Q8A_NONC_-",
+       "unconstrained":0
+      },
+     "HOMSAP_CHRY_DAZ1_E72_7_23965003_Q8A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"HOMSAP_CHRY_DAZ1-E72.7_23965003_Q8A_NONC_-",
+       "unconstrained":0
+      },
+     "HOMSAP_CHRY_DAZ1_E72_8_23965003_Q8A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"HOMSAP_CHRY_DAZ1-E72.8_23965003_Q8A_NONC_-",
+       "unconstrained":0
+      },
+     "HOMSAP_CHRY_DAZ1_E72_9_23965003_Q8A_NONC_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"HOMSAP_CHRY_DAZ1-E72.9_23965003_Q8A_NONC_-",
+       "unconstrained":0
+      },
+     "HOMSAP_CHRY_DAZ2_E72_1_25661821_Q11_3B_NONC_T":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"HOMSAP_CHRY_DAZ2-E72.1_25661821_Q11.3B_NONC_T",
+       "unconstrained":0
+      },
+     "NODE110":{
+       "MG94xREV with separate rates for branch sets":0.02797296747611524,
+       "Nucleotide GTR":0.0273683630115786,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.02800328525835365
+      },
+     "NODE136":{
+       "MG94xREV with separate rates for branch sets":0.05937740751966853,
+       "Nucleotide GTR":0.05808124674802569,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.05940151074389711
+      },
+     "NODE14":{
+       "MG94xREV with separate rates for branch sets":0.01440735310116534,
+       "Nucleotide GTR":0.01410540088912607,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01438333509952153
+      },
+     "NODE143":{
+       "MG94xREV with separate rates for branch sets":0.01386074052408294,
+       "Nucleotide GTR":0.01361428658072584,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01385715292728759
+      },
+     "NODE16":{
+       "MG94xREV with separate rates for branch sets":0.01446475237198989,
+       "Nucleotide GTR":0.0140988317264481,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01444336779937696
+      },
+     "NODE17":{
+       "MG94xREV with separate rates for branch sets":0.01546330869819648,
+       "Nucleotide GTR":0.01472882510847528,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01546439754522278
+      },
+     "NODE196":{
+       "MG94xREV with separate rates for branch sets":0.01434309444300268,
+       "Nucleotide GTR":0.01397747874879744,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01432894384630799
+      },
+     "NODE216":{
+       "MG94xREV with separate rates for branch sets":0.01427235675956788,
+       "Nucleotide GTR":0.01406431264630329,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01427732294869952
+      },
+     "NODE22":{
+       "MG94xREV with separate rates for branch sets":0.02990864673062851,
+       "Nucleotide GTR":0.02917611776243728,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.02994008682462018
+      },
+     "NODE233":{
+       "MG94xREV with separate rates for branch sets":0.01393998239628731,
+       "Nucleotide GTR":0.01383292574013661,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01394327676537606
+      },
+     "NODE236":{
+       "MG94xREV with separate rates for branch sets":0.02847881317677317,
+       "Nucleotide GTR":0.02810399140815372,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.02848929873252493
+      },
+     "NODE275":{
+       "MG94xREV with separate rates for branch sets":0.04642108319362682,
+       "Nucleotide GTR":0.04457218947150648,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.0463225212688345
+      },
+     "NODE295":{
+       "MG94xREV with separate rates for branch sets":0.06237382864898167,
+       "Nucleotide GTR":0.05927941087336558,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.0624208557645985
+      },
+     "NODE297":{
+       "MG94xREV with separate rates for branch sets":0.01426792366165411,
+       "Nucleotide GTR":0.01416486603248644,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01422824737873041
+      },
+     "NODE298":{
+       "MG94xREV with separate rates for branch sets":0.03052961367411816,
+       "Nucleotide GTR":0.02915895665678276,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.03050884417616536
+      },
+     "NODE301":{
+       "MG94xREV with separate rates for branch sets":0.01385109290275961,
+       "Nucleotide GTR":0.0136578749026768,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01384569291651869
+      },
+     "NODE322":{
+       "MG94xREV with separate rates for branch sets":0.02888086051333911,
+       "Nucleotide GTR":0.02832169998801532,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.02887335509392738
+      },
+     "NODE323":{
+       "MG94xREV with separate rates for branch sets":0.01172508358105071,
+       "Nucleotide GTR":0.01171406903633166,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01171235706788513
+      },
+     "NODE33":{
+       "MG94xREV with separate rates for branch sets":0.01457066262515085,
+       "Nucleotide GTR":0.01421865012858042,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01458162298025323
+      },
+     "NODE337":{
+       "MG94xREV with separate rates for branch sets":0.01180257566923369,
+       "Nucleotide GTR":0.01171406990617808,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01178930289242383
+      },
+     "NODE365":{
+       "MG94xREV with separate rates for branch sets":0.01191547814915612,
+       "Nucleotide GTR":0.01183058312976362,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01190061915581757
+      },
+     "NODE390":{
+       "MG94xREV with separate rates for branch sets":0.04391766999349328,
+       "Nucleotide GTR":0.0432250507711336,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.04396974778129002
+      },
+     "NODE393":{
+       "MG94xREV with separate rates for branch sets":0.01370359475740198,
+       "Nucleotide GTR":0.01375490657664059,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01367295054060355
+      },
+     "NODE493":{
+       "MG94xREV with separate rates for branch sets":0.04691574716225418,
+       "Nucleotide GTR":0.04542077736653431,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.04692136959020586
+      },
+     "NODE494":{
+       "MG94xREV with separate rates for branch sets":0.01396419113570736,
+       "Nucleotide GTR":0.01401991694362606,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01395045943366885
+      },
+     "NODE505":{
+       "MG94xREV with separate rates for branch sets":0.01435706245475161,
+       "Nucleotide GTR":0.01439247289867035,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01435328700251547
+      },
+     "NODE79":{
+       "MG94xREV with separate rates for branch sets":0.01462671198022748,
+       "Nucleotide GTR":0.01417442276616,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01460737204143706
+      },
+     "NODE84":{
+       "MG94xREV with separate rates for branch sets":0.01421840405144064,
+       "Nucleotide GTR":0.01383633133649601,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "unconstrained":0.01420335968882571
+      },
+     "PANPAN_CHRY_LOC129395530_E72_1_9036315_Q23B_C2_":{
+       "MG94xREV with separate rates for branch sets":0.01425962275279141,
+       "Nucleotide GTR":0.01378330782487501,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PANPAN_CHRY_LOC129395530-E72.1_9036315_Q23B_C2_-",
+       "unconstrained":0.01428912784702276
+      },
+     "PANPAN_CHRY_LOC129395530_E72_4_9036315_Q23B_C2_":{
+       "MG94xREV with separate rates for branch sets":0.02945302557994802,
+       "Nucleotide GTR":0.02916805338539118,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PANPAN_CHRY_LOC129395530-E72.4_9036315_Q23B_C2_-",
+       "unconstrained":0.0294242290216816
+      },
+     "PANPAN_CHRY_LOC129395530_E72_7_9036315_Q23B_C2_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PANPAN_CHRY_LOC129395530-E72.7_9036315_Q23B_C2_-",
+       "unconstrained":0
+      },
+     "PANPAN_CHRY_LOC129395530_E72_8_9036315_Q23B_C2_":{
+       "MG94xREV with separate rates for branch sets":0.02783677870749113,
+       "Nucleotide GTR":0.02722943043558377,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PANPAN_CHRY_LOC129395530-E72.8_9036315_Q23B_C2_-",
+       "unconstrained":0.02784515483321173
+      },
+     "PANPAN_CHRY_LOC129395530_E72_9_9036315_Q23B_C2_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PANPAN_CHRY_LOC129395530-E72.9_9036315_Q23B_C2_-",
+       "unconstrained":0
+      },
+     "PANPAN_CHRY_LOC129395621_E72_7_9107812_Q22A_NONC_T":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PANPAN_CHRY_LOC129395621-E72.7_9107812_Q22A_NONC_T",
+       "unconstrained":0
+      },
+     "PANPAN_CHRY_LOC129395621_E72_8_9107812_Q22A_NONC_T":{
+       "MG94xREV with separate rates for branch sets":0.05879741110296969,
+       "Nucleotide GTR":0.05728971990602254,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PANPAN_CHRY_LOC129395621-E72.8_9107812_Q22A_NONC_T",
+       "unconstrained":0.05880902723478917
+      },
+     "PONABE_CHR2_DAZL_E72_138140947_NA_NONC_T":{
+       "MG94xREV with separate rates for branch sets":0.01427292063666566,
+       "Nucleotide GTR":0.01397637082626638,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONABE_CHR2_DAZL-E72_138140947_NA_NONC_T",
+       "unconstrained":0.01425096885605162
+      },
+     "PONABE_CHRY_LOC129053177_E72_1_40287231_Q13A_C2_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONABE_CHRY_LOC129053177-E72.1_40287231_Q13A_C2_-",
+       "unconstrained":0
+      },
+     "PONABE_CHRY_LOC129053177_E72_2_40287231_Q13A_C2_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONABE_CHRY_LOC129053177-E72.2_40287231_Q13A_C2_-",
+       "unconstrained":0
+      },
+     "PONABE_CHRY_LOC129053177_E72_4_40287231_Q13A_C2_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONABE_CHRY_LOC129053177-E72.4_40287231_Q13A_C2_-",
+       "unconstrained":0
+      },
+     "PONABE_CHRY_LOC129053177_E72_6_40287231_Q13A_C2_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONABE_CHRY_LOC129053177-E72.6_40287231_Q13A_C2_-",
+       "unconstrained":0
+      },
+     "PONABE_CHRY_LOC129053200_E72_1_47246963_Q23_1A_C2_":{
+       "MG94xREV with separate rates for branch sets":0.0600718695215302,
+       "Nucleotide GTR":0.05736875527747995,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONABE_CHRY_LOC129053200-E72.1_47246963_Q23.1A_C2_-",
+       "unconstrained":0.06007829604576607
+      },
+     "PONABE_CHRY_LOC129053200_E72_2_47246963_Q23_1A_C2_":{
+       "MG94xREV with separate rates for branch sets":0.0141997955294047,
+       "Nucleotide GTR":0.014140172452222,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONABE_CHRY_LOC129053200-E72.2_47246963_Q23.1A_C2_-",
+       "unconstrained":0.01416264321435211
+      },
+     "PONABE_CHRY_LOC129053200_E72_3_47246963_Q23_1A_C2_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONABE_CHRY_LOC129053200-E72.3_47246963_Q23.1A_C2_-",
+       "unconstrained":0
+      },
+     "PONABE_CHRY_LOC129053200_E72_5_47246963_Q23_1A_C2_":{
+       "MG94xREV with separate rates for branch sets":0.01450644801406597,
+       "Nucleotide GTR":0.01422655564355322,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONABE_CHRY_LOC129053200-E72.5_47246963_Q23.1A_C2_-",
+       "unconstrained":0.0144897767447261
+      },
+     "PONABE_CHRY_LOC129053245_E72_3_40367975_Q13B_C2_T":{
+       "MG94xREV with separate rates for branch sets":0.01180915605188169,
+       "Nucleotide GTR":0.01171201071619466,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONABE_CHRY_LOC129053245-E72.3_40367975_Q13B_C2_T",
+       "unconstrained":0.01178223930765159
+      },
+     "PONABE_CHRY_LOC129053305_E72_1_50800706_Q29B_C2_T":{
+       "MG94xREV with separate rates for branch sets":0.01223885969908355,
+       "Nucleotide GTR":0.01201399540421683,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONABE_CHRY_LOC129053305-E72.1_50800706_Q29B_C2_T",
+       "unconstrained":0.0122201095209642
+      },
+     "PONPYG_CHRY_LOC129025913_E72_1_33814768_Q18A_C2_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONPYG_CHRY_LOC129025913-E72.1_33814768_Q18A_C2_-",
+       "unconstrained":0
+      },
+     "PONPYG_CHRY_LOC129025913_E72_2_33814768_Q18A_C2_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONPYG_CHRY_LOC129025913-E72.2_33814768_Q18A_C2_-",
+       "unconstrained":0
+      },
+     "PONPYG_CHRY_LOC129025913_E72_3_33814768_Q18A_C2_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONPYG_CHRY_LOC129025913-E72.3_33814768_Q18A_C2_-",
+       "unconstrained":0
+      },
+     "PONPYG_CHRY_LOC129025914_E72_3_33882908_Q18B_C2_T":{
+       "MG94xREV with separate rates for branch sets":0.01434469248151304,
+       "Nucleotide GTR":0.01397770922803295,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONPYG_CHRY_LOC129025914-E72.3_33882908_Q18B_C2_T",
+       "unconstrained":0.0143272395445316
+      },
+     "PONPYG_CHRY_LOC129025923_E72_16_42461501_Q31B_C2_T":{
+       "MG94xREV with separate rates for branch sets":0.01452226214284354,
+       "Nucleotide GTR":0.01408977158429518,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONPYG_CHRY_LOC129025923-E72.16_42461501_Q31B_C2_T",
+       "unconstrained":0.01451660035702904
+      },
+     "PONPYG_CHRY_LOC129025923_E72_1_42461501_Q31B_C2_T":{
+       "MG94xREV with separate rates for branch sets":0.01435913371758873,
+       "Nucleotide GTR":0.01439247299035601,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONPYG_CHRY_LOC129025923-E72.1_42461501_Q31B_C2_T",
+       "unconstrained":0.01435329626588198
+      },
+     "PONPYG_CHRY_LOC129025923_E72_2_42461501_Q31B_C2_T":{
+       "MG94xREV with separate rates for branch sets":0.04638904266494365,
+       "Nucleotide GTR":0.04454726834234149,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONPYG_CHRY_LOC129025923-E72.2_42461501_Q31B_C2_T",
+       "unconstrained":0.04639127547747433
+      },
+     "PONPYG_CHRY_LOC129025923_E72_7_42461501_Q31B_C2_T":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONPYG_CHRY_LOC129025923-E72.7_42461501_Q31B_C2_T",
+       "unconstrained":0
+      },
+     "PONPYG_CHRY_LOC129025960_E72_2_42384755_Q30A_C35_":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONPYG_CHRY_LOC129025960-E72.2_42384755_Q30A_C35_-",
+       "unconstrained":0
+      },
+     "PONPYG_CHRY_LOC129025961_E72_4_26220121_Q7_1A_C2_":{
+       "MG94xREV with separate rates for branch sets":0.01344746267374309,
+       "Nucleotide GTR":0.01358191492722448,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONPYG_CHRY_LOC129025961-E72.4_26220121_Q7.1A_C2_-",
+       "unconstrained":0.01341579903858168
+      },
+     "PONPYG_CHRY_LOC129025961_E72_9_26220121_Q7_1A_C2_":{
+       "MG94xREV with separate rates for branch sets":0.01183061634021604,
+       "Nucleotide GTR":0.01171406889398329,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONPYG_CHRY_LOC129025961-E72.9_26220121_Q7.1A_C2_-",
+       "unconstrained":0.01181600330630721
+      },
+     "PONPYG_CHRY_LOC129025963_E72_3_26306805_Q7_3B_C2_T":{
+       "MG94xREV with separate rates for branch sets":0.05879949032397674,
+       "Nucleotide GTR":0.05953484367158339,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"PONPYG_CHRY_LOC129025963-E72.3_26306805_Q7.3B_C2_T",
+       "unconstrained":0.05882203556016982
+      },
+     "SYMSYN_CHR10_DAZL_E72_109881390_NA_NONC_":{
+       "MG94xREV with separate rates for branch sets":0.01439481997574756,
+       "Nucleotide GTR":0.01414031735324033,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"SYMSYN_CHR10_DAZL-E72_109881390_NA_NONC_-",
+       "unconstrained":0.01437338200703155
+      },
+     "SYMSYN_CHRY_LOC129476757_E72_1_18127859_Q5B_NONC_T":{
+       "MG94xREV with separate rates for branch sets":0.02731504764818977,
+       "Nucleotide GTR":0.02820076463196923,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"SYMSYN_CHRY_LOC129476757-E72.1_18127859_Q5B_NONC_T",
+       "unconstrained":0.02726962959943762
+      },
+     "SYMSYN_CHRY_LOC129476757_E72_2_18127859_Q5B_NONC_T":{
+       "MG94xREV with separate rates for branch sets":0.01414506874549259,
+       "Nucleotide GTR":0.01409188161972812,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"SYMSYN_CHRY_LOC129476757-E72.2_18127859_Q5B_NONC_T",
+       "unconstrained":0.0141048399945231
+      },
+     "SYMSYN_CHRY_LOC129476757_E72_3_18127859_Q5B_NONC_T":{
+       "MG94xREV with separate rates for branch sets":0.02808683007615387,
+       "Nucleotide GTR":0.02748511252384582,
+       "Posterior prob omega class":        [
+[0],
+        [1] 
+        ],
+       "Posterior prob omega class by site":        [
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+        ],
+       "original name":"SYMSYN_CHRY_LOC129476757-E72.3_18127859_Q5B_NONC_T",
+       "unconstrained":0.02811828961511022
+      }
+    },
+   "attributes":{
+     "MG94xREV with separate rates for branch sets":{
+       "attribute type":"branch length",
+       "display order":1
+      },
+     "Nucleotide GTR":{
+       "attribute type":"branch length",
+       "display order":0
+      },
+     "Posterior prob omega class":{
+       "attribute type":"branch annotations",
+       "display order":4
+      },
+     "Posterior prob omega class by site":{
+       "attribute type":"branch annotations",
+       "display order":5
+      },
+     "original name":{
+       "attribute type":"node label",
+       "display order":0
+      },
+     "unconstrained":{
+       "attribute type":"branch length",
+       "display order":0
+      }
+    }
+  },
+ "data partitions":{
+   "0":{
+     "coverage":      [
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29] 
+      ],
+     "name":"busted.filter.default"
+    }
+  },
+ "fits":{
+   "MG94xREV with separate rates for branch sets":{
+     "AIC-c":1543.389371997693,
+     "Equilibrium frequencies":      [
+[0.02128918465405538],
+      [0.008359606469415217],
+      [0.01213741801132617],
+      [0.03577288987891963],
+      [0.01619015358278925],
+      [0.006357374170538252],
+      [0.009230351697121036],
+      [0.02720482680061635],
+      [0.003398928243057201],
+      [0.001334654332303259],
+      [0.001937801449273877],
+      [0.005711326559520138],
+      [0.009571134001121744],
+      [0.003758289244777441],
+      [0.005456707530220155],
+      [0.01608267898476282],
+      [0.03189080392819364],
+      [0.01252253551110968],
+      [0.01818162716344307],
+      [0.05358712583932482],
+      [0.02425254991518524],
+      [0.00952322864709512],
+      [0.01382689571932869],
+      [0.04075232619271105],
+      [0.005091531494828234],
+      [0.001999287446421278],
+      [0.002902790645802903],
+      [0.008555461302969431],
+      [0.01433738129290439],
+      [0.005629847613154369],
+      [0.008174046717500749],
+      [0.02409155495983031],
+      [0.02644650356713124],
+      [0.01038472660676034],
+      [0.01507771546671961],
+      [0.04443889586016739],
+      [0.02011222888228723],
+      [0.007897452223314748],
+      [0.0114664104356522],
+      [0.03379521389461175],
+      [0.00422232083403496],
+      [0.001657975217638106],
+      [0.002407235118365672],
+      [0.007094899155784633],
+      [0.01188974747578883],
+      [0.004668737273570692],
+      [0.006778598500026133],
+      [0.01997871849256261],
+      [0.01777916526312545],
+      [0.07608158630718306],
+      [0.03443312998487698],
+      [0.0135208285738158],
+      [0.01963106144533204],
+      [0.05785907666975349],
+      [0.002838535525563553],
+      [0.004121305511188056],
+      [0.01214681805236814],
+      [0.02035583538340487],
+      [0.007993108985930444],
+      [0.01160529569511085],
+      [0.0342045535983101] 
+      ],
+     "Log Likelihood":-668.4489566952986,
+     "Rate Distributions":{
+       "non-synonymous/synonymous rate ratio for *test*":        [
+[0.9570290059303108, 1] 
+        ]
+      },
+     "display order":1,
+     "estimated parameters":97
+    },
+   "Nucleotide GTR":{
+     "AIC-c":1568.492248246177,
+     "Equilibrium frequencies":      [
+[0.2704043661622426],
+      [0.2458447035475068],
+      [0.1456214338873729],
+      [0.3381294964028777] 
+      ],
+     "Log Likelihood":-668.5318384088029,
+     "Rate Distributions":{
+       "Substitution rate from nucleotide A to nucleotide C":0.116166350486923,
+       "Substitution rate from nucleotide A to nucleotide G":1,
+       "Substitution rate from nucleotide A to nucleotide T":0.07493526336649448,
+       "Substitution rate from nucleotide C to nucleotide G":0.5207977137800156,
+       "Substitution rate from nucleotide C to nucleotide T":0.2684495904197499,
+       "Substitution rate from nucleotide G to nucleotide T":0.1617446519081601
+      },
+     "display order":0,
+     "estimated parameters":113
+    },
+   "Unconstrained model":{
+     "AIC-c":1547.95142803096,
+     "Log Likelihood":-668.4625561207432,
+     "Rate Distributions":{
+       "Test":{
+         "0":{
+           "omega":116.2043561631423,
+           "proportion":0
+          },
+         "1":{
+           "omega":1,
+           "proportion":1
+          }
+        }
+      },
+     "display order":2,
+     "estimated parameters":99
+    }
+  },
+ "input":{
+   "file name":"/Users/sergei/Dropbox/Work/Collaborations/Y-chromosome/2026/round6_export_20260126/DAZ_DAZL_repeats/DAZ_DAZL_repeats.unique.nexus",
+   "number of sequences":54,
+   "number of sites":30,
+   "partition count":1,
+   "trees":{
+     "0":"(PONABE_CHR2_DAZL_E72_138140947_NA_NONC_T:2.3787e-06,GORGOR_CHR2_DAZL_E72_26423032_NA_NONC_:1e-06,SYMSYN_CHR10_DAZL_E72_109881390_NA_NONC_:0.0148632952,(((PONABE_CHRY_LOC129053177_E72_1_40287231_Q13A_C2_:5e-06,PONPYG_CHRY_LOC129025961_E72_4_26220121_Q7_1A_C2_:0.014597443)NODE393:0.014655749,PONPYG_CHRY_LOC129025913_E72_3_33814768_Q18A_C2_:7.6679e-06,SYMSYN_CHRY_LOC129476757_E72_2_18127859_Q5B_NONC_T:0.0150645153)NODE390:0.0456080498,((GORGOR_CHRY_DAZ1_E72_1_42783133_Q18_1_A_NONC_:2.3899e-06,(((PANPAN_CHRY_LOC129395530_E72_7_9036315_Q23B_C2_:2.8315e-06,(HOMSAP_CHRY_DAZ1_E72_5_23965003_Q8A_NONC_:2.0523e-06,HOMSAP_CHRY_DAZ1_E72_3_23965003_Q8A_NONC_:0.0151561802)NODE236:0.0302520517)NODE233:0.0148693125,HOMSAP_CHRY_DAZ1_E72_8_23965003_Q8A_NONC_:2e-06)NODE216:0.0149477569,((PONABE_CHRY_LOC129053200_E72_5_47246963_Q23_1A_C2_:0.0149308006,PONABE_CHRY_LOC129053177_E72_6_40287231_Q13A_C2_:2e-06)NODE196:0.0148537931,(HOMSAP_CHRY_DAZ1_E72_7_23965003_Q8A_NONC_:2e-06,(GORGOR_CHRY_DAZ1_E72_8_42783133_Q18_1_A_NONC_:2e-06,PANPAN_CHRY_LOC129395530_E72_8_9036315_Q23B_C2_:0.03028185)NODE110:0.0149308006,(HOMSAP_CHRY_DAZ1_E72_9_23965003_Q8A_NONC_:2e-06,(PANPAN_CHRY_LOC129395530_E72_9_9036315_Q23B_C2_:0.0148537931,PANPAN_CHRY_LOC129395621_E72_7_9107812_Q22A_NONC_T:1e-06)NODE143:2.8315e-06,GORGOR_CHRY_DAZ1_E72_11_42783133_Q18_1_A_NONC_:2.0523e-06)NODE136:0.0302520517)NODE84:0.0149477569,PONABE_CHRY_LOC129053177_E72_2_40287231_Q13A_C2_:0.0149308006,PONPYG_CHRY_LOC129025923_E72_16_42461501_Q31B_C2_T:2.8315e-06,PONPYG_CHRY_LOC129025914_E72_3_33882908_Q18B_C2_T:2e-06,SYMSYN_CHRY_LOC129476757_E72_3_18127859_Q5B_NONC_T:0.0148537931)NODE79:2.3899e-06,GORGOR_CHRY_DAZ1_E72_3_42783133_Q18_1_A_NONC_:0.0149308006,GORGOR_CHRY_DAZ1_E72_4_42783133_Q18_1_A_NONC_:0.0634914551,(GORGOR_CHRY_DAZ1_E72_7_42783133_Q18_1_A_NONC_:0.0301507475,HOMSAP_CHRY_DAZ1_E72_4_23965003_Q8A_NONC_:0.04647167150000001,PANPAN_CHRY_LOC129395530_E72_4_9036315_Q23B_C2_:0.0311452964)NODE33:0.0151609328,GORGOR_CHRY_DAZ1_E72_2_42783133_Q18_1_A_NONC_:0.0634914551,GORGOR_CHRY_DAZ1_E72_5_42783133_Q18_1_A_NONC_:0.0148537931,GORGOR_CHRY_DAZ1_E72_9_42783133_Q18_1_A_NONC_:2.8315e-06)NODE22:0.0307564352,(HOMSAP_CHRY_DAZ1_E72_2_23965003_Q8A_NONC_:0.0151764968,PANPAN_CHRY_LOC129395530_E72_1_9036315_Q23B_C2_:0.014610122)NODE275:0.0466906512)NODE17:0.0152141049,PANPAN_CHRY_LOC129395621_E72_8_9107812_Q22A_NONC_T:0.0614816149)NODE16:0.0151088616,(PONPYG_CHRY_LOC129025923_E72_2_42461501_Q31B_C2_T:1e-06,((PONABE_CHRY_LOC129053200_E72_1_47246963_Q23_1A_C2_:1e-06,GORGOR_CHRY_LOC129530216_E72_1_42879918_Q18_1_B_NONC_T:2.3167e-06,(HOMSAP_CHRY_DAZ2_E72_1_25661821_Q11_3B_NONC_T:2.1837e-06,HOMSAP_CHRY_DAZ1_E72_1_23965003_Q8A_NONC_:0.0146676776)NODE301:0.0146953984)NODE298:0.0335321238,SYMSYN_CHRY_LOC129476757_E72_1_18127859_Q5B_NONC_T:7.6679e-06)NODE297:0.0150645153,((PONABE_CHRY_LOC129053245_E72_3_40367975_Q13B_C2_T:5e-06,(PONPYG_CHRY_LOC129025961_E72_9_26220121_Q7_1A_C2_:0.014597443,PONPYG_CHRY_LOC129025923_E72_7_42461501_Q31B_C2_T:0.014655749)NODE337:0.0456080498,PONABE_CHRY_LOC129053177_E72_4_40287231_Q13A_C2_:3.3778e-06)NODE323:0.0119581197,(PONABE_CHRY_LOC129053305_E72_1_50800706_Q29B_C2_T:0.0121405078,PONABE_CHRY_LOC129053200_E72_3_47246963_Q23_1A_C2_:7.3302e-06)NODE365:0.0119742993,PONPYG_CHRY_LOC129025913_E72_2_33814768_Q18A_C2_:4.4821e-06)NODE322:0.0273820525)NODE295:0.0653025359)NODE14:0.014869987,((PONPYG_CHRY_LOC129025960_E72_2_42384755_Q30A_C35_:1e-06,(PONPYG_CHRY_LOC129025913_E72_1_33814768_Q18A_C2_:2.3085e-06,PONPYG_CHRY_LOC129025923_E72_1_42461501_Q31B_C2_T:0.014986252)NODE505:0.0149748509,PONABE_CHRY_LOC129053200_E72_2_47246963_Q23_1A_C2_:0.0148810098)NODE494:0.0147996686,PONPYG_CHRY_LOC129025963_E72_3_26306805_Q7_3B_C2_T:0.0626209932)NODE493:0.0478957582)"
+    }
+  },
+ "runtime":"2.5.94",
+ "substitutions":{
+   "0":{
+     "0":{
+       "GORGOR_CHRY_DAZ1_E72_5_42783133_Q18_1_A_NONC_":"GCC",
+       "NODE236":"CCA",
+       "NODE275":"GAA",
+       "NODE295":"GCT",
+       "PANPAN_CHRY_LOC129395621_E72_8_9107812_Q22A_NONC_T":"ACA",
+       "root":"GCA"
+      },
+     "1":{
+       "HOMSAP_CHRY_DAZ1_E72_1_23965003_Q8A_NONC_":"TAC",
+       "NODE22":"TTT",
+       "NODE494":"CAT",
+       "root":"TAT"
+      },
+     "10":{
+       "GORGOR_CHRY_DAZ1_E72_4_42783133_Q18_1_A_NONC_":"CAC",
+       "HOMSAP_CHRY_DAZ1_E72_4_23965003_Q8A_NONC_":"CAA",
+       "NODE322":"CAA",
+       "NODE493":"CAC",
+       "PANPAN_CHRY_LOC129395530_E72_4_9036315_Q23B_C2_":"CAC",
+       "SYMSYN_CHRY_LOC129476757_E72_1_18127859_Q5B_NONC_T":"CAA",
+       "root":"CAG"
+      },
+     "11":{
+       "GORGOR_CHR2_DAZL_E72_26423032_NA_NONC_":"---",
+       "NODE16":"---",
+       "NODE298":"---",
+       "NODE390":"---",
+       "NODE493":"---",
+       "PONABE_CHR2_DAZL_E72_138140947_NA_NONC_T":"---",
+       "PONPYG_CHRY_LOC129025923_E72_2_42461501_Q31B_C2_T":"---",
+       "PONPYG_CHRY_LOC129025961_E72_9_26220121_Q7_1A_C2_":"CTT",
+       "SYMSYN_CHR10_DAZL_E72_109881390_NA_NONC_":"---",
+       "root":"TTT"
+      },
+     "12":{
+       "GORGOR_CHR2_DAZL_E72_26423032_NA_NONC_":"---",
+       "NODE16":"---",
+       "NODE298":"---",
+       "NODE323":"ACA",
+       "NODE390":"---",
+       "NODE493":"---",
+       "PONABE_CHR2_DAZL_E72_138140947_NA_NONC_T":"---",
+       "PONPYG_CHRY_LOC129025923_E72_2_42461501_Q31B_C2_T":"---",
+       "SYMSYN_CHR10_DAZL_E72_109881390_NA_NONC_":"---",
+       "SYMSYN_CHRY_LOC129476757_E72_1_18127859_Q5B_NONC_T":"GTA",
+       "root":"ATA"
+      },
+     "13":{
+       "GORGOR_CHR2_DAZL_E72_26423032_NA_NONC_":"---",
+       "NODE16":"---",
+       "NODE298":"---",
+       "NODE390":"---",
+       "NODE493":"---",
+       "PONABE_CHR2_DAZL_E72_138140947_NA_NONC_T":"---",
+       "PONPYG_CHRY_LOC129025923_E72_2_42461501_Q31B_C2_T":"---",
+       "SYMSYN_CHR10_DAZL_E72_109881390_NA_NONC_":"---",
+       "root":"TCT"
+      },
+     "14":{
+       "GORGOR_CHR2_DAZL_E72_26423032_NA_NONC_":"---",
+       "NODE16":"---",
+       "NODE298":"---",
+       "NODE390":"---",
+       "NODE493":"---",
+       "PONABE_CHR2_DAZL_E72_138140947_NA_NONC_T":"---",
+       "PONPYG_CHRY_LOC129025923_E72_2_42461501_Q31B_C2_T":"---",
+       "SYMSYN_CHR10_DAZL_E72_109881390_NA_NONC_":"---",
+       "root":"ATA"
+      },
+     "15":{
+       "GORGOR_CHR2_DAZL_E72_26423032_NA_NONC_":"---",
+       "NODE16":"---",
+       "NODE298":"---",
+       "NODE390":"---",
+       "NODE493":"---",
+       "PONABE_CHR2_DAZL_E72_138140947_NA_NONC_T":"---",
+       "PONPYG_CHRY_LOC129025923_E72_2_42461501_Q31B_C2_T":"---",
+       "SYMSYN_CHR10_DAZL_E72_109881390_NA_NONC_":"---",
+       "root":"AAT"
+      },
+     "16":{
+       "GORGOR_CHR2_DAZL_E72_26423032_NA_NONC_":"---",
+       "NODE16":"---",
+       "NODE298":"---",
+       "NODE337":"TCT",
+       "NODE390":"---",
+       "NODE493":"---",
+       "PONABE_CHR2_DAZL_E72_138140947_NA_NONC_T":"---",
+       "PONPYG_CHRY_LOC129025923_E72_2_42461501_Q31B_C2_T":"---",
+       "SYMSYN_CHR10_DAZL_E72_109881390_NA_NONC_":"---",
+       "root":"TCC"
+      },
+     "17":{
+       "NODE505":"ATC",
+       "PONPYG_CHRY_LOC129025914_E72_3_33882908_Q18B_C2_T":"ATC",
+       "SYMSYN_CHR10_DAZL_E72_109881390_NA_NONC_":"ATC",
+       "root":"GTC"
+      },
+     "18":{
+       "GORGOR_CHRY_DAZ1_E72_2_42783133_Q18_1_A_NONC_":"GCC",
+       "HOMSAP_CHRY_DAZ1_E72_4_23965003_Q8A_NONC_":"GCC",
+       "NODE16":"ACC",
+       "NODE236":"ACT",
+       "root":"ATC"
+      },
+     "19":{
+       "GORGOR_CHRY_DAZ1_E72_5_42783133_Q18_1_A_NONC_":"TCT",
+       "NODE143":"AGT",
+       "NODE233":"GCT",
+       "NODE322":"CCT",
+       "root":"ACT"
+      },
+     "2":{
+       "NODE295":"TCT",
+       "NODE390":"CGT",
+       "PANPAN_CHRY_LOC129395530_E72_1_9036315_Q23B_C2_":"CCC",
+       "PONABE_CHRY_LOC129053200_E72_1_47246963_Q23_1A_C2_":"CCT",
+       "root":"CCT"
+      },
+     "20":{
+       "NODE390":"AGA",
+       "PANPAN_CHRY_LOC129395530_E72_8_9036315_Q23B_C2_":"GGC",
+       "PANPAN_CHRY_LOC129395621_E72_8_9107812_Q22A_NONC_T":"GGG",
+       "PONPYG_CHRY_LOC129025923_E72_16_42461501_Q31B_C2_T":"GGT",
+       "PONPYG_CHRY_LOC129025923_E72_2_42461501_Q31B_C2_T":"CGA",
+       "SYMSYN_CHRY_LOC129476757_E72_2_18127859_Q5B_NONC_T":"AGC",
+       "root":"GGA"
+      },
+     "21":{
+       "NODE301":"TGT",
+       "PANPAN_CHRY_LOC129395621_E72_8_9107812_Q22A_NONC_T":"TGT",
+       "PONABE_CHRY_LOC129053305_E72_1_50800706_Q29B_C2_T":"AAT",
+       "PONPYG_CHRY_LOC129025963_E72_3_26306805_Q7_3B_C2_T":"TGT",
+       "root":"TAT"
+      },
+     "22":{
+       "NODE493":"CAT",
+       "root":"CAG"
+      },
+     "23":{
+       "GORGOR_CHRY_DAZ1_E72_4_42783133_Q18_1_A_NONC_":"TTC",
+       "HOMSAP_CHRY_DAZ1_E72_4_23965003_Q8A_NONC_":"TTC",
+       "NODE136":"TTC",
+       "NODE393":"TCG",
+       "root":"TTG"
+      },
+     "24":{
+       "NODE110":"GCT",
+       "NODE136":"CAT",
+       "NODE298":"CTT",
+       "PONPYG_CHRY_LOC129025963_E72_3_26306805_Q7_3B_C2_T":"CTT",
+       "root":"CCT"
+      },
+     "25":{
+       "GORGOR_CHRY_DAZ1_E72_4_42783133_Q18_1_A_NONC_":"GTG",
+       "PANPAN_CHRY_LOC129395530_E72_8_9036315_Q23B_C2_":"GTG",
+       "PONABE_CHRY_LOC129053200_E72_2_47246963_Q23_1A_C2_":"GTG",
+       "PONPYG_CHRY_LOC129025923_E72_2_42461501_Q31B_C2_T":"TTA",
+       "SYMSYN_CHRY_LOC129476757_E72_3_18127859_Q5B_NONC_T":"GTG",
+       "root":"GTA"
+      },
+     "26":{
+       "GORGOR_CHRY_DAZ1_E72_7_42783133_Q18_1_A_NONC_":"TGC",
+       "NODE33":"TAC",
+       "NODE84":"TAC",
+       "PONPYG_CHRY_LOC129025961_E72_4_26220121_Q7_1A_C2_":"TGT",
+       "SYMSYN_CHRY_LOC129476757_E72_1_18127859_Q5B_NONC_T":"TGT",
+       "root":"TAT"
+      },
+     "27":{
+       "PONPYG_CHRY_LOC129025923_E72_1_42461501_Q31B_C2_T":"GAT",
+       "root":"AAT"
+      },
+     "28":{
+       "GORGOR_CHRY_DAZ1_E72_2_42783133_Q18_1_A_NONC_":"GAT",
+       "GORGOR_CHRY_DAZ1_E72_9_42783133_Q18_1_A_NONC_":"TAC",
+       "NODE136":"TAC",
+       "PONABE_CHR2_DAZL_E72_138140947_NA_NONC_T":"TAC",
+       "PONPYG_CHRY_LOC129025923_E72_2_42461501_Q31B_C2_T":"AAT",
+       "PONPYG_CHRY_LOC129025963_E72_3_26306805_Q7_3B_C2_T":"TGT",
+       "root":"TAT"
+      },
+     "29":{
+       "PANPAN_CHRY_LOC129395530_E72_4_9036315_Q23B_C2_":"CAC",
+       "PANPAN_CHRY_LOC129395530_E72_9_9036315_Q23B_C2_":"---",
+       "PONABE_CHRY_LOC129053200_E72_5_47246963_Q23_1A_C2_":"CAA",
+       "root":"CAG"
+      },
+     "3":{
+       "GORGOR_CHRY_DAZ1_E72_4_42783133_Q18_1_A_NONC_":"GGT",
+       "NODE22":"GCT",
+       "NODE298":"GCT",
+       "root":"ACT"
+      },
+     "4":{
+       "NODE110":"TGT",
+       "NODE14":"TAT",
+       "PONABE_CHRY_LOC129053200_E72_1_47246963_Q23_1A_C2_":"TAC",
+       "PONPYG_CHRY_LOC129025963_E72_3_26306805_Q7_3B_C2_T":"TAT",
+       "root":"TAC"
+      },
+     "5":{
+       "HOMSAP_CHRY_DAZ1_E72_2_23965003_Q8A_NONC_":"CCC",
+       "root":"CCA"
+      },
+     "6":{
+       "GORGOR_CHRY_DAZ1_E72_7_42783133_Q18_1_A_NONC_":"GAT",
+       "GORGOR_CHRY_DAZ1_E72_9_42783133_Q18_1_A_NONC_":"GAT",
+       "HOMSAP_CHRY_DAZ1_E72_3_23965003_Q8A_NONC_":"AGA",
+       "NODE216":"AGT",
+       "NODE275":"GAT",
+       "NODE295":"GAT",
+       "NODE297":"CAT",
+       "PONABE_CHRY_LOC129053200_E72_1_47246963_Q23_1A_C2_":"AAT",
+       "SYMSYN_CHRY_LOC129476757_E72_3_18127859_Q5B_NONC_T":"AGT",
+       "root":"AAT"
+      },
+     "7":{
+       "NODE390":"GCA",
+       "root":"TCA"
+      },
+     "8":{
+       "GORGOR_CHRY_DAZ1_E72_11_42783133_Q18_1_A_NONC_":"GCG",
+       "NODE136":"GCA",
+       "NODE275":"GCA",
+       "NODE493":"GCA",
+       "PONABE_CHRY_LOC129053200_E72_1_47246963_Q23_1A_C2_":"GCA",
+       "PONABE_CHRY_LOC129053245_E72_3_40367975_Q13B_C2_T":"TCA",
+       "root":"CCA"
+      },
+     "9":{
+       "NODE17":"TTT",
+       "NODE196":"ATT",
+       "NODE295":"GGT",
+       "NODE365":"GAT",
+       "NODE79":"GTT",
+       "PANPAN_CHRY_LOC129395621_E72_8_9107812_Q22A_NONC_T":"GGT",
+       "root":"GTT"
+      }
+    }
+  },
+ "test results":{
+   "LRT":0,
+   "p-value":0.5
+  },
+ "tested":{
+   "0":{
+     "GORGOR_CHR2_DAZL_E72_26423032_NA_NONC_":"test",
+     "GORGOR_CHRY_DAZ1_E72_11_42783133_Q18_1_A_NONC_":"test",
+     "GORGOR_CHRY_DAZ1_E72_1_42783133_Q18_1_A_NONC_":"test",
+     "GORGOR_CHRY_DAZ1_E72_2_42783133_Q18_1_A_NONC_":"test",
+     "GORGOR_CHRY_DAZ1_E72_3_42783133_Q18_1_A_NONC_":"test",
+     "GORGOR_CHRY_DAZ1_E72_4_42783133_Q18_1_A_NONC_":"test",
+     "GORGOR_CHRY_DAZ1_E72_5_42783133_Q18_1_A_NONC_":"test",
+     "GORGOR_CHRY_DAZ1_E72_7_42783133_Q18_1_A_NONC_":"test",
+     "GORGOR_CHRY_DAZ1_E72_8_42783133_Q18_1_A_NONC_":"test",
+     "GORGOR_CHRY_DAZ1_E72_9_42783133_Q18_1_A_NONC_":"test",
+     "GORGOR_CHRY_LOC129530216_E72_1_42879918_Q18_1_B_NONC_T":"test",
+     "HOMSAP_CHRY_DAZ1_E72_1_23965003_Q8A_NONC_":"test",
+     "HOMSAP_CHRY_DAZ1_E72_2_23965003_Q8A_NONC_":"test",
+     "HOMSAP_CHRY_DAZ1_E72_3_23965003_Q8A_NONC_":"test",
+     "HOMSAP_CHRY_DAZ1_E72_4_23965003_Q8A_NONC_":"test",
+     "HOMSAP_CHRY_DAZ1_E72_5_23965003_Q8A_NONC_":"test",
+     "HOMSAP_CHRY_DAZ1_E72_7_23965003_Q8A_NONC_":"test",
+     "HOMSAP_CHRY_DAZ1_E72_8_23965003_Q8A_NONC_":"test",
+     "HOMSAP_CHRY_DAZ1_E72_9_23965003_Q8A_NONC_":"test",
+     "HOMSAP_CHRY_DAZ2_E72_1_25661821_Q11_3B_NONC_T":"test",
+     "NODE110":"test",
+     "NODE136":"test",
+     "NODE14":"test",
+     "NODE143":"test",
+     "NODE16":"test",
+     "NODE17":"test",
+     "NODE196":"test",
+     "NODE216":"test",
+     "NODE22":"test",
+     "NODE233":"test",
+     "NODE236":"test",
+     "NODE275":"test",
+     "NODE295":"test",
+     "NODE297":"test",
+     "NODE298":"test",
+     "NODE301":"test",
+     "NODE322":"test",
+     "NODE323":"test",
+     "NODE33":"test",
+     "NODE337":"test",
+     "NODE365":"test",
+     "NODE390":"test",
+     "NODE393":"test",
+     "NODE493":"test",
+     "NODE494":"test",
+     "NODE505":"test",
+     "NODE79":"test",
+     "NODE84":"test",
+     "PANPAN_CHRY_LOC129395530_E72_1_9036315_Q23B_C2_":"test",
+     "PANPAN_CHRY_LOC129395530_E72_4_9036315_Q23B_C2_":"test",
+     "PANPAN_CHRY_LOC129395530_E72_7_9036315_Q23B_C2_":"test",
+     "PANPAN_CHRY_LOC129395530_E72_8_9036315_Q23B_C2_":"test",
+     "PANPAN_CHRY_LOC129395530_E72_9_9036315_Q23B_C2_":"test",
+     "PANPAN_CHRY_LOC129395621_E72_7_9107812_Q22A_NONC_T":"test",
+     "PANPAN_CHRY_LOC129395621_E72_8_9107812_Q22A_NONC_T":"test",
+     "PONABE_CHR2_DAZL_E72_138140947_NA_NONC_T":"test",
+     "PONABE_CHRY_LOC129053177_E72_1_40287231_Q13A_C2_":"test",
+     "PONABE_CHRY_LOC129053177_E72_2_40287231_Q13A_C2_":"test",
+     "PONABE_CHRY_LOC129053177_E72_4_40287231_Q13A_C2_":"test",
+     "PONABE_CHRY_LOC129053177_E72_6_40287231_Q13A_C2_":"test",
+     "PONABE_CHRY_LOC129053200_E72_1_47246963_Q23_1A_C2_":"test",
+     "PONABE_CHRY_LOC129053200_E72_2_47246963_Q23_1A_C2_":"test",
+     "PONABE_CHRY_LOC129053200_E72_3_47246963_Q23_1A_C2_":"test",
+     "PONABE_CHRY_LOC129053200_E72_5_47246963_Q23_1A_C2_":"test",
+     "PONABE_CHRY_LOC129053245_E72_3_40367975_Q13B_C2_T":"test",
+     "PONABE_CHRY_LOC129053305_E72_1_50800706_Q29B_C2_T":"test",
+     "PONPYG_CHRY_LOC129025913_E72_1_33814768_Q18A_C2_":"test",
+     "PONPYG_CHRY_LOC129025913_E72_2_33814768_Q18A_C2_":"test",
+     "PONPYG_CHRY_LOC129025913_E72_3_33814768_Q18A_C2_":"test",
+     "PONPYG_CHRY_LOC129025914_E72_3_33882908_Q18B_C2_T":"test",
+     "PONPYG_CHRY_LOC129025923_E72_16_42461501_Q31B_C2_T":"test",
+     "PONPYG_CHRY_LOC129025923_E72_1_42461501_Q31B_C2_T":"test",
+     "PONPYG_CHRY_LOC129025923_E72_2_42461501_Q31B_C2_T":"test",
+     "PONPYG_CHRY_LOC129025923_E72_7_42461501_Q31B_C2_T":"test",
+     "PONPYG_CHRY_LOC129025960_E72_2_42384755_Q30A_C35_":"test",
+     "PONPYG_CHRY_LOC129025961_E72_4_26220121_Q7_1A_C2_":"test",
+     "PONPYG_CHRY_LOC129025961_E72_9_26220121_Q7_1A_C2_":"test",
+     "PONPYG_CHRY_LOC129025963_E72_3_26306805_Q7_3B_C2_T":"test",
+     "SYMSYN_CHR10_DAZL_E72_109881390_NA_NONC_":"test",
+     "SYMSYN_CHRY_LOC129476757_E72_1_18127859_Q5B_NONC_T":"test",
+     "SYMSYN_CHRY_LOC129476757_E72_2_18127859_Q5B_NONC_T":"test",
+     "SYMSYN_CHRY_LOC129476757_E72_3_18127859_Q5B_NONC_T":"test"
+    }
+  },
+ "timers":{
+   "Overall":{
+     "order":0,
+     "timer":7
+    },
+   "Preliminary model fitting":{
+     "order":1,
+     "timer":1
+    },
+   "Unconstrained BUSTED model fitting":{
+     "order":2,
+     "timer":6
+    }
+  }
+}

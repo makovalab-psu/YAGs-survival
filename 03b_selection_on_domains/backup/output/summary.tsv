@@ -1,0 +1,4 @@
+Domain	dN/dS	dN/dS 95% CI	p (dN/dS≠1)	LRT p (heterogeneity)	BUSTED p	BUSTED anomaly	aBSREL positives	aBSREL tested	MEME sites (p≤0.05)	MEME total sites
+CDY_Chromodomain	0.532	[0.375, 0.729]	0.0406	0.9997	0.2438	0	0	81	0	52
+CDY_crotonase_domain	0.232	[0.190, 0.281]	0	0.7829	0.01255	0	0	98	1	198
+CDY_nodomain	0.418	[0.372, 0.468]	0	0.1763	0.2755	0	2	105	5	383

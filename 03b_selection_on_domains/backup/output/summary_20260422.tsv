@@ -1,0 +1,8 @@
+Domain	dN/dS	dN/dS 95% CI	p (dN/dS≠1)	LRT p (heterogeneity)	BUSTED p	BUSTED anomaly	aBSREL positives	aBSREL tested	MEME sites (p≤0.05)	MEME total sites
+CDY_Chromodomain	0.532	[0.375, 0.729]	0.0406	0.9997	0.2438	0	0	81	0	52
+CDY_crotonase_domain	0.232	[0.190, 0.281]	0	0.7829	0.01255	0	0	98	1	198
+DAZ-DAZL_RBD	0.599	[0.498, 0.713]	0.001045	0.9626	0.5	0	0	114	1	165
+HSFY_HSF-DNA-binding_domain	0.345	[0.198, 0.550]	0.01146	1	0.5	0	0	26	0	115
+RBMY-RBMX_RRM	0.495	[0.452, 0.540]	2.22e-16	0.002954	0.03046	0	1	132	16	400
+RBMY_RRM-RBMX-like_domain	0.237	[0.188, 0.294]	4.108e-15	1	0.5	0	0	164	0	86
+TSPY_NAP-S_domain	0.851	[0.673, 1.055]	0.4629	1	0.5	0	0	192	1	163

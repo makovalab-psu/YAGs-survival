@@ -1,0 +1,14 @@
+
+data contains YAGs_20251015_data excep for BPY2 and TSPY which were taken from 
+YAGs_20260223 ()
+
+
+--- Apr 12 2026 ---
+
+isoforms from RBMYB and RBMY were combined and reanalyzed:
+
+I saw that there was RBMY and RBMYB last time (YAGs_20251015), 
+and this is the combined version of those two genes. I clustered them, 
+and observed that all the entries in RBMYB fall into one pre-existing 
+cluster in RBMY (PanPan__RBMY_isoform_35__CGCCCTGGG__15_reads), 
+without any change in clusters of RBMY.

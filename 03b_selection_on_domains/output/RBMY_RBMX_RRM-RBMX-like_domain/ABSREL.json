@@ -1,0 +1,1120 @@
+{
+ "Site Log Likelihood":{
+   "tested":{
+     "GorGor_chrY_LOC129530256_15477440_nonP_closest_Q2A_at_428101_nonC_t":      [
+[-5.205292437438859, -10.73898539199693, -4.294234426521364, -7.601931074576248, -6.36582150553365, -24.9714978951769, -12.87804018703936, -18.23255899868496, -10.40687744306745, -12.65737147735678, -6.53022221866749, -6.952110474293387, -18.24290835555927, -10.33133919788085, -23.73699397304195, -7.311228470477841, -13.92602755036545, -8.239586284656955, -13.59240457362385, -8.176803496002625, -10.39259529565747, -8.761582454068161, -32.59386062001328, -11.27713414619949, -6.820223073961666, -12.50691947194094, -9.879239222050582, -5.143764636863448, -19.87481545040288, -10.4284718389168, -9.442105886796085, -12.96241230764682, -15.03518463484847, -14.12245098751483, -16.0397182680455, -4.294234426521364, -6.005060984407101, -9.742369149592173, -11.22373148739118, -14.07482676014465, -13.05295221976613, -12.15368079799955, -13.10658985131822, -11.42808793765526, -6.323440718630944, -14.79045482960398, -5.903992036049572, -12.84425293927708, -8.197911304718623, -18.5027495863899, -5.143764636863448, -13.6825026561201, -6.750816429742557, -5.143764636863448, -5.611881413511673, -9.035880600130838, -13.2842581486545, -5.499340273048021, -5.629161503153537, -5.43038945676792, -9.296732728482832, -6.637038893413059, -10.58707529140185, -11.99562621714499, -7.901422549541405, -5.629161503153537, -13.33938086640119, -4.058402659480662, -6.20479100669636, -17.35084690909836, -19.18217000650536, -6.870874642587506, -14.25440665254591, -6.20479100669636, -4.24547037187176, -6.883017716661754, -6.377927634752242, -5.097010680776417, -6.126941376401256, -4.294234426521364, -7.491147686151723, -7.454049603312768, -14.46311842718875, -4.24547037187176, -6.615784744523978] 
+      ],
+     "GorGor_chrY_LOC129530267_16438966_nonP_closest_Q2B_at_11653_nonC_t":      [
+[-5.205420009516319, -10.73887884095342, -4.294575057473699, -7.600769906537507, -6.364810265782632, -24.9689334915099, -12.87959795627411, -18.23244841349685, -10.40422816809549, -12.65787589497937, -6.528884834087588, -6.950824003612937, -18.24116568140935, -10.33232031434454, -23.73480253445525, -7.3103699869004, -13.92641919560326, -8.237566359765783, -13.59103949196551, -8.178243807747823, -10.39081824549449, -8.760166325107418, -32.83265433016889, -11.27384862025447, -6.819949005681968, -12.50550746350945, -9.888271792963749, -5.143252687962241, -19.87235746210996, -10.42727166441437, -9.441933875886551, -12.96432498399292, -15.03712531268454, -13.89691500575982, -16.03973268305914, -4.294575057473699, -6.006237667456285, -9.743773753553937, -11.22331231656321, -14.0734542538962, -13.05161363311472, -11.93271185544626, -13.10348463864703, -11.42549110813408, -6.323098235489507, -14.79456693337897, -5.904218605200671, -12.84476525523774, -8.19770094587763, -18.50231436464506, -5.143252687962241, -13.68090228208843, -6.751690228980845, -5.143252687962241, -5.612690249779597, -9.034217683601819, -13.52153451938689, -5.499067537216487, -5.630657171209791, -5.429332253385517, -9.296253474580134, -6.636199578631783, -10.58700823610124, -11.99422131151315, -7.90107935284463, -5.630657171209791, -13.35025061414319, -4.05835657053513, -6.204610232466337, -17.34915598657135, -19.18410673991026, -6.870966070439836, -14.2549685449157, -6.204610232466337, -4.245987800145801, -6.883835285286036, -6.378759984129436, -5.09788004819629, -6.127049219135044, -4.294575057473699, -7.49226509353713, -7.45185520315738, -14.46404519380031, -4.245987800145801, -6.615052569390927] 
+      ],
+     "Node1":      [
+[-5.210159494203785, -10.73668446438538, -4.295684824350014, -7.60185043372507, -6.366297749083636, -24.96708049045417, -12.88043135341668, -18.23726698242698, -10.40408165240583, -12.65611784482585, -6.530808866904699, -6.951615648310033, -18.24679325717671, -10.3348636256206, -23.74065337145688, -7.311645090412122, -13.92758621155299, -8.239406765284247, -13.58970036976943, -8.179523643112736, -10.3913326638648, -8.759816564110842, -32.81120474722692, -11.2740321077501, -6.818549990059354, -12.50620673902755, -9.879782858826346, -5.145190851784497, -19.8693587795469, -10.42648751350759, -9.441207826441683, -12.96422890118089, -15.03545609952954, -13.89660629028329, -16.03470759943673, -4.295684824350014, -6.006014725011429, -9.744508938117827, -11.22177201359846, -14.07157548200043, -13.04958889460612, -11.93435882615328, -13.10350373063219, -11.42575945686657, -6.325004969807102, -14.79357727061828, -5.905982325203003, -12.84224863194693, -8.199841036266109, -18.50426647477041, -5.145190851784497, -13.67866607456442, -6.751597084716566, -5.145190851784497, -5.611701156101369, -9.034582150712293, -13.28349812349225, -5.499381295698162, -5.632047964944809, -5.430634823811776, -9.294360832554327, -6.636524816807694, -10.5864367883559, -11.99288395828999, -7.899692908065706, -5.632047964944809, -13.340873171019, -4.061091152836186, -6.205999380503184, -17.34831729514967, -19.18311947855034, -6.868494707912529, -14.2601128451695, -6.205999380503184, -4.246993851074126, -6.884141837749193, -6.381458624915902, -5.098468754666298, -6.126513425600157, -4.295684824350014, -7.494128530095154, -7.448719014071317, -14.46388240793796, -4.246993851074126, -6.614789784268511] 
+      ],
+     "Node11":      [
+[-5.210313030523313, -10.73637335171603, -4.295239407779071, -7.6027552601049, -6.367661818638966, -24.96507697965131, -12.87886815764715, -18.23654288809064, -10.40502779831675, -12.65497612540646, -6.533734916543226, -6.953096116330675, -18.24535967028824, -10.33426890770755, -23.74084566412979, -7.312833135101023, -13.92765882202757, -8.240582832103737, -13.58998395462955, -8.180960008077809, -10.39305685668385, -8.760553356263182, -32.58366631977589, -11.27453294505763, -6.818274285966344, -12.50476677428331, -9.884317763392641, -5.146563106871758, -19.87239397101991, -10.42877299172783, -9.439667205536827, -12.96568077705647, -15.03408207359317, -13.89802105061255, -16.0303845671181, -4.295239407779071, -6.005284405269671, -9.742960628354744, -11.22120826257951, -14.07307165578773, -13.04987102237865, -11.92952116183408, -13.10529825652101, -11.42889387188388, -6.324858819157886, -14.79039337111287, -5.905939248656801, -12.84057294751753, -8.198704797529153, -18.50204760250388, -5.146563106871758, -13.67558060333883, -6.750464864240465, -5.146563106871758, -5.610877739527537, -9.036962915360903, -13.28372404928244, -5.499793471131277, -5.629725464484732, -5.432519630469586, -9.294806972522691, -6.637333175680904, -10.58669990153937, -11.99761304606407, -7.899577625737284, -5.629725464484732, -13.56970004913441, -4.061598163936003, -6.206086064740767, -17.34959112314582, -19.18038494368535, -6.869280783878839, -14.25805826919563, -6.206086064740767, -4.24643529083593, -6.88343460590707, -6.380275079910833, -5.097571500367269, -6.1266139560233, -4.295239407779071, -7.493008212223128, -7.452331589738434, -14.45986070847467, -4.24643529083593, -6.615714723928965] 
+      ],
+     "Node14":      [
+[-5.210193098620374, -10.737580621246, -4.295668707723611, -7.600686511508993, -6.367021751018824, -24.96767266922352, -12.88133533187303, -18.23668859142993, -10.40433548730334, -12.65610554384403, -6.531337462732438, -6.952019681714581, -18.24536698229485, -10.3336653723934, -23.73629909272176, -7.312270190067556, -13.92715325583783, -8.2385294682853, -13.5912564747198, -8.179941588725116, -10.39001121150954, -8.759623481617703, -32.58947726191978, -11.27362847608827, -6.818230996681766, -12.50666675220696, -9.879860135281584, -5.145405177952076, -19.87150206024852, -10.42721718237044, -9.440344458477805, -12.96675484737261, -15.03600444562525, -13.89695777992478, -16.03158013180179, -4.295668707723611, -6.007275694316161, -9.744980913417885, -11.22147416367698, -14.07179763458753, -13.05005506824162, -11.93446301512348, -13.10120098858297, -11.42649537314331, -6.323596751625916, -14.7915283854776, -5.906130146036923, -12.8429145259962, -8.197749684751289, -18.50341276737888, -5.145405177952076, -13.67794407003128, -6.752159549524877, -5.145405177952076, -5.612414281878754, -9.034678653777707, -13.28531893023068, -5.49947969741245, -5.63241315399513, -5.430830479495994, -9.294993353611376, -6.636289677715314, -10.5877626156095, -11.99342053765706, -7.89939450196195, -5.63241315399513, -13.34295007094636, -4.061116503016788, -6.205910771860231, -17.346396084663, -19.18381548494061, -6.869448834176694, -14.47621210440564, -6.205910771860231, -4.246945536583032, -6.884806488172276, -6.381478447397363, -5.098848290467214, -6.126941313569519, -4.295668707723611, -7.49416909929156, -7.449968595009329, -14.46194389409777, -4.246945536583032, -6.615188224836865] 
+      ],
+     "Node26":      [
+[-5.209602503141257, -10.73665322461097, -4.295611042591242, -7.600146535319436, -6.367305348153772, -24.96847981240425, -12.87950103569922, -18.45129898024572, -10.40440062216196, -12.65717255337615, -6.530573607748778, -6.952654510337885, -18.24589887707511, -10.33191780273552, -23.7394794155951, -7.312500079210881, -13.92662212275748, -8.239434442932378, -13.58991178430381, -8.177248279722782, -10.38860384763965, -8.759975602437775, -32.59174415459406, -11.27472491852797, -6.819565908835187, -12.50694720152698, -9.878870757624394, -5.14481753276166, -19.87044842644875, -10.42797470831466, -9.442816101017312, -12.964489061448, -15.03598496725203, -13.8966228559275, -16.03556509827337, -4.295611042591242, -6.005764215222658, -9.744702678641856, -11.22318820607371, -14.07319032327148, -13.04739455338125, -11.93374382348983, -13.10458676037788, -11.4281496106935, -6.322783887534036, -14.78832699702024, -5.905921542651433, -12.84342963404732, -8.197889097156651, -18.50397596790156, -5.14481753276166, -13.68008551786686, -6.751432042841984, -5.14481753276166, -5.611889391299171, -9.035447383157718, -13.28449784725109, -5.499520154094485, -5.6317216361043, -5.430740006632909, -9.296106808461612, -6.637274952607262, -10.586544711513, -11.99283603442514, -7.900692433055161, -5.6317216361043, -13.34121976513481, -4.060624167061646, -6.206203816588069, -17.34962088187415, -19.18143352513407, -6.868784799912771, -14.26001310298025, -6.206203816588069, -4.246792042407076, -6.883893431673654, -6.381035269437107, -5.098078347471969, -6.126585399327766, -4.295611042591242, -7.494301053644156, -7.449945114918351, -14.46599672830398, -4.246792042407076, -6.615111075651923] 
+      ],
+     "Node31":      [
+[-5.202857946986768, -10.73656154165342, -4.294961020807096, -7.600099020165557, -6.366831382640223, -24.94354119373733, -12.87446456823876, -18.22959503981465, -10.41022347636623, -12.66175105370366, -6.530034754024422, -6.954473318389964, -18.23980142549005, -10.32814247666083, -23.72236252062414, -7.312225202001931, -13.92526970897025, -8.21826591222246, -13.59533478472188, -8.386825530143817, -10.38955692832805, -8.772804187637966, -32.59808262037047, -11.28192209488548, -6.822149444013654, -12.50635055418976, -9.883694097224748, -5.143256163457688, -19.87933758226183, -10.4313610880388, -9.444542020663143, -12.95963172462109, -15.0380115146935, -13.90088240360455, -16.03963205434854, -4.294961020807096, -6.004189544120479, -9.744365780116887, -11.22665537236612, -14.07399256910133, -13.04994349295208, -11.92825303374155, -13.1035652143413, -11.42982560749627, -6.319211495416601, -15.0006870856434, -5.905198962605497, -12.84777039941701, -8.195160772221135, -18.49393495993801, -5.143256163457688, -13.6867713850716, -6.752449562266603, -5.143256163457688, -5.614243028582672, -9.036324384015925, -13.28023807109173, -5.502269093874579, -5.628922607699045, -5.432437476722062, -9.301985938001337, -6.637177366267763, -10.5864985454055, -11.99860812617349, -7.903634154674261, -5.628922607699045, -13.33509935316323, -4.057422275278845, -6.20704437977409, -17.34998640172905, -19.37226837730278, -6.874308842358163, -14.25077731909194, -6.20704437977409, -4.246287608074022, -6.883163525008797, -6.374358262094162, -5.097440081720121, -6.129349278142423, -4.294961020807096, -7.492369088457892, -7.460707711409439, -14.46003329816422, -4.246287608074022, -6.619194174017865] 
+      ]
+    },
+   "unconstrained":    [
+[-5.213050085612044, -10.73693880119792, -4.295463168926777, -7.600293265939746, -6.368891141788886, -24.97075717260958, -12.88433005905731, -18.2385290755454, -10.40134465674545, -12.65568129430381, -6.532470313028659, -6.953482536800294, -18.24916532520263, -10.33169037911692, -23.73644598848562, -7.313910297334091, -13.92972030798262, -8.239258669894452, -13.58886039317643, -8.181915835670312, -10.3881122858877, -8.758942039646383, -32.58698823527101, -11.27173820716941, -6.820201841112333, -12.50616094584942, -9.879371688110975, -5.146612493476222, -19.86685951048737, -10.42811486683258, -9.443098211721953, -12.96388007354395, -15.0364891995965, -13.89981063240716, -16.03331028506787, -4.295463168926777, -6.007187145002237, -9.745244836900053, -11.21848866531883, -14.07263390397532, -13.04823384290739, -11.93720967456045, -13.09563550472216, -11.43142706074362, -6.323463347648855, -14.78771966305672, -5.906149029713034, -12.83985159595879, -8.197448722787012, -18.49889258617705, -5.146612493476222, -13.67886628218985, -6.752468444740813, -5.146612493476222, -5.610930122821389, -9.038289365238272, -13.28465014323485, -5.498985378553918, -5.633786346788642, -5.431232893082303, -9.292558027342906, -6.640071590528117, -10.5884707413408, -11.99123883884907, -7.90127769451512, -5.633786346788642, -13.34156695337808, -4.062599333005428, -6.205601712856453, -17.34258022666613, -19.18164141584526, -6.86683625613873, -14.26248109879172, -6.205601712856453, -4.246594450465182, -6.884577550275768, -6.38257687688555, -5.098985102115415, -6.126143313318623, -4.295463168926777, -7.494146131774532, -7.447710443485062, -14.46120256971997, -4.246594450465182, -6.615102541587915] 
+    ]
+  },
+ "analysis":{
+   "authors":"Sergei L Kosakovsky Pond, Ben Murrell, Steven Weaver and Temple iGEM / UCSD viral evolution group",
+   "citation":"\n                                Less Is More: An Adaptive Branch-Site Random Effects Model for Efficient Detection of Episodic Diversifying Selection (2015). \n                                Mol Biol Evol 32 (5): 1342-1353. \n                            ",
+   "contact":"spond@temple.edu",
+   "info":"aBSREL (Adaptive branch-site random effects likelihood)\n                            uses an adaptive random effects branch-site model framework\n                            to test whether each branch has evolved under positive selection,\n                            using a procedure which infers an optimal number of rate categories per branch. v2.2 adds support for multiple-hit models. v2.3 adds support for SRV. v2.5 adds support for ancestral state reconstruction, identification of sites contributing to selection signal, and some diagnostics. ",
+   "requirements":"in-frame codon alignment and a phylogenetic tree",
+   "settings":{
+     "multiple-hit":"None",
+     "srv":0
+    },
+   "version":"2.5"
+  },
+ "branch attributes":{
+   "0":{
+     "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":{
+       "Baseline MG94xREV":0.3640226635132597,
+       "Baseline MG94xREV omega ratio":0.061050826304761,
+       "Corrected P-value":1,
+       "Full adaptive model":0.4160295323717964,
+       "Full adaptive model (non-synonymous subs/site)":0.06172733096987207,
+       "Full adaptive model (synonymous subs/site)":0.3543022014019244,
+       "LRT":0,
+       "Nucleotide GTR":0.2358695647879783,
+       "Rate Distributions":        [
+[0.04589116019563792, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"GorGor_chrX_RBMX_148580455_nonP-closest-Q18.2B-at-983454_nonC_-"
+      },
+     "GorGor_chrY_LOC129530238_19671638_nonP_closest_Q10B_at_60465_nonC_":{
+       "Baseline MG94xREV":0,
+       "Baseline MG94xREV omega ratio":1,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"GorGor_chrY_LOC129530238_19671638_nonP-closest-Q10B-at-60465_nonC_-"
+      },
+     "GorGor_chrY_LOC129530243_19602754_Q10B_nonC_":{
+       "Baseline MG94xREV":0,
+       "Baseline MG94xREV omega ratio":1,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"GorGor_chrY_LOC129530243_19602754_Q10B_nonC_-"
+      },
+     "GorGor_chrY_LOC129530249_25725362_nonP_closest_Q13A_at_289492_nonC_":{
+       "Baseline MG94xREV":0.004130087827100893,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.004196631505253118,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.004196631505253118,
+       "LRT":0,
+       "Nucleotide GTR":0.003945279179256568,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"GorGor_chrY_LOC129530249_25725362_nonP-closest-Q13A-at-289492_nonC_-"
+      },
+     "GorGor_chrY_LOC129530256_15477440_nonP_closest_Q2A_at_428101_nonC_t":{
+       "Baseline MG94xREV":0.007805083970843843,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Corrected P-value":1,
+       "Full adaptive model":0.00779990547468491,
+       "Full adaptive model (non-synonymous subs/site)":0.00779990547468491,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0.881843879740245,
+       "Nucleotide GTR":0.007943528354694574,
+       "Rate Distributions":        [
+[10000000000, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":0.2625723100725368,
+       "original name":"GorGor_chrY_LOC129530256_15477440_nonP-closest-Q2A-at-428101_nonC_t"
+      },
+     "GorGor_chrY_LOC129530259_15918165_Q2A_nonC_":{
+       "Baseline MG94xREV":0.007992272054179522,
+       "Baseline MG94xREV omega ratio":0.2804166765952155,
+       "Corrected P-value":1,
+       "Full adaptive model":0.008142188928845042,
+       "Full adaptive model (non-synonymous subs/site)":0.003864645538084983,
+       "Full adaptive model (synonymous subs/site)":0.004277543390760052,
+       "LRT":0,
+       "Nucleotide GTR":0.007920755140088307,
+       "Rate Distributions":        [
+[0.2379800944835131, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"GorGor_chrY_LOC129530259_15918165_Q2A_nonC_-"
+      },
+     "GorGor_chrY_LOC129530261_16137383_nonP_closest_Q2A_at_9455_nonC_":{
+       "Baseline MG94xREV":0.004156727738246544,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.00427493150290751,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.00427493150290751,
+       "LRT":0,
+       "Nucleotide GTR":0.00394988505900563,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"GorGor_chrY_LOC129530261_16137383_nonP-closest-Q2A-at-9455_nonC_-"
+      },
+     "GorGor_chrY_LOC129530264_16264504_Q2B_nonC_t":{
+       "Baseline MG94xREV":0.03612333930666584,
+       "Baseline MG94xREV omega ratio":0.9518580721296714,
+       "Corrected P-value":1,
+       "Full adaptive model":0.03662684249265372,
+       "Full adaptive model (non-synonymous subs/site)":0.02752551415868193,
+       "Full adaptive model (synonymous subs/site)":0.009101328333971785,
+       "LRT":0,
+       "Nucleotide GTR":0.03639976169173784,
+       "Rate Distributions":        [
+[0.7966288811496791, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"GorGor_chrY_LOC129530264_16264504_Q2B_nonC_t"
+      },
+     "GorGor_chrY_LOC129530266_16415999_Q2B_nonC_t":{
+       "Baseline MG94xREV":0.01183357246504817,
+       "Baseline MG94xREV omega ratio":0.5845553720873033,
+       "Corrected P-value":1,
+       "Full adaptive model":0.0118448480908578,
+       "Full adaptive model (non-synonymous subs/site)":0.007800204929995859,
+       "Full adaptive model (synonymous subs/site)":0.004044643160861935,
+       "LRT":0,
+       "Nucleotide GTR":0.01192467752989654,
+       "Rate Distributions":        [
+[0.5079853528877818, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"GorGor_chrY_LOC129530266_16415999_Q2B_nonC_t"
+      },
+     "GorGor_chrY_LOC129530267_16438966_nonP_closest_Q2B_at_11653_nonC_t":{
+       "Baseline MG94xREV":0.007898479143122205,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Corrected P-value":1,
+       "Full adaptive model":0.007919578316335359,
+       "Full adaptive model (non-synonymous subs/site)":0.007919578316335359,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0.9323528509075913,
+       "Nucleotide GTR":0.007943863316712273,
+       "Rate Distributions":        [
+[10000000000, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":0.2550694324027594,
+       "original name":"GorGor_chrY_LOC129530267_16438966_nonP-closest-Q2B-at-11653_nonC_t"
+      },
+     "HomSap_chrY_RBMY1A1_22410130_Q7_3A_nonC_t":{
+       "Baseline MG94xREV":0,
+       "Baseline MG94xREV omega ratio":1,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"HomSap_chrY_RBMY1A1_22410130_Q7.3A_nonC_t"
+      },
+     "HomSap_chrY_RBMY1F_23239128_Q7_7B_nonC_t":{
+       "Baseline MG94xREV":0.007984536821887402,
+       "Baseline MG94xREV omega ratio":0.2814500144350726,
+       "Corrected P-value":1,
+       "Full adaptive model":0.008050326034593743,
+       "Full adaptive model (non-synonymous subs/site)":0.003872683614615801,
+       "Full adaptive model (synonymous subs/site)":0.004177642419977952,
+       "LRT":0,
+       "Nucleotide GTR":0.007933999796854408,
+       "Rate Distributions":        [
+[0.2441777811482762, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"HomSap_chrY_RBMY1F_23239128_Q7.7B_nonC_t"
+      },
+     "Node1":{
+       "Baseline MG94xREV":0.003863986544543431,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Corrected P-value":1,
+       "Full adaptive model":0.003867683769246968,
+       "Full adaptive model (non-synonymous subs/site)":0.003867683769246968,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0.4430973819100927,
+       "Nucleotide GTR":0.003938703039265455,
+       "Rate Distributions":        [
+[10000000000, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":0.3415093233289603
+      },
+     "Node11":{
+       "Baseline MG94xREV":0.003880931955616497,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Corrected P-value":1,
+       "Full adaptive model":0.003901547021252466,
+       "Full adaptive model (non-synonymous subs/site)":0.003901547021252466,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0.4444295404134664,
+       "Nucleotide GTR":0.003956227655234962,
+       "Rate Distributions":        [
+[10000000000, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":0.3412214543738855
+      },
+     "Node14":{
+       "Baseline MG94xREV":0.003856013299099793,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Corrected P-value":1,
+       "Full adaptive model":0.003852481084614258,
+       "Full adaptive model (non-synonymous subs/site)":0.003852481084614258,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0.434686660645184,
+       "Nucleotide GTR":0.003946742621718916,
+       "Rate Distributions":        [
+[10000000000, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":0.343335736044676
+      },
+     "Node18":{
+       "Baseline MG94xREV":0.008320872282582843,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.008577863928572961,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.008577863928572961,
+       "LRT":0,
+       "Nucleotide GTR":0.0088787715935133,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node26":{
+       "Baseline MG94xREV":0.003862904516121521,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Corrected P-value":1,
+       "Full adaptive model":0.003861684329733679,
+       "Full adaptive model (non-synonymous subs/site)":0.003861684329733679,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0.4356651246612273,
+       "Nucleotide GTR":0.003946843901051553,
+       "Rate Distributions":        [
+[10000000000, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":0.3431224621963146
+      },
+     "Node31":{
+       "Baseline MG94xREV":0.01304916571997567,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Corrected P-value":1,
+       "Full adaptive model":0.01338829763336147,
+       "Full adaptive model (non-synonymous subs/site)":0.01338829763336147,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":1.165737560734669,
+       "Nucleotide GTR":0.01092200830822799,
+       "Rate Distributions":        [
+[10000000000, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":0.2235440910886838
+      },
+     "Node32":{
+       "Baseline MG94xREV":0.01095251197091787,
+       "Baseline MG94xREV omega ratio":0.09009228331666438,
+       "Corrected P-value":1,
+       "Full adaptive model":0.01074793096980346,
+       "Full adaptive model (non-synonymous subs/site)":0.002064399929423848,
+       "Full adaptive model (synonymous subs/site)":0.008683531040379619,
+       "LRT":0,
+       "Nucleotide GTR":0.01306592829470746,
+       "Rate Distributions":        [
+[0.06262141312933737, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node7":{
+       "Baseline MG94xREV":0.004101038568688607,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.004177697930593495,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.004177697930593495,
+       "LRT":0,
+       "Nucleotide GTR":0.003938658155094542,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node8":{
+       "Baseline MG94xREV":0.004093265132551679,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.004191323105893082,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.004191323105893082,
+       "LRT":0,
+       "Nucleotide GTR":0.003946782338553853,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "PanPan_chrY_LOC129395525_32259993_Q7A_C3_":{
+       "Baseline MG94xREV":0,
+       "Baseline MG94xREV omega ratio":1,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"PanPan_chrY_LOC129395525_32259993_Q7A_C3_-"
+      },
+     "PanPan_chrY_LOC129395733_26495121_Q12_6A_C3_":{
+       "Baseline MG94xREV":0.01591070464469238,
+       "Baseline MG94xREV omega ratio":0.8236570086951343,
+       "Corrected P-value":1,
+       "Full adaptive model":0.01594245749515238,
+       "Full adaptive model (non-synonymous subs/site)":0.01166361553617194,
+       "Full adaptive model (synonymous subs/site)":0.004278841958980438,
+       "LRT":0,
+       "Nucleotide GTR":0.01536097577795877,
+       "Rate Distributions":        [
+[0.7180130523280468, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"PanPan_chrY_LOC129395733_26495121_Q12.6A_C3_-"
+      },
+     "PanPan_chrY_LOC129395779_29435508_Q9_3B_C3_t":{
+       "Baseline MG94xREV":0.008008514996983608,
+       "Baseline MG94xREV omega ratio":0.2805778173815275,
+       "Corrected P-value":1,
+       "Full adaptive model":0.008066394267084354,
+       "Full adaptive model (non-synonymous subs/site)":0.003862323457725563,
+       "Full adaptive model (synonymous subs/site)":0.004204070809358799,
+       "LRT":0,
+       "Nucleotide GTR":0.007926745356640199,
+       "Rate Distributions":        [
+[0.2419936715890742, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"PanPan_chrY_LOC129395779_29435508_Q9.3B_C3_t"
+      },
+     "PanTro_chrY_LOC740336_24040994_Q4A_C3_":{
+       "Baseline MG94xREV":0,
+       "Baseline MG94xREV omega ratio":1,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"PanTro_chrY_LOC740336_24040994_Q4A_C3_-"
+      },
+     "PonAbe_chrY_LOC129053464_11360201_Q4A_C3_t":{
+       "Baseline MG94xREV":0.01210994884322252,
+       "Baseline MG94xREV omega ratio":0.1416044617074896,
+       "Corrected P-value":1,
+       "Full adaptive model":0.01234295851603064,
+       "Full adaptive model (non-synonymous subs/site)":0.003872382419189339,
+       "Full adaptive model (synonymous subs/site)":0.008470576096841292,
+       "LRT":0,
+       "Nucleotide GTR":0.0119152498480595,
+       "Rate Distributions":        [
+[0.1204177978271219, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"PonAbe_chrY_LOC129053464_11360201_Q4A_C3_t"
+      },
+     "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":{
+       "Baseline MG94xREV":0.1492277389580069,
+       "Baseline MG94xREV omega ratio":0.4498546757902414,
+       "Corrected P-value":1,
+       "Full adaptive model":0.1493500049793974,
+       "Full adaptive model (non-synonymous subs/site)":0.08799208781019068,
+       "Full adaptive model (synonymous subs/site)":0.06135791716920699,
+       "LRT":0,
+       "Nucleotide GTR":0.1446170854544644,
+       "Rate Distributions":        [
+[0.3777447202664008, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"PonPyg_chrY_LOC129025868-exPG_15712776_nonP-closest-Q4B-at-4388024_nonC_-"
+      },
+     "SymSyn_chrY_LOC129476690_19589548_Q6_1A_nonC_t":{
+       "Baseline MG94xREV":0,
+       "Baseline MG94xREV omega ratio":1,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"SymSyn_chrY_LOC129476690_19589548_Q6.1A_nonC_t"
+      },
+     "SymSyn_chrY_LOC129476703_19871324_Q6_2A_nonC_":{
+       "Baseline MG94xREV":0.004211270650520182,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.004366081569596146,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.004366081569596146,
+       "LRT":0,
+       "Nucleotide GTR":0.00393089920009127,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"SymSyn_chrY_LOC129476703_19871324_Q6.2A_nonC_-"
+      }
+    },
+   "attributes":{
+     "Baseline MG94xREV":{
+       "attribute type":"branch length",
+       "display order":1
+      },
+     "Baseline MG94xREV omega ratio":{
+       "attribute type":"branch label",
+       "display order":1
+      },
+     "Corrected P-value":{
+       "attribute type":"branch label",
+       "display order":6
+      },
+     "Full adaptive model":{
+       "attribute type":"branch length",
+       "display order":2
+      },
+     "Full adaptive model (non-synonymous subs/site)":{
+       "attribute type":"branch label",
+       "display order":10
+      },
+     "Full adaptive model (synonymous subs/site)":{
+       "attribute type":"branch label",
+       "display order":9
+      },
+     "LRT":{
+       "attribute type":"branch label",
+       "display order":4
+      },
+     "Nucleotide GTR":{
+       "attribute type":"branch length",
+       "display order":0
+      },
+     "Rate Distributions":{
+       "attribute type":"branch label",
+       "display order":3
+      },
+     "Rate classes":{
+       "attribute type":"branch label",
+       "display order":2
+      },
+     "Uncorrected P-value":{
+       "attribute type":"branch label",
+       "display order":5
+      },
+     "original name":{
+       "attribute type":"node label",
+       "display order":-1
+      },
+     "posterior":{
+       "attribute type":"branch annotations",
+       "display order":-1
+      }
+    }
+  },
+ "data partitions":{
+   "0":{
+     "coverage":      [
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84] 
+      ],
+     "name":"absrel.filter.default"
+    }
+  },
+ "fits":{
+   "Baseline MG94xREV":{
+     "AIC-c":1909.049704184671,
+     "Equilibrium frequencies":      [
+[0.05168248144103642],
+      [0.02128369217393385],
+      [0.0255442604967809],
+      [0.04650113422563129],
+      [0.02835376420418298],
+      [0.01167654440088419],
+      [0.01401395441359108],
+      [0.02551120144192078],
+      [0.01814031369044933],
+      [0.007470478230938035],
+      [0.00896591815025022],
+      [0.01632168460752076],
+      [0.03372770337847669],
+      [0.01388962055276367],
+      [0.01667004402721822],
+      [0.03034638465868079],
+      [0.01789380463295381],
+      [0.007368961764399814],
+      [0.008844080123052057],
+      [0.0160998889341936],
+      [0.009816802582463523],
+      [0.004042720056617361],
+      [0.004851991534075437],
+      [0.00883263422779852],
+      [0.006280643268410536],
+      [0.002586471745394951],
+      [0.003104231516411778],
+      [0.005650987094744441],
+      [0.01167739857191685],
+      [0.004808943952905312],
+      [0.005771598087566585],
+      [0.01050669904498323],
+      [0.05312418603891735],
+      [0.02187740973569702],
+      [0.02625682840723799],
+      [0.04779830295961045],
+      [0.02914470440443321],
+      [0.01200226652723606],
+      [0.01440487957719063],
+      [0.02622284715611206],
+      [0.01864634538485163],
+      [0.007678870369117395],
+      [0.009216026215130716],
+      [0.01677698487731665],
+      [0.03466855187647672],
+      [0.01427707737092336],
+      [0.01713506192981907],
+      [0.03119290984616424],
+      [0.009400273241013227],
+      [0.02053794821714774],
+      [0.01252288037021148],
+      [0.005157127202467294],
+      [0.00618948064077883],
+      [0.01126741837369196],
+      [0.003299452747106664],
+      [0.003959937015633606],
+      [0.00720872552612082],
+      [0.01489636407811877],
+      [0.006134566659908578],
+      [0.007362583874779301],
+      [0.01340295214464033] 
+      ],
+     "Log Likelihood":-879.2943665360972,
+     "Rate Distributions":{
+       "Per-branch omega":{
+         "2.5%":0,
+         "97.5%":10000000000,
+         "Mean":769230769.6111629,
+         "Median":0.2814500144350726
+        }
+      },
+     "display order":1,
+     "estimated parameters":72
+    },
+   "Full adaptive model":{
+     "AIC-c":1900.250532201524,
+     "Log Likelihood":-874.8947805445234,
+     "Rate Distributions":{
+      },
+     "display order":2,
+     "estimated parameters":72
+    },
+   "Nucleotide GTR":{
+     "AIC-c":1980.11230728023,
+     "Equilibrium frequencies":      [
+[0.3615686274509804],
+      [0.1684313725490196],
+      [0.2294117647058823],
+      [0.2405882352941176] 
+      ],
+     "Log Likelihood":-944.6465770671036,
+     "Rate Distributions":{
+       "Substitution rate from nucleotide A to nucleotide C":0.4128990633444565,
+       "Substitution rate from nucleotide A to nucleotide G":1,
+       "Substitution rate from nucleotide A to nucleotide T":0.2204327214929811,
+       "Substitution rate from nucleotide C to nucleotide G":0.8462945890359375,
+       "Substitution rate from nucleotide C to nucleotide T":0.8031454728074455,
+       "Substitution rate from nucleotide G to nucleotide T":0.2758029756579841
+      },
+     "display order":0,
+     "estimated parameters":45
+    }
+  },
+ "input":{
+   "file name":"/Users/kxp5629/proj/Y/YAGs-survival/selection_on_domains/output/RBMY_RBMX_RRM-RBMX-like_domain/alignment.dedup.fasta",
+   "number of sequences":20,
+   "number of sites":85,
+   "partition count":1,
+   "trees":{
+     "0":"((((SymSyn_chrY_LOC129476690_19589548_Q6_1A_nonC_t,SymSyn_chrY_LOC129476703_19871324_Q6_2A_nonC_)Node32,PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_)Node31,(GorGor_chrY_LOC129530261_16137383_nonP_closest_Q2A_at_9455_nonC_,GorGor_chrY_LOC129530256_15477440_nonP_closest_Q2A_at_428101_nonC_t,GorGor_chrY_LOC129530259_15918165_Q2A_nonC_)Node26,GorGor_chrY_LOC129530249_25725362_nonP_closest_Q13A_at_289492_nonC_,PanPan_chrY_LOC129395779_29435508_Q9_3B_C3_t,PanPan_chrY_LOC129395525_32259993_Q7A_C3_,(PanPan_chrY_LOC129395733_26495121_Q12_6A_C3_,GorGor_chrY_LOC129530264_16264504_Q2B_nonC_t)Node18,PonAbe_chrY_LOC129053464_11360201_Q4A_C3_t,((GorGor_chrY_LOC129530238_19671638_nonP_closest_Q10B_at_60465_nonC_,GorGor_chrY_LOC129530266_16415999_Q2B_nonC_t)Node8,(GorGor_chrY_LOC129530243_19602754_Q10B_nonC_,GorGor_chrY_LOC129530267_16438966_nonP_closest_Q2B_at_11653_nonC_t)Node11)Node7,(HomSap_chrY_RBMY1A1_22410130_Q7_3A_nonC_t,HomSap_chrY_RBMY1F_23239128_Q7_7B_nonC_t)Node14)Node1,PanTro_chrY_LOC740336_24040994_Q4A_C3_,GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_)"
+    }
+  },
+ "runtime":"2.5.68",
+ "substitutions":{
+   "0":{
+     "0":{
+       "root":"ATG"
+      },
+     "1":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GTT",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"ATG",
+       "root":"GTA"
+      },
+     "10":{
+       "root":"TTC"
+      },
+     "11":{
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"GTT",
+       "root":"ATT"
+      },
+     "12":{
+       "GorGor_chrY_LOC129530266_16415999_Q2B_nonC_t":"TGT",
+       "PanPan_chrY_LOC129395779_29435508_Q9_3B_C3_t":"GCT",
+       "root":"GGT"
+      },
+     "13":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GGG",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"GGG",
+       "root":"GGC"
+      },
+     "14":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"CTT",
+       "GorGor_chrY_LOC129530249_25725362_nonP_closest_Q13A_at_289492_nonC_":"CTG",
+       "GorGor_chrY_LOC129530264_16264504_Q2B_nonC_t":"CTA",
+       "GorGor_chrY_LOC129530266_16415999_Q2B_nonC_t":"CTG",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"CTA",
+       "root":"CTC"
+      },
+     "15":{
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"AGT",
+       "root":"AAT"
+      },
+     "16":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"ACG",
+       "Node18":"AGG",
+       "root":"AGA"
+      },
+     "17":{
+       "Node32":"GAG",
+       "root":"GAA"
+      },
+     "18":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"ACA",
+       "GorGor_chrY_LOC129530264_16264504_Q2B_nonC_t":"AGC",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"GCC",
+       "root":"ACC"
+      },
+     "19":{
+       "Node31":"GAT",
+       "root":"AAT"
+      },
+     "2":{
+       "root":"GAA"
+      },
+     "20":{
+       "Node18":"GAA",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"GAA",
+       "root":"GAG"
+      },
+     "21":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"AAA",
+       "Node32":"AAA",
+       "root":"AAG"
+      },
+     "22":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GCT",
+       "GorGor_chrY_LOC129530266_16415999_Q2B_nonC_t":"AAG",
+       "GorGor_chrY_LOC129530267_16438966_nonP_closest_Q2B_at_11653_nonC_t":"AAG",
+       "Node1":"ATG",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"ACG",
+       "root":"ACG"
+      },
+     "23":{
+       "GorGor_chrY_LOC129530264_16264504_Q2B_nonC_t":"TTT",
+       "root":"CTT"
+      },
+     "24":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GAA",
+       "root":"AAA"
+      },
+     "25":{
+       "PonAbe_chrY_LOC129053464_11360201_Q4A_C3_t":"TCA",
+       "root":"GCA"
+      },
+     "26":{
+       "Node7":"GTG",
+       "root":"GTA"
+      },
+     "27":{
+       "root":"TTT"
+      },
+     "28":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GGC",
+       "GorGor_chrY_LOC129530264_16264504_Q2B_nonC_t":"GCA",
+       "PanPan_chrY_LOC129395733_26495121_Q12_6A_C3_":"GAG",
+       "root":"GGG"
+      },
+     "29":{
+       "PonAbe_chrY_LOC129053464_11360201_Q4A_C3_t":"AAG",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"GAA",
+       "root":"AAA"
+      },
+     "3":{
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"GCG",
+       "root":"GCA"
+      },
+     "30":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"TAT",
+       "root":"CAT"
+      },
+     "31":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GGA",
+       "SymSyn_chrY_LOC129476703_19871324_Q6_2A_nonC_":"GGA",
+       "root":"GGT"
+      },
+     "32":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"CGA",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"CGC",
+       "root":"CCC"
+      },
+     "33":{
+       "GorGor_chrY_LOC129530256_15477440_nonP_closest_Q2A_at_428101_nonC_t":"GTA",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"GTG",
+       "root":"ATA"
+      },
+     "34":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GTG",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"TCG",
+       "root":"TCA"
+      },
+     "35":{
+       "root":"GAA"
+      },
+     "36":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GTA",
+       "root":"GTT"
+      },
+     "37":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"CTC",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"GTT",
+       "root":"CTT"
+      },
+     "38":{
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"TGG",
+       "root":"TTG"
+      },
+     "39":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"ATG",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"AAG",
+       "root":"ATA"
+      },
+     "4":{
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"AAT",
+       "root":"GAT"
+      },
+     "40":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"AAA",
+       "GorGor_chrY_LOC129530259_15918165_Q2A_nonC_":"AGG",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"AAA",
+       "root":"AAG"
+      },
+     "41":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GAC",
+       "GorGor_chrY_LOC129530256_15477440_nonP_closest_Q2A_at_428101_nonC_t":"TAT",
+       "root":"GAT"
+      },
+     "42":{
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"AAA",
+       "root":"ACC"
+      },
+     "43":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"AAC",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"AAC",
+       "root":"AGC"
+      },
+     "44":{
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"AAG",
+       "root":"AAA"
+      },
+     "45":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"TCA",
+       "Node31":"TGC",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"TGT",
+       "root":"TCC"
+      },
+     "46":{
+       "root":"AGA"
+      },
+     "47":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GGA",
+       "GorGor_chrY_LOC129530261_16137383_nonP_closest_Q2A_at_9455_nonC_":"GGT",
+       "root":"GGC"
+      },
+     "48":{
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"TTC",
+       "root":"TTT"
+      },
+     "49":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GCT",
+       "GorGor_chrY_LOC129530259_15918165_Q2A_nonC_":"GCC",
+       "Node8":"GCC",
+       "root":"GCA"
+      },
+     "5":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"CGC",
+       "GorGor_chrY_LOC129530264_16264504_Q2B_nonC_t":"CGT",
+       "Node31":"CGT",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"CAG",
+       "root":"CAT"
+      },
+     "50":{
+       "root":"TTT"
+      },
+     "51":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GTC",
+       "GorGor_chrY_LOC129530264_16264504_Q2B_nonC_t":"ACT",
+       "root":"ATT"
+      },
+     "52":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"ACC",
+       "root":"ACT"
+      },
+     "53":{
+       "root":"TTT"
+      },
+     "54":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GAA",
+       "root":"GAG"
+      },
+     "55":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"AGC",
+       "root":"AAC"
+      },
+     "56":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"CCA",
+       "GorGor_chrY_LOC129530267_16438966_nonP_closest_Q2B_at_11653_nonC_t":"ACT",
+       "root":"CCT"
+      },
+     "57":{
+       "root":"GCA"
+      },
+     "58":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GAC",
+       "root":"GAT"
+      },
+     "59":{
+       "root":"GCT"
+      },
+     "6":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"CCA",
+       "PanPan_chrY_LOC129395733_26495121_Q12_6A_C3_":"CCG",
+       "root":"CCT"
+      },
+     "60":{
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"AGG",
+       "root":"AAG"
+      },
+     "61":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GAT",
+       "root":"AAT"
+      },
+     "62":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GCA",
+       "PanPan_chrY_LOC129395733_26495121_Q12_6A_C3_":"ACT",
+       "root":"GCT"
+      },
+     "63":{
+       "HomSap_chrY_RBMY1F_23239128_Q7_7B_nonC_t":"GCG",
+       "root":"GCC"
+      },
+     "64":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"AGA",
+       "root":"AAA"
+      },
+     "65":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GAC",
+       "root":"GAT"
+      },
+     "66":{
+       "Node11":"TTG",
+       "root":"ATG"
+      },
+     "67":{
+       "root":"AAT"
+      },
+     "68":{
+       "root":"GGA"
+      },
+     "69":{
+       "HomSap_chrY_RBMY1F_23239128_Q7_7B_nonC_t":"ACG",
+       "PanPan_chrY_LOC129395733_26495121_Q12_6A_C3_":"GAG",
+       "root":"AAG"
+      },
+     "7":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GGA",
+       "Node26":"GCC",
+       "PanPan_chrY_LOC129395779_29435508_Q9_3B_C3_t":"GGG",
+       "root":"GGC"
+      },
+     "70":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"TCA",
+       "GorGor_chrY_LOC129530264_16264504_Q2B_nonC_t":"CCT",
+       "Node31":"TGT",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"TAT",
+       "root":"TCT"
+      },
+     "71":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"TTA",
+       "root":"TTG"
+      },
+     "72":{
+       "Node14":"CAT",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"TAT",
+       "root":"GAT"
+      },
+     "73":{
+       "root":"GGA"
+      },
+     "74":{
+       "root":"AAA"
+      },
+     "75":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GCC",
+       "root":"GCA"
+      },
+     "76":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"ATC",
+       "root":"ATA"
+      },
+     "77":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"AAG",
+       "root":"AAA"
+      },
+     "78":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"GTG",
+       "root":"GTA"
+      },
+     "79":{
+       "root":"GAA"
+      },
+     "8":{
+       "GorGor_chrY_LOC129530264_16264504_Q2B_nonC_t":"AGG",
+       "root":"AAG"
+      },
+     "80":{
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"GAA",
+       "root":"CAA"
+      },
+     "81":{
+       "root":"GCC"
+      },
+     "82":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"ACC",
+       "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"AAT",
+       "root":"AAG"
+      },
+     "83":{
+       "root":"AAA"
+      },
+     "84":{
+       "root":"CCA"
+      },
+     "9":{
+       "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"CTC",
+       "PonAbe_chrY_LOC129053464_11360201_Q4A_C3_t":"CTC",
+       "root":"CTT"
+      }
+    }
+  },
+ "test results":{
+   "P-value threshold":0.05,
+   "positive test results":0,
+   "tested":29
+  },
+ "tested":{
+   "0":{
+     "GorGor_chrX_RBMX_148580455_nonP_closest_Q18_2B_at_983454_nonC_":"test",
+     "GorGor_chrY_LOC129530238_19671638_nonP_closest_Q10B_at_60465_nonC_":"test",
+     "GorGor_chrY_LOC129530243_19602754_Q10B_nonC_":"test",
+     "GorGor_chrY_LOC129530249_25725362_nonP_closest_Q13A_at_289492_nonC_":"test",
+     "GorGor_chrY_LOC129530256_15477440_nonP_closest_Q2A_at_428101_nonC_t":"test",
+     "GorGor_chrY_LOC129530259_15918165_Q2A_nonC_":"test",
+     "GorGor_chrY_LOC129530261_16137383_nonP_closest_Q2A_at_9455_nonC_":"test",
+     "GorGor_chrY_LOC129530264_16264504_Q2B_nonC_t":"test",
+     "GorGor_chrY_LOC129530266_16415999_Q2B_nonC_t":"test",
+     "GorGor_chrY_LOC129530267_16438966_nonP_closest_Q2B_at_11653_nonC_t":"test",
+     "HomSap_chrY_RBMY1A1_22410130_Q7_3A_nonC_t":"test",
+     "HomSap_chrY_RBMY1F_23239128_Q7_7B_nonC_t":"test",
+     "Node1":"test",
+     "Node11":"test",
+     "Node14":"test",
+     "Node18":"test",
+     "Node26":"test",
+     "Node31":"test",
+     "Node32":"test",
+     "Node7":"test",
+     "Node8":"test",
+     "PanPan_chrY_LOC129395525_32259993_Q7A_C3_":"test",
+     "PanPan_chrY_LOC129395733_26495121_Q12_6A_C3_":"test",
+     "PanPan_chrY_LOC129395779_29435508_Q9_3B_C3_t":"test",
+     "PanTro_chrY_LOC740336_24040994_Q4A_C3_":"test",
+     "PonAbe_chrY_LOC129053464_11360201_Q4A_C3_t":"test",
+     "PonPyg_chrY_LOC129025868_exPG_15712776_nonP_closest_Q4B_at_4388024_nonC_":"test",
+     "SymSyn_chrY_LOC129476690_19589548_Q6_1A_nonC_t":"test",
+     "SymSyn_chrY_LOC129476703_19871324_Q6_2A_nonC_":"test"
+    }
+  },
+ "timers":{
+   "Baseline model fitting":{
+     "order":2,
+     "timer":0
+    },
+   "Complexity analysis":{
+     "order":3,
+     "timer":11
+    },
+   "Full adaptive model fitting":{
+     "order":4,
+     "timer":2
+    },
+   "Overall":{
+     "order":0,
+     "timer":21
+    },
+   "Preliminary model fitting":{
+     "order":1,
+     "timer":0
+    },
+   "Testing for selection":{
+     "order":5,
+     "timer":8
+    }
+  }
+}

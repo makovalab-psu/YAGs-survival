@@ -1,0 +1,2 @@
+Domain	dN/dS	dN/dS 95% CI	p (dN/dS≠1)	LRT p (heterogeneity)	BUSTED p	BUSTED anomaly	aBSREL positives	aBSREL tested	MEME sites (p≤0.05)	MEME total sites
+TSPY	0.767	[0.639, 0.910]	0.1151	0.9079	0.5	0	0	91	3	275
